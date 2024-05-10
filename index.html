@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Making sharable documents with Quarto - Making shareable documents with Quarto</title>
+<title>Quarto Contributing Clinic - Contributing to Quarto books and websites</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -100,8 +100,7 @@ ul.task-list li input[type="checkbox"] {
       </a>
       <div class="sidebar-tools-main tools-wide">
     <a href="https://openscapes.org" title="Openscapes.org" class="quarto-navigation-tool px-1" aria-label="Openscapes.org"><i class="bi bi-globe"></i></a>
-    <a href="https://github.com/openscapes/quarto-website-tutorial" title="Quarto website tutorial" class="quarto-navigation-tool px-1" aria-label="Quarto website tutorial"><i class="bi bi-github"></i></a>
-    <a href="https://twitter.com/openscapes" title="Openscapes Twitter" class="quarto-navigation-tool px-1" aria-label="Openscapes Twitter"><i class="bi bi-twitter"></i></a>
+    <a href="https://github.com/Openscapes/quarto-clinic" title="Quarto Contributing Clinic repo" class="quarto-navigation-tool px-1" aria-label="Quarto Contributing Clinic repo"><i class="bi bi-github"></i></a>
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div>
@@ -121,13 +120,13 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./explore.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Explore and setup</span></a>
+ <span class="menu-text">Explore</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="./quarto-workflows/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Quarto workflows</span></a>
+            <a href="./workflows/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Workflows</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -135,19 +134,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./quarto-workflows/browser.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">From the Browser</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./quarto-workflows/rstudio.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">From RStudio</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./quarto-workflows/jupyter.html" class="sidebar-item-text sidebar-link">
+  <a href="./workflows/jupyter.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">From Jupyter</span></a>
   </div>
 </li>
@@ -155,14 +142,8 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./learning-more.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Learning more</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./transition-from-rmarkdown.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Transition from Rmd</span></a>
+  <a href="./where-to-contribute.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Where to Contribute</span></a>
   </div>
 </li>
     </ul>
@@ -181,15 +162,15 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#example-quarto-sites" id="toc-example-quarto-sites" class="nav-link" data-scroll-target="#example-quarto-sites">Example Quarto sites</a></li>
   <li><a href="#about" id="toc-about" class="nav-link" data-scroll-target="#about">About</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/openscapes/quarto-website-tutorial/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/openscapes/quarto-website-tutorial/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/Openscapes/quarto-clinic/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/Openscapes/quarto-clinic/blob/main/index.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/Openscapes/quarto-clinic/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Making shareable documents with Quarto</h1>
-<p class="subtitle lead">Create open-source tutorials, onboarding docs, and much more</p>
+<h1 class="title">Contributing to Quarto books and websites</h1>
+<p class="subtitle lead">Share open-source tutorials, onboarding docs, and much more</p>
 </div>
 
 
@@ -470,7 +451,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/openscapes\.github\.io\/quarto-website-tutorial");
+      var filterRegex = new RegExp("https:\/\/openscapes\.github\.io\/quarto-clinic\/");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
@@ -802,8 +783,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   <div class="nav-page nav-page-previous">
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./explore.html" class="pagination-link" aria-label="Explore and setup">
-        <span class="nav-page-text">Explore and setup</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./explore.html" class="pagination-link" aria-label="Explore">
+        <span class="nav-page-text">Explore</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -815,7 +796,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/openscapes/quarto-website-tutorial/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/openscapes/quarto-website-tutorial/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/Openscapes/quarto-clinic/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/Openscapes/quarto-clinic/blob/main/index.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/Openscapes/quarto-clinic/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This page is built with ❤️ and <a href="https://quarto.org/">Quarto</a>.</p>
 </div>
