@@ -1,21 +1,6 @@
 ---
-title: Quarto workflows
+title: Workflows
 ---
-
-<!---
-## Why am I here?
-
-## Stuff from Alison Hill chat
-
-### what do code chunks look like,
-
-### Can you open slide decks within here
-
-
-## What's Freeze?
-
-JJ: You can put it in the project root or at a a file level, OR at a directory level (if there is a _metadata.yml file in a directory then documents within it will merge that metadata -- this applies to docs in subdirectories as well). So if you have mostly frozen stuff you can set it at the project level then disable on a per-file or per-directory basis. If frozen stuff is more the exception then you can use directory or file level enablement
---->
 
 ## Basic Workflow
 
@@ -27,8 +12,6 @@ How do you work in Quarto? You can use whichever tool you're comfortable with (R
 4.  Repeat, repeat, repeat
 5.  Commit and push your website to GitHub, your updates will publish automatically! 
 6.  Repeat all of the above to make the website as you'd like!
-
-Note: if editing from your internet browser we won't render in Step 3. That step will not be separate, but combined with Step 5, which will only require a commit, not a push.
 
 ## Authoring
 
@@ -59,7 +42,3 @@ Notice that there are multiple ways in the `_quarto.yml` for you to include a fi
 As you modify `_quarto.yml`, the most important thing to know is that **spacing matters**. Pay attention to whether text is indented by one, two, four, or other spaces, and make sure you follow it; if your site is not looking as expected it is likely a silent error in your YAML. Some text editors like RStudio provide debugging support for YAML and are highly recommended to save you time and heartache.
 :::
 
-## Install Quarto
-
-
-**<https://quarto.org/docs/get-started/>** describes how to install Quarto, which will depend on your operating system. We'll walk through installation for each tool in the next chapters.

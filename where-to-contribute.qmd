@@ -1,0 +1,10 @@
+---
+title: Where to contribute
+---
+
+We can use these skills to contribute to many Quarto websites and books.
+
+-   [NASA Earthdata Cloud Cookbook](https://nasa-openscapes.github.io/earthdata-cloud-cookbook/)
+-   [NASA Openscapes site](https://nasa-openscapes.github.io/)
+-   [Openscapes Champions Lessons Series](https://openscapes.github.io/series)
+-   [Openscapes Approach Guide](https://openscapes.github.io/approach-guide/)
