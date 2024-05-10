@@ -1,12 +1,16 @@
 project: 
   type: website
+  output-dir: _site
+  
+execute:
+  freeze: true  # never re-execute computational content during project render, needed for .qmd and .rmd since quarto does not render .ipynb by default  
   
 website: 
   page-navigation: true
-  title: "Making sharable documents with Quarto" 
-  site-url: "https://openscapes.github.io/quarto-website-tutorial" 
-  repo-url: https://github.com/openscapes/quarto-website-tutorial 
-  repo-actions: [edit, issue]
+  title: "Quarto Contributing Clinic" 
+  site-url: https://openscapes.github.io/quarto-clinic/ 
+  repo-url: https://github.com/Openscapes/quarto-clinic 
+  repo-actions: [edit, source, issue]
   
   page-footer:
     right: "This page is built with ❤️ and [Quarto](https://quarto.org/)."
@@ -21,11 +25,8 @@ website:
         href: https://openscapes.org
         text: "Openscapes.org"
       - icon: github
-        href: https://github.com/openscapes/quarto-website-tutorial
-        text: "Quarto website tutorial"
-      - icon: twitter
-        href: https://twitter.com/openscapes
-        text: "Openscapes Twitter"         
+        href: https://github.com/Openscapes/quarto-clinic
+        text: "Quarto Contributing Clinic repo"
 
     style: "docked"
     search: true
@@ -33,15 +34,13 @@ website:
     contents:
       - href: index.qmd
         text: Welcome
-      - explore.qmd
-      - section: quarto-workflows/index.qmd
+      - href: explore.qmd
+        text: Explore
+      - section: workflows/index.qmd
         contents: 
-          - quarto-workflows/browser.md
-          - quarto-workflows/rstudio.qmd
-          - quarto-workflows/jupyter.md 
-      - learning-more.qmd
-      - href: transition-from-rmarkdown.qmd
-        text: Transition from Rmd
+          - workflows/jupyter.qmd
+      - href: where-to-contribute.qmd
+        text: Where to Contribute
 
 
 format:
