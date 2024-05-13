@@ -38,7 +38,11 @@ website:
         text: Explore
       - section: workflows/index.qmd
         contents: 
-          - workflows/jupyter.qmd
+          - href: workflows/jupyter.qmd
+      - section: practice/index.qmd
+        contents: 
+          - practice/demo.qmd
+          - practice/demo.ipynb
       - href: where-to-contribute.qmd
         text: Where to Contribute
 
