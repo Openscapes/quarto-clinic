@@ -2,14 +2,43 @@
 title: "`demo.qmd`"
 ---
 
-*Below is contents of GitHub Clinic `demo.md` file.*
-
 *Modify it to contain the content we want for Quarto Clinic:*
 
 -   *fix a typo*
--   *insert an image, with alt text, edit size*
+
 -   *python code to run*
 -   *R code to run*
+
+
+
+## Quarto
+
+Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+
+## Running Code
+
+When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+```{r}
+1 + 1
+```
+
+You can add options to executable code like this
+
+```{python}
+#| echo: false
+2 * 2
+```
+
+The `echo: false` option disables the printing of code (only output is displayed).
+
+
+## insert an image 
+with alt text, edit size - e.g. NASA Openscapes logo
+
+
+
+
 
 # GitHub practice from the browser
 
