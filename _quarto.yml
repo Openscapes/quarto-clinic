@@ -42,7 +42,6 @@ website:
       - section: practice/index.qmd
         contents: 
           - practice/demo.qmd
-          - practice/demo.ipynb
       - href: where-to-contribute.qmd
         text: Where to Contribute
 
