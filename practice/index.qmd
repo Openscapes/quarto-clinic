@@ -1,0 +1,5 @@
+---
+title: Practice
+---
+
+Now that we have each set up our own GitHub clone of this Quarto Clinic website in the Openscapes 2i2c JupyterHub, we can practice editing and rendering `.qmd` and `ipynb` files. These are the workflows we use to contribute to the NASA Earthdata Cloud Cookbook and other Quarto websites and books.
