@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://openscapes.github.io/quarto-clinic/where-to-contribute.html</loc>
-    <lastmod>2024-05-10T19:58:56.567Z</lastmod>
+    <loc>https://openscapes.github.io/quarto-clinic/explore.html</loc>
+    <lastmod>2024-05-22T04:56:56.575Z</lastmod>
   </url>
   <url>
     <loc>https://openscapes.github.io/quarto-clinic/index.html</loc>
-    <lastmod>2024-05-10T19:58:56.567Z</lastmod>
-  </url>
-  <url>
-    <loc>https://openscapes.github.io/quarto-clinic/workflows/jupyter.html</loc>
-    <lastmod>2024-05-10T19:58:56.603Z</lastmod>
+    <lastmod>2024-05-22T04:56:56.599Z</lastmod>
   </url>
   <url>
     <loc>https://openscapes.github.io/quarto-clinic/workflows/index.html</loc>
-    <lastmod>2024-05-10T19:58:56.603Z</lastmod>
+    <lastmod>2024-05-22T04:56:56.631Z</lastmod>
   </url>
   <url>
-    <loc>https://openscapes.github.io/quarto-clinic/explore.html</loc>
-    <lastmod>2024-05-10T19:58:56.543Z</lastmod>
+    <loc>https://openscapes.github.io/quarto-clinic/workflows/jupyter.html</loc>
+    <lastmod>2024-05-22T04:56:56.631Z</lastmod>
+  </url>
+  <url>
+    <loc>https://openscapes.github.io/quarto-clinic/where-to-contribute.html</loc>
+    <lastmod>2024-05-22T04:56:56.599Z</lastmod>
   </url>
 </urlset>

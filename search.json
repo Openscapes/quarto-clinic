@@ -1,12 +1,42 @@
 [
   {
-    "objectID": "where-to-contribute.html",
-    "href": "where-to-contribute.html",
-    "title": "Where to contribute",
+    "objectID": "explore.html",
+    "href": "explore.html",
+    "title": "Explore",
     "section": "",
-    "text": "We can use these skills to contribute to many Quarto websites and books.\n\nNASA Earthdata Cloud Cookbook\nNASA Openscapes site\nOpenscapes Champions Lessons Series\nOpenscapes Approach Guide",
+    "text": "With this tutorial, we have a working example website that we will explore together. We’ll learn a few rules and look for patterns to get an understanding of what things to do to help you start customizing and making it your own. And you can continue to use this website as a reference after the tutorial, along with Quarto documentation.\nWe’ll start our exploration online looking at the website architecture and GitHub repository. Then we’ll setup a copy for ourselves so that we can modify from a working example, which is a great way to learn something new. We’ll set it up so that any modifications (commits) will automatically be republished via GitHub Actions. Subsequent chapters will describe how to modify your repo using different tools (browser, RStudio, Jupyter).",
     "crumbs": [
-      "Where to Contribute"
+      "Explore"
+    ]
+  },
+  {
+    "objectID": "explore.html#exploring-online",
+    "href": "explore.html#exploring-online",
+    "title": "Explore",
+    "section": "Exploring online",
+    "text": "Exploring online\n\nThe website itself\nThis website has 5 things you can see on the left sidebar:\n\nWelcome\nExplore\nQuarto workflows\nGitHub workflows\nWhere to contribute\n\nMost of these are pages, but you’ll see that “Workflows” has an arrow &gt;; it is a folder with additional pages inside.\n\n\nThe website’s repo\nLet’s go to this website’s GitHub repository (also called a “repo”), https://github.com/Openscapes/quarto-clinic. You can also click there from any page in this tutorial website by clicking the GitHub octocat icon underneath the Openscapes logo in the left navbar (click it holding command on Mac, or control on a PC to open it in a different tab in your browser).\nHave a look at the filenames. We can recognize the names of the webpages we’ve seen above, and they have red arrows marking them in the image below. You’ll see the “quarto-workflows” folder and the rest in this site are .qmd files, which are plain text Quarto files that can combine Markdown text with code. index.qmd is the home page. If you click inside “quarto-workflows” you’ll see a mix of filetypes!\n\n\n\nquarto-website-tutorial GitHub repository with files for webpages marked with red arrows\n\n\nThe _site folder has html files with names that should be familiar: they match the .qmd files we were just exploring. This folder is where Quarto stores files to build the website.",
+    "crumbs": [
+      "Explore"
+    ]
+  },
+  {
+    "objectID": "explore.html#quarto.yml-intro",
+    "href": "explore.html#quarto.yml-intro",
+    "title": "Explore",
+    "section": "_quarto.yml intro",
+    "text": "_quarto.yml intro\nThere is also a _quarto.yml file, which is the website’s configuration file. It is essentially metadata for the website that includes the order that the pages/chapters will be in. This is where you update the organization of your website: which page comes before another. If we compare side-by-side, you’ll see that the pages that appear on our website are listed there.\n\n\n\n_quarto.yml and website side-by-side\n\n\nWe’ll learn more about how to interact with _quarto.yml in Quarto Workflows.",
+    "crumbs": [
+      "Explore"
+    ]
+  },
+  {
+    "objectID": "explore.html#onward",
+    "href": "explore.html#onward",
+    "title": "Explore",
+    "section": "Onward!",
+    "text": "Onward!\nNow you are ready to start editing! The next chapter describes how to do this in the JupyterHub.",
+    "crumbs": [
+      "Explore"
     ]
   },
   {
@@ -67,6 +97,46 @@
     "text": "About\nOpenscapes is about better science for future us. We help researchers reimagine data analysis, develop modern skills that are of immediate value to them, and cultivate collaborative and inclusive research teams as part of the broader global open movement.\nWe’re developing this tutorial to help folks with different levels of technical skills use Quarto for documentation and tutorial building. This tutorial was originally created for several different audiences: NASA-Openscapes researcher support engineers using Python, communications directors at organizations promoting open science who do not identify as coders, and fisheries scientists curious about transitioning from RMarkdown. We’re hoping it’s useful to folks with backgrounds as wide as these; if you find it useful or have suggestions for improvement, please let us know by clicking “Edit this page” or “Report an issue” at the upper right side of any page.",
     "crumbs": [
       "Welcome"
+    ]
+  },
+  {
+    "objectID": "workflows/index.html",
+    "href": "workflows/index.html",
+    "title": "Workflows",
+    "section": "",
+    "text": "How do you work in Quarto? You can use whichever tool you’re comfortable with (RStudio, Jupyter, GitHub, VS Code, etc). Developing your quarto site will have the same basic workflow, no matter which tool you use. It is very iterative, and each is explored more below.\n\nAuthoring: write text, code, images, etc in a file. Supported files include .md, .Rmd, .qmd, .ipynb…\nUpdate _quarto.yml as needed (for example, if you’ve created a new file you’d like included in your site)\nRender individual files and/or the whole website\nRepeat, repeat, repeat\nCommit and push your website to GitHub, your updates will publish automatically!\nRepeat all of the above to make the website as you’d like!",
+    "crumbs": [
+      "Workflows"
+    ]
+  },
+  {
+    "objectID": "workflows/index.html#basic-workflow",
+    "href": "workflows/index.html#basic-workflow",
+    "title": "Workflows",
+    "section": "",
+    "text": "How do you work in Quarto? You can use whichever tool you’re comfortable with (RStudio, Jupyter, GitHub, VS Code, etc). Developing your quarto site will have the same basic workflow, no matter which tool you use. It is very iterative, and each is explored more below.\n\nAuthoring: write text, code, images, etc in a file. Supported files include .md, .Rmd, .qmd, .ipynb…\nUpdate _quarto.yml as needed (for example, if you’ve created a new file you’d like included in your site)\nRender individual files and/or the whole website\nRepeat, repeat, repeat\nCommit and push your website to GitHub, your updates will publish automatically!\nRepeat all of the above to make the website as you’d like!",
+    "crumbs": [
+      "Workflows"
+    ]
+  },
+  {
+    "objectID": "workflows/index.html#authoring",
+    "href": "workflows/index.html#authoring",
+    "title": "Workflows",
+    "section": "Authoring",
+    "text": "Authoring\nAs an author, you have a lot of options of how your text will be formatted, arranged, and interlinked. You will be writing in Markdown, which is a lightweight text formatting language. The Quarto documentation about authoring introduces markdown-basics that will get you started. Also see Mine Çetinkaya-Rundel’s A Quarto tip a day.\nEach page of our site has a similar first few lines - this YAML, like we saw in our _quarto.yml and it is indicated by two sets of 3 dashes --- :\n---\ntitle: My title\n---\nYou’re able to add more features to individual pages by including it in the YAML, which for the most part here only includes a title. See Quarto excecution options for more information of what you can include in the YAML.",
+    "crumbs": [
+      "Workflows"
+    ]
+  },
+  {
+    "objectID": "workflows/index.html#update-_quarto.yml",
+    "href": "workflows/index.html#update-_quarto.yml",
+    "title": "Workflows",
+    "section": "Update _quarto.yml",
+    "text": "Update _quarto.yml\nLet’s have a closer look at the _quarto.yml file.\nThis type of file (.yml or .yaml) is written in YAML (“Yet Another Markup Language”). You’ll be able to shift the arrangement of webpages by reordering/adding/deleting them in the _quarto.yml file following the patterns you see in this example.\n\n\n\n_quarto.yml and website side-by-side\n\n\nNotice that there are multiple ways in the _quarto.yml for you to include a file in your website. For example, in the above image, the “First Observations” we see in the left sidebar of the published website (right image) is represented in _quarto.yml (left image) over two lines, with line 36 indicating the file reference and line 37 indicating the text to show up in the left sidebar. However, “From RStudio” is only represented in one line of _quarto.yml, on line 43. This represents two strategies for including a file in your website. By default, the title of a specified file will show up in the website’s sidebar, which is what is happening with the “From RStudio” example. If you would like more control over what is written in the sidebar vs the title of your files, then the approach we took with “First Observations” is what you’ll want to do: you’ll see that only “First Observations” shows up in the sidebar as we specified in _quarto.yml, but the page’s title says “First Observations & Setup” (which in our preference was too long for the sidebar).\n\n\n\n\n\n\nNote\n\n\n\nAs you modify _quarto.yml, the most important thing to know is that spacing matters. Pay attention to whether text is indented by one, two, four, or other spaces, and make sure you follow it; if your site is not looking as expected it is likely a silent error in your YAML. Some text editors like RStudio provide debugging support for YAML and are highly recommended to save you time and heartache.",
+    "crumbs": [
+      "Workflows"
     ]
   },
   {
@@ -169,83 +239,13 @@
     ]
   },
   {
-    "objectID": "workflows/index.html",
-    "href": "workflows/index.html",
-    "title": "Workflows",
+    "objectID": "where-to-contribute.html",
+    "href": "where-to-contribute.html",
+    "title": "Where to contribute",
     "section": "",
-    "text": "How do you work in Quarto? You can use whichever tool you’re comfortable with (RStudio, Jupyter, GitHub, VS Code, etc). Developing your quarto site will have the same basic workflow, no matter which tool you use. It is very iterative, and each is explored more below.\n\nAuthoring: write text, code, images, etc in a file. Supported files include .md, .Rmd, .qmd, .ipynb…\nUpdate _quarto.yml as needed (for example, if you’ve created a new file you’d like included in your site)\nRender individual files and/or the whole website\nRepeat, repeat, repeat\nCommit and push your website to GitHub, your updates will publish automatically!\nRepeat all of the above to make the website as you’d like!",
+    "text": "We can use these skills to contribute to many Quarto websites and books.\n\nNASA Earthdata Cloud Cookbook\nNASA Openscapes site\nOpenscapes Champions Lessons Series\nOpenscapes Approach Guide",
     "crumbs": [
-      "Workflows"
-    ]
-  },
-  {
-    "objectID": "workflows/index.html#basic-workflow",
-    "href": "workflows/index.html#basic-workflow",
-    "title": "Workflows",
-    "section": "",
-    "text": "How do you work in Quarto? You can use whichever tool you’re comfortable with (RStudio, Jupyter, GitHub, VS Code, etc). Developing your quarto site will have the same basic workflow, no matter which tool you use. It is very iterative, and each is explored more below.\n\nAuthoring: write text, code, images, etc in a file. Supported files include .md, .Rmd, .qmd, .ipynb…\nUpdate _quarto.yml as needed (for example, if you’ve created a new file you’d like included in your site)\nRender individual files and/or the whole website\nRepeat, repeat, repeat\nCommit and push your website to GitHub, your updates will publish automatically!\nRepeat all of the above to make the website as you’d like!",
-    "crumbs": [
-      "Workflows"
-    ]
-  },
-  {
-    "objectID": "workflows/index.html#authoring",
-    "href": "workflows/index.html#authoring",
-    "title": "Workflows",
-    "section": "Authoring",
-    "text": "Authoring\nAs an author, you have a lot of options of how your text will be formatted, arranged, and interlinked. You will be writing in Markdown, which is a lightweight text formatting language. The Quarto documentation about authoring introduces markdown-basics that will get you started. Also see Mine Çetinkaya-Rundel’s A Quarto tip a day.\nEach page of our site has a similar first few lines - this YAML, like we saw in our _quarto.yml and it is indicated by two sets of 3 dashes --- :\n---\ntitle: My title\n---\nYou’re able to add more features to individual pages by including it in the YAML, which for the most part here only includes a title. See Quarto excecution options for more information of what you can include in the YAML.",
-    "crumbs": [
-      "Workflows"
-    ]
-  },
-  {
-    "objectID": "workflows/index.html#update-_quarto.yml",
-    "href": "workflows/index.html#update-_quarto.yml",
-    "title": "Workflows",
-    "section": "Update _quarto.yml",
-    "text": "Update _quarto.yml\nLet’s have a closer look at the _quarto.yml file.\nThis type of file (.yml or .yaml) is written in YAML (“Yet Another Markup Language”). You’ll be able to shift the arrangement of webpages by reordering/adding/deleting them in the _quarto.yml file following the patterns you see in this example.\n\n\n\n_quarto.yml and website side-by-side\n\n\nNotice that there are multiple ways in the _quarto.yml for you to include a file in your website. For example, in the above image, the “First Observations” we see in the left sidebar of the published website (right image) is represented in _quarto.yml (left image) over two lines, with line 36 indicating the file reference and line 37 indicating the text to show up in the left sidebar. However, “From RStudio” is only represented in one line of _quarto.yml, on line 43. This represents two strategies for including a file in your website. By default, the title of a specified file will show up in the website’s sidebar, which is what is happening with the “From RStudio” example. If you would like more control over what is written in the sidebar vs the title of your files, then the approach we took with “First Observations” is what you’ll want to do: you’ll see that only “First Observations” shows up in the sidebar as we specified in _quarto.yml, but the page’s title says “First Observations & Setup” (which in our preference was too long for the sidebar).\n\n\n\n\n\n\nNote\n\n\n\nAs you modify _quarto.yml, the most important thing to know is that spacing matters. Pay attention to whether text is indented by one, two, four, or other spaces, and make sure you follow it; if your site is not looking as expected it is likely a silent error in your YAML. Some text editors like RStudio provide debugging support for YAML and are highly recommended to save you time and heartache.",
-    "crumbs": [
-      "Workflows"
-    ]
-  },
-  {
-    "objectID": "explore.html",
-    "href": "explore.html",
-    "title": "Explore",
-    "section": "",
-    "text": "With this tutorial, we have a working example website that we will explore together. We’ll learn a few rules and look for patterns to get an understanding of what things to do to help you start customizing and making it your own. And you can continue to use this website as a reference after the tutorial, along with Quarto documentation.\nWe’ll start our exploration online looking at the website architecture and GitHub repository. Then we’ll setup a copy for ourselves so that we can modify from a working example, which is a great way to learn something new. We’ll set it up so that any modifications (commits) will automatically be republished via GitHub Actions. Subsequent chapters will describe how to modify your repo using different tools (browser, RStudio, Jupyter).",
-    "crumbs": [
-      "Explore"
-    ]
-  },
-  {
-    "objectID": "explore.html#exploring-online",
-    "href": "explore.html#exploring-online",
-    "title": "Explore",
-    "section": "Exploring online",
-    "text": "Exploring online\n\nThe website itself\nThis website has 5 things you can see on the left sidebar:\n\nWelcome\nExplore\nQuarto workflows\nGitHub workflows\nWhere to contribute\n\nMost of these are pages, but you’ll see that “Workflows” has an arrow &gt;; it is a folder with additional pages inside.\n\n\nThe website’s repo\nLet’s go to this website’s GitHub repository (also called a “repo”), https://github.com/Openscapes/quarto-clinic. You can also click there from any page in this tutorial website by clicking the GitHub octocat icon underneath the Openscapes logo in the left navbar (click it holding command on Mac, or control on a PC to open it in a different tab in your browser).\nHave a look at the filenames. We can recognize the names of the webpages we’ve seen above, and they have red arrows marking them in the image below. You’ll see the “quarto-workflows” folder and the rest in this site are .qmd files, which are plain text Quarto files that can combine Markdown text with code. index.qmd is the home page. If you click inside “quarto-workflows” you’ll see a mix of filetypes!\n\n\n\nquarto-website-tutorial GitHub repository with files for webpages marked with red arrows\n\n\nThe _site folder has html files with names that should be familiar: they match the .qmd files we were just exploring. This folder is where Quarto stores files to build the website.",
-    "crumbs": [
-      "Explore"
-    ]
-  },
-  {
-    "objectID": "explore.html#quarto.yml-intro",
-    "href": "explore.html#quarto.yml-intro",
-    "title": "Explore",
-    "section": "_quarto.yml intro",
-    "text": "_quarto.yml intro\nThere is also a _quarto.yml file, which is the website’s configuration file. It is essentially metadata for the website that includes the order that the pages/chapters will be in. This is where you update the organization of your website: which page comes before another. If we compare side-by-side, you’ll see that the pages that appear on our website are listed there.\n\n\n\n_quarto.yml and website side-by-side\n\n\nWe’ll learn more about how to interact with _quarto.yml in Quarto Workflows.",
-    "crumbs": [
-      "Explore"
-    ]
-  },
-  {
-    "objectID": "explore.html#onward",
-    "href": "explore.html#onward",
-    "title": "Explore",
-    "section": "Onward!",
-    "text": "Onward!\nNow you are ready to start editing! The next chapter describes how to do this in the JupyterHub.",
-    "crumbs": [
-      "Explore"
+      "Where to Contribute"
     ]
   }
 ]
