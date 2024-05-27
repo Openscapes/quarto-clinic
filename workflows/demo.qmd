@@ -12,14 +12,11 @@ To learn more about Quarto see <https://quarto.org>.
 
 When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
 
-
-```{r}
-1 + 1
-```
-
 You can add options to executable code like this
 
-```{python}
+TODO: day before clinic, make this Python code (don't add screenshot - fewer files to for folks to get distracted with, lighter weight repo)
+
+```{r}
 #| echo: false
 2 * 2
 ```
