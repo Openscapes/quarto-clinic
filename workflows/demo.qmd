@@ -1,12 +1,10 @@
 ---
-title: "`demo.qmd`"
+title: "`demo.qmd` aka Quarto Practice"
 ---
-
-## Quarto
 
 Quarto enables you to weave together content and executable code into a finished document. 
 
-This demo.qmd file has example R and python code chunks, Markdown-formatted text, and examples for adding images, hyperlinks....
+This `demo.qmd` file has example R and python code chunks, Markdown-formatted text, and examples for adding images and hyperlinks.
 
 To learn more about Quarto see <https://quarto.org>.
 
@@ -14,6 +12,9 @@ To learn more about Quarto see <https://quarto.org>.
 
 When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
 
+TODO: un-comment code
+
+<!---
 ```{r}
 1 + 1
 ```
@@ -24,31 +25,16 @@ You can add options to executable code like this
 #| echo: false
 2 * 2
 ```
+--->
 
 The `echo: false` option disables the printing of code (only output is displayed).
 
 
-## insert an image
+## Task: Edit a `.qmd` page
 
-with alt text, edit size - e.g. NASA Openscapes logo
+TODO: Edit down to what we need. 
 
-# GitHub practice from the browser
-
-Working on GitHub.com, we contribute changes through **commits**. You'll practice creating several commits by making small edits to a file, writing commit messages, and committing changes to see them posted nicely online to communicate our work. You'll practice with the file with your name on it; everyone has their own file to practice with.
-
-## Task 1: Commit an edit from the browser
-
-Let's edit this file by clicking the pencil icon at the top-right of the file.
-
-Next, make an edit to the text in this file. One idea is to fix this tpyo.
-
-Finally, we will commit these edits to GitHub. To do this, press the green "Commit Changes..." button. Committing changes has two steps: write a human-readable Commit message, and press the green button to commit changes.
-
-Note: In the browser, GitHub will suggest "Update file.md" as the commit message. But you can be more descriptive - practice writing commit messages that help you remember detail about what you changed.
-
-## Task 2: Practice Markdown
-
-Now let's practice Markdown and commit another edit to this file.
+Now let's practice Markdown and commit an edit to this file.
 
 This file is written in Markdown, which formats text on the web. To see the Markdown that results in the following formatting, click the pencil icon to edit, or click 'Raw' to inspect it. For example, with Markdown:
 
@@ -76,6 +62,3 @@ We can include an image with the same `[]()` pattern, by adding a preceding excl
 
 Your turn! Change or add something in Markdown and make another commit: write a human-readable commit message, and press the green button to commit changes.
 
-## NOTES
-
-It's a lot to get familiar with markdown if you haven't used it previously!
