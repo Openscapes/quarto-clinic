@@ -39,9 +39,7 @@ website:
       - section: workflows/index.qmd
         contents: 
           - href: workflows/jupyter.qmd
-      - section: practice/index.qmd
-        contents: 
-          - practice/demo.qmd
+            text: From JupyterHub
       - href: where-to-contribute.qmd
         text: Where to Contribute
 

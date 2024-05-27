@@ -1,5 +1,5 @@
 ---
-title: From Jupyter
+title: From JupyterHub
 ---
 
 You can interact with Quarto through JupyterLab or JupyterHub. Your Jupyter setup will involve `.ipynb` notebooks and the command line. [Quarto's JupyterLab tutorials](https://quarto.org/docs/get-started/hello/jupyter.html) has great instructions on getting started with JupyterLab, including computations and authoring.
@@ -8,123 +8,30 @@ Here we will demonstrate how to work with this Quarto tutorial site in JupyterHu
 
 ## Setup
 
+TODO: add login to the Hub
+
 ### JupyterHub
 
 Our JupyterHub is already setup with python environments as well as Quarto (through [nasa-openscapes/corn](https://github.com/nasa-openscapes/corn)), so there is no further installation required.
 
 ### Clone your repo
 
-You'll start by cloning your repository into JupyterHub. Do this by opening a terminal (File \> New \> Terminal). In the Terminal, `git clone` your repository and `cd` into it:
+You'll start by cloning your repository into JupyterHub. 
+
+**Option A:** Use the Git tab to Clone repo
+
+TODO: add screenshot from doc
+
+**Option B:** Do this by opening a terminal (File > New > Terminal). In the Terminal, `git clone` your repository and `cd` into it:
 
 ``` bash
-git clone https://github.com/openscapes/quarto-website-tutorial
-cd quarto-website-tutorial
+git clone https://github.com/openscapes/quarto-clinic
+cd quarto-clinic
 ```
 
-### Install Quarto
-
-Not needed - Quarto is already installed on the NASA-Openscapes JupyterHub! But to install elsewhere you would do so from <https://quarto.org/docs/get-started/>.
-
-Quarto is a Command Line Interface (CLI), like git. Once download is complete, follow the installation prompts on your computer like you do for other software. You won't see an application to click on when it is installed. 
-
-*Note for Mac users: If you do not have administrative privileges, please select "Install for me only" during the Destination Selection installation step (you will first click on "Change Install Location" at the Installation Type step).*
-
-You can check to confirm that Quarto is installed properly from the command line: 
-
-``` bash
-quarto check install
-```
-
-::: {.callout-note collapse="true"}
-## Additional checks
-
-You can also run:
-
--   `quarto check knitr` to locate R, verify we have the rmarkdown package, and do a basic render
--   `quarto check jupyter` to locate Python, verify we have Jupyter, and do a basic render
--   `quarto check` to run all of these checks together
-:::
-
-::: {.callout-tip collapse="true"}
-## Historical aside: Install Quarto in a docker container
-
-In Summer 2021 some NASA Mentors trying to install quarto locally was not an option, but they were able to install it inside a container using the following `Dockerfile`:
-
-``` bash
-#| fold: true
-#| summary: "Show the Dockerfile"
-
-##############################
-# This Dockerfile installs quarto and then runs quarto serve against the
-# internal /home/quarto/to_serve.
-#
-# BUILD
-# -----
-# To build this container, run
-#
-#     docker build -t quarto_serve .
-#
-# Add the --no-cache option to force docker to build fresh and get the most
-# recent version of quarto.
-#
-#
-# RUN
-# ---
-# 1. Find the directory you want quarto to serve. Let's call this /PATH/TO/earthdata-cloud-cookbook.
-# 2. Run docker:
-#
-#     docker run --rm -it -p 4848:4848 -v /PATH/TO/earthdata-cloud-cookbook:/home/quarto/to_serve quarto_serve
-#
-# 3. Open your browser and go to http://127.0.0.1:4848/
-#
-##############################
-
-FROM ubuntu:hirsute
-
-######
-# Install some command line tools we'll need
-######
-RUN apt-get update
-RUN apt-get -y install wget
-RUN apt-get -y install gdebi-core
-RUN apt-get -y install git
 
 
-######
-# Install quarto (https://quarto.org/)
-######
-
-# This is a quick and dirty way of getting the newest version number from
-# https://github.com/quarto-dev/quarto-cli/releases/latest. What's happening is
-# we're pulling the version number out of the redirect URL. This will end up
-# with QVER set to something like 0.2.11.
-RUN QVER=`wget --max-redirect 0 https://github.com/quarto-dev/quarto-cli/releases/latest 2>&1 | grep "Location" | sed 's/L.*tag\/v//' | sed 's/ .*//'` \
-    && wget -O quarto.deb "https://github.com/quarto-dev/quarto-cli/releases/download/v$QVER/quarto-$QVER-amd64.deb"
-RUN gdebi -n quarto.deb
-
-# Run this to make sure quarto installed correctly
-RUN quarto check install
-
-
-######
-# Create a non-root user called quarto
-######
-RUN useradd -ms /bin/bash quarto
-USER quarto
-RUN mkdir /home/quarto/to_serve
-WORKDIR /home/quarto/to_serve
-
-
-######
-# Start quarto serve
-######
-
-CMD quarto serve --no-browse --host 0.0.0.0 --port 4848
-```
-
-:::
-
-## Quarto preview
+## Preview the site (aka Quarto preview)
 
 Let's start off by previewing our quarto site locally. In Terminal, type `quarto preview`, which will provide a URL with a preview of our site!
 
@@ -137,17 +44,23 @@ quarto preview
 
 Copy this URL into another browser window; and arrange them so you can see them both. I make a bit more space in Jupyter by collapsing the left file menu by clicking on the file icon at the top of the left sidebar.
 
+TODO: add new screenshots
+
 ![](images/jupyter-side-by-side.png){fig-align="center"}
+
+Now that we have each set up our own GitHub clone of this Quarto Clinic website in the Openscapes 2i2c JupyterHub, we can practice editing and rendering `.qmd` and `ipynb` files. These are the workflows we use to contribute to the NASA Earthdata Cloud Cookbook and other Quarto websites and books.
 
 ### Make a small change and preview it
 
-Now we'll be able to see live changes in the preview as we edit in our `.md` files. Let's try it: Change the date in `index.md` by opening it from the file directory. Change to today's date, and save. Your preview window will refresh automatically! If it does not, you can also refresh the page manually. The refreshed previewed site will now display your changes!
+TODO: move this below ipynb section?
+
+Now we'll be able to see live changes in the preview as we edit in our `.qmd` files. Let's try it: Change the date in `index.qmd` by opening it from the file directory. Change to today's date, and save. Your preview window will refresh automatically! If it does not, you can also refresh the page manually. The refreshed previewed site will now display your changes!
 
 ## Create a new `.ipynb` page
 
 Let's add a new page to our site. Instead of an `.md` file like the others, let's add a `.ipynb` file.
 
-File \> New \> Notebook. Accept the default kernel by clicking Select.
+File > New > Notebook. Accept the default kernel by clicking Select.
 
 ### First chunk: raw yaml
 
@@ -214,6 +127,8 @@ Now we'll add `python-example.ipynb` to our `_quarto.yml` file; this is where we
 Open `_quarto.yml` by clicking on it from the file directory.
 
 Scroll down to review the current contents in the `sidebar:` section. It's there we see all the file arrangement that we see in the previewed site.
+
+TODO: update screenshots and dont' use line #
 
 Add `- python-example.ipynb` to line 46, making sure that your indentation aligns with the other pages.
 
