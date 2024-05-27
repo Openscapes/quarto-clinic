@@ -1,6 +1,6 @@
 # Quarto Contributing Clinic
 
-A book that is a 1.5hr session to teach folks how to contribute to existing Quarto sites & books. Analogous to our [GitHub Clinic](https://openscapes.github.io/series/core-lessons/github/) with 2x short slide decks and activities.
+A book that is a 1hr session to teach folks how to contribute to existing Quarto sites & books. Analogous to our [GitHub Clinic](https://openscapes.github.io/series/core-lessons/github/) with 2x short slide decks and activities.
 
 [POP](https://suzannehawkes.com/2010/04/09/pop-everything/):
 
