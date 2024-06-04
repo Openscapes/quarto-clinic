@@ -36,13 +36,14 @@ website:
         text: Welcome
       - href: explore.qmd
         text: Explore
-      - section: workflows/index.qmd
+      - section: lessons/index.qmd
+        text: Lessons
         contents: 
-          - href: workflows/part1-edit-quarto-site.qmd
+          - href: lessons/part1-edit-quarto-site.qmd
             text: Edit a Quarto site 
-          - href: workflows/demo.qmd
+          - href: lessons/demo.qmd
             text: Quarto practice file 
-          - href: workflows/part2-share-via-github.qmd
+          - href: lessons/part2-share-via-github.qmd
             text: Share via GitHub
       - href: next-steps.qmd
         text: Next Steps

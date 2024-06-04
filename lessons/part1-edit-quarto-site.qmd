@@ -4,6 +4,8 @@ title: "Part 1: Edit a Quarto site"
 
 We will work through this Quarto Clinic site in the NASA Openscapes 2i2c JupyterHub ("the Hub"). The Hub has a python environment as well as Quarto installed. No further installations are required.
 
+TODO: move Setup to setup.qmd. Add Setup after Welcome, then do Explore while Hub is initiating. Setup includes Hub login, clone, branch. Leave Preview in Edit Quarto site = step 1.
+
 ## Setup
 
 TODO: Don't call this "Setup"; too vague. Decide if this file is just "demo 1" or all the content of Part 1 - demo and practice for: clone, branch, preview, make changes, add ipynb, edit \_quarto.yml, preview, END
