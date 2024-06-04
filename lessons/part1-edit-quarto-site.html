@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.554">
+<meta name="generator" content="quarto-1.4.555">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Quarto Contributing Clinic - Workflows</title>
+<title>Quarto Contributing Clinic - Part 1: Edit a Quarto site</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -63,8 +63,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../workflows/jupyter.html" rel="next">
-<link href="../explore.html" rel="prev">
+<link href="../lessons/demo.html" rel="next">
+<link href="../lessons/index.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -116,7 +116,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../workflows/index.html">Workflows</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lessons/index.html">Lessons</a></li><li class="breadcrumb-item"><a href="../lessons/part1-edit-quarto-site.html">Edit a Quarto site</a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -160,8 +160,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../workflows/index.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Workflows</span></a>
+            <a href="../lessons/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lessons</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -169,16 +169,28 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../workflows/jupyter.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">From Jupyter</span></a>
+  <a href="../lessons/part1-edit-quarto-site.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Edit a Quarto site</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../lessons/demo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Quarto practice file</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../lessons/part2-share-via-github.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Share via GitHub</span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../where-to-contribute.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Where to Contribute</span></a>
+  <a href="../next-steps.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Next Steps</span></a>
   </div>
 </li>
     </ul>
@@ -191,18 +203,34 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#basic-workflow" id="toc-basic-workflow" class="nav-link active" data-scroll-target="#basic-workflow">Basic Workflow</a></li>
-  <li><a href="#authoring" id="toc-authoring" class="nav-link" data-scroll-target="#authoring">Authoring</a></li>
+  <li><a href="#setup" id="toc-setup" class="nav-link active" data-scroll-target="#setup">Setup</a>
+  <ul class="collapse">
+  <li><a href="#log-in-to-the-hub" id="toc-log-in-to-the-hub" class="nav-link" data-scroll-target="#log-in-to-the-hub">Log in to the Hub</a></li>
+  <li><a href="#clone-the-quarto-clinic-repo" id="toc-clone-the-quarto-clinic-repo" class="nav-link" data-scroll-target="#clone-the-quarto-clinic-repo">Clone the Quarto Clinic repo</a></li>
+  <li><a href="#make-a-branch" id="toc-make-a-branch" class="nav-link" data-scroll-target="#make-a-branch">Make a branch</a></li>
+  </ul></li>
+  <li><a href="#preview-the-site-aka-quarto-preview" id="toc-preview-the-site-aka-quarto-preview" class="nav-link" data-scroll-target="#preview-the-site-aka-quarto-preview">Preview the site (aka Quarto preview)</a></li>
+  <li><a href="#choose-task-1a-or-1b-activity" id="toc-choose-task-1a-or-1b-activity" class="nav-link" data-scroll-target="#choose-task-1a-or-1b-activity">Choose Task 1a or 1b (Activity)</a>
+  <ul class="collapse">
+  <li><a href="#task-1a-edit-and-preview-a-demo.qmd-file" id="toc-task-1a-edit-and-preview-a-demo.qmd-file" class="nav-link" data-scroll-target="#task-1a-edit-and-preview-a-demo.qmd-file">Task 1a: Edit and preview a demo.qmd file</a></li>
+  <li><a href="#task-1b-create-a-new-.ipynb-page" id="toc-task-1b-create-a-new-.ipynb-page" class="nav-link" data-scroll-target="#task-1b-create-a-new-.ipynb-page">Task 1b: Create a new <code>.ipynb</code> page</a></li>
+  </ul></li>
+  <li><a href="#preview-your-updates-regroup-10-min" id="toc-preview-your-updates-regroup-10-min" class="nav-link" data-scroll-target="#preview-your-updates-regroup-10-min">Preview your updates (Regroup, 10 min)</a>
+  <ul class="collapse">
   <li><a href="#update-_quarto.yml" id="toc-update-_quarto.yml" class="nav-link" data-scroll-target="#update-_quarto.yml">Update <code>_quarto.yml</code></a></li>
+  <li><a href="#quarto-render" id="toc-quarto-render" class="nav-link" data-scroll-target="#quarto-render">Quarto render</a></li>
+  <li><a href="#render-whole-notebook" id="toc-render-whole-notebook" class="nav-link" data-scroll-target="#render-whole-notebook">Render whole notebook</a></li>
+  </ul></li>
+  <li><a href="#commit-and-push-to-github" id="toc-commit-and-push-to-github" class="nav-link" data-scroll-target="#commit-and-push-to-github">Commit and push to GitHub</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/Openscapes/quarto-clinic/edit/main/workflows/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/Openscapes/quarto-clinic/blob/main/workflows/index.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/Openscapes/quarto-clinic/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/Openscapes/quarto-clinic/edit/main/lessons/part1-edit-quarto-site.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/Openscapes/quarto-clinic/blob/main/lessons/part1-edit-quarto-site.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/Openscapes/quarto-clinic/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lessons/index.html">Lessons</a></li><li class="breadcrumb-item"><a href="../lessons/part1-edit-quarto-site.html">Edit a Quarto site</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Workflows</h1>
+<h1 class="title">Part 1: Edit a Quarto site</h1>
 </div>
 
 
@@ -219,51 +247,197 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="basic-workflow" class="level2">
-<h2 class="anchored" data-anchor-id="basic-workflow">Basic Workflow</h2>
-<p>How do you work in Quarto? You can use whichever tool you’re comfortable with (RStudio, Jupyter, GitHub, VS Code, etc). Developing your quarto site will have the same basic workflow, no matter which tool you use. It is very iterative, and each is explored more below.</p>
-<ol type="1">
-<li>Authoring: write text, code, images, etc in a file. Supported files include <code>.md</code>, <code>.Rmd</code>, <code>.qmd</code>, <code>.ipynb</code>…</li>
-<li>Update <code>_quarto.yml</code> as needed (for example, if you’ve created a new file you’d like included in your site)</li>
-<li>Render individual files and/or the whole website</li>
-<li>Repeat, repeat, repeat</li>
-<li>Commit and push your website to GitHub, your updates will publish automatically!</li>
-<li>Repeat all of the above to make the website as you’d like!</li>
-</ol>
-</section>
-<section id="authoring" class="level2">
-<h2 class="anchored" data-anchor-id="authoring">Authoring</h2>
-<p>As an author, you have a lot of options of how your text will be formatted, arranged, and interlinked. You will be writing in Markdown, which is a lightweight text formatting language. The Quarto documentation about authoring introduces <a href="https://quarto.org/docs/authoring/markdown-basics.html">markdown-basics</a> that will get you started. Also see Mine Çetinkaya-Rundel’s <a href="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/">A Quarto tip a day</a>.</p>
-<p>Each page of our site has a similar first few lines - this YAML, like we saw in our <code>_quarto.yml</code> and it is indicated by two sets of 3 dashes <code>---</code> :</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">---</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">title:</span> My title</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="ex">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>You’re able to add more features to individual pages by including it in the YAML, which for the most part here only includes a title. See <a href="https://quarto.org/docs/computations/execution-options.html">Quarto excecution options</a> for more information of what you can include in the YAML.</p>
-</section>
-<section id="update-_quarto.yml" class="level2">
-<h2 class="anchored" data-anchor-id="update-_quarto.yml">Update <code>_quarto.yml</code></h2>
-<p>Let’s have a closer look at the <code>_quarto.yml</code> file.</p>
-<p>This type of file (<code>.yml</code> or <code>.yaml</code>) is written in YAML (“Yet Another Markup Language”). You’ll be able to shift the arrangement of webpages by reordering/adding/deleting them in the <code>_quarto.yml</code> file following the patterns you see in this example.</p>
+<p>We will work through this Quarto Clinic site in the NASA Openscapes 2i2c JupyterHub (“the Hub”). The Hub has a python environment as well as Quarto installed. No further installations are required.</p>
+<p>TODO: move Setup to setup.qmd. Add Setup after Welcome, then do Explore while Hub is initiating. Setup includes Hub login, clone, branch. Leave Preview in Edit Quarto site = step 1.</p>
+<section id="setup" class="level2">
+<h2 class="anchored" data-anchor-id="setup">Setup</h2>
+<p>TODO: Don’t call this “Setup”; too vague. Decide if this file is just “demo 1” or all the content of Part 1 - demo and practice for: clone, branch, preview, make changes, add ipynb, edit _quarto.yml, preview, END</p>
+<section id="log-in-to-the-hub" class="level3">
+<h3 class="anchored" data-anchor-id="log-in-to-the-hub">Log in to the Hub</h3>
+<p>Go to the Hub https://openscapes.2i2c.cloud &gt; log in with your GitHub Account &gt; select the Python server.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/quarto-yml-site-side-by-side3.png" class="img-fluid figure-img" style="width:95.0%"></p>
-<figcaption><code>_quarto.yml</code> and website side-by-side</figcaption>
+<p><a href="https://openscapes.2i2c.cloud/"><img src="images/jupyterhub-2i2c-login.png" class="img-fluid figure-img" alt="Login page for the NASA Openscapes 2i2c JupyterHub, “the Hub”"></a></p>
+<figcaption>Login page for the NASA Openscapes 2i2c JupyterHub, “the Hub”</figcaption>
 </figure>
 </div>
-<p>Notice that there are multiple ways in the <code>_quarto.yml</code> for you to include a file in your website. For example, in the above image, the “First Observations” we see in the left sidebar of the published website (right image) is represented in <code>_quarto.yml</code> (left image) over two lines, with line 36 indicating the file reference and line 37 indicating the text to show up in the left sidebar. However, “From RStudio” is only represented in one line of <code>_quarto.yml</code>, on line 43. This represents two strategies for including a file in your website. By default, the title of a specified file will show up in the website’s sidebar, which is what is happening with the “From RStudio” example. If you would like more control over what is written in the sidebar vs the title of your files, then the approach we took with “First Observations” is what you’ll want to do: you’ll see that only “First Observations” shows up in the sidebar as we specified in <code>_quarto.yml</code>, but the page’s title says “First Observations &amp; Setup” (which in our preference was too long for the sidebar).</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/jupyterhub-server-options.png" class="img-fluid figure-img"></p>
+<figcaption>Hub server options</figcaption>
+</figure>
 </div>
-<div class="callout-title-container flex-fill">
-Note
+<p><img src="images/jupyterhub-loading.png" class="img-fluid"></p>
+<p>It takes a few minutes for the Hub to load. Please be patient!</p>
+<p>While the server starts up, we’ll explore the GitHub Clinic repo structure side by side with the website (go back to the <a href="../explore.html">Explore</a> section).</p>
+</section>
+<section id="clone-the-quarto-clinic-repo" class="level3">
+<h3 class="anchored" data-anchor-id="clone-the-quarto-clinic-repo">Clone the Quarto Clinic repo</h3>
+<p>You’ll start by cloning your repository into the Hub.</p>
+<p><strong>Option A:</strong> Use the Git tab to Clone repo</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/jupyterhyb-clone-repo.png" class="img-fluid figure-img"></p>
+<figcaption>Clone a GitHub repository in the Hub</figcaption>
+</figure>
 </div>
+<p><strong>Option B:</strong> Do this by opening a terminal (File &gt; New &gt; Terminal). In the Terminal, <code>git clone</code> your repository and <code>cd</code> into it:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone https://github.com/openscapes/quarto-clinic</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> quarto-clinic</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="make-a-branch" class="level3">
+<h3 class="anchored" data-anchor-id="make-a-branch">Make a branch</h3>
+<p>Working in a branch means you have your own version of the Quarto Clinic to edit and preview. Later, you might propose contributing your edits to the Main branch of the Clinic by making a “Pull Request”.</p>
+<p>branch name = your name</p>
+<p>TODO screenshot and cmd line</p>
+</section>
+</section>
+<section id="preview-the-site-aka-quarto-preview" class="level2">
+<h2 class="anchored" data-anchor-id="preview-the-site-aka-quarto-preview">Preview the site (aka Quarto preview)</h2>
+<p>Let’s start off by previewing our quarto site locally.</p>
+<p>quarto render does X</p>
+<p>quarto preview does Y</p>
+<p>In Terminal, type <code>quarto preview</code>, which will provide a URL with a preview of our site!</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> preview</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Preparing to preview</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Watching files for changes</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Browse at https://openscapes.2i2c.cloud/user/jules32/proxy/4593/</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Copy this URL into another browser window; and arrange them so you can see them both. I make a bit more space in Jupyter by collapsing the left file menu by clicking on the file icon at the top of the left sidebar.</p>
+<p>TODO: add new screenshots</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/jupyter-side-by-side.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
 </div>
-<div class="callout-body-container callout-body">
-<p>As you modify <code>_quarto.yml</code>, the most important thing to know is that <strong>spacing matters</strong>. Pay attention to whether text is indented by one, two, four, or other spaces, and make sure you follow it; if your site is not looking as expected it is likely a silent error in your YAML. Some text editors like RStudio provide debugging support for YAML and are highly recommended to save you time and heartache.</p>
+<p>Now that we have each set up our own GitHub clone of this Quarto Clinic website in the Openscapes 2i2c JupyterHub, we can practice editing and rendering <code>.qmd</code> and <code>ipynb</code> files. These are the workflows we use to contribute to the NASA Earthdata Cloud Cookbook and other Quarto websites and books.</p>
+</section>
+<section id="choose-task-1a-or-1b-activity" class="level2">
+<h2 class="anchored" data-anchor-id="choose-task-1a-or-1b-activity">Choose Task 1a or 1b (Activity)</h2>
+<p>TODO: fill out Task 1a</p>
+<p>TODO: edit demo.md file to have only what we need</p>
+<section id="task-1a-edit-and-preview-a-demo.qmd-file" class="level3">
+<h3 class="anchored" data-anchor-id="task-1a-edit-and-preview-a-demo.qmd-file">Task 1a: Edit and preview a demo.qmd file</h3>
+<ol type="1">
+<li><p>Edit a .qmd page (uses demo.qmd file that has markdown for text, add hyperlink, add image, run Python code)</p>
+<ol type="1">
+<li>Headers</li>
+</ol>
+<pre><code>1.  Headers are powerful in Quarto because they let you organize on the side of the page. They let you share a specific section of a page by copying the URL</code></pre>
+<ol start="2" type="1">
+<li><p>hyperlink something (cite the Cookbook and hyperlink it)</p>
+<ol type="1">
+<li>Hyperlinking is done like this; lets you cite and give credit</li>
+</ol></li>
+<li><p>inspect this image with alt-txt</p></li>
+<li><p>Python code</p>
+<ol type="1">
+<li>manage echo, run</li>
+</ol></li>
+</ol></li>
+</ol>
+<p>TODO: screenshot</p>
+<p>TODO: edit the text below re: “make a small change”; fix a typo</p>
+<section id="make-a-small-change-and-preview-it" class="level4">
+<h4 class="anchored" data-anchor-id="make-a-small-change-and-preview-it">Make a small change and preview it</h4>
+<p>Now we’ll be able to see live changes in the preview as we edit in our <code>.qmd</code> files. Let’s try it: Change the date in <code>index.qmd</code> by opening it from the file directory. Change to today’s date, and save. Your preview window will refresh automatically! If it does not, you can also refresh the page manually. The refreshed previewed site will now display your changes!</p>
+</section>
+</section>
+<section id="task-1b-create-a-new-.ipynb-page" class="level3">
+<h3 class="anchored" data-anchor-id="task-1b-create-a-new-.ipynb-page">Task 1b: Create a new <code>.ipynb</code> page</h3>
+<p>Let’s add a new page to our site. Instead of a <code>.qmd</code> file like the others, let’s add a <code>.ipynb</code> file.</p>
+<p>File &gt; New &gt; Notebook. Accept the default kernel by clicking Select.</p>
+<p>TODO: screenshot</p>
+<section id="first-chunk-raw-yaml" class="level4">
+<h4 class="anchored" data-anchor-id="first-chunk-raw-yaml">First chunk: raw yaml</h4>
+<p>By default, this Notebook will give us a first chunk that is code. Let’s change it to raw so that we can write our yaml at the top.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/jupyter-raw-chunk.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
 </div>
+<p>In our Raw code chunk, let’s write the title of this document. We need three dashes <code>---</code> on separate lines preceding and following the <code>title:</code>, which you can name as you’d like.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">---</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="ex">title:</span> Python Example</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="ex">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="second-chunk-markdown" class="level4">
+<h4 class="anchored" data-anchor-id="second-chunk-markdown">Second chunk: Markdown</h4>
+<p>Let’s add a new chunk that is Markdown so we can write some description of what this page will be.</p>
+<p>Click the <code>+</code> symbol at the top of the document, and this will add a new chunk, which by default again is a Code chunk. Change it to a Markdown Chunk following the steps we did above when switching to Raw.</p>
+<p>Here, write a little bit of text in Markdown. Since your title is effectively a level-1 header, avoid using level-1 headers in the rest of your document. Here is some example text I wrote:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">## Introduction</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="ex">This</span> example has some Python code that will be a part of our Quarto site.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="third-chunk-code" class="level4">
+<h4 class="anchored" data-anchor-id="third-chunk-code">Third chunk: Code</h4>
+<p>Now let’s create a new chunk with the default Code setting.</p>
+<p>Paste the following code (or write some of your own to test):</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-polar</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "A line plot on a polar axis"</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>r <span class="op">=</span> np.arange(<span class="dv">0</span>, <span class="dv">2</span>, <span class="fl">0.01</span>)</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>theta <span class="op">=</span> <span class="dv">2</span> <span class="op">*</span> np.pi <span class="op">*</span> r</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(</span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>  subplot_kw <span class="op">=</span> {<span class="st">'projection'</span>: <span class="st">'polar'</span>} </span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>ax.plot(theta, r)</span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>ax.set_rticks([<span class="fl">0.5</span>, <span class="dv">1</span>, <span class="fl">1.5</span>, <span class="dv">2</span>])</span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>ax.grid(<span class="va">True</span>)</span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Now, go ahead and execute this code chunk like you normally would, by clicking the cursor in a code block and clicking the sideways “play” triangle to run the selected cells (and advance to the next cell). This code produces a plot.</p>
+<p>Note that the code runs as it normally would; the code options in the comments are just comments.</p>
+</section>
+<section id="save-your-file" class="level4">
+<h4 class="anchored" data-anchor-id="save-your-file">Save your file</h4>
+<p>Save your document - I’ll call mine <code>python-example.ipynb</code> in the main repository.</p>
+</section>
+</section>
+</section>
+<section id="preview-your-updates-regroup-10-min" class="level2">
+<h2 class="anchored" data-anchor-id="preview-your-updates-regroup-10-min">Preview your updates (Regroup, 10 min)</h2>
+<p><strong>Demo</strong>: If you created a new page, how do you get it in the book? Involves editing _quarto.yml to have it show up in site</p>
+<section id="update-_quarto.yml" class="level3">
+<h3 class="anchored" data-anchor-id="update-_quarto.yml">Update <code>_quarto.yml</code></h3>
+<p>Now we’ll add <code>python-example.ipynb</code> to our <code>_quarto.yml</code> file; this is where we register of all files to include in our site. Let’s add it after the section called “Basic Workflows”.</p>
+<p>Open <code>_quarto.yml</code> by clicking on it from the file directory.</p>
+<p>Scroll down to review the current contents in the <code>sidebar:</code> section. It’s there we see all the file arrangement that we see in the previewed site.</p>
+<p>TODO: update screenshots and dont’ use line #</p>
+<p>Add <code>- python-example.ipynb</code> to line 46, making sure that your indentation aligns with the other pages.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/jupyter-python-example.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
 </div>
+<p>You’ll see that our new page shows up in our Preview, and the code is executed since we did that in the Jupyter Notebook itself. By default, Quarto will not execute code chunks since your computations will likely become more complex and you will want to control when they are executed (or “run”).</p>
+<p>Since Quarto is still previewing our website and the <code>python-example.ipynb</code>, the plot also displays in the notebook after the code is run and the file is saved, as shown below.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/jupyter-execute-cell.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<p>So, your normal workflow for creating and running code blocks in your Jupyter Notebook is the same one you’ll use as Quarto displays the preview.</p>
+</section>
+<section id="quarto-render" class="level3">
+<h3 class="anchored" data-anchor-id="quarto-render">Quarto render</h3>
+<p>TODO: clarify preview vs render text</p>
+<p>So far we have used <strong>Quarto preview</strong> to view our website as we develop it. <strong>Quarto render</strong> will build the html elements of the website that we can see when we preview. Rendering will format the markdown text and code nicely as a website (or however is indicated in the <code>_quarto.yml</code>).</p>
+<p>By default, Quarto render does not execute code in a Jupyter notebook. It will never run .ipynb files unless you tell it to.</p>
+</section>
+<section id="render-whole-notebook" class="level3">
+<h3 class="anchored" data-anchor-id="render-whole-notebook">Render whole notebook</h3>
+<p>If you would like it to specifically execute code in a Jupyter notebook, you can do so in Terminal.</p>
+<p>Our Terminal is still busy previewing our website, so let’s open a new Terminal.</p>
+<p>File &gt; New &gt; Terminal. Then type:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> quarto-website-tutorial</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render python-example.ipynb <span class="at">--execute</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><em>TODO: move the below sections elsewhere. Here commit and push, then move to Part 2: Share via GitHub. I think the transition/ section break is when moving from JupyterHub to GitHub</em></p>
+</section>
+</section>
+<section id="commit-and-push-to-github" class="level2">
+<h2 class="anchored" data-anchor-id="commit-and-push-to-github">Commit and push to GitHub</h2>
+<p>Committing and pushing will make the changes you see locally live on your website (using the <a href="../explore.html#setup-github-action">GitHub Action we set up earlier</a>).</p>
 
 
 </section>
@@ -824,13 +998,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../explore.html" class="pagination-link" aria-label="Explore">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Explore</span>
+      <a href="../lessons/index.html" class="pagination-link" aria-label="Lessons">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Lessons</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../workflows/jupyter.html" class="pagination-link" aria-label="From Jupyter">
-        <span class="nav-page-text">From Jupyter</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../lessons/demo.html" class="pagination-link" aria-label="Quarto practice file">
+        <span class="nav-page-text">Quarto practice file</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -842,7 +1016,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/Openscapes/quarto-clinic/edit/main/workflows/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/Openscapes/quarto-clinic/blob/main/workflows/index.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/Openscapes/quarto-clinic/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/Openscapes/quarto-clinic/edit/main/lessons/part1-edit-quarto-site.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/Openscapes/quarto-clinic/blob/main/lessons/part1-edit-quarto-site.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/Openscapes/quarto-clinic/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This page is built with ❤️ and <a href="https://quarto.org/">Quarto</a>.</p>
 </div>
