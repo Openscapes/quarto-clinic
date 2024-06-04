@@ -1,5 +1,5 @@
 ---
-title: Part 2: Share via GitHub
+title: "Part 2: Share via GitHub"
 ---
 
 Contribute your updates using GitHub

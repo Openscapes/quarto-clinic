@@ -1,5 +1,5 @@
 ---
-title: Part 1: Edit a Quarto site
+title: "Part 1: Edit a Quarto site"
 ---
 
 We will work through this Quarto Clinic site in the NASA Openscapes 2i2c JupyterHub ("the Hub"). The Hub has a python environment as well as Quarto installed. No further installations are required.

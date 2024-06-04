@@ -38,11 +38,11 @@ website:
         text: Explore
       - section: workflows/index.qmd
         contents: 
-          - href: workflows/part1-edit-quarto-site
+          - href: workflows/part1-edit-quarto-site.qmd
             text: Edit a Quarto site 
           - href: workflows/demo.qmd
             text: Quarto practice file 
-          - href: workflows/part2-share-via-github
+          - href: workflows/part2-share-via-github.qmd
             text: Share via GitHub
       - href: next-steps.qmd
         text: Next Steps
