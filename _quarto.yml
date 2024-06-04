@@ -38,10 +38,14 @@ website:
         text: Explore
       - section: workflows/index.qmd
         contents: 
-          - href: workflows/jupyter.qmd
-            text: From JupyterHub
-      - href: where-to-contribute.qmd
-        text: Where to Contribute
+          - href: workflows/part1-edit-quarto-site
+            text: Edit a Quarto site 
+          - href: workflows/demo.qmd
+            text: Quarto practice file 
+          - href: workflows/part2-share-via-github
+            text: Share via GitHub
+      - href: next-steps.qmd
+        text: Next Steps
 
 
 format:

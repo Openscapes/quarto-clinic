@@ -1,10 +1,10 @@
 ---
-title: From JupyterHub
+title: Part 1: Edit a Quarto site
 ---
 
 We will work through this Quarto Clinic site in the NASA Openscapes 2i2c JupyterHub ("the Hub"). The Hub has a python environment as well as Quarto installed. No further installations are required.
 
-## Setup Demo 
+## Setup
 
 TODO: Don't call this "Setup"; too vague. Decide if this file is just "demo 1" or all the content of Part 1 - demo and practice for: clone, branch, preview, make changes, add ipynb, edit \_quarto.yml, preview, END
 
@@ -37,7 +37,7 @@ git clone https://github.com/openscapes/quarto-clinic
 cd quarto-clinic
 ```
 
-### Make a branch 
+### Make a branch
 
 Working in a branch means you have your own version of the Quarto Clinic to edit and preview. Later, you might propose contributing your edits to the Main branch of the Clinic by making a "Pull Request".
 
@@ -70,7 +70,7 @@ TODO: add new screenshots
 
 Now that we have each set up our own GitHub clone of this Quarto Clinic website in the Openscapes 2i2c JupyterHub, we can practice editing and rendering `.qmd` and `ipynb` files. These are the workflows we use to contribute to the NASA Earthdata Cloud Cookbook and other Quarto websites and books.
 
-## Activity: Choose Task 1a or 1b
+## Choose Task 1a or 1b (Activity)
 
 TODO: fill out Task 1a
 
@@ -80,9 +80,11 @@ TODO: edit demo.md file to have only what we need
 
 1.  Edit a .qmd page (uses demo.qmd file that has markdown for text, add hyperlink, add image, run Python code)
 
-    1.   Headers
+    1.  Headers
 
-        1.  Headers are powerful in Quarto because they let you organize on the side of the page. They let you share a specific section of a page by copying the URL
+    ```         
+    1.  Headers are powerful in Quarto because they let you organize on the side of the page. They let you share a specific section of a page by copying the URL
+    ```
 
     2.  hyperlink something (cite the Cookbook and hyperlink it)
 
@@ -98,7 +100,7 @@ TODO: screenshot
 
 TODO: edit the text below re: "make a small change"; fix a typo
 
-### Make a small change and preview it
+#### Make a small change and preview it
 
 Now we'll be able to see live changes in the preview as we edit in our `.qmd` files. Let's try it: Change the date in `index.qmd` by opening it from the file directory. Change to today's date, and save. Your preview window will refresh automatically! If it does not, you can also refresh the page manually. The refreshed previewed site will now display your changes!
 
@@ -110,7 +112,7 @@ File \> New \> Notebook. Accept the default kernel by clicking Select.
 
 TODO: screenshot
 
-### First chunk: raw yaml
+#### First chunk: raw yaml
 
 By default, this Notebook will give us a first chunk that is code. Let's change it to raw so that we can write our yaml at the top.
 
@@ -124,7 +126,7 @@ title: Python Example
 ---
 ```
 
-### Second chunk: Markdown
+#### Second chunk: Markdown
 
 Let's add a new chunk that is Markdown so we can write some description of what this page will be.
 
@@ -138,7 +140,7 @@ Here, write a little bit of text in Markdown. Since your title is effectively a 
 This example has some Python code that will be a part of our Quarto site.
 ```
 
-### Third chunk: Code
+#### Third chunk: Code
 
 Now let's create a new chunk with the default Code setting.
 
@@ -164,15 +166,15 @@ Now, go ahead and execute this code chunk like you normally would, by clicking t
 
 Note that the code runs as it normally would; the code options in the comments are just comments.
 
-### Save your file
+#### Save your file
 
 Save your document - I'll call mine `python-example.ipynb` in the main repository.
 
-## Regroup (10 min)
+## Preview your updates (Regroup, 10 min)
 
 **Demo**: If you created a new page, how do you get it in the book? Involves editing \_quarto.yml to have it show up in site
 
-## Update `_quarto.yml`
+### Update `_quarto.yml`
 
 Now we'll add `python-example.ipynb` to our `_quarto.yml` file; this is where we register of all files to include in our site. Let's add it after the section called "Basic Workflows".
 
@@ -194,7 +196,7 @@ Since Quarto is still previewing our website and the `python-example.ipynb`, the
 
 So, your normal workflow for creating and running code blocks in your Jupyter Notebook is the same one you'll use as Quarto displays the preview.
 
-## Quarto render
+### Quarto render
 
 TODO: clarify preview vs render text
 
@@ -215,20 +217,8 @@ cd quarto-website-tutorial
 quarto render python-example.ipynb --execute
 ```
 
-TODO: move the below sections elsewhere
+*TODO: move the below sections elsewhere. Here commit and push, then move to Part 2: Share via GitHub. I think the transition/ section break is when moving from JupyterHub to GitHub*
 
-## Commit and push!
+## Commit and push to GitHub
 
 Committing and pushing will make the changes you see locally live on your website (using the [GitHub Action we set up earlier](/explore.qmd#setup-github-action)).
-
-## Troubleshooting
-
-### My changes don't show up in preview
-
-Make sure you've saved your file! There might be a slight delay depending on your JupyterHub setup.
-
-### Quarto render hangs / does not complete
-
-Check the specific notebook, are there any \`---\` throughout to denote line breaks rather than yaml? They might be causing the issue; consider deleting those.
-
-Also check how long the first raw cell is. Are there level-1 headers (`#`)? Try removing them.
