@@ -1,9 +1,10 @@
 ---
-title: "Contributing to Quarto books and websites"
+title: "Contributing to Quarto websites and books"
 subtitle: "Share open-source tutorials, onboarding docs, and much more"
 ---
+*TODO: edit Welcome page to include POP, What is Quarto. Brief. Move to Setup & Explore*
 
-## Welcome {#welcome}
+## Welcome
 
 It's possible to create beautiful documentation to share online with [Quarto](https://quarto.org) that auto-updates with [GitHub](http://github.com). This is very new and incredibly cool. This tutorial is an example of a quarto website --- it is a really powerful way to create and share your work. You can communicate about science using the same reproducible workflow you and/or your colleagues use for analyses, whether or not you write code.
 
@@ -15,15 +16,17 @@ Quarto helps you have your ideas and your code in one place, and present it in a
 
 **Quarto unifies and extends the RMarkdown ecosystem** - it unifies by combining the functionality of R Markdown, bookdown, distill, xaringian, etc into a single consistent system. And it extends in several ways: all features are possible beyond R too, including Python and Javascript. It also has more “guardrails”: accessibility and inclusion are centered in the design. Quarto is for people who love RMarkdown, and it's for people who have never used RMarkdown.
 
+*TODO: add Cookbook below* 
+
 The ability for Quarto to streamline collaboration has been so cool and important for our [NASA Openscapes](https://nasa-openscapes.github.io/) project. Quarto has been a common place for us to collaborate - across R and Python languages and coding expertise.
 
 ## What is this tutorial?
 
-This is a 1-hour tutorial that can be used to teach or as self-paced learning.
+This is a 1.5-hour tutorial that can be used to teach or as self-paced learning.
 
-We introduce Quarto by exploring this tutorial website, and practicing the basic Quarto workflow using different tools (GitHub browser, RStudio, and Jupyter) for editing your website.
+We introduce Quarto by exploring this clinic website, and practicing the basic Quarto workflow using the 2i2c Openscapes JupyterHub for editing your website and GitHub in the browser to review proposed updates.
 
-We'll start off from the browser so you don't need to install any additional software, however this approach is very limited and you will soon outgrow its capabilities. If you don't already have a workflow to edit files and sync to GitHub from your computer, I recommend RStudio. You don't need to know R to use RStudio, and it has powerful editor features that make for happy workflows.
+
 
 [Quarto.org](https://quarto.org) is the go-to place for full documentation and more tutorials!
 

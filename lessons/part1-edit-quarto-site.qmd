@@ -4,49 +4,6 @@ title: "Part 1: Edit a Quarto site"
 
 We will work through this Quarto Clinic site in the NASA Openscapes 2i2c JupyterHub ("the Hub"). The Hub has a python environment as well as Quarto installed. No further installations are required.
 
-TODO: move Setup to setup.qmd. Add Setup after Welcome, then do Explore while Hub is initiating. Setup includes Hub login, clone, branch. Leave Preview in Edit Quarto site = step 1.
-
-## Setup
-
-TODO: Don't call this "Setup"; too vague. Decide if this file is just "demo 1" or all the content of Part 1 - demo and practice for: clone, branch, preview, make changes, add ipynb, edit \_quarto.yml, preview, END
-
-### Log in to the Hub
-
-Go to the Hub https://openscapes.2i2c.cloud \> log in with your GitHub Account \> select the Python server.
-
-[![Login page for the NASA Openscapes 2i2c JupyterHub, "the Hub"](images/jupyterhub-2i2c-login.png)](https://openscapes.2i2c.cloud/)
-
-![Hub server options](images/jupyterhub-server-options.png)
-
-![](images/jupyterhub-loading.png)
-
-It takes a few minutes for the Hub to load. Please be patient!
-
-While the server starts up, we’ll explore the GitHub Clinic repo structure side by side with the website (go back to the [Explore](../explore.qmd) section).
-
-### Clone the Quarto Clinic repo
-
-You'll start by cloning your repository into the Hub.
-
-**Option A:** Use the Git tab to Clone repo
-
-![Clone a GitHub repository in the Hub](images/jupyterhyb-clone-repo.png)
-
-**Option B:** Do this by opening a terminal (File \> New \> Terminal). In the Terminal, `git clone` your repository and `cd` into it:
-
-``` bash
-git clone https://github.com/openscapes/quarto-clinic
-cd quarto-clinic
-```
-
-### Make a branch
-
-Working in a branch means you have your own version of the Quarto Clinic to edit and preview. Later, you might propose contributing your edits to the Main branch of the Clinic by making a "Pull Request".
-
-branch name = your name
-
-TODO screenshot and cmd line
-
 ## Preview the site (aka Quarto preview)
 
 Let's start off by previewing our quarto site locally.
@@ -79,6 +36,8 @@ TODO: fill out Task 1a
 TODO: edit demo.md file to have only what we need
 
 ### Task 1a: Edit and preview a demo.qmd file
+
+Open [demo.qmd](demo.qmd) file.
 
 1.  Edit a .qmd page (uses demo.qmd file that has markdown for text, add hyperlink, add image, run Python code)
 
