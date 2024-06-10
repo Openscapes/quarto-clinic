@@ -4,48 +4,7 @@ title: "Part 1: Edit a Quarto site"
 
 We will work through this Quarto Clinic site in the NASA Openscapes 2i2c JupyterHub ("the Hub"). The Hub has a python environment as well as Quarto installed. No further installations are required.
 
-TODO: move Setup to setup.qmd. Add Setup after Welcome, then do Explore while Hub is initiating. Setup includes Hub login, clone, branch. Leave Preview in Edit Quarto site = step 1.
-
-## Setup
-
-TODO: Don't call this "Setup"; too vague. Decide if this file is just "demo 1" or all the content of Part 1 - demo and practice for: clone, branch, preview, make changes, add ipynb, edit \_quarto.yml, preview, END
-
-### Log in to the Hub
-
-Go to the Hub https://openscapes.2i2c.cloud \> log in with your GitHub Account \> select the Python server.
-
-[![Login page for the NASA Openscapes 2i2c JupyterHub, "the Hub"](images/jupyterhub-2i2c-login.png)](https://openscapes.2i2c.cloud/)
-
-![Hub server options](images/jupyterhub-server-options.png)
-
-![](images/jupyterhub-loading.png)
-
-It takes a few minutes for the Hub to load. Please be patient!
-
-While the server starts up, we’ll explore the GitHub Clinic repo structure side by side with the website (go back to the [Explore](../explore.qmd) section).
-
-### Clone the Quarto Clinic repo
-
-You'll start by cloning your repository into the Hub.
-
-**Option A:** Use the Git tab to Clone repo
-
-![Clone a GitHub repository in the Hub](images/jupyterhyb-clone-repo.png)
-
-**Option B:** Do this by opening a terminal (File \> New \> Terminal). In the Terminal, `git clone` your repository and `cd` into it:
-
-``` bash
-git clone https://github.com/openscapes/quarto-clinic
-cd quarto-clinic
-```
-
-### Make a branch
-
-Working in a branch means you have your own version of the Quarto Clinic to edit and preview. Later, you might propose contributing your edits to the Main branch of the Clinic by making a "Pull Request".
-
-branch name = your name
-
-TODO screenshot and cmd line
+*TODO: List here the thinks we'll do in this section*
 
 ## Preview the site (aka Quarto preview)
 
@@ -72,13 +31,15 @@ TODO: add new screenshots
 
 Now that we have each set up our own GitHub clone of this Quarto Clinic website in the Openscapes 2i2c JupyterHub, we can practice editing and rendering `.qmd` and `ipynb` files. These are the workflows we use to contribute to the NASA Earthdata Cloud Cookbook and other Quarto websites and books.
 
-## Choose Task 1a or 1b (Activity)
+## Choose Task 1a or 1b to do in breakouts
 
-TODO: fill out Task 1a
+*TODO: fill out Task 1a*
 
-TODO: edit demo.md file to have only what we need
+*TODO: edit demo.md file to have only what we need*
 
 ### Task 1a: Edit and preview a demo.qmd file
+
+Open [demo.qmd](demo.qmd) file.
 
 1.  Edit a .qmd page (uses demo.qmd file that has markdown for text, add hyperlink, add image, run Python code)
 
@@ -98,9 +59,9 @@ TODO: edit demo.md file to have only what we need
 
         1.  manage echo, run
 
-TODO: screenshot
+*TODO: screenshot*
 
-TODO: edit the text below re: "make a small change"; fix a typo
+*TODO: edit the text below re: "make a small change"; fix a typo*
 
 #### Make a small change and preview it
 
@@ -112,7 +73,7 @@ Let's add a new page to our site. Instead of a `.qmd` file like the others, let'
 
 File \> New \> Notebook. Accept the default kernel by clicking Select.
 
-TODO: screenshot
+*TODO: screenshot*
 
 #### First chunk: raw yaml
 
@@ -174,11 +135,13 @@ Save your document - I'll call mine `python-example.ipynb` in the main repositor
 
 ## Preview your updates (Regroup, 10 min)
 
-**Demo**: If you created a new page, how do you get it in the book? Involves editing \_quarto.yml to have it show up in site
+**Demo**: If you created a new page, how do you get it in the book? Involves editing `_quarto.yml` to have it show up in site
 
 ### Update `_quarto.yml`
 
-Now we'll add `python-example.ipynb` to our `_quarto.yml` file; this is where we register of all files to include in our site. Let's add it after the section called "Basic Workflows".
+*TODO: not Basic Workflows, where to put it new files?*
+
+Now we'll add `python-example.ipynb` or `your_demo_file.qmd` to our `_quarto.yml` file; this is where we register of all files to include in our site. Let's add it after the section called "Basic Workflows".
 
 Open `_quarto.yml` by clicking on it from the file directory.
 
@@ -200,9 +163,9 @@ So, your normal workflow for creating and running code blocks in your Jupyter No
 
 ### Quarto render
 
-TODO: clarify preview vs render text
+*TODO: clarify preview vs render text; cp some `render-vs-preview.qmd`*
 
-So far we have used **Quarto preview** to view our website as we develop it. **Quarto render** will build the html elements of the website that we can see when we preview. Rendering will format the markdown text and code nicely as a website (or however is indicated in the `_quarto.yml`).
+So far we have used **Quarto preview** to view our website as we develop it. **Quarto render** will build the html elements of the website that we can see when we preview. Rendering will format the markdown text and code nicely as `.html` files for a website (or however is indicated in the `_quarto.yml`; could be `.docx` or `.pdf` files).
 
 By default, Quarto render does not execute code in a Jupyter notebook. It will never run .ipynb files unless you tell it to.
 
@@ -223,4 +186,8 @@ quarto render python-example.ipynb --execute
 
 ## Commit and push to GitHub
 
+*TODO: do we need to create a GitHub Action or is it already there?*
+
 Committing and pushing will make the changes you see locally live on your website (using the [GitHub Action we set up earlier](/explore.qmd#setup-github-action)).
+
+Now we can move to [Part 2](part2-share-via-github.qmd) to Contribute your updates via PR, review, etc
