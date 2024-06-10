@@ -1,0 +1,21 @@
+---
+title: "Part 2: Contribute via GitHub"
+---
+
+## Contribute your updates using GitHub
+
+*TODO: refine this list of steps, keep the list here, turn it into a demo with screenshots*
+
+1.  GitHub commit, push, pull request, review PRs, merge (now we’re on GitHub.com….)
+
+    1.  Good commit messages
+
+    2.  Push to GitHub then move to GitHub.com, screenshot yellow banner to compare and make a pull request
+
+    3.  Not finished proposing your updates? Can make Draft PR at the start so folks can see your thinking. Set Ready for Review when ready. Request specific reviewer(s). 
+
+    4.  Condense/ adapt [Review a pull request](https://nasa-openscapes.github.io/earthdata-cloud-cookbook/contributing/workflow.html#review-a-pull-request) from Cookbook; note using “suggesting” and commenting, “Start your Review” instead of adding single comments (fewer notifications)
+
+    5.  **Demo**: have someone commit and push, PR, tag Stef as reviewer. Screenshare the above steps to review. That person screenshares to commit suggested edits, merge their PR.
+
+    6.  **Task**: people pair up to review each other’s PRs.
