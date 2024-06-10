@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Quarto Contributing Clinic - Contributing to Quarto books and websites</title>
+<title>Quarto Contributing Clinic - Contributing to Quarto websites and books</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -29,7 +29,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./explore.html" rel="next">
+<link href="./setup.html" rel="next">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -119,8 +119,8 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./explore.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Explore</span></a>
+  <a href="./setup.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Setup &amp; Explore</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -134,20 +134,14 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./lessons/part1-edit-quarto-site.html" class="sidebar-item-text sidebar-link">
+  <a href="./lessons/part1-quarto.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Edit a Quarto site</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./lessons/demo.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Quarto practice file</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./lessons/part2-share-via-github.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Share via GitHub</span></a>
+  <a href="./lessons/part2-github.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Contribute via GitHub</span></a>
   </div>
 </li>
       </ul>
@@ -181,7 +175,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Contributing to Quarto books and websites</h1>
+<h1 class="title">Contributing to Quarto websites and books</h1>
 <p class="subtitle lead">Share open-source tutorials, onboarding docs, and much more</p>
 </div>
 
@@ -199,6 +193,7 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<p><em>TODO: edit Welcome page to include POP, What is Quarto. Brief. Move to Setup &amp; Explore</em></p>
 <section id="welcome" class="level2">
 <h2 class="anchored" data-anchor-id="welcome">Welcome</h2>
 <p>It’s possible to create beautiful documentation to share online with <a href="https://quarto.org">Quarto</a> that auto-updates with <a href="http://github.com">GitHub</a>. This is very new and incredibly cool. This tutorial is an example of a quarto website — it is a really powerful way to create and share your work. You can communicate about science using the same reproducible workflow you and/or your colleagues use for analyses, whether or not you write code.</p>
@@ -208,13 +203,13 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="what-is-quarto">What is Quarto?</h2>
 <p>Quarto helps you have your ideas and your code in one place, and present it in a beautiful way.</p>
 <p><strong>Quarto unifies and extends the RMarkdown ecosystem</strong> - it unifies by combining the functionality of R Markdown, bookdown, distill, xaringian, etc into a single consistent system. And it extends in several ways: all features are possible beyond R too, including Python and Javascript. It also has more “guardrails”: accessibility and inclusion are centered in the design. Quarto is for people who love RMarkdown, and it’s for people who have never used RMarkdown.</p>
+<p><em>TODO: add Cookbook below</em></p>
 <p>The ability for Quarto to streamline collaboration has been so cool and important for our <a href="https://nasa-openscapes.github.io/">NASA Openscapes</a> project. Quarto has been a common place for us to collaborate - across R and Python languages and coding expertise.</p>
 </section>
 <section id="what-is-this-tutorial" class="level2">
 <h2 class="anchored" data-anchor-id="what-is-this-tutorial">What is this tutorial?</h2>
-<p>This is a 1-hour tutorial that can be used to teach or as self-paced learning.</p>
-<p>We introduce Quarto by exploring this tutorial website, and practicing the basic Quarto workflow using different tools (GitHub browser, RStudio, and Jupyter) for editing your website.</p>
-<p>We’ll start off from the browser so you don’t need to install any additional software, however this approach is very limited and you will soon outgrow its capabilities. If you don’t already have a workflow to edit files and sync to GitHub from your computer, I recommend RStudio. You don’t need to know R to use RStudio, and it has powerful editor features that make for happy workflows.</p>
+<p>This is a 1.5-hour tutorial that can be used to teach or as self-paced learning.</p>
+<p>We introduce Quarto by exploring this clinic website, and practicing the basic Quarto workflow using the 2i2c Openscapes JupyterHub for editing your website and GitHub in the browser to review proposed updates.</p>
 <p><a href="https://quarto.org">Quarto.org</a> is the go-to place for full documentation and more tutorials!</p>
 </section>
 <section id="example-quarto-sites" class="level2">
@@ -795,8 +790,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   <div class="nav-page nav-page-previous">
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./explore.html" class="pagination-link" aria-label="Explore">
-        <span class="nav-page-text">Explore</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./setup.html" class="pagination-link" aria-label="Setup &amp; Explore">
+        <span class="nav-page-text">Setup &amp; Explore</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
