@@ -209,7 +209,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#quarto-render" id="toc-quarto-render" class="nav-link" data-scroll-target="#quarto-render">Quarto render</a></li>
   <li><a href="#render-whole-notebook" id="toc-render-whole-notebook" class="nav-link" data-scroll-target="#render-whole-notebook">Render whole notebook</a></li>
   </ul></li>
-  <li><a href="#commit-and-push-to-github" id="toc-commit-and-push-to-github" class="nav-link" data-scroll-target="#commit-and-push-to-github">Commit and push to GitHub</a></li>
+  <li><a href="#onward" id="toc-onward" class="nav-link" data-scroll-target="#onward">Onward</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/Openscapes/quarto-clinic/edit/main/lessons/part1-quarto.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/Openscapes/quarto-clinic/blob/main/lessons/part1-quarto.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/Openscapes/quarto-clinic/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -240,52 +240,33 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="preview-the-site-aka-quarto-preview" class="level2">
 <h2 class="anchored" data-anchor-id="preview-the-site-aka-quarto-preview">Preview the site (aka Quarto preview)</h2>
 <p>Let’s start off by previewing our quarto site locally.</p>
-<p>quarto render does X</p>
-<p>quarto preview does Y</p>
+<p>quarto preview does X</p>
+<p>quarto render does Y</p>
 <p>In Terminal, type <code>quarto preview</code>, which will provide a URL with a preview of our site!</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> preview</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Preparing to preview</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Watching files for changes</span></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Browse at https://openscapes.2i2c.cloud/user/jules32/proxy/4593/</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Copy this URL into another browser window; and arrange them so you can see them both. I make a bit more space in Jupyter by collapsing the left file menu by clicking on the file icon at the top of the left sidebar.</p>
-<p>TODO: add new screenshots</p>
+<p>Click or copy this URL into a browser window; and arrange them so you can see them both. I make a bit more space in Jupyter by collapsing the left file menu by clicking on the file icon at the top of the left sidebar.</p>
+<p>TODO: note to open index.qmd add new screenshots</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/jupyter-side-by-side.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
 </figure>
 </div>
-<p>Now that we have each set up our own GitHub clone of this Quarto Clinic website in the Openscapes 2i2c JupyterHub, we can practice editing and rendering <code>.qmd</code> and <code>ipynb</code> files. These are the workflows we use to contribute to the NASA Earthdata Cloud Cookbook and other Quarto websites and books.</p>
+<p>Now that we have each set up our own GitHub clone of this Quarto Clinic website in the Hub, we can practice editing and rendering <code>.qmd</code> and <code>.ipynb</code> files. These are the workflows we use to contribute to the NASA Earthdata Cloud Cookbook and other Quarto websites and books.</p>
 </section>
 <section id="choose-task-1a-or-1b-to-do-in-breakouts" class="level2">
 <h2 class="anchored" data-anchor-id="choose-task-1a-or-1b-to-do-in-breakouts">Choose Task 1a or 1b to do in breakouts</h2>
-<p><em>TODO: fill out Task 1a</em></p>
-<p><em>TODO: edit demo.md file to have only what we need</em></p>
 <section id="task-1a-edit-and-preview-a-demo.qmd-file" class="level3">
 <h3 class="anchored" data-anchor-id="task-1a-edit-and-preview-a-demo.qmd-file">Task 1a: Edit and preview a demo.qmd file</h3>
-<p>Open <a href="../lessons/demo.html">demo.qmd</a> file.</p>
-<ol type="1">
-<li><p>Edit a .qmd page (uses demo.qmd file that has markdown for text, add hyperlink, add image, run Python code)</p>
-<ol type="1">
-<li>Headers</li>
-</ol>
-<pre><code>1.  Headers are powerful in Quarto because they let you organize on the side of the page. They let you share a specific section of a page by copying the URL</code></pre>
-<ol start="2" type="1">
-<li><p>hyperlink something (cite the Cookbook and hyperlink it)</p>
-<ol type="1">
-<li>Hyperlinking is done like this; lets you cite and give credit</li>
-</ol></li>
-<li><p>inspect this image with alt-txt</p></li>
-<li><p>Python code</p>
-<ol type="1">
-<li>manage echo, run</li>
-</ol></li>
-</ol></li>
-</ol>
+<p>Open <a href="../lessons/demo.html"><code>lessons/demo.qmd</code></a> file. The suggestions / how-to are in the file.</p>
+<p><em>TODO: finesse opening demo.qmd; Markdown only shows when going to Raw then Markdown</em></p>
 <p><em>TODO: screenshot</em></p>
-<p><em>TODO: edit the text below re: “make a small change”; fix a typo</em></p>
 <section id="make-a-small-change-and-preview-it" class="level4">
 <h4 class="anchored" data-anchor-id="make-a-small-change-and-preview-it">Make a small change and preview it</h4>
-<p>Now we’ll be able to see live changes in the preview as we edit in our <code>.qmd</code> files. Let’s try it: Change the date in <code>index.qmd</code> by opening it from the file directory. Change to today’s date, and save. Your preview window will refresh automatically! If it does not, you can also refresh the page manually. The refreshed previewed site will now display your changes!</p>
+<p>Now we’ll be able to see live changes in the preview as we edit in our <code>.qmd</code> files. Let’s try it: Fix the typo, etc. Your preview window will refresh automatically! If it does not, you can also refresh the page manually. The refreshed previewed site will now display your changes!</p>
+<p>Save your changes</p>
 </section>
 </section>
 <section id="task-1b-create-a-new-.ipynb-page" class="level3">
@@ -302,36 +283,36 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </figure>
 </div>
 <p>In our Raw code chunk, let’s write the title of this document. We need three dashes <code>---</code> on separate lines preceding and following the <code>title:</code>, which you can name as you’d like.</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">---</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="ex">title:</span> Python Example</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="ex">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">---</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ex">title:</span> Python Example</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="ex">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="second-chunk-markdown" class="level4">
 <h4 class="anchored" data-anchor-id="second-chunk-markdown">Second chunk: Markdown</h4>
 <p>Let’s add a new chunk that is Markdown so we can write some description of what this page will be.</p>
 <p>Click the <code>+</code> symbol at the top of the document, and this will add a new chunk, which by default again is a Code chunk. Change it to a Markdown Chunk following the steps we did above when switching to Raw.</p>
 <p>Here, write a little bit of text in Markdown. Since your title is effectively a level-1 header, avoid using level-1 headers in the rest of your document. Here is some example text I wrote:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">## Introduction</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="ex">This</span> example has some Python code that will be a part of our Quarto site.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">## Introduction</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="ex">This</span> example has some Python code that will be a part of our Quarto site.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="third-chunk-code" class="level4">
 <h4 class="anchored" data-anchor-id="third-chunk-code">Third chunk: Code</h4>
 <p>Now let’s create a new chunk with the default Code setting.</p>
 <p>Paste the following code (or write some of your own to test):</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-polar</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "A line plot on a polar axis"</span></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>r <span class="op">=</span> np.arange(<span class="dv">0</span>, <span class="dv">2</span>, <span class="fl">0.01</span>)</span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>theta <span class="op">=</span> <span class="dv">2</span> <span class="op">*</span> np.pi <span class="op">*</span> r</span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(</span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>  subplot_kw <span class="op">=</span> {<span class="st">'projection'</span>: <span class="st">'polar'</span>} </span>
-<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>ax.plot(theta, r)</span>
-<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>ax.set_rticks([<span class="fl">0.5</span>, <span class="dv">1</span>, <span class="fl">1.5</span>, <span class="dv">2</span>])</span>
-<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>ax.grid(<span class="va">True</span>)</span>
-<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-polar</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "A line plot on a polar axis"</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>r <span class="op">=</span> np.arange(<span class="dv">0</span>, <span class="dv">2</span>, <span class="fl">0.01</span>)</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>theta <span class="op">=</span> <span class="dv">2</span> <span class="op">*</span> np.pi <span class="op">*</span> r</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>  subplot_kw <span class="op">=</span> {<span class="st">'projection'</span>: <span class="st">'polar'</span>} </span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>ax.plot(theta, r)</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>ax.set_rticks([<span class="fl">0.5</span>, <span class="dv">1</span>, <span class="fl">1.5</span>, <span class="dv">2</span>])</span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>ax.grid(<span class="va">True</span>)</span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Now, go ahead and execute this code chunk like you normally would, by clicking the cursor in a code block and clicking the sideways “play” triangle to run the selected cells (and advance to the next cell). This code produces a plot.</p>
 <p>Note that the code runs as it normally would; the code options in the comments are just comments.</p>
 </section>
@@ -346,7 +327,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p><strong>Demo</strong>: If you created a new page, how do you get it in the book? Involves editing <code>_quarto.yml</code> to have it show up in site</p>
 <section id="update-_quarto.yml" class="level3">
 <h3 class="anchored" data-anchor-id="update-_quarto.yml">Update <code>_quarto.yml</code></h3>
-<p><em>TODO: not Basic Workflows, where to put it new files?</em></p>
+<p><em>TODO: don’t call it Basic Workflows below, where to put it new files?</em></p>
 <p>Now we’ll add <code>python-example.ipynb</code> or <code>your_demo_file.qmd</code> to our <code>_quarto.yml</code> file; this is where we register of all files to include in our site. Let’s add it after the section called “Basic Workflows”.</p>
 <p>Open <code>_quarto.yml</code> by clicking on it from the file directory.</p>
 <p>Scroll down to review the current contents in the <code>sidebar:</code> section. It’s there we see all the file arrangement that we see in the previewed site.</p>
@@ -374,19 +355,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="render-whole-notebook" class="level3">
 <h3 class="anchored" data-anchor-id="render-whole-notebook">Render whole notebook</h3>
+<p><em>TODO: incorporate/ link to <a href="https://nasa-openscapes.github.io/earthdata-cloud-cookbook/contributing/workflow.html#quarto-render">Cookbook Quarto render</a></em></p>
 <p>If you would like it to specifically execute code in a Jupyter notebook, you can do so in Terminal.</p>
 <p>Our Terminal is still busy previewing our website, so let’s open a new Terminal.</p>
 <p>File &gt; New &gt; Terminal. Then type:</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> quarto-website-tutorial</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render python-example.ipynb <span class="at">--execute</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><em>TODO: move the below sections elsewhere. Here commit and push, then move to Part 2: Share via GitHub. I think the transition/ section break is when moving from JupyterHub to GitHub</em></p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> quarto-website-tutorial</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render python-example.ipynb <span class="at">--execute</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 </section>
-<section id="commit-and-push-to-github" class="level2">
-<h2 class="anchored" data-anchor-id="commit-and-push-to-github">Commit and push to GitHub</h2>
-<p><em>TODO: do we need to create a GitHub Action or is it already there?</em></p>
-<p>Committing and pushing will make the changes you see locally live on your website (using the <a href="../explore.qmd#setup-github-action">GitHub Action we set up earlier</a>).</p>
-<p>Now we can move to <a href="part2-share-via-github.qmd">Part 2</a> to Contribute your updates via PR, review, etc</p>
+<section id="onward" class="level2">
+<h2 class="anchored" data-anchor-id="onward">Onward</h2>
+<p>Now we can move to <a href="../lessons/part2-github.html">Part 2</a> to Contribute your proposed updates using Git and GitHub.</p>
 
 
 </section>
