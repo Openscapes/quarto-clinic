@@ -10,9 +10,9 @@ We will work through this Quarto Clinic site in the NASA Openscapes 2i2c Jupyter
 
 Let's start off by previewing our quarto site locally.
 
-quarto render does X
+quarto preview does X
 
-quarto preview does Y
+quarto render does Y
 
 In Terminal, type `quarto preview`, which will provide a URL with a preview of our site!
 
@@ -23,13 +23,13 @@ quarto preview
 # Browse at https://openscapes.2i2c.cloud/user/jules32/proxy/4593/
 ```
 
-Copy this URL into another browser window; and arrange them so you can see them both. I make a bit more space in Jupyter by collapsing the left file menu by clicking on the file icon at the top of the left sidebar.
+Click or copy this URL into a browser window; and arrange them so you can see them both. I make a bit more space in Jupyter by collapsing the left file menu by clicking on the file icon at the top of the left sidebar.
 
-TODO: add new screenshots
+TODO: note to open index.qmd add new screenshots
 
 ![](images/jupyter-side-by-side.png){fig-align="center"}
 
-Now that we have each set up our own GitHub clone of this Quarto Clinic website in the Openscapes 2i2c JupyterHub, we can practice editing and rendering `.qmd` and `ipynb` files. These are the workflows we use to contribute to the NASA Earthdata Cloud Cookbook and other Quarto websites and books.
+Now that we have each set up our own GitHub clone of this Quarto Clinic website in the Hub, we can practice editing and rendering `.qmd` and `.ipynb` files. These are the workflows we use to contribute to the NASA Earthdata Cloud Cookbook and other Quarto websites and books.
 
 ## Choose Task 1a or 1b to do in breakouts
 
@@ -39,7 +39,9 @@ Now that we have each set up our own GitHub clone of this Quarto Clinic website 
 
 ### Task 1a: Edit and preview a demo.qmd file
 
-Open [demo.qmd](demo.qmd) file.
+Open `lessons/demo.qmd` file.
+
+*TODO: finesse opening demo.qmd; Markdown only shows when going to Raw then Markdown*
 
 1.  Edit a .qmd page (uses demo.qmd file that has markdown for text, add hyperlink, add image, run Python code)
 
@@ -65,7 +67,9 @@ Open [demo.qmd](demo.qmd) file.
 
 #### Make a small change and preview it
 
-Now we'll be able to see live changes in the preview as we edit in our `.qmd` files. Let's try it: Change the date in `index.qmd` by opening it from the file directory. Change to today's date, and save. Your preview window will refresh automatically! If it does not, you can also refresh the page manually. The refreshed previewed site will now display your changes!
+Now we'll be able to see live changes in the preview as we edit in our `.qmd` files. Let's try it: Fix the typo, etc. Your preview window will refresh automatically! If it does not, you can also refresh the page manually. The refreshed previewed site will now display your changes!
+
+Save your changes
 
 ### Task 1b: Create a new `.ipynb` page
 
@@ -139,7 +143,7 @@ Save your document - I'll call mine `python-example.ipynb` in the main repositor
 
 ### Update `_quarto.yml`
 
-*TODO: not Basic Workflows, where to put it new files?*
+*TODO: don't call it Basic Workflows below, where to put it new files?*
 
 Now we'll add `python-example.ipynb` or `your_demo_file.qmd` to our `_quarto.yml` file; this is where we register of all files to include in our site. Let's add it after the section called "Basic Workflows".
 
@@ -171,6 +175,8 @@ By default, Quarto render does not execute code in a Jupyter notebook. It will n
 
 ### Render whole notebook
 
+*TODO: incorporate/ link to [Cookbook Quarto render](https://nasa-openscapes.github.io/earthdata-cloud-cookbook/contributing/workflow.html#quarto-render)*
+
 If you would like it to specifically execute code in a Jupyter notebook, you can do so in Terminal.
 
 Our Terminal is still busy previewing our website, so let's open a new Terminal.
@@ -182,12 +188,6 @@ cd quarto-website-tutorial
 quarto render python-example.ipynb --execute
 ```
 
-*TODO: move the below sections elsewhere. Here commit and push, then move to Part 2: Share via GitHub. I think the transition/ section break is when moving from JupyterHub to GitHub*
+## Onward
 
-## Commit and push to GitHub
-
-*TODO: do we need to create a GitHub Action or is it already there?*
-
-Committing and pushing will make the changes you see locally live on your website (using the [GitHub Action we set up earlier](/explore.qmd#setup-github-action)).
-
-Now we can move to [Part 2](part2-share-via-github.qmd) to Contribute your updates via PR, review, etc
+Now we can move to [Part 2](part2-github.qmd) to Contribute your proposed updates using Git and GitHub.

@@ -71,13 +71,15 @@ git clone https://github.com/openscapes/quarto-clinic
 cd quarto-clinic
 ```
 
-### Make a branch
+### Create a new branch
 
 Working in a branch means you have your own version of the Quarto Clinic to edit and preview. Later, we'll learn how to contribute your edits to the Main branch of the Clinic by making a "Pull Request".
 
-branch name = your name
+Navigate into the `quarto-clinic` folder \> click the Git tab \> New Branch, with branch name = your name, to make it easy to identify in following exercises.
 
-*TODO screenshot and cmd line*
+![Create a branch](images/jupyterhub-git-branch.png)
+
+*TODO add cmd line*
 
 ## Onward!
 

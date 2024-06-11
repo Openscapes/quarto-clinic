@@ -4,18 +4,48 @@ title: "Part 2: Contribute via GitHub"
 
 ## Contribute your updates using GitHub
 
-*TODO: refine this list of steps, keep the list here, turn it into a demo with screenshots*
+*TODO: refine this list of steps, keep the list here so folks know what's coming*
 
-1.  GitHub commit, push, pull request, review PRs, merge (now we’re on GitHub.com….)
+*TODO: use text and some screenshot styles from 2021 Cloud Hackathon [Tracking changes section](https://nasa-openscapes.github.io/2021-Cloud-Hackathon/tutorials/00_Setup.html#step-5.-tracking-changes-optional)*
 
-    1.  Good commit messages
+GitHub commit, push, (move to GitHub.com….) pull request, review PRs, merge
 
-    2.  Push to GitHub then move to GitHub.com, screenshot yellow banner to compare and make a pull request
+1.  Good commit messages
 
-    3.  Not finished proposing your updates? Can make Draft PR at the start so folks can see your thinking. Set Ready for Review when ready. Request specific reviewer(s). 
+2.  Push to GitHub then move to GitHub.com, screenshot yellow banner to compare and make a pull request
 
-    4.  Condense/ adapt [Review a pull request](https://nasa-openscapes.github.io/earthdata-cloud-cookbook/contributing/workflow.html#review-a-pull-request) from Cookbook; note using “suggesting” and commenting, “Start your Review” instead of adding single comments (fewer notifications)
+3.  Not finished proposing your updates? Can make Draft PR at the start so folks can see your thinking. Set Ready for Review when ready. Request specific reviewer(s). 
 
-    5.  **Demo**: have someone commit and push, PR, tag Stef as reviewer. Screenshare the above steps to review. That person screenshares to commit suggested edits, merge their PR.
+4.  Condense/ adapt [Review a pull request](https://nasa-openscapes.github.io/earthdata-cloud-cookbook/contributing/workflow.html#review-a-pull-request) from Cookbook; note using “suggesting” and commenting, “Start your Review” instead of adding single comments (fewer notifications)
 
-    6.  **Task**: people pair up to review each other’s PRs.
+5.  **Demo**: have someone commit and push, PR, tag Stef as reviewer. Screenshare the above steps to review. That person screenshares to commit suggested edits, merge their PR.
+
+6.  **Task**: people pair up to review each other’s PRs.
+
+### Diff, Stage, Commit, and Push your edits to GitHub
+
+Inspect the differences your edits will introduce
+
+![](images/jupyterhub-git-diff.png){fig-align="left" width="100%"}
+
+In the Git tab "stage" your saved changes.
+
+![Stage your changes](images/jupyterhub-git-stage.png){fig-align="left" width="50%"}
+
+Commit your edits with a good commit message and push your edits.
+
+![Commit and Push](images/jupyterhub-git-commit-push.png){fig-align="left" width="50%"}
+
+In the Hub, in our own branch of the Quarto Clinic repo, we have made one or more edits to the Clinic files, committed those updates, and pushed those commit(s) to GitHub. How do our suggested contributions get incorporated into the main Quarto Clinic repo and website?
+
+## Make a Pull Request
+
+After pushing your edits, go to <https://github.com/Openscapes/quarto-clinic/> and you will see a yellow banner inviting you to make a pull request to add your edits to the Clinic repo.
+
+![](images/github-yellow-pr-banner.png){fig-align="left" width="90%"}
+
+Not finished proposing your updates? Can make Draft PR at the start so folks can see your thinking. Set Ready for Review when ready and request specific reviewer(s). 
+
+## Reviewing a pull request
+
+Adapt [Reviewing a pull request](https://nasa-openscapes.github.io/earthdata-cloud-cookbook/contributing/workflow.html#review-a-pull-request) (in Cookbook)
