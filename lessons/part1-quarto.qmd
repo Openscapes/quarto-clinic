@@ -33,37 +33,13 @@ Now that we have each set up our own GitHub clone of this Quarto Clinic website 
 
 ## Choose Task 1a or 1b to do in breakouts
 
-*TODO: fill out Task 1a*
-
-*TODO: edit demo.md file to have only what we need*
-
 ### Task 1a: Edit and preview a demo.qmd file
 
-Open `lessons/demo.qmd` file.
+Open [`lessons/demo.qmd`](demo.qmd) file. The suggestions / how-to are in the file.
 
 *TODO: finesse opening demo.qmd; Markdown only shows when going to Raw then Markdown*
 
-1.  Edit a .qmd page (uses demo.qmd file that has markdown for text, add hyperlink, add image, run Python code)
-
-    1.  Headers
-
-    ```         
-    1.  Headers are powerful in Quarto because they let you organize on the side of the page. They let you share a specific section of a page by copying the URL
-    ```
-
-    2.  hyperlink something (cite the Cookbook and hyperlink it)
-
-        1.  Hyperlinking is done like this; lets you cite and give credit
-
-    3.  inspect this image with alt-txt
-
-    4.  Python code
-
-        1.  manage echo, run
-
 *TODO: screenshot*
-
-*TODO: edit the text below re: "make a small change"; fix a typo*
 
 #### Make a small change and preview it
 
