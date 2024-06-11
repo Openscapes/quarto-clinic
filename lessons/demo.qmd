@@ -1,12 +1,23 @@
 ---
-title: "`demo.qmd` aka Quarto Practice"
+title: '`demo.qmd` aka Quarto Practice'
+jupyter:
+  jupytext:
+    text_representation:
+      extension: .qmd
+      format_name: quarto
+      format_version: '1.0'
+      jupytext_version: 1.16.1
+  kernelspec:
+    display_name: Python 3 (ipykernel)
+    language: python
+    name: python3
 ---
 
 Quarto enables you to weave together content and executable code into a finished document.
 
 This `demo.qmd` file has an Python code chunks, Markdown-formatted text, and examples for adding images and hyperlinks.
 
-TODO: edit this file to contain the content listed below
+*TODO: edit this file to contain the content listed below*
 
 ### Edit and preview a demo.qmd file
 
