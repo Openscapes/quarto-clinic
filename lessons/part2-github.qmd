@@ -43,7 +43,7 @@ Not finished proposing your updates? Can make Draft PR at the start so folks can
 
 ## Review a pull request
 
-*TODO: Adapt [Reviewing a pull request](https://nasa-openscapes.github.io/earthdata-cloud-cookbook/contributing/workflow.html#review-a-pull-request) (in Cookbook). Copied; Edit to condense.*
+*TODO: Adapt [Reviewing a pull request](https://nasa-openscapes.github.io/earthdata-cloud-cookbook/contributing/workflow.html#review-a-pull-request) (in Cookbook). Copied; Will edit to condense, using a Stef + Andy PR & Review of edits to this clinic.*
 
 Any pull request (PR) must be reviewed before it can be merged into the Cookbook. If you know someone who is familiar with the content you're proposing to add, request their review.
 
@@ -53,7 +53,7 @@ In reviewing a pull request with lots of changes, it can be helpful to have wind
 
 From the pull request page in GitHub browser, look at the elements of the pull request.
 
-*TODO: add screenshot of a PR page as in Cookbook, pull-request-example.png*
+*TODO: add screenshot of a PR page like the one in Cookbook, pull-request-example.png*
 
 ![](images/pull-request-example.png)
 
