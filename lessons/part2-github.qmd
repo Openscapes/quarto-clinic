@@ -46,6 +46,6 @@ After pushing your edits, go to <https://github.com/Openscapes/quarto-clinic/> a
 
 Not finished proposing your updates? Can make Draft PR at the start so folks can see your thinking. Set Ready for Review when ready and request specific reviewer(s). 
 
-## Reviewing a pull request
+## Review a pull request
 
 Adapt [Reviewing a pull request](https://nasa-openscapes.github.io/earthdata-cloud-cookbook/contributing/workflow.html#review-a-pull-request) (in Cookbook)

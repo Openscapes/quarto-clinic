@@ -4,63 +4,52 @@ title: "`demo.qmd` aka Quarto Practice"
 
 Quarto enables you to weave together content and executable code into a finished document.
 
-This `demo.qmd` file has an Python code chunks, Markdown-formatted text, and examples for adding images and hyperlinks.
+This `demo.qmd` file has Markdown-formatted text, examples for adding hyperlinks and inserting images with alt-text, and a Python code chunk.
 
-TODO: edit this file to contain the content listed below
+*TODO: edit this file to contain the content listed below*
 
 ### Edit and preview a demo.qmd file
 
-1.  Edit a .qmd page (uses demo.qmd file that has markdown for text, add hyperlink, add image, run Python code)
-
-    1.   Headers
-
-        1.  Headers are powerful in Quarto because they let you organize on the side of the page. They let you share a specific section of a page by copying the URL
-
-    2.  hyperlink something (cite the Cookbook and hyperlink it)
-
-        1.  Hyperlinking is done like this; lets you cite and give credit
-
-    3.  inspect this image with alt-txt
-
-    4.  Python code
-
-        1.  manage echo, run
+-   Headers. Headers are powerful in Quarto because they let you organize on the side of the page. They let you share a specific section of a page by copying the URL
+-   hyperlink something (cite the Cookbook and hyperlink it). Hyperlinking is done like this; lets you cite and give credit
+-   inspect this image with alt-txt
+-   Python code. manage echo, run
 
 ## Task: Edit a `.qmd` page
 
-TODO: Edit down to what we need.
+*TODO: Edit down to what we need, duplicated under each name header*
+
+::: callout-note
+Only make changes to the section under your name header (to prevent conflicts at a later stage)
+:::
 
 Now let's practice Markdown and commit an edit to this file.
 
-This file is written in Markdown, which formats text on the web. To see the Markdown that results in the following formatting, click the pencil icon to edit, or click 'Raw' to inspect it. For example, with Markdown:
+### Stefanie
+
+Fix this tpyo.
+
+### Julie
+
+Fix this tpyo.
+
+### Andy
+
+Fix this tpyo.
 
 We can make words **bold** or *italic*.
 
-### We can make headers.
+### We can make headers using `### Name`.
 
-We can make lists – *note that lists need an empty line before list items!*
+We can make hyperlinks in [Markdown](https://quarto.org/docs/authoring/markdown-basics.html) using the `[]()` pattern: you name hyperlink in `[]` and put the URL in `()`. For example:
 
-1.  bananas
-2.  tamales
-3.  cakes
-
-We can make hyperlinks in [Markdown](https://quarto.org/docs/authoring/markdown-basics.html) using the `[]()` pattern: you put words to hyperlink in `[]` and the URL in `()`. For example:
-
-> [This twitter thread](https://twitter.com/allison_horst/status/1287772985630191617) describes the palmerpenguins R package. Learn more on the [palmerpenguins webpage](https://allisonhorst.github.io/palmerpenguins).
-
-We can make an indented quote block with the `>` symbol, as in the example above.
+[This twitter thread](https://twitter.com/allison_horst/status/1287772985630191617) describes the palmerpenguins R package. Learn more on the [palmerpenguins webpage](https://allisonhorst.github.io/palmerpenguins).
 
 We can include an image with the same `[]()` pattern, by adding a preceding exclamation point: `![]()`. For example:
 
 [![The Openscapes logo](/images/openscapes_hex.png){fig-alt="Openscapes logo. A hexagonal shape with orange border, yellow background, the word openscapes in orange above a cartoon evoking a landscape of data plots" width="250"}](https://openscapes.org/)
 
 *Note how we can add alt text for the image, manage the image size, and link the image to a URL*
-
-:::{.callout-note}
-example callout notes and their different types are so valuable
-:::
-
-
 
 ## Running Code
 
@@ -77,5 +66,4 @@ TODO: day before clinic, make this Python code (don't add screenshot - fewer fil
 
 The `echo: false` option disables the printing of code (only output is displayed).
 
-
-Your turn! Change or add something in Markdown and commit and push to GitHub.
+Your turn! Change or add something in this file under your Name header and save the file.
