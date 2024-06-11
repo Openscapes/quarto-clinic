@@ -19,6 +19,8 @@ This `demo.qmd` file has an Python code chunks, Markdown-formatted text, and exa
 
 *TODO: edit this file to contain the content listed below*
 
+ADDING TEXT
+
 ### Edit and preview a demo.qmd file
 
 1.  Edit a .qmd page (uses demo.qmd file that has markdown for text, add hyperlink, add image, run Python code)
