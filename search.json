@@ -261,7 +261,7 @@
     "href": "index.html",
     "title": "Contributing to Quarto websites and books",
     "section": "",
-    "text": "TODO: edit Welcome page to include POP, What is Quarto. Brief. Move to Setup & Explore",
+    "text": "It’s possible to create beautiful documentation to share online with Quarto that auto-updates with GitHub. This is fairly new and incredibly cool. This Clinic is an example of a Quarto website — a really powerful way to create and share your work. You can communicate about science using the same reproducible workflow you and/or your colleagues use for analyses, whether or not you write code.\nCreating and editing websites with Quarto can be done without knowing R, Python or HTML, CSS, etc, however, Quarto integrates with these tools so you can make your websites as complex and beautiful as you like as you see examples and reuse and remix from others in the open science community.\nTo begin, you should have a GitHub account with access to the 2i2c Openscapes JupyterHub.",
     "crumbs": [
       "Welcome"
     ]
@@ -270,8 +270,18 @@
     "objectID": "index.html#welcome",
     "href": "index.html#welcome",
     "title": "Contributing to Quarto websites and books",
-    "section": "Welcome",
-    "text": "Welcome\nIt’s possible to create beautiful documentation to share online with Quarto that auto-updates with GitHub. This is very new and incredibly cool. This tutorial is an example of a quarto website — it is a really powerful way to create and share your work. You can communicate about science using the same reproducible workflow you and/or your colleagues use for analyses, whether or not you write code.\nCreating websites with Quarto can be done without knowing R, Python or HTML, CSS, etc, and that’s where we’ll start. However, Quarto integrates with these tools so you can make your websites as complex and beautiful as you like as you see examples and reuse and remix from others in the open community. This tutorial borrows heavily from a lot of great tutorials and resources you should check out too – there are links throughout.",
+    "section": "",
+    "text": "It’s possible to create beautiful documentation to share online with Quarto that auto-updates with GitHub. This is fairly new and incredibly cool. This Clinic is an example of a Quarto website — a really powerful way to create and share your work. You can communicate about science using the same reproducible workflow you and/or your colleagues use for analyses, whether or not you write code.\nCreating and editing websites with Quarto can be done without knowing R, Python or HTML, CSS, etc, however, Quarto integrates with these tools so you can make your websites as complex and beautiful as you like as you see examples and reuse and remix from others in the open science community.\nTo begin, you should have a GitHub account with access to the 2i2c Openscapes JupyterHub.",
+    "crumbs": [
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "index.html#purpose-outcomes-process-pop",
+    "href": "index.html#purpose-outcomes-process-pop",
+    "title": "Contributing to Quarto websites and books",
+    "section": "Purpose, Outcomes, Process (POP)",
+    "text": "Purpose, Outcomes, Process (POP)\nPurpose: NASA Openscapes Mentors learn workflows with Quarto and GitHub for contributing to the NASA Earthdata Cloud Cookbook or any site or book made with Quarto. An opportunity for Mentors to connect and skill-build together.\nOutcomes: Mentors build skills and are more equipped and empowered to contribute. This is a new clinic we can reuse and build on.\nProcess: A 1.5-hr clinic with demo’s and hands-on practice to guide folks through contributing to existing Quarto sites & books. Analogous to our GitHub Clinic. The clinic content is contained in this website that is built with Quarto on GitHub; there are no accompanying slide decks.\n\nIntroduction to Quarto using the 2i2c Openscapes JupyterHub.\nGitHub Workflow: How to clone the repo for this site, make a branch to work in, edit, commit and push your edits to GitHub, make a pull request, review and merge a pull request, and communicate what you’re doing at each step.",
     "crumbs": [
       "Welcome"
     ]
@@ -281,17 +291,17 @@
     "href": "index.html#what-is-quarto",
     "title": "Contributing to Quarto websites and books",
     "section": "What is Quarto?",
-    "text": "What is Quarto?\nQuarto helps you have your ideas and your code in one place, and present it in a beautiful way.\nQuarto unifies and extends the RMarkdown ecosystem - it unifies by combining the functionality of R Markdown, bookdown, distill, xaringian, etc into a single consistent system. And it extends in several ways: all features are possible beyond R too, including Python and Javascript. It also has more “guardrails”: accessibility and inclusion are centered in the design. Quarto is for people who love RMarkdown, and it’s for people who have never used RMarkdown.\nTODO: add Cookbook below\nThe ability for Quarto to streamline collaboration has been so cool and important for our NASA Openscapes project. Quarto has been a common place for us to collaborate - across R and Python languages and coding expertise.",
+    "text": "What is Quarto?\nQuarto helps you have your ideas and your code in one place, and present it in a beautiful way.\n\nQuarto is an open-source scientific and technical publishing system built on Pandoc. You can weave together narrative text and code to produce elegantly formatted output as documents, web pages, blog posts, books, presentations, and more.\n\nQuarto can be used to create dynamic content with Python, R, Julia, and Observable through your favorite IDE like JupyterHub or RStudio.\nThe ability for Quarto to streamline collaboration has been so cool and important for our NASA Openscapes project. Quarto is a common place for us to collaborate - across Python and R languages and varied levels of coding expertise and accessibility and inclusion are centered in the Quarto design.",
     "crumbs": [
       "Welcome"
     ]
   },
   {
-    "objectID": "index.html#what-is-this-tutorial",
-    "href": "index.html#what-is-this-tutorial",
+    "objectID": "index.html#what-is-this-clinic",
+    "href": "index.html#what-is-this-clinic",
     "title": "Contributing to Quarto websites and books",
-    "section": "What is this tutorial?",
-    "text": "What is this tutorial?\nThis is a 1.5-hour tutorial that can be used to teach or as self-paced learning.\nWe introduce Quarto by exploring this clinic website, and practicing the basic Quarto workflow using the 2i2c Openscapes JupyterHub for editing your website and GitHub in the browser to review proposed updates.\nQuarto.org is the go-to place for full documentation and more tutorials!",
+    "section": "What is this Clinic?",
+    "text": "What is this Clinic?\nThis is a 1.5-hour clinic that can be used to teach or as self-paced learning.\nWe introduce Quarto by exploring this clinic website, and practicing the basic Quarto workflow using the 2i2c Openscapes JupyterHub for editing your website and GitHub in the browser to review proposed updates.\nQuarto.org is the go-to place for full documentation and more tutorials!",
     "crumbs": [
       "Welcome"
     ]
@@ -301,7 +311,7 @@
     "href": "index.html#example-quarto-sites",
     "title": "Contributing to Quarto websites and books",
     "section": "Example Quarto sites",
-    "text": "Example Quarto sites\nA few Quarto websites from Openscapes - so far we have been using Quarto for documentation using Quarto and Markdown files and Jupyter Notebooks.\n\nChampions Lessons Series\nOpenscapes Approach Guide\nNASA Earthdata Cloud Cookbook\n2021 NASA Cloud Hackathon\nFaylab Lab Manual\nA Quarto tip a day, by Mine Çetinkaya-Rundel",
+    "text": "Example Quarto sites\nA few Quarto websites from Openscapes - so far we have been using Quarto for documentation using Quarto and Markdown files and Jupyter Notebooks.\n\nNASA Earthdata Cloud Cookbook\n2021 NASA Cloud Hackathon\nChampions Lessons Series\nOpenscapes Approach Guide\nFaylab Lab Manual\nA Quarto tip a day, by Mine Çetinkaya-Rundel",
     "crumbs": [
       "Welcome"
     ]
