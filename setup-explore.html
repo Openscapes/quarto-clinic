@@ -63,8 +63,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./lessons/index.html" rel="next">
-<link href="./index.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -116,7 +114,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./setup.html">Setup &amp; Explore</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Setup and Explore</li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -154,7 +152,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./setup.html" class="sidebar-item-text sidebar-link active">
+  <a href="./setup.qmd" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Setup &amp; Explore</span></a>
   </div>
 </li>
@@ -200,17 +198,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#setup-part-1-log-in-to-the-hub" id="toc-setup-part-1-log-in-to-the-hub" class="nav-link active" data-scroll-target="#setup-part-1-log-in-to-the-hub">Setup Part 1: Log in to the Hub</a></li>
   <li><a href="#explore" id="toc-explore" class="nav-link" data-scroll-target="#explore">Explore</a>
   <ul class="collapse">
-  <li><a href="#the-website-itself" id="toc-the-website-itself" class="nav-link" data-scroll-target="#the-website-itself">The website itself</a></li>
+  <li><a href="#the-website" id="toc-the-website" class="nav-link" data-scroll-target="#the-website">The website</a></li>
   <li><a href="#the-websites-source-repo" id="toc-the-websites-source-repo" class="nav-link" data-scroll-target="#the-websites-source-repo">The website’s source repo</a></li>
   <li><a href="#quarto.yml-intro" id="toc-quarto.yml-intro" class="nav-link" data-scroll-target="#quarto.yml-intro"><code>_quarto.yml</code> intro</a></li>
   </ul></li>
   <li><a href="#setup-part-2-clone-the-quarto-clinic-repo" id="toc-setup-part-2-clone-the-quarto-clinic-repo" class="nav-link" data-scroll-target="#setup-part-2-clone-the-quarto-clinic-repo">Setup Part 2: Clone the Quarto Clinic repo</a>
   <ul class="collapse">
   <li><a href="#create-a-new-branch" id="toc-create-a-new-branch" class="nav-link" data-scroll-target="#create-a-new-branch">Create a new branch</a></li>
+  <li><a href="#set-up-our-git-credentials" id="toc-set-up-our-git-credentials" class="nav-link" data-scroll-target="#set-up-our-git-credentials">Set up our Git credentials</a></li>
   </ul></li>
   <li><a href="#onward" id="toc-onward" class="nav-link" data-scroll-target="#onward">Onward!</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/Openscapes/quarto-clinic/edit/main/setup.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/Openscapes/quarto-clinic/blob/main/setup.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/Openscapes/quarto-clinic/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/Openscapes/quarto-clinic/edit/main/setup-explore.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/Openscapes/quarto-clinic/blob/main/setup-explore.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/Openscapes/quarto-clinic/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -234,10 +233,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>TODO: Do Setup after Welcome, then do Explore while Hub is initiating. Setup includes Hub login, clone, branch. Preview site is step 1 in Lessons: Edit Quarto site.</p>
+<p><em>TODO: Do Welcome, then Setup Part 1: Hub login, then Explore while Hub is initiating. Setup Part 2: clone, branch. Preview site is on next page: step 1 in Lessons: Edit Quarto site.</em></p>
 <section id="setup-part-1-log-in-to-the-hub" class="level2">
 <h2 class="anchored" data-anchor-id="setup-part-1-log-in-to-the-hub">Setup Part 1: Log in to the Hub</h2>
-<p>Go to the Hub https://openscapes.2i2c.cloud &gt; log in with your GitHub Account &gt; select the Python server.</p>
+<p>Go to the Hub <a href="https://openscapes.2i2c.cloud" class="uri">https://openscapes.2i2c.cloud</a> &gt; log in with your GitHub Account &gt; select the Python server.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><a href="https://openscapes.2i2c.cloud/"><img src="images/jupyterhub-2i2c-login.png" class="img-fluid figure-img" alt="Login page for the NASA Openscapes 2i2c JupyterHub, “the Hub”"></a></p>
@@ -252,15 +251,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <p><img src="images/jupyterhub-loading.png" class="img-fluid"></p>
 <p>It takes a few minutes for the Hub to load. Please be patient!</p>
-<p>While the server starts up, we’ll explore the GitHub Clinic website structure side by side with the repo.</p>
+<p>While the server starts up, we’ll explore the Quarto Clinic website structure side by side with the repo.</p>
 </section>
 <section id="explore" class="level2">
 <h2 class="anchored" data-anchor-id="explore">Explore</h2>
-<p>With this Clinic, we have a working example website that we will explore together. We’ll learn a few rules and look for patterns to get an understanding of what things to do to help you start customizing and making it your own. And you can continue to use this website as a reference after the clinic, along with <a href="https://quarto.org">Quarto</a> documentation.</p>
-<p>We’ll start our exploration online looking at the website architecture and GitHub repository. Then we’ll setup a copy for ourselves so that we can modify from a working example, which is a great way to learn something new. We’ll set it up so that any modifications (commits) will automatically be republished via GitHub Actions.</p>
-<section id="the-website-itself" class="level3">
-<h3 class="anchored" data-anchor-id="the-website-itself">The website itself</h3>
-<p><a href="https://openscapes.github.io/quarto-clinic/">This Quarto Clinic website</a> has 4 things you can see on the left sidebar:</p>
+<p>With this Clinic, we have a working example website that we will explore together. We’ll learn a few rules and look for patterns to get an understanding of what things to do to help you start customizing and making it your own. You can continue to use this website as a reference after the clinic, along with <a href="https://quarto.org">Quarto</a> documentation.</p>
+<p>We’ll start our exploration looking at the website architecture and its source GitHub repository. Then we’ll setup a copy for ourselves so that we can modify starting from a working example, which is a great way to learn something new.</p>
+<section id="the-website" class="level3">
+<h3 class="anchored" data-anchor-id="the-website">The website</h3>
+<p>This Quarto Clinic website has 4 things you can see on the left navbar:</p>
 <ul>
 <li>Welcome</li>
 <li>Setup &amp; Explore</li>
@@ -271,20 +270,34 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="the-websites-source-repo" class="level3">
 <h3 class="anchored" data-anchor-id="the-websites-source-repo">The website’s source repo</h3>
-<p>Let’s go to this website’s GitHub repository (also called a “repo”), <a href="https://github.com/Openscapes/quarto-clinic" class="uri">https://github.com/Openscapes/quarto-clinic</a>. You can also click there from any page in this tutorial website by clicking the GitHub octocat icon underneath the Openscapes logo in the left navbar (click it holding command on Mac, or control on a PC to open it in a different tab in your browser).</p>
-<p><strong>Have a look at the filenames.</strong> We can recognize the names of the webpages we’ve seen above, and they have red arrows marking them in the image below. You’ll see the “quarto-workflows” folder and the rest in this site are <code>.qmd</code> files, which are plain text Quarto files that can combine Markdown text with code. <code>index.qmd</code> is the home page. If you click inside “quarto-workflows” you’ll see a mix of filetypes!</p>
-<p><em>TODO: replace screenshots</em></p>
+<p><em>TODO: If we will make a new repo for every Clinic, we’ll need to update the repo link below, every time.</em></p>
+<p>Let’s go to this website’s GitHub repository (or “repo”), <a href="https://github.com/Openscapes/quarto-clinic" class="uri">https://github.com/Openscapes/quarto-clinic</a>. You can also click there from any page in this clinic website by clicking the GitHub Octocat icon underneath the Openscapes logo in the left navbar.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>To open a link in a new browser tab, hold command on Mac, or control on a PC, then click.</p>
+</div>
+</div>
+<p><strong>Have a look at the filenames.</strong> We can recognize the names of the webpages we see (and listed above), and they have red arrows marking them in the image below. Note that most files in this repo are <code>.qmd</code> files. These are plain text Quarto files that can combine Markdown text with code. <code>index.qmd</code> is the home page. When we click inside the <code>lessons</code> folder we see more <code>.qmd</code> files and an <code>images</code> folder that holds images used in the pages inside the Lessons section of the site.</p>
+<p><em>TODO: replace screenshots; red arrows for lessons, next-steps, setup (rename setup-explore)</em></p>
+<p><em>TODO: take text from <code>_render-vs-preview.qmd</code> then delete</em></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/quarto-files-github.png" class="img-fluid figure-img" style="width:80.0%" alt="Screenshot of files on GitHub with red arrows identifying the files that we saw in the left sidebar"></p>
 <figcaption>quarto-website-tutorial GitHub repository with files for webpages marked with red arrows</figcaption>
 </figure>
 </div>
-<p><strong>The <code>_site</code> folder</strong> has html files with names that should be familiar: they match the <code>.qmd</code> files we were just exploring. This folder is where Quarto stores files to build the website.</p>
 </section>
 <section id="quarto.yml-intro" class="level3">
 <h3 class="anchored" data-anchor-id="quarto.yml-intro"><code>_quarto.yml</code> intro</h3>
-<p>There is also a <code>_quarto.yml</code> file, which is the website’s configuration file. It is essentially metadata for the website that includes the order that the pages/chapters will be in. This is where you update the organization of your website: which page comes before another. If we compare side-by-side, you’ll see that the pages that appear on our website are listed there.</p>
+<p>There is also a <code>_quarto.yml</code> file, which is the website’s configuration file. It is essentially metadata for the website that includes the order that the pages / sections will be in. This is where we can update the organization of our website: which page comes before another, and how pages are named in the navbar. If we compare the repo and website side-by-side, we’ll see that the pages that appear on our website are listed there.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/quarto-yml-site-side-by-side3.png" class="img-fluid figure-img"></p>
@@ -296,33 +309,45 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="setup-part-2-clone-the-quarto-clinic-repo" class="level2">
 <h2 class="anchored" data-anchor-id="setup-part-2-clone-the-quarto-clinic-repo">Setup Part 2: Clone the Quarto Clinic repo</h2>
-<p>After our Hub server is loaded, we’ll clone the Quarto Clinic repository into the Hub.</p>
-<p><strong>Option A:</strong> Use the Git tab to Clone repo</p>
+<p>After our Hub server has loaded (Setup Part 1), we’ll clone the Quarto Clinic repository into the Hub.</p>
+<p><strong>Option A:</strong> In the Hub, use the Git tab to Clone the repo.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/jupyterhyb-clone-repo.png" class="img-fluid figure-img"></p>
 <figcaption>Clone a GitHub repository in the Hub</figcaption>
 </figure>
 </div>
-<p><strong>Option B:</strong> Do this by opening a terminal (File &gt; New &gt; Terminal). In the Terminal, <code>git clone</code> your repository and <code>cd</code> into it:</p>
+<p><strong>Option B:</strong> In the Hub, do this by opening a terminal (File &gt; New &gt; Terminal). In the Terminal, <code>git clone</code> your repository and <code>cd</code> into it:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone https://github.com/openscapes/quarto-clinic</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> quarto-clinic</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <section id="create-a-new-branch" class="level3">
 <h3 class="anchored" data-anchor-id="create-a-new-branch">Create a new branch</h3>
-<p>Working in a branch means you have your own version of the Quarto Clinic to edit and preview. Later, we’ll learn how to contribute your edits to the Main branch of the Clinic by making a “Pull Request”.</p>
-<p>Navigate into the <code>quarto-clinic</code> folder &gt; click the Git tab &gt; New Branch, with branch name = your name, to make it easy to identify in following exercises.</p>
+<p>Working in a branch means you have your own version of the Quarto Clinic to edit and preview. Later, we’ll learn how to contribute your edits to the Main branch of the Clinic by making a “Pull Request” on GitHub.</p>
+<p>Navigate into the <code>quarto-clinic</code> folder (In the Terminal: <code>cd quarto-clinic)</code> &gt; click the Git tab &gt; New Branch, with branch name = <em>your name</em>, to make it easy to identify your work in the exercises that follow.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/jupyterhub-git-branch.png" class="img-fluid figure-img"></p>
 <figcaption>Create a branch</figcaption>
 </figure>
 </div>
-<p><em>TODO add cmd line</em></p>
+<p><em>TODO add cmd line for creating a branch ?git checkout yourname</em></p>
+</section>
+<section id="set-up-our-git-credentials" class="level3">
+<h3 class="anchored" data-anchor-id="set-up-our-git-credentials">Set up our Git credentials</h3>
+<p><em>TODO: do we need to do <a href="https://nasa-openscapes.github.io/2021-Cloud-Hackathon/tutorials/00_Setup.html#step-5.1.-configure-git-git-config">Step 5.1. Configure Git (<code>git config</code>)</a>? (but ignore the push file part). Clarify the following text to say see the orange dot. click it to be prompted</em></p>
+<p>When you see the following screenshot, GitHub is asking for you to input your credentials. (Note: you see this screenshot when you have committed work to push to GitHub.com. In this case we have created a new branch in the Hub and it does not yet exist on GitHub.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/jupyterhub-git-credentials.png" class="img-fluid figure-img"></p>
+<figcaption>Prompt to add your Git credentials</figcaption>
+</figure>
+</div>
+<p>We’ll follow the instructions in the 2021 Cloud Hackathon to <a href="https://nasa-openscapes.github.io/2021-Cloud-Hackathon/tutorials/00_Setup.html#step-5.6.-setup-pat">Setup your Personal Access Token (PAT)</a>.</p>
 </section>
 </section>
 <section id="onward" class="level2">
 <h2 class="anchored" data-anchor-id="onward">Onward!</h2>
-<p>Now you are ready to start editing! The next chapter describes how to do this in the JupyterHub.</p>
+<p>Now we are ready to start editing! The next chapter describes how to do this in the JupyterHub.</p>
 
 
 </section>
@@ -881,18 +906,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
-      <a href="./index.html" class="pagination-link" aria-label="Welcome">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Welcome</span>
-      </a>          
-  </div>
-  <div class="nav-page nav-page-next">
-      <a href="./lessons/index.html" class="pagination-link" aria-label="Lessons">
-        <span class="nav-page-text">Lessons</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
-  </div>
-</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
@@ -901,7 +914,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/Openscapes/quarto-clinic/edit/main/setup.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/Openscapes/quarto-clinic/blob/main/setup.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/Openscapes/quarto-clinic/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/Openscapes/quarto-clinic/edit/main/setup-explore.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/Openscapes/quarto-clinic/blob/main/setup-explore.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/Openscapes/quarto-clinic/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This page is built with ❤️ and <a href="https://quarto.org/">Quarto</a>.</p>
 </div>
