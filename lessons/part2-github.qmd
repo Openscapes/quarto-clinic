@@ -31,8 +31,6 @@ Commit your edits with a good commit message and push your edits.
 
 ![Commit and Push](images/jupyterhub-git-commit-push.png){fig-align="left" width="50%"}
 
-*TODO: Add storing GitHub PAT, from 2021 Cloud Hackathon [Step 5.1. Configure Git (git config)](https://nasa-openscapes.github.io/2021-Cloud-Hackathon/tutorials/00_Setup.html#step-5.1.-configure-git-git-config). Add to setup.qmd, or part2-github.qmd when we’re prompted at pushing to GitHub.*
-
 In the Hub, in our own branch of the Quarto Clinic repo, we have made one or more edits to the Clinic files, committed those updates, and pushed those commit(s) to GitHub. How do our suggested contributions get incorporated into the main Quarto Clinic repo and website?
 
 ## Make a Pull Request
@@ -76,7 +74,7 @@ Now, switch to the 2i2c Hub to view the Cookbook preview as it would appear if t
     -   Go to the Main branch and pull so that we have the most recent changes from remote.
     -   `git checkout` to the branch that has the PR: reorg_how_to_guides (note, this PR has been merged and the branch deleted so you won't see this one; apply this example to your own)
     -   `quarto preview` - this will build the book with Andy's suggested edits. *TODO: Is this preview link still an issue?* <!-- -   At the end of the preview log, it says "Browse at 
-                                        <!--     https://openscapes.2i2c.cloud..." The Browse URL actually --> <!--     points to the production Hub!! We need it to point to --> <!--     staging since that's where we're working, so we use the URL --> <!--     staging.openscapes.2i2c.cloud.... (See minute 10:06 in the --> <!--     [video](https://youtu.be/2_F5Kr6gM1I?t=606).) -->
+                                            <!--     https://openscapes.2i2c.cloud..." The Browse URL actually --> <!--     points to the production Hub!! We need it to point to --> <!--     staging since that's where we're working, so we use the URL --> <!--     staging.openscapes.2i2c.cloud.... (See minute 10:06 in the --> <!--     [video](https://youtu.be/2_F5Kr6gM1I?t=606).) -->
 
 We can now view the changes in the built Quarto book and concurrently look at the files changed in GitHub.
 

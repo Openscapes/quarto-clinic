@@ -21,7 +21,7 @@ Stef will demo then it's your turn.
 Only make changes to the section under your name header (to prevent conflicts at a later stage)
 :::
 
-Now let's practice Markdown in this Quarto file and commit an edit to this file.
+Now let's practice Markdown in this Quarto file and commit an edit to this file. Open the `demo.qmd`
 
 Make an edit, preview, edit etc
 

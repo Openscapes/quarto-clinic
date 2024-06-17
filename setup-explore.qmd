@@ -85,7 +85,7 @@ Navigate into the `quarto-clinic` folder (In the Terminal: `cd quarto-clinic)` \
 
 ![Create a branch](images/jupyterhub-git-branch.png)
 
-*TODO add cmd line for creating a branch ?git checkout yourname*
+In the terminal: `git checkout -b yourname`
 
 ### Set up our Git credentials
 
