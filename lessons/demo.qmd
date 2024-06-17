@@ -1,5 +1,16 @@
 ---
-title: "`demo.qmd` aka Quarto Practice"
+title: '`demo.qmd` aka Quarto Practice'
+jupyter:
+  jupytext:
+    text_representation:
+      extension: .qmd
+      format_name: quarto
+      format_version: '1.0'
+      jupytext_version: 1.16.1
+  kernelspec:
+    display_name: Python 3 (ipykernel)
+    language: python
+    name: python3
 ---
 
 Quarto enables you to weave together content and executable code into a finished document.
@@ -25,7 +36,7 @@ Now let's practice Markdown in this Quarto file and commit an edit to this file.
 
 ### Stefanie
 
-Your first edit? Fix this tpyo.
+Your first edit? Fix this typo.
 
 #### **Headers**
 
