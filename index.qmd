@@ -17,11 +17,11 @@ The ability for Quarto to streamline collaboration has been so cool and importan
 
 **Outcomes:** Mentors build skills and are more equipped and empowered to contribute. This is a new clinic we can reuse and build on.
 
-**Process:** A 1.5-hr clinic with demo's and hands-on practice to guide folks through contributing to existing Quarto sites & books. Analogous to our GitHub Clinic. The clinic content is contained in this website that is built with Quarto on GitHub; there are no accompanying slide decks.
+**Process:** A 1.5-hr clinic that can be used to teach or as self-paced learning. with demo's and hands-on practice to guide folks through contributing to existing Quarto sites & books. Analogous to our GitHub Clinic. The clinic content is contained in this website that is built with Quarto on GitHub; there are no accompanying slide decks.
 
-1.  Introduction to Quarto using the 2i2c Openscapes JupyterHub.
+1.  Quarto Workflow: Use the 2i2c Openscapes JupyterHub to explore this clinic website and its source repository on GitHub, practice contributing to this site by editing a Quarto file or adding a new Jupyter Notebook and previewing the changes.
 
-2.  GitHub Workflow: How to clone the repo for this site, make a branch to work in, edit, commit and push your edits to GitHub, make a pull request, review and merge a pull request, and communicate what you’re doing at each step.
+2.  GitHub Workflow: Clone the repository for this site, make a branch to work in, edit, commit and push your edits to GitHub, make a pull request, review and merge a pull request, and communicate what you’re doing at each step.
 
 ## What is Quarto?
 
@@ -32,12 +32,6 @@ Quarto helps you have your ideas and your code in one place, and present it in a
 Quarto can be used to create dynamic content with Python, R, Julia, and Observable through your favorite IDE like JupyterHub or RStudio. Creating and editing websites with Quarto can be done without knowing R, Python or HTML, CSS, etc, however, Quarto integrates with these tools so you can make your websites as complex and beautiful as you like as you see examples and reuse and remix from others in the open science community.
 
 [Quarto.org](https://quarto.org) is the go-to place for full documentation and more tutorials!
-
-## What is this Clinic?
-
-This is a 1.5-hour clinic that can be used to teach or as self-paced learning.
-
-We introduce Quarto by exploring this clinic website and its source repository on GitHub, we'll practice the basic Quarto workflow using the 2i2c Openscapes JupyterHub for editing this site, and use GitHub in the browser to review proposed updates.
 
 ## Example Quarto sites
 

@@ -1,17 +1,17 @@
 ---
-title: "`demo.qmd` aka Quarto Practice"
+title: "`demo.qmd` Quarto Practice"
 ---
 
 Quarto enables you to weave together content and executable code into a finished document.
 
 This `demo.qmd` file has Markdown-formatted text, examples for adding hyperlinks and inserting images with alt-text, and a Python code chunk.
 
-## Edit and preview a demo.qmd file
-
 -   Headers. Headers are powerful in Quarto because they let you organize on the side of the page. They let you share a specific section of a page by copying the URL
 -   hyperlink something (cite the Cookbook and hyperlink it). Hyperlinking is done like this; lets you cite and give credit
 -   inspect this image with alt-txt
 -   Python code. manage echo, run
+
+Stef will demo then it's your turn.
 
 ## Task 1a: Edit a `.qmd` page
 
@@ -22,6 +22,8 @@ Only make changes to the section under your name header (to prevent conflicts at
 :::
 
 Now let's practice Markdown in this Quarto file and commit an edit to this file.
+
+Make an edit, preview, edit etc
 
 ### Stefanie
 
@@ -57,6 +59,8 @@ You can add options to executable code. The `echo: false` option disables the pr
 ### Julie
 
 Fix this tpyo.
+
+*TODO: copy activities text under each participant heading when it's settled*
 
 ### Andy
 
