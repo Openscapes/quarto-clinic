@@ -34,7 +34,7 @@ website:
     contents:
       - href: index.qmd
         text: Welcome
-      - href: setup.qmd
+      - href: setup-explore.qmd
         text: Setup & Explore
       - section: lessons/index.qmd
         text: Lessons
