@@ -6,6 +6,8 @@ title: "Part 2: Contribute via GitHub"
 
 *TODO: use text and some screenshot styles from 2021 Cloud Hackathon [Tracking changes section](https://nasa-openscapes.github.io/2021-Cloud-Hackathon/tutorials/00_Setup.html#step-5.-tracking-changes-optional). Those screenshots are so clean and text so clear.*
 
+*TODO: do we add this text? "We have set it up so that any modifications (commits) will automatically be republished via GitHub Actions."*
+
 GitHub commit, push, (move to GitHub.com….) pull request, review PRs, merge
 
 1.  Good commit messages
@@ -74,7 +76,7 @@ Now, switch to the 2i2c Hub to view the Cookbook preview as it would appear if t
     -   Go to the Main branch and pull so that we have the most recent changes from remote.
     -   `git checkout` to the branch that has the PR: reorg_how_to_guides (note, this PR has been merged and the branch deleted so you won't see this one; apply this example to your own)
     -   `quarto preview` - this will build the book with Andy's suggested edits. *TODO: Is this preview link still an issue?* <!-- -   At the end of the preview log, it says "Browse at 
-                                    <!--     https://openscapes.2i2c.cloud..." The Browse URL actually --> <!--     points to the production Hub!! We need it to point to --> <!--     staging since that's where we're working, so we use the URL --> <!--     staging.openscapes.2i2c.cloud.... (See minute 10:06 in the --> <!--     [video](https://youtu.be/2_F5Kr6gM1I?t=606).) -->
+                                        <!--     https://openscapes.2i2c.cloud..." The Browse URL actually --> <!--     points to the production Hub!! We need it to point to --> <!--     staging since that's where we're working, so we use the URL --> <!--     staging.openscapes.2i2c.cloud.... (See minute 10:06 in the --> <!--     [video](https://youtu.be/2_F5Kr6gM1I?t=606).) -->
 
 We can now view the changes in the built Quarto book and concurrently look at the files changed in GitHub.
 

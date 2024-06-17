@@ -2,19 +2,13 @@
 title: "Part 1: Edit a Quarto site"
 ---
 
-We will work through this Quarto Clinic site in the NASA Openscapes 2i2c JupyterHub ("the Hub"). The Hub has a python environment as well as Quarto installed. No further installations are required.
+The NASA Openscapes 2i2c JupyterHub ("the Hub") has a Python environment as well as Quarto installed. No further installations are required.
 
-*TODO: List here the thinks we'll do in this section*
+*TODO: List here the things we'll do in this section*
 
 ## Preview the site (aka Quarto preview)
 
-Let's start off by previewing our quarto site locally.
-
-quarto preview does X
-
-quarto render does Y
-
-In Terminal, type `quarto preview`, which will provide a URL with a preview of our site!
+Let's start off by previewing our quarto site locally. In Terminal, in the `quarto-clinic` folder, type `quarto preview`, which will provide a URL with a preview of our site!
 
 ``` bash
 quarto preview
@@ -23,29 +17,29 @@ quarto preview
 # Browse at https://openscapes.2i2c.cloud/user/jules32/proxy/4593/
 ```
 
-Click or copy this URL into a browser window; and arrange them so you can see them both. I make a bit more space in Jupyter by collapsing the left file menu by clicking on the file icon at the top of the left sidebar.
+Open this URL in a browser window and arrange your Hub and website preview windows so you can see them both. I make a bit more space in Jupyter by collapsing the left file menu by clicking on the file icon at the top of the left sidebar.
 
-TODO: note to open index.qmd add new screenshots
+*TODO: note to open index.qmd add new screenshots*
 
 ![](images/jupyter-side-by-side.png){fig-align="center"}
 
-Now that we have each set up our own GitHub clone of this Quarto Clinic website in the Hub, we can practice editing and rendering `.qmd` and `.ipynb` files. These are the workflows we use to contribute to the NASA Earthdata Cloud Cookbook and other Quarto websites and books.
+Now that we have each set up our own GitHub clone with our unique branch of this Quarto Clinic website in the Hub, we can practice editing and rendering `.qmd` and `.ipynb` files. These are the workflows we use to contribute to the NASA Earthdata Cloud Cookbook and other Quarto websites and books.
+
+*TODO: quarto preview does X; quarto render does Y*
 
 ## Choose Task 1a or 1b to do in breakouts
 
 ### Task 1a: Edit and preview a demo.qmd file
 
-Open [`lessons/demo.qmd`](demo.qmd) file. The suggestions / how-to are in the file.
+Open [`lessons/demo.qmd`](demo.qmd) file. The suggestions / how-to for this are in the file.
 
-*TODO: finesse opening demo.qmd; Markdown only shows when going to Raw then Markdown*
+*TODO: finesse opening demo.qmd; Markdown only shows when going to Raw then Markdown (this belongs in the demo file itself I think)*
 
 *TODO: screenshot*
 
 #### Make a small change and preview it
 
-Now we'll be able to see live changes in the preview as we edit in our `.qmd` files. Let's try it: Fix the typo, etc. Your preview window will refresh automatically! If it does not, you can also refresh the page manually. The refreshed previewed site will now display your changes!
-
-Save your changes
+Now we'll be able to see live changes in the preview as we edit in our `.qmd` files. Let's try it: Fix the typo, etc. When we save changes, our preview window will refresh automatically! If it does not, you can also refresh the page manually. The refreshed previewed site will now display your changes!
 
 ### Task 1b: Create a new `.ipynb` page
 

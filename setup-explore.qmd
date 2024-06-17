@@ -1,0 +1,102 @@
+---
+title: "Setup and Explore"
+editor: visual
+---
+
+*TODO: Do Welcome, then Setup Part 1: Hub login, then Explore while Hub is initiating. Setup Part 2: clone, branch. Preview site is on next page: step 1 in Lessons: Edit Quarto site.*
+
+## Setup Part 1: Log in to the Hub
+
+Go to the Hub <https://openscapes.2i2c.cloud> \> log in with your GitHub Account \> select the Python server.
+
+[![Login page for the NASA Openscapes 2i2c JupyterHub, "the Hub"](images/jupyterhub-2i2c-login.png)](https://openscapes.2i2c.cloud/)
+
+![Hub server options](images/jupyterhub-server-options.png)
+
+![](images/jupyterhub-loading.png)
+
+It takes a few minutes for the Hub to load. Please be patient!
+
+While the server starts up, we’ll explore the Quarto Clinic website structure side by side with the repo.
+
+## Explore
+
+With this Clinic, we have a working example website that we will explore together. We'll learn a few rules and look for patterns to get an understanding of what things to do to help you start customizing and making it your own. You can continue to use this website as a reference after the clinic, along with [Quarto](https://quarto.org) documentation.
+
+We'll start our exploration looking at the website architecture and its source GitHub repository. Then we'll setup a copy for ourselves so that we can modify starting from a working example, which is a great way to learn something new.
+
+### The website
+
+This Quarto Clinic website has 4 things you can see on the left navbar:
+
+-   Welcome
+-   Setup & Explore
+-   Lessons
+-   Next Steps
+
+Most of these are pages, but you'll see that "Lessons" has an arrow `>`; it is a folder with additional pages inside.
+
+### The website's source repo
+
+*TODO: If we will make a new repo for every Clinic, we'll need to update the repo link below, every time.*
+
+Let's go to this website's GitHub repository (or "repo"), <https://github.com/Openscapes/quarto-clinic>. You can also click there from any page in this clinic website by clicking the GitHub Octocat icon underneath the Openscapes logo in the left navbar.
+
+::: callout-tip
+To open a link in a new browser tab, hold command on Mac, or control on a PC, then click.
+:::
+
+**Have a look at the filenames.** We can recognize the names of the webpages we see (and listed above), and they have red arrows marking them in the image below. Note that most files in this repo are `.qmd` files. These are plain text Quarto files that can combine Markdown text with code. `index.qmd` is the home page. When we click inside the `lessons` folder we see more `.qmd` files and an `images` folder that holds images used in the pages inside the Lessons section of the site.
+
+*TODO: replace screenshots; red arrows for lessons, next-steps, setup (rename setup-explore)*
+
+*TODO: take text from `_render-vs-preview.qmd` then delete*
+
+![quarto-website-tutorial GitHub repository with files for webpages marked with red arrows](images/quarto-files-github.png){fig-alt="Screenshot of files on GitHub with red arrows identifying the files that we saw in the left sidebar" fig-align="center" width="80%"}
+
+### `_quarto.yml` intro
+
+There is also a `_quarto.yml` file, which is the website's configuration file. It is essentially metadata for the website that includes the order that the pages / sections will be in. This is where we can update the organization of our website: which page comes before another, and how pages are named in the navbar. If we compare the repo and website side-by-side, we'll see that the pages that appear on our website are listed there.
+
+![\_quarto.yml and website side-by-side](images/quarto-yml-site-side-by-side3.png){fig-align="center"}
+
+We'll learn more about how to interact with `_quarto.yml` in the [Lessons](lessons/index.qmd).
+
+## Setup Part 2: Clone the Quarto Clinic repo
+
+After our Hub server has loaded (Setup Part 1), we'll clone the Quarto Clinic repository into the Hub.
+
+**Option A:** In the Hub, use the Git tab to Clone the repo.
+
+![Clone a GitHub repository in the Hub](images/jupyterhyb-clone-repo.png)
+
+**Option B:** In the Hub, do this by opening a terminal (File \> New \> Terminal). In the Terminal, `git clone` your repository and `cd` into it:
+
+``` bash
+git clone https://github.com/openscapes/quarto-clinic
+cd quarto-clinic
+```
+
+### Create a new branch
+
+Working in a branch means you have your own version of the Quarto Clinic to edit and preview. Later, we'll learn how to contribute your edits to the Main branch of the Clinic by making a "Pull Request" on GitHub.
+
+Navigate into the `quarto-clinic` folder (In the Terminal: `cd quarto-clinic)` \> click the Git tab \> New Branch, with branch name = *your name*, to make it easy to identify your work in the exercises that follow.
+
+![Create a branch](images/jupyterhub-git-branch.png)
+
+*TODO add cmd line for creating a branch ?git checkout yourname*
+
+### Set up our Git credentials
+
+*TODO: do we need to do [Step 5.1. Configure Git (`git config`)](https://nasa-openscapes.github.io/2021-Cloud-Hackathon/tutorials/00_Setup.html#step-5.1.-configure-git-git-config)? (but ignore the push file part). Clarify the following text to say see the orange dot. click it to be prompted*
+
+When you see the following screenshot, GitHub is asking for you to input your credentials. (Note: you see this screenshot when you have committed work to push to GitHub.com. In this case we have created a new branch in the Hub and it does not yet exist on GitHub.
+
+![Prompt to add your Git credentials](images/jupyterhub-git-credentials.png)
+
+We'll follow the instructions in the 2021 Cloud Hackathon to [Setup your Personal Access Token (PAT)](https://nasa-openscapes.github.io/2021-Cloud-Hackathon/tutorials/00_Setup.html#step-5.6.-setup-pat).
+
+## Onward!
+
+Now we are ready to start editing! The next chapter describes how to do this in the JupyterHub.

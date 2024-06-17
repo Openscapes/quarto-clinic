@@ -5,9 +5,9 @@ subtitle: "Share open-source tutorials, onboarding docs, and much more"
 
 ## Welcome
 
-It's possible to create beautiful documentation to share online with [Quarto](https://quarto.org) that auto-updates with [GitHub](http://github.com). This is fairly new and incredibly cool. This Clinic is an example of a Quarto website --- a really powerful way to create and share your work. You can communicate about science using the same reproducible workflow you and/or your colleagues use for analyses, whether or not you write code.
+It's possible to create beautiful documentation to share online with [Quarto](https://quarto.org) that auto-updates with [GitHub](http://github.com). This Clinic is an example of a Quarto website --- a really powerful way to create and share your work. You can communicate about science using the same reproducible workflow you and/or your colleagues use for analyses, whether or not you write code.
 
-Creating and editing websites with Quarto can be done without knowing R, Python or HTML, CSS, etc, however, Quarto integrates with these tools so you can make your websites as complex and beautiful as you like as you see examples and reuse and remix from others in the open science community.
+The ability for Quarto to streamline collaboration has been so cool and important for our [NASA Openscapes](https://nasa-openscapes.github.io/) project. Quarto is a common place for us to collaborate - across Python and R languages and varied levels of coding expertise, and accessibility and inclusion are centered in the Quarto design.
 
 **To begin**, you should have a GitHub account with access to the 2i2c Openscapes JupyterHub.
 
@@ -17,43 +17,30 @@ Creating and editing websites with Quarto can be done without knowing R, Python 
 
 **Outcomes:** Mentors build skills and are more equipped and empowered to contribute. This is a new clinic we can reuse and build on.
 
-**Process:** A 1.5-hr clinic with demo's and hands-on practice to guide folks through contributing to existing Quarto sites & books. Analogous to our GitHub Clinic. The clinic content is contained in this website that is built with Quarto on GitHub; there are no accompanying slide decks.
+**Process:** A 1.5-hr clinic that can be used to teach or as self-paced learning. with demo's and hands-on practice to guide folks through contributing to existing Quarto sites & books. Analogous to our GitHub Clinic. The clinic content is contained in this website that is built with Quarto on GitHub; there are no accompanying slide decks.
 
-1.  Introduction to Quarto using the 2i2c Openscapes JupyterHub.
+1.  Quarto Workflow: Use the 2i2c Openscapes JupyterHub to explore this clinic website and its source repository on GitHub, practice contributing to this site by editing a Quarto file or adding a new Jupyter Notebook and previewing the changes.
 
-2.  GitHub Workflow: How to clone the repo for this site, make a branch to work in, edit, commit and push your edits to GitHub, make a pull request, review and merge a pull request, and communicate what you’re doing at each step.
+2.  GitHub Workflow: Clone the repository for this site, make a branch to work in, edit, commit and push your edits to GitHub, make a pull request, review and merge a pull request, and communicate what you’re doing at each step.
 
 ## What is Quarto?
 
-[Quarto](https://quarto.org) helps you have your ideas and your code in one place, and present it in a beautiful way.
+Quarto helps you have your ideas and your code in one place, and present it in a beautiful way.
 
 > Quarto is an open-source scientific and technical publishing system built on Pandoc. You can weave together narrative text and code to produce elegantly formatted output as documents, web pages, blog posts, books, presentations, and more.
 
-Quarto can be used to create dynamic content with Python, R, Julia, and Observable through your favorite IDE like JupyterHub or RStudio.
-
-The ability for Quarto to streamline collaboration has been so cool and important for our [NASA Openscapes](https://nasa-openscapes.github.io/) project. Quarto is a common place for us to collaborate - across Python and R languages and varied levels of coding expertise and accessibility and inclusion are centered in the Quarto design.
-
-## What is this Clinic?
-
-This is a 1.5-hour clinic that can be used to teach or as self-paced learning.
-
-We introduce Quarto by exploring this clinic website, and practicing the basic Quarto workflow using the 2i2c Openscapes JupyterHub for editing your website and GitHub in the browser to review proposed updates.
+Quarto can be used to create dynamic content with Python, R, Julia, and Observable through your favorite IDE like JupyterHub or RStudio. Creating and editing websites with Quarto can be done without knowing R, Python or HTML, CSS, etc, however, Quarto integrates with these tools so you can make your websites as complex and beautiful as you like as you see examples and reuse and remix from others in the open science community.
 
 [Quarto.org](https://quarto.org) is the go-to place for full documentation and more tutorials!
 
 ## Example Quarto sites
 
-A few Quarto websites from Openscapes - so far we have been using Quarto for documentation using Quarto and Markdown files and Jupyter Notebooks.
-
+-   [NASA Openscapes](https://nasa-openscapes.github.io/)
 -   [NASA Earthdata Cloud Cookbook](https://nasa-openscapes.github.io/earthdata-cloud-cookbook/)
 -   [2021 NASA Cloud Hackathon](https://nasa-openscapes.github.io/2021-Cloud-Hackathon/)
--   [Champions Lessons Series](https://openscapes.github.io/series)
+-   [Openscapes Champions Lessons Series](https://openscapes.github.io/series)
 -   [Openscapes Approach Guide](https://openscapes.github.io/approach-guide/)
 -   [Faylab Lab Manual](https://thefaylab.github.io/lab-manual/)
 -   [A Quarto tip a day](https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/), by Mine Çetinkaya-Rundel
 
-## About
-
-[Openscapes](https://openscapes.org) is about better science for future us. We help researchers reimagine data analysis, develop modern skills that are of immediate value to them, and cultivate collaborative and inclusive research teams as part of the broader global open movement.
-
-We're developing this tutorial to help folks with different levels of technical skills use [Quarto](https://quarto.org) for documentation and tutorial building. This tutorial was originally created for several different audiences: [NASA-Openscapes](https://nasa-openscapes.github.io) researcher support engineers using Python, communications directors at organizations promoting open science who do not identify as coders, and fisheries scientists curious about transitioning from RMarkdown. We're hoping it's useful to folks with backgrounds as wide as these; if you find it useful or have suggestions for improvement, please let us know by clicking "Edit this page" or "Report an issue" at the upper right side of any page.
+See many more examples at the [Quarto gallery](https://quarto.org/docs/gallery/)!
