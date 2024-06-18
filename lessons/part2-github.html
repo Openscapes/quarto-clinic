@@ -203,14 +203,14 @@ ul.task-list li input[type="checkbox"] {
 <section id="contribute-your-updates-using-github" class="level2">
 <h2 class="anchored" data-anchor-id="contribute-your-updates-using-github">Contribute your updates using GitHub</h2>
 <p><em>TODO: use text and some screenshot styles from 2021 Cloud Hackathon <a href="https://nasa-openscapes.github.io/2021-Cloud-Hackathon/tutorials/00_Setup.html#step-5.-tracking-changes-optional">Tracking changes section</a>. Those screenshots are so clean and text so clear.</em></p>
-<p><em>TODO: do we add this text? “We have set it up so that any modifications (commits) will automatically be republished via GitHub Actions.”</em></p>
+<p><em>TODO: add this text somewhere? “We have set it up so that any modifications (commits) will automatically be republished via GitHub Actions.”</em></p>
 <p>GitHub commit, push, (move to GitHub.com….) pull request, review PRs, merge</p>
 <ol type="1">
 <li>Good commit messages</li>
 <li>Push to GitHub then move to GitHub.com, screenshot yellow banner to compare and make a pull request</li>
 <li>Not finished proposing your updates? Can make Draft PR at the start so folks can see your thinking. Set Ready for Review when ready. Request specific reviewer(s).&nbsp;</li>
 <li>Condense/ adapt <a href="https://nasa-openscapes.github.io/earthdata-cloud-cookbook/contributing/workflow.html#review-a-pull-request">Review a pull request</a> from Cookbook; note using “suggesting” and commenting, “Start your Review” instead of adding single comments (fewer notifications)</li>
-<li><strong>Demo</strong>: have someone commit and push, PR, tag Stef as reviewer. Screenshare the above steps to review. That person screenshares to commit suggested edits, merge their PR.</li>
+<li><strong>Demo</strong>: Andy commit and push, make a pull request, tag Stef as reviewer. Screenshare the above steps to review. Andy screenshares to commit suggested edits, merge his pull request.</li>
 <li><strong>Task</strong>: people pair up to review each other’s PRs.</li>
 </ol>
 <section id="diff-stage-commit-and-push-your-edits-to-github" class="level3">
@@ -229,12 +229,14 @@ ul.task-list li input[type="checkbox"] {
 </figure>
 </div>
 <p>Commit your edits with a good commit message and push your edits.</p>
+<p><em>TODO: What makes a good commit message (from GitHub Clinic)</em></p>
 <div class="quarto-figure quarto-figure-left">
 <figure class="figure">
 <p><img src="images/jupyterhub-git-commit-push.png" class="img-fluid figure-img" style="width:50.0%"></p>
 <figcaption>Commit and Push</figcaption>
 </figure>
 </div>
+<p>On your first commit, you will be prompted to add your Git credentials. When you are working on a project over time, you can have them stored, following instructions in <a href="https://nasa-openscapes.github.io/2021-Cloud-Hackathon/tutorials/00_Setup.html#step-5.1.-configure-git-git-config">Configure Git (git config)</a> from the 2021 Cloud Hackathon.</p>
 <p>In the Hub, in our own branch of the Quarto Clinic repo, we have made one or more edits to the Clinic files, committed those updates, and pushed those commit(s) to GitHub. How do our suggested contributions get incorporated into the main Quarto Clinic repo and website?</p>
 </section>
 </section>
@@ -246,7 +248,7 @@ ul.task-list li input[type="checkbox"] {
 <p><img src="images/github-yellow-pr-banner.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:90.0%"></p>
 </figure>
 </div>
-<p>Not finished proposing your updates? Can make Draft PR at the start so folks can see your thinking. Set Ready for Review when ready and request specific reviewer(s).</p>
+<p>Not finished proposing your updates? You can set your Pull Request as a Draft at the start so folks can see your thinking. Set Ready for Review when ready and request a reviewer(s); preferable someone who knows about what you are contributing.</p>
 </section>
 <section id="review-a-pull-request" class="level2">
 <h2 class="anchored" data-anchor-id="review-a-pull-request">Review a pull request</h2>
@@ -284,7 +286,7 @@ ul.task-list li input[type="checkbox"] {
 <li>Go to the Main branch and pull so that we have the most recent changes from remote.</li>
 <li><code>git checkout</code> to the branch that has the PR: reorg_how_to_guides (note, this PR has been merged and the branch deleted so you won’t see this one; apply this example to your own)</li>
 <li><code>quarto preview</code> - this will build the book with Andy’s suggested edits. <em>TODO: Is this preview link still an issue?</em> <!-- -   At the end of the preview log, it says "Browse at 
-                                        <!--     https://openscapes.2i2c.cloud..." The Browse URL actually --> <!--     points to the production Hub!! We need it to point to --> <!--     staging since that's where we're working, so we use the URL --> <!--     staging.openscapes.2i2c.cloud.... (See minute 10:06 in the --> <!--     [video](https://youtu.be/2_F5Kr6gM1I?t=606).) --></li>
+                                            <!--     https://openscapes.2i2c.cloud..." The Browse URL actually --> <!--     points to the production Hub!! We need it to point to --> <!--     staging since that's where we're working, so we use the URL --> <!--     staging.openscapes.2i2c.cloud.... (See minute 10:06 in the --> <!--     [video](https://youtu.be/2_F5Kr6gM1I?t=606).) --></li>
 </ul></li>
 </ul>
 <p>We can now view the changes in the built Quarto book and concurrently look at the files changed in GitHub.</p>
