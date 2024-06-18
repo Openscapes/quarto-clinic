@@ -8,3 +8,6 @@
 _site/
 
 .DS_Store
+
+# Ignore notebook checkpoint files
+.ipynb_checkpoints
