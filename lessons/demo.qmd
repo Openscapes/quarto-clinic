@@ -4,26 +4,21 @@ title: "`demo.qmd` Quarto Practice"
 
 Quarto enables you to weave together content and executable code into a finished document.
 
-This `demo.qmd` file has Markdown-formatted text, examples for adding hyperlinks and inserting images with alt-text, and a Python code chunk.
+This `demo.qmd` file has Markdown-formatted text, examples for adding headers, hyperlinks, and inserting images with alt-text, and a Python code chunk.
 
--   Headers. Headers are powerful in Quarto because they let you organize on the side of the page. They let you share a specific section of a page by copying the URL
--   hyperlink something (cite the Cookbook and hyperlink it). Hyperlinking is done like this; lets you cite and give credit
--   inspect this image with alt-txt
--   Python code. manage echo, run
+Headers are powerful in Quarto because they let you organize on the side of the page. In a Quarto site, headers let you share a specific section of a page by clicking on a header and copying the URL.
 
-Stef will demo then it's your turn.
+Hyperlinking lets us cite our sources and inspirations and give credit.
+
+Python code in a `.qmd` file will be executed automatically. *TODO: draft manage echo, run*
 
 ## Task 1a: Edit a `.qmd` page
 
-*TODO: Edit down to what we need, duplicated under each name header*
+We can all practice Markdown in this Quarto file. Make an edit, preview how it will look in the site (quarto preview), edit, repeat.
 
 ::: callout-note
 Only make changes to the section under your name header (to prevent conflicts at a later stage)
 :::
-
-Now let's practice Markdown in this Quarto file and commit an edit to this file. Open the `demo.qmd`
-
-Make an edit, preview, edit etc
 
 ### Stefanie
 
@@ -39,7 +34,11 @@ We can make hyperlinks using the `[]()` pattern: you name the hyperlink in `[]` 
 
 #### **Images**
 
-We can include an image with the same `[]()` pattern, by adding a preceding exclamation point: `![]()`. The `[]` contain the caption and `()` contain the path to the image file. Other attributes like image size, alt text, and a hyperlink, are also set in this example:
+We can include an image with the same `[]()` pattern, by adding a preceding exclamation point: `![]()`. The `[]` contain the caption (optional) and `()` contain the path to the image file.
+
+![The Openscapes logo](/images/openscapes_hex.png){width="150"}
+
+Additional attributes like image size, alt text, and linking the image to a URL, are set inside `{}` in this example:
 
 [![The Openscapes logo](/images/openscapes_hex.png){fig-alt="Openscapes logo. A hexagonal shape with orange border, yellow background, the word openscapes in orange above a cartoon evoking a landscape of data plots" width="150"}](https://openscapes.org/)
 
