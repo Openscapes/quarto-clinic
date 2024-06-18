@@ -29,6 +29,8 @@ Make an edit, preview, edit etc
 
 Your first edit? Fix this tpyo.
 
+FIXING TYPO
+
 #### **Headers**
 
 We can make headers using `## Name`, `### Name`, etc. Headers are powerful in Quarto because they let you organize your content. You can share a specific subsection of a page by copying its URL.
@@ -49,7 +51,7 @@ When you **Render**, a document will be generated that includes both content and
 
 *TODO: day before clinic, make this Python code (don't add screenshot - fewer files to for folks to get distracted with, lighter weight repo)*
 
-```{r}
+```{python}
 #| echo: false
 2 * 2
 ```
