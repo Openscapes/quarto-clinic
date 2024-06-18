@@ -6,7 +6,7 @@ title: "Part 2: Contribute via GitHub"
 
 *TODO: use text and some screenshot styles from 2021 Cloud Hackathon [Tracking changes section](https://nasa-openscapes.github.io/2021-Cloud-Hackathon/tutorials/00_Setup.html#step-5.-tracking-changes-optional). Those screenshots are so clean and text so clear.*
 
-*TODO: do we add this text? "We have set it up so that any modifications (commits) will automatically be republished via GitHub Actions."*
+*TODO: add this text somewhere? "We have set it up so that any modifications (commits) will automatically be republished via GitHub Actions."*
 
 GitHub commit, push, (move to GitHub.com….) pull request, review PRs, merge
 
@@ -14,7 +14,7 @@ GitHub commit, push, (move to GitHub.com….) pull request, review PRs, merge
 2.  Push to GitHub then move to GitHub.com, screenshot yellow banner to compare and make a pull request
 3.  Not finished proposing your updates? Can make Draft PR at the start so folks can see your thinking. Set Ready for Review when ready. Request specific reviewer(s). 
 4.  Condense/ adapt [Review a pull request](https://nasa-openscapes.github.io/earthdata-cloud-cookbook/contributing/workflow.html#review-a-pull-request) from Cookbook; note using “suggesting” and commenting, “Start your Review” instead of adding single comments (fewer notifications)
-5.  **Demo**: have someone commit and push, PR, tag Stef as reviewer. Screenshare the above steps to review. That person screenshares to commit suggested edits, merge their PR.
+5.  **Demo**: Andy commit and push, make a pull request, tag Stef as reviewer. Screenshare the above steps to review. Andy screenshares to commit suggested edits, merge his pull request.
 6.  **Task**: people pair up to review each other’s PRs.
 
 ### Diff, Stage, Commit, and Push your edits to GitHub
@@ -29,7 +29,11 @@ In the Git tab "stage" your saved changes.
 
 Commit your edits with a good commit message and push your edits.
 
+*TODO: What makes a good commit message (from GitHub Clinic)*
+
 ![Commit and Push](images/jupyterhub-git-commit-push.png){fig-align="left" width="50%"}
+
+On your first commit, you will be prompted to add your Git credentials. When you are working on a project over time, you can have them stored, following instructions in [Configure Git (git config)](https://nasa-openscapes.github.io/2021-Cloud-Hackathon/tutorials/00_Setup.html#step-5.1.-configure-git-git-config) from the 2021 Cloud Hackathon.
 
 In the Hub, in our own branch of the Quarto Clinic repo, we have made one or more edits to the Clinic files, committed those updates, and pushed those commit(s) to GitHub. How do our suggested contributions get incorporated into the main Quarto Clinic repo and website?
 
@@ -39,7 +43,7 @@ After pushing your edits, go to <https://github.com/Openscapes/quarto-clinic/> a
 
 ![](images/github-yellow-pr-banner.png){fig-align="left" width="90%"}
 
-Not finished proposing your updates? Can make Draft PR at the start so folks can see your thinking. Set Ready for Review when ready and request specific reviewer(s).
+Not finished proposing your updates? You can set your Pull Request as a Draft at the start so folks can see your thinking. Set Ready for Review when ready and request a reviewer(s); preferable someone who knows about what you are contributing.
 
 ## Review a pull request
 
@@ -74,7 +78,7 @@ Now, switch to the 2i2c Hub to view the Cookbook preview as it would appear if t
     -   Go to the Main branch and pull so that we have the most recent changes from remote.
     -   `git checkout` to the branch that has the PR: reorg_how_to_guides (note, this PR has been merged and the branch deleted so you won't see this one; apply this example to your own)
     -   `quarto preview` - this will build the book with Andy's suggested edits. *TODO: Is this preview link still an issue?* <!-- -   At the end of the preview log, it says "Browse at 
-                                            <!--     https://openscapes.2i2c.cloud..." The Browse URL actually --> <!--     points to the production Hub!! We need it to point to --> <!--     staging since that's where we're working, so we use the URL --> <!--     staging.openscapes.2i2c.cloud.... (See minute 10:06 in the --> <!--     [video](https://youtu.be/2_F5Kr6gM1I?t=606).) -->
+                                                <!--     https://openscapes.2i2c.cloud..." The Browse URL actually --> <!--     points to the production Hub!! We need it to point to --> <!--     staging since that's where we're working, so we use the URL --> <!--     staging.openscapes.2i2c.cloud.... (See minute 10:06 in the --> <!--     [video](https://youtu.be/2_F5Kr6gM1I?t=606).) -->
 
 We can now view the changes in the built Quarto book and concurrently look at the files changed in GitHub.
 
