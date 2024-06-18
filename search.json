@@ -1,5 +1,128 @@
 [
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Contributing to Quarto websites and books",
+    "section": "",
+    "text": "It’s possible to create beautiful documentation to share online with Quarto that auto-updates with GitHub. This Clinic is an example of a Quarto website — a really powerful way to create and share your work. You can communicate about science using the same reproducible workflow you and/or your colleagues use for analyses, whether or not you write code.\nThe ability for Quarto to streamline collaboration has been so cool and important for our NASA Openscapes project. Quarto is a common place for us to collaborate - across Python and R languages and varied levels of coding expertise, and accessibility and inclusion are centered in the Quarto design.\nTo begin, you should have a GitHub account with access to the 2i2c Openscapes JupyterHub.",
+    "crumbs": [
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "index.html#welcome",
+    "href": "index.html#welcome",
+    "title": "Contributing to Quarto websites and books",
+    "section": "",
+    "text": "It’s possible to create beautiful documentation to share online with Quarto that auto-updates with GitHub. This Clinic is an example of a Quarto website — a really powerful way to create and share your work. You can communicate about science using the same reproducible workflow you and/or your colleagues use for analyses, whether or not you write code.\nThe ability for Quarto to streamline collaboration has been so cool and important for our NASA Openscapes project. Quarto is a common place for us to collaborate - across Python and R languages and varied levels of coding expertise, and accessibility and inclusion are centered in the Quarto design.\nTo begin, you should have a GitHub account with access to the 2i2c Openscapes JupyterHub.",
+    "crumbs": [
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "index.html#purpose-outcomes-process-pop",
+    "href": "index.html#purpose-outcomes-process-pop",
+    "title": "Contributing to Quarto websites and books",
+    "section": "Purpose, Outcomes, Process (POP)",
+    "text": "Purpose, Outcomes, Process (POP)\nPurpose: NASA Openscapes Mentors learn workflows with Quarto and GitHub for contributing to the NASA Earthdata Cloud Cookbook or any site or book made with Quarto. An opportunity for Mentors to connect and skill-build together.\nOutcomes: Mentors build skills and are more equipped and empowered to contribute. This is a new clinic we can reuse and build on.\nProcess: A 1.5-hr clinic that can be used to teach or as self-paced learning. with demo’s and hands-on practice to guide folks through contributing to existing Quarto sites & books. Analogous to our GitHub Clinic. The clinic content is contained in this website that is built with Quarto on GitHub; there are no accompanying slide decks.\n\nQuarto Workflow: Use the 2i2c Openscapes JupyterHub to explore this clinic website and its source repository on GitHub, practice contributing to this site by editing a Quarto file or adding a new Jupyter Notebook and previewing the changes.\nGitHub Workflow: Clone the repository for this site, make a branch to work in, edit, commit and push your edits to GitHub, make a pull request, review and merge a pull request, and communicate what you’re doing at each step.",
+    "crumbs": [
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "index.html#what-is-quarto",
+    "href": "index.html#what-is-quarto",
+    "title": "Contributing to Quarto websites and books",
+    "section": "What is Quarto?",
+    "text": "What is Quarto?\nQuarto helps you have your ideas and your code in one place, and present it in a beautiful way.\n\nQuarto is an open-source scientific and technical publishing system built on Pandoc. You can weave together narrative text and code to produce elegantly formatted output as documents, web pages, blog posts, books, presentations, and more.\n\nQuarto can be used to create dynamic content with Python, R, Julia, and Observable through your favorite IDE like JupyterHub or RStudio. Creating and editing websites with Quarto can be done without knowing R, Python or HTML, CSS, etc, however, Quarto integrates with these tools so you can make your websites as complex and beautiful as you like as you see examples and reuse and remix from others in the open science community.\nQuarto.org is the go-to place for full documentation and more tutorials!",
+    "crumbs": [
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "index.html#example-quarto-sites",
+    "href": "index.html#example-quarto-sites",
+    "title": "Contributing to Quarto websites and books",
+    "section": "Example Quarto sites",
+    "text": "Example Quarto sites\n\nNASA Openscapes\nNASA Earthdata Cloud Cookbook\n2021 NASA Cloud Hackathon\nOpenscapes Champions Lessons Series\nOpenscapes Approach Guide\nFaylab Lab Manual\nA Quarto tip a day, by Mine Çetinkaya-Rundel\n\nSee many more examples at the Quarto gallery!",
+    "crumbs": [
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "lessons/demo.html",
+    "href": "lessons/demo.html",
+    "title": "demo.qmd Quarto Practice",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document.\nThis demo.qmd file has Markdown-formatted text, examples for adding hyperlinks and inserting images with alt-text, and a Python code chunk.\nStef will demo then it’s your turn.",
+    "crumbs": [
+      "Lessons",
+      "demo.qmd practice file"
+    ]
+  },
+  {
+    "objectID": "lessons/demo.html#task-1a-edit-a-.qmd-page",
+    "href": "lessons/demo.html#task-1a-edit-a-.qmd-page",
+    "title": "demo.qmd Quarto Practice",
+    "section": "Task 1a: Edit a .qmd page",
+    "text": "Task 1a: Edit a .qmd page\nTODO: Edit down to what we need, duplicated under each name header\n\n\n\n\n\n\nNote\n\n\n\nOnly make changes to the section under your name header (to prevent conflicts at a later stage)\n\n\nNow let’s practice Markdown in this Quarto file and commit an edit to this file.\nMake an edit, preview, edit etc\n\nStefanie\nYour first edit? Fix this tpyo.\n\nHeaders\nWe can make headers using ## Name, ### Name, etc. Headers are powerful in Quarto because they let you organize your content. You can share a specific subsection of a page by copying its URL.\n\n\nHyperlinks\nWe can make hyperlinks using the []() pattern: you name the hyperlink in [] and put the URL in (). For example, here’s a link to Markdown Basics. Hyperlinking lets us cite and give credit to our sources, like the NASA Earthdata Cloud Cookbook (Barrett et al.).\n\n\nImages\nWe can include an image with the same []() pattern, by adding a preceding exclamation point: ![](). The [] contain the caption and () contain the path to the image file. Other attributes like image size, alt text, and a hyperlink, are also set in this example:\n\n\n\nThe Openscapes logo\n\n\n\n\nCode\nWhen you Render, a document will be generated that includes both content and the output of embedded code. You can embed code like this:\nTODO: day before clinic, make this Python code (don’t add screenshot - fewer files to for folks to get distracted with, lighter weight repo)\n\n\n[1] 4\n\n\nYou can add options to executable code. The echo: false option disables the printing of code (only output is displayed).\n\n\n\nJulie\nFix this tpyo.\nTODO: copy activities text under each participant heading when it’s settled\n\n\nAndy\nFix this tpyo.",
+    "crumbs": [
+      "Lessons",
+      "demo.qmd practice file"
+    ]
+  },
+  {
+    "objectID": "lessons/demo.html#your-turn",
+    "href": "lessons/demo.html#your-turn",
+    "title": "demo.qmd Quarto Practice",
+    "section": "Your turn!",
+    "text": "Your turn!\nChange or add something to this file under your Name header and save the file.",
+    "crumbs": [
+      "Lessons",
+      "demo.qmd practice file"
+    ]
+  },
+  {
+    "objectID": "lessons/index.html",
+    "href": "lessons/index.html",
+    "title": "Practice",
+    "section": "",
+    "text": "TODO: Drastically reduce this page’s text. Get to the doing. This index page should say, hey here’s 2 things we’ll practice - Edit a Quarto site, and Contribute via GitHub. Here’s the Basic Workflow",
+    "crumbs": [
+      "Lessons"
+    ]
+  },
+  {
+    "objectID": "lessons/index.html#basic-workflow",
+    "href": "lessons/index.html#basic-workflow",
+    "title": "Practice",
+    "section": "Basic Workflow",
+    "text": "Basic Workflow\nHow do you work in Quarto? You can use whichever tool you’re comfortable with (Jupyter, RStudio, GitHub, VS Code, etc). Developing your Quarto site will have the same basic workflow, no matter which tool you use. It is very iterative.\n\nAuthoring: write text, code, images, etc in a file. Supported files include .md, .Rmd, .qmd, .ipynb…\nUpdate _quarto.yml as needed (for example, if you’ve created a new file you’d like included in your site)\nRender individual files and/or the whole website\nRepeat, repeat, repeat\nCommit and push your updates to GitHub, they will publish automatically!\nRepeat all of the above to make the website as you’d like!",
+    "crumbs": [
+      "Lessons"
+    ]
+  },
+  {
+    "objectID": "lessons/index.html#authoring",
+    "href": "lessons/index.html#authoring",
+    "title": "Practice",
+    "section": "Authoring",
+    "text": "Authoring\nTODO: change “authoring” heading? Move to “Edit a Quarto site”\nAs an author, you have a lot of options of how your text will be formatted, arranged, and interlinked. You will be writing in Markdown, which is a lightweight text formatting language. The Quarto documentation about authoring introduces markdown-basics that will get you started.\nEach page of our site has a similar first few lines - this YAML, like we saw in our _quarto.yml and it is indicated by two sets of 3 dashes --- :\n---\ntitle: My title\n---\nYou’re able to add more features to individual pages by including it in the YAML, which for the most part here only includes a title. See Quarto excecution options for more information of what you can include in the YAML.",
+    "crumbs": [
+      "Lessons"
+    ]
+  },
+  {
+    "objectID": "lessons/index.html#update-_quarto.yml",
+    "href": "lessons/index.html#update-_quarto.yml",
+    "title": "Practice",
+    "section": "Update _quarto.yml",
+    "text": "Update _quarto.yml\nTODO: move this to Edit a Quarto site: Preview your updates (Regroup, 10 min)\nLet’s have a closer look at the _quarto.yml file.\nThis type of file (.yml or .yaml) is written in YAML (“Yet Another Markup Language”). You’ll be able to shift the arrangement of webpages by reordering/adding/deleting them in the _quarto.yml file following the patterns you see in this example.\n\n\n\n_quarto.yml and website side-by-side\n\n\nNotice that there are multiple ways in the _quarto.yml for you to include a file in your website. For example, in the above image, the “First Observations” we see in the left sidebar of the published website (right image) is represented in _quarto.yml (left image) over two lines, with line 36 indicating the file reference and line 37 indicating the text to show up in the left sidebar. However, “From RStudio” is only represented in one line of _quarto.yml, on line 43. This represents two strategies for including a file in your website. By default, the title of a specified file will show up in the website’s sidebar, which is what is happening with the “From RStudio” example. If you would like more control over what is written in the sidebar vs the title of your files, then the approach we took with “First Observations” is what you’ll want to do: you’ll see that only “First Observations” shows up in the sidebar as we specified in _quarto.yml, but the page’s title says “First Observations & Setup” (which in our preference was too long for the sidebar).\n\n\n\n\n\n\nNote\n\n\n\nAs you modify _quarto.yml, the most important thing to know is that spacing matters. Pay attention to whether text is indented by one, two, four, or other spaces, and make sure you follow it; if your site is not looking as expected it is likely a silent error in your YAML. Some text editors like RStudio provide debugging support for YAML and are highly recommended to save you time and heartache.",
+    "crumbs": [
+      "Lessons"
+    ]
+  },
+  {
     "objectID": "setup-explore.html",
     "href": "setup-explore.html",
     "title": "Setup and Explore",
@@ -47,79 +170,6 @@
     "text": "Onward!\nNow we are ready to start editing! The next chapter describes how to do this in the JupyterHub.",
     "crumbs": [
       "Setup & Explore"
-    ]
-  },
-  {
-    "objectID": "next-steps.html",
-    "href": "next-steps.html",
-    "title": "Next Steps",
-    "section": "",
-    "text": "Make sure you’ve saved your file! There might be a slight delay depending on your JupyterHub setup.\n\n\n\nCheck the specific notebook, are there any `—` throughout to denote line breaks rather than yaml? They might be causing the issue; consider deleting those.\nAlso check how long the first raw cell is. Are there level-1 headers (#)? Try removing them.",
-    "crumbs": [
-      "Next Steps"
-    ]
-  },
-  {
-    "objectID": "next-steps.html#troubleshooting",
-    "href": "next-steps.html#troubleshooting",
-    "title": "Next Steps",
-    "section": "",
-    "text": "Make sure you’ve saved your file! There might be a slight delay depending on your JupyterHub setup.\n\n\n\nCheck the specific notebook, are there any `—` throughout to denote line breaks rather than yaml? They might be causing the issue; consider deleting those.\nAlso check how long the first raw cell is. Are there level-1 headers (#)? Try removing them.",
-    "crumbs": [
-      "Next Steps"
-    ]
-  },
-  {
-    "objectID": "next-steps.html#where-to-get-help-and-learn-more",
-    "href": "next-steps.html#where-to-get-help-and-learn-more",
-    "title": "Next Steps",
-    "section": "Where to get help and learn more",
-    "text": "Where to get help and learn more\n\nhttps://quarto.org/\nA Quarto tip a day, by Mine Çetinkaya-Rundel, July 2022",
-    "crumbs": [
-      "Next Steps"
-    ]
-  },
-  {
-    "objectID": "next-steps.html#where-to-contribute",
-    "href": "next-steps.html#where-to-contribute",
-    "title": "Next Steps",
-    "section": "Where to contribute",
-    "text": "Where to contribute\nWe can use these skills to contribute to many Quarto websites and books.\n\nNASA Earthdata Cloud Cookbook\nNASA Openscapes site\n\ne.g. add a link to your slides or recording of a presentation\n\nOpenscapes Approach Guide\nOpenscapes Champions Lessons Series",
-    "crumbs": [
-      "Next Steps"
-    ]
-  },
-  {
-    "objectID": "lessons/demo.html",
-    "href": "lessons/demo.html",
-    "title": "demo.qmd Quarto Practice",
-    "section": "",
-    "text": "Quarto enables you to weave together content and executable code into a finished document.\nThis demo.qmd file has Markdown-formatted text, examples for adding hyperlinks and inserting images with alt-text, and a Python code chunk.\nStef will demo then it’s your turn.",
-    "crumbs": [
-      "Lessons",
-      "demo.qmd practice file"
-    ]
-  },
-  {
-    "objectID": "lessons/demo.html#task-1a-edit-a-.qmd-page",
-    "href": "lessons/demo.html#task-1a-edit-a-.qmd-page",
-    "title": "demo.qmd Quarto Practice",
-    "section": "Task 1a: Edit a .qmd page",
-    "text": "Task 1a: Edit a .qmd page\nTODO: Edit down to what we need, duplicated under each name header\n\n\n\n\n\n\nNote\n\n\n\nOnly make changes to the section under your name header (to prevent conflicts at a later stage)\n\n\nNow let’s practice Markdown in this Quarto file and commit an edit to this file.\nMake an edit, preview, edit etc\n\nStefanie\nYour first edit? Fix this tpyo.\n\nHeaders\nWe can make headers using ## Name, ### Name, etc. Headers are powerful in Quarto because they let you organize your content. You can share a specific subsection of a page by copying its URL.\n\n\nHyperlinks\nWe can make hyperlinks using the []() pattern: you name the hyperlink in [] and put the URL in (). For example, here’s a link to Markdown Basics. Hyperlinking lets us cite and give credit to our sources, like the NASA Earthdata Cloud Cookbook (Barrett et al.).\n\n\nImages\nWe can include an image with the same []() pattern, by adding a preceding exclamation point: ![](). The [] contain the caption and () contain the path to the image file. Other attributes like image size, alt text, and a hyperlink, are also set in this example:\n\n\n\nThe Openscapes logo\n\n\n\n\nCode\nWhen you Render, a document will be generated that includes both content and the output of embedded code. You can embed code like this:\nTODO: day before clinic, make this Python code (don’t add screenshot - fewer files to for folks to get distracted with, lighter weight repo)\n\n\n[1] 4\n\n\nYou can add options to executable code. The echo: false option disables the printing of code (only output is displayed).\n\n\n\nJulie\nFix this tpyo.\nTODO: copy activities text under each participant heading when it’s settled\n\n\nAndy\nFix this tpyo.",
-    "crumbs": [
-      "Lessons",
-      "demo.qmd practice file"
-    ]
-  },
-  {
-    "objectID": "lessons/demo.html#your-turn",
-    "href": "lessons/demo.html#your-turn",
-    "title": "demo.qmd Quarto Practice",
-    "section": "Your turn!",
-    "text": "Your turn!\nChange or add something to this file under your Name header and save the file.",
-    "crumbs": [
-      "Lessons",
-      "demo.qmd practice file"
     ]
   },
   {
@@ -222,93 +272,43 @@
     ]
   },
   {
-    "objectID": "lessons/index.html",
-    "href": "lessons/index.html",
-    "title": "Practice",
+    "objectID": "next-steps.html",
+    "href": "next-steps.html",
+    "title": "Next Steps",
     "section": "",
-    "text": "TODO: Drastically reduce this page’s text. Get to the doing. This index page should say, hey here’s 2 things we’ll practice - Edit a Quarto site, and Contribute via GitHub. Here’s the Basic Workflow",
+    "text": "Make sure you’ve saved your file! There might be a slight delay depending on your JupyterHub setup.\n\n\n\nCheck the specific notebook, are there any `—` throughout to denote line breaks rather than yaml? They might be causing the issue; consider deleting those.\nAlso check how long the first raw cell is. Are there level-1 headers (#)? Try removing them.",
     "crumbs": [
-      "Lessons"
+      "Next Steps"
     ]
   },
   {
-    "objectID": "lessons/index.html#basic-workflow",
-    "href": "lessons/index.html#basic-workflow",
-    "title": "Practice",
-    "section": "Basic Workflow",
-    "text": "Basic Workflow\nHow do you work in Quarto? You can use whichever tool you’re comfortable with (Jupyter, RStudio, GitHub, VS Code, etc). Developing your Quarto site will have the same basic workflow, no matter which tool you use. It is very iterative.\n\nAuthoring: write text, code, images, etc in a file. Supported files include .md, .Rmd, .qmd, .ipynb…\nUpdate _quarto.yml as needed (for example, if you’ve created a new file you’d like included in your site)\nRender individual files and/or the whole website\nRepeat, repeat, repeat\nCommit and push your updates to GitHub, they will publish automatically!\nRepeat all of the above to make the website as you’d like!",
-    "crumbs": [
-      "Lessons"
-    ]
-  },
-  {
-    "objectID": "lessons/index.html#authoring",
-    "href": "lessons/index.html#authoring",
-    "title": "Practice",
-    "section": "Authoring",
-    "text": "Authoring\nTODO: change “authoring” heading? Move to “Edit a Quarto site”\nAs an author, you have a lot of options of how your text will be formatted, arranged, and interlinked. You will be writing in Markdown, which is a lightweight text formatting language. The Quarto documentation about authoring introduces markdown-basics that will get you started.\nEach page of our site has a similar first few lines - this YAML, like we saw in our _quarto.yml and it is indicated by two sets of 3 dashes --- :\n---\ntitle: My title\n---\nYou’re able to add more features to individual pages by including it in the YAML, which for the most part here only includes a title. See Quarto excecution options for more information of what you can include in the YAML.",
-    "crumbs": [
-      "Lessons"
-    ]
-  },
-  {
-    "objectID": "lessons/index.html#update-_quarto.yml",
-    "href": "lessons/index.html#update-_quarto.yml",
-    "title": "Practice",
-    "section": "Update _quarto.yml",
-    "text": "Update _quarto.yml\nTODO: move this to Edit a Quarto site: Preview your updates (Regroup, 10 min)\nLet’s have a closer look at the _quarto.yml file.\nThis type of file (.yml or .yaml) is written in YAML (“Yet Another Markup Language”). You’ll be able to shift the arrangement of webpages by reordering/adding/deleting them in the _quarto.yml file following the patterns you see in this example.\n\n\n\n_quarto.yml and website side-by-side\n\n\nNotice that there are multiple ways in the _quarto.yml for you to include a file in your website. For example, in the above image, the “First Observations” we see in the left sidebar of the published website (right image) is represented in _quarto.yml (left image) over two lines, with line 36 indicating the file reference and line 37 indicating the text to show up in the left sidebar. However, “From RStudio” is only represented in one line of _quarto.yml, on line 43. This represents two strategies for including a file in your website. By default, the title of a specified file will show up in the website’s sidebar, which is what is happening with the “From RStudio” example. If you would like more control over what is written in the sidebar vs the title of your files, then the approach we took with “First Observations” is what you’ll want to do: you’ll see that only “First Observations” shows up in the sidebar as we specified in _quarto.yml, but the page’s title says “First Observations & Setup” (which in our preference was too long for the sidebar).\n\n\n\n\n\n\nNote\n\n\n\nAs you modify _quarto.yml, the most important thing to know is that spacing matters. Pay attention to whether text is indented by one, two, four, or other spaces, and make sure you follow it; if your site is not looking as expected it is likely a silent error in your YAML. Some text editors like RStudio provide debugging support for YAML and are highly recommended to save you time and heartache.",
-    "crumbs": [
-      "Lessons"
-    ]
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Contributing to Quarto websites and books",
+    "objectID": "next-steps.html#troubleshooting",
+    "href": "next-steps.html#troubleshooting",
+    "title": "Next Steps",
     "section": "",
-    "text": "It’s possible to create beautiful documentation to share online with Quarto that auto-updates with GitHub. This Clinic is an example of a Quarto website — a really powerful way to create and share your work. You can communicate about science using the same reproducible workflow you and/or your colleagues use for analyses, whether or not you write code.\nThe ability for Quarto to streamline collaboration has been so cool and important for our NASA Openscapes project. Quarto is a common place for us to collaborate - across Python and R languages and varied levels of coding expertise, and accessibility and inclusion are centered in the Quarto design.\nTo begin, you should have a GitHub account with access to the 2i2c Openscapes JupyterHub.",
+    "text": "Make sure you’ve saved your file! There might be a slight delay depending on your JupyterHub setup.\n\n\n\nCheck the specific notebook, are there any `—` throughout to denote line breaks rather than yaml? They might be causing the issue; consider deleting those.\nAlso check how long the first raw cell is. Are there level-1 headers (#)? Try removing them.",
     "crumbs": [
-      "Welcome"
+      "Next Steps"
     ]
   },
   {
-    "objectID": "index.html#welcome",
-    "href": "index.html#welcome",
-    "title": "Contributing to Quarto websites and books",
-    "section": "",
-    "text": "It’s possible to create beautiful documentation to share online with Quarto that auto-updates with GitHub. This Clinic is an example of a Quarto website — a really powerful way to create and share your work. You can communicate about science using the same reproducible workflow you and/or your colleagues use for analyses, whether or not you write code.\nThe ability for Quarto to streamline collaboration has been so cool and important for our NASA Openscapes project. Quarto is a common place for us to collaborate - across Python and R languages and varied levels of coding expertise, and accessibility and inclusion are centered in the Quarto design.\nTo begin, you should have a GitHub account with access to the 2i2c Openscapes JupyterHub.",
+    "objectID": "next-steps.html#where-to-get-help-and-learn-more",
+    "href": "next-steps.html#where-to-get-help-and-learn-more",
+    "title": "Next Steps",
+    "section": "Where to get help and learn more",
+    "text": "Where to get help and learn more\n\nhttps://quarto.org/\nA Quarto tip a day, by Mine Çetinkaya-Rundel, July 2022",
     "crumbs": [
-      "Welcome"
+      "Next Steps"
     ]
   },
   {
-    "objectID": "index.html#purpose-outcomes-process-pop",
-    "href": "index.html#purpose-outcomes-process-pop",
-    "title": "Contributing to Quarto websites and books",
-    "section": "Purpose, Outcomes, Process (POP)",
-    "text": "Purpose, Outcomes, Process (POP)\nPurpose: NASA Openscapes Mentors learn workflows with Quarto and GitHub for contributing to the NASA Earthdata Cloud Cookbook or any site or book made with Quarto. An opportunity for Mentors to connect and skill-build together.\nOutcomes: Mentors build skills and are more equipped and empowered to contribute. This is a new clinic we can reuse and build on.\nProcess: A 1.5-hr clinic that can be used to teach or as self-paced learning. with demo’s and hands-on practice to guide folks through contributing to existing Quarto sites & books. Analogous to our GitHub Clinic. The clinic content is contained in this website that is built with Quarto on GitHub; there are no accompanying slide decks.\n\nQuarto Workflow: Use the 2i2c Openscapes JupyterHub to explore this clinic website and its source repository on GitHub, practice contributing to this site by editing a Quarto file or adding a new Jupyter Notebook and previewing the changes.\nGitHub Workflow: Clone the repository for this site, make a branch to work in, edit, commit and push your edits to GitHub, make a pull request, review and merge a pull request, and communicate what you’re doing at each step.",
+    "objectID": "next-steps.html#where-to-contribute",
+    "href": "next-steps.html#where-to-contribute",
+    "title": "Next Steps",
+    "section": "Where to contribute",
+    "text": "Where to contribute\nWe can use these skills to contribute to many Quarto websites and books.\n\nNASA Earthdata Cloud Cookbook\nNASA Openscapes site\n\ne.g. add a link to your slides or recording of a presentation\n\nOpenscapes Approach Guide\nOpenscapes Champions Lessons Series",
     "crumbs": [
-      "Welcome"
-    ]
-  },
-  {
-    "objectID": "index.html#what-is-quarto",
-    "href": "index.html#what-is-quarto",
-    "title": "Contributing to Quarto websites and books",
-    "section": "What is Quarto?",
-    "text": "What is Quarto?\nQuarto helps you have your ideas and your code in one place, and present it in a beautiful way.\n\nQuarto is an open-source scientific and technical publishing system built on Pandoc. You can weave together narrative text and code to produce elegantly formatted output as documents, web pages, blog posts, books, presentations, and more.\n\nQuarto can be used to create dynamic content with Python, R, Julia, and Observable through your favorite IDE like JupyterHub or RStudio. Creating and editing websites with Quarto can be done without knowing R, Python or HTML, CSS, etc, however, Quarto integrates with these tools so you can make your websites as complex and beautiful as you like as you see examples and reuse and remix from others in the open science community.\nQuarto.org is the go-to place for full documentation and more tutorials!",
-    "crumbs": [
-      "Welcome"
-    ]
-  },
-  {
-    "objectID": "index.html#example-quarto-sites",
-    "href": "index.html#example-quarto-sites",
-    "title": "Contributing to Quarto websites and books",
-    "section": "Example Quarto sites",
-    "text": "Example Quarto sites\n\nNASA Openscapes\nNASA Earthdata Cloud Cookbook\n2021 NASA Cloud Hackathon\nOpenscapes Champions Lessons Series\nOpenscapes Approach Guide\nFaylab Lab Manual\nA Quarto tip a day, by Mine Çetinkaya-Rundel\n\nSee many more examples at the Quarto gallery!",
-    "crumbs": [
-      "Welcome"
+      "Next Steps"
     ]
   }
 ]
