@@ -19,27 +19,31 @@ quarto preview
 
 Open this URL in a browser window and arrange your Hub and website preview windows so you can see them both. I make a bit more space in Jupyter by collapsing the left file menu by clicking on the file icon at the top of the left sidebar.
 
-*TODO: note to open index.qmd add new screenshots*
+*TODO: note to open index.qmd to compare*
+
+*TODO: add new screenshots*
 
 ![](images/jupyter-side-by-side.png){fig-align="center"}
 
 Now that we have each set up our own GitHub clone with our unique branch of this Quarto Clinic website in the Hub, we can practice editing and rendering `.qmd` and `.ipynb` files. These are the workflows we use to contribute to the NASA Earthdata Cloud Cookbook and other Quarto websites and books.
 
-*TODO: quarto preview does X; quarto render does Y*
+*TODO: quarto preview does X; quarto render does Y. This isn't the place for it. Once done, delete file \_render-vs-preview.qmd*
 
-## Choose Task 1a or 1b to do in breakouts
+## Make changes to the site content
+
+First we'll demonstrate, then you can choose either Task 1a or 1b to try in a breakout room.
 
 ### Task 1a: Edit and preview a demo.qmd file
 
-Open [`lessons/demo.qmd`](demo.qmd) file. The suggestions / how-to for this are in the file.
+**Open [`lessons/demo.qmd`](demo.qmd) file using the Editor, not as a Notebook file.** Suggestions for things to try, and how to format things are in the file.
 
-*TODO: finesse opening demo.qmd; Markdown only shows when going to Raw then Markdown (this belongs in the demo file itself I think)*
+![Open .qmd file with the Editor](images/jupyterhub-openwith-editor.png){fig-align="left" width="50%"}
 
-*TODO: screenshot*
+*TODO: screenshot of demo file in Hub Editor with typo showing?*
 
 #### Make a small change and preview it
 
-Now we'll be able to see live changes in the preview as we edit in our `.qmd` files. Let's try it: Fix the typo, etc. When we save changes, our preview window will refresh automatically! If it does not, you can also refresh the page manually. The refreshed previewed site will now display your changes!
+Now we'll be able to see live changes in the preview as we edit in our `.qmd` files. Let's try it: Fix the typo. When we save changes, our preview window will refresh automatically and display your changes! If it does not, you can also refresh the page manually.
 
 ### Task 1b: Create a new `.ipynb` page
 
@@ -99,13 +103,17 @@ ax.grid(True)
 plt.show()
 ```
 
-Now, go ahead and execute this code chunk like you normally would, by clicking the cursor in a code block and clicking the sideways "play" triangle to run the selected cells (and advance to the next cell). This code produces a plot.
+Now, execute this code chunk as you normally would, by clicking the cursor in a code block and clicking the sideways "play" triangle to run the selected cells (and advance to the next cell). This code produces a plot.
 
 Note that the code runs as it normally would; the code options in the comments are just comments.
 
 #### Save your file
 
-Save your document - I'll call mine `python-example.ipynb` in the main repository.
+Save your document. Name it `python-yourname.ipynb`.
+
+::: callout-important
+In this Clinic, you must give unique filenames to any new files you create. This will help avoid conflicts that will arise from several people creating files called `example.ipynb` and trying to display them in the site.
+:::
 
 ## Preview your updates (Regroup, 10 min)
 
@@ -115,13 +123,13 @@ Save your document - I'll call mine `python-example.ipynb` in the main repositor
 
 *TODO: don't call it Basic Workflows below, where to put it new files?*
 
-Now we'll add `python-example.ipynb` or `your_demo_file.qmd` to our `_quarto.yml` file; this is where we register of all files to include in our site. Let's add it after the section called "Basic Workflows".
+Now we'll add `python-example.ipynb` or `newfile.qmd` to our `_quarto.yml` file; this is where we register of all files to include in our site. Let's add it after the section called "Basic Workflows".
 
 Open `_quarto.yml` by clicking on it from the file directory.
 
 Scroll down to review the current contents in the `sidebar:` section. It's there we see all the file arrangement that we see in the previewed site.
 
-TODO: update screenshots and dont' use line \#
+*TODO: update screenshots and dont' use line \#*
 
 Add `- python-example.ipynb` to line 46, making sure that your indentation aligns with the other pages.
 
