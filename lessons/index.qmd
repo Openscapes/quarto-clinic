@@ -4,17 +4,6 @@ title: Practice
 
 *TODO: Drastically reduce this page's text. Get to the doing. This index page should say, hey here's 2 things we'll practice - Edit a Quarto site, and Contribute via GitHub. Here's the Basic Workflow*
 
-## Basic Workflow
-
-How do you work in Quarto? You can use whichever tool you're comfortable with (Jupyter, RStudio, GitHub, VS Code, etc). Developing your Quarto site will have the same basic workflow, no matter which tool you use. It is very iterative.
-
-1.  Authoring: write text, code, images, etc in a file. Supported files include `.md`, `.Rmd`, `.qmd`, `.ipynb`...
-2.  Update `_quarto.yml` as needed (for example, if you've created a new file you'd like included in your site)
-3.  Render individual files and/or the whole website
-4.  Repeat, repeat, repeat
-5.  Commit and push your updates to GitHub, they will publish automatically!
-6.  Repeat all of the above to make the website as you'd like!
-
 ## Authoring
 
 *TODO: Move to "Edit a Quarto site"*

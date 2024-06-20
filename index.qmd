@@ -11,17 +11,19 @@ The ability for Quarto to streamline collaboration has been so cool and importan
 
 **To begin**, you should have a GitHub account with access to the 2i2c Openscapes JupyterHub.
 
-## Purpose, Outcomes, Process ([POP](https://suzannehawkes.com/2010/04/09/pop-everything/))
+## Our Plan today
 
-**Purpose:** NASA Openscapes Mentors learn workflows with Quarto and GitHub for contributing to the [NASA Earthdata Cloud Cookbook](https://nasa-openscapes.github.io/earthdata-cloud-cookbook/) or any site or book made with Quarto. An opportunity for Mentors to connect and skill-build together.
+We will learn workflows with Quarto and GitHub for contributing to open source documentation - like the [NASA Earthdata Cloud Cookbook](https://nasa-openscapes.github.io/earthdata-cloud-cookbook/). 
 
-**Outcomes:** Mentors build skills and are more equipped and empowered to contribute. This is a new clinic we can reuse and build on.
+This is a 1.5-hr clinic that has demos and time for hands-on practice in breakout rooms.
 
-**Process:** A 1.5-hr clinic that can be used to teach or as self-paced learning. with demo's and hands-on practice to guide folks through contributing to existing Quarto sites & books. Analogous to our GitHub Clinic. The clinic content is contained in this website that is built with Quarto on GitHub; there are no accompanying slide decks.
+**Part 1. Quarto Workflow:** Use the 2i2c Openscapes JupyterHub to explore this clinic website and its source repository on GitHub, practice contributing to this site by editing a Quarto file or adding a new Jupyter Notebook and previewing the changes.
 
-1.  Quarto Workflow: Use the 2i2c Openscapes JupyterHub to explore this clinic website and its source repository on GitHub, practice contributing to this site by editing a Quarto file or adding a new Jupyter Notebook and previewing the changes.
+**Part 2. GitHub Workflow:** Clone the repository for this site, make a branch to work in, edit, commit and push your edits to GitHub, make a pull request, review and merge a pull request, and communicate what you’re doing at each step.
 
-2.  GitHub Workflow: Clone the repository for this site, make a branch to work in, edit, commit and push your edits to GitHub, make a pull request, review and merge a pull request, and communicate what you’re doing at each step.
+This requires some setup. We'll do this first, and discuss more as we go. 
+
+<!--- TOCUT or move
 
 ## What is Quarto?
 
@@ -33,14 +35,5 @@ Quarto can be used to create dynamic content with Python, R, Julia, and Observab
 
 [Quarto.org](https://quarto.org) is the go-to place for full documentation and more tutorials!
 
-## Example Quarto sites
+--->
 
--   [NASA Openscapes](https://nasa-openscapes.github.io/)
--   [NASA Earthdata Cloud Cookbook](https://nasa-openscapes.github.io/earthdata-cloud-cookbook/)
--   [2021 NASA Cloud Hackathon](https://nasa-openscapes.github.io/2021-Cloud-Hackathon/)
--   [Openscapes Champions Lessons Series](https://openscapes.github.io/series)
--   [Openscapes Approach Guide](https://openscapes.github.io/approach-guide/)
--   [Faylab Lab Manual](https://thefaylab.github.io/lab-manual/)
--   [A Quarto tip a day](https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/), by Mine Çetinkaya-Rundel
-
-See many more examples at the [Quarto gallery](https://quarto.org/docs/gallery/)!
