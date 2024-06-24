@@ -170,13 +170,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./lessons/part1-quarto.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Edit a Quarto site</span></a>
+ <span class="menu-text">Part 1: Edit a Quarto site</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./lessons/demo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><code>.qmd</code> file for practice</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./lessons/part2-github.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Contribute via GitHub</span></a>
+ <span class="menu-text">Part 2: Contribute via GitHub</span></a>
   </div>
 </li>
       </ul>
@@ -202,7 +208,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul class="collapse">
   <li><a href="#the-website" id="toc-the-website" class="nav-link" data-scroll-target="#the-website">The website</a></li>
   <li><a href="#the-websites-source-repo" id="toc-the-websites-source-repo" class="nav-link" data-scroll-target="#the-websites-source-repo">The website’s source repo</a></li>
-  <li><a href="#quarto-basic-workflow" id="toc-quarto-basic-workflow" class="nav-link" data-scroll-target="#quarto-basic-workflow">Quarto Basic Workflow</a></li>
   </ul></li>
   <li><a href="#setup-part-2-clone-the-quarto-clinic-repo" id="toc-setup-part-2-clone-the-quarto-clinic-repo" class="nav-link" data-scroll-target="#setup-part-2-clone-the-quarto-clinic-repo">Setup Part 2: Clone the Quarto Clinic repo</a>
   <ul class="collapse">
@@ -235,7 +240,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p><em>TODO: Do Welcome, then Setup Part 1: Hub login, then Explore while Hub is initiating. Setup Part 2: clone, branch. Preview site is on next page: step 1 in Lessons: Edit Quarto site.</em></p>
 <section id="setup-part-1-log-in-to-the-hub" class="level2">
 <h2 class="anchored" data-anchor-id="setup-part-1-log-in-to-the-hub">Setup Part 1: Log in to the Hub</h2>
 <p>Go to the Hub <a href="https://openscapes.2i2c.cloud" class="uri">https://openscapes.2i2c.cloud</a> &gt; log in with your GitHub Account &gt; select the Python server.</p>
@@ -272,10 +276,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="the-websites-source-repo" class="level3">
 <h3 class="anchored" data-anchor-id="the-websites-source-repo">The website’s source repo</h3>
-<!---
-*TODO: If we will make a new repo for every Clinic, we'll need to update the repo link below, every time. Good to keep in mind; we'll figure out an approach where we don't need to update here every time...* 
---->
-<p>Let’s go to this website’s GitHub repository (or “repo”), <a href="https://github.com/Openscapes/quarto-clinic" class="uri">https://github.com/Openscapes/quarto-clinic</a>. You can also click there from any page in this clinic website by clicking the GitHub Octocat icon underneath the Openscapes logo in the left navbar.</p>
+<p>Let’s go to this website’s GitHub repository (or “repo”). You can get there from any page in this clinic website by clicking the GitHub Octocat icon underneath the Openscapes logo in the left navbar.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -290,37 +291,13 @@ Tip
 </div>
 </div>
 <p><strong>Have a look at the filenames.</strong> We can recognize the names of the webpages we see (and listed above), and they have red arrows marking them in the image below. Note that most files in this repo are <code>.qmd</code> files. These are plain text Quarto files that can combine Markdown text with code. <code>index.qmd</code> is the home page. When we click inside the <code>lessons</code> folder we see more <code>.qmd</code> files and an <code>images</code> folder that holds images used in the pages inside the Lessons section of the site.</p>
-<p><em>TODO: replace screenshots; red arrows for lessons, next-steps, setup (rename setup-explore)</em></p>
-<p><em>TODO: take text from <code>_render-vs-preview.qmd</code> then delete</em></p>
+<p><em>TODO: replace screenshots; red arrows for lessons</em></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/quarto-files-github.png" class="img-fluid figure-img" style="width:80.0%" alt="Screenshot of files on GitHub with red arrows identifying the files that we saw in the left sidebar"></p>
 <figcaption>quarto-website-tutorial GitHub repository with files for webpages marked with red arrows</figcaption>
 </figure>
 </div>
-</section>
-<section id="quarto-basic-workflow" class="level3">
-<h3 class="anchored" data-anchor-id="quarto-basic-workflow">Quarto Basic Workflow</h3>
-<p>Quarto is an open-source scientific and technical publishing system You can weave together narrative text and code to produce elegantly formatted output as documents, web pages, blog posts, books, presentations, and more.</p>
-<p>How do you work in Quarto? You can use whichever tool you’re comfortable with (Jupyter, RStudio, GitHub, VS Code, etc). Developing your Quarto site will have the same basic workflow, no matter which tool you use. It is very iterative.</p>
-<ol type="1">
-<li>Authoring: write text, code, images, etc in a file. Supported files include <code>.md</code>, <code>.Rmd</code>, <code>.qmd</code>, <code>.ipynb</code>…</li>
-<li>Update <code>_quarto.yml</code> as needed (for example, if you’ve created a new file you’d like included in your site) <!---I think this still works even without exploring _quarto.yml yet ---></li>
-<li>Render individual files and/or the whole website</li>
-<li>Repeat, repeat, repeat</li>
-<li>Commit and push your updates to GitHub, they will publish automatically!</li>
-<li>Repeat all of the above to make the website as you’d like!</li>
-</ol>
-<!--- TOCUT or MOVE - This feeels like too much for the intro here. 
-### `_quarto.yml` intro
-
-There is also a `_quarto.yml` file, which is the website's configuration file. It is essentially metadata for the website that includes the order that the pages / sections will be in. This is where we can update the organization of our website: which page comes before another, and how pages are named in the navbar. If we compare the repo and website side-by-side, we'll see that the pages that appear on our website are listed there.
-
-![\_quarto.yml and website side-by-side](images/quarto-yml-site-side-by-side3.png){fig-align="center"}
-
-We'll learn more about how to interact with `_quarto.yml` in the [Lessons](lessons/index.qmd).
-
---->
 </section>
 </section>
 <section id="setup-part-2-clone-the-quarto-clinic-repo" class="level2">

@@ -20,40 +20,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -170,13 +136,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../lessons/part1-quarto.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Edit a Quarto site</span></a>
+ <span class="menu-text">Part 1: Edit a Quarto site</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../lessons/demo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><code>.qmd</code> file for practice</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../lessons/part2-github.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Contribute via GitHub</span></a>
+ <span class="menu-text">Part 2: Contribute via GitHub</span></a>
   </div>
 </li>
       </ul>
@@ -197,8 +169,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#authoring" id="toc-authoring" class="nav-link active" data-scroll-target="#authoring">Authoring</a></li>
-  <li><a href="#update-_quarto.yml" id="toc-update-_quarto.yml" class="nav-link" data-scroll-target="#update-_quarto.yml">Update <code>_quarto.yml</code></a></li>
+  <li><a href="#workflow-to-edit-a-quarto-site-source" id="toc-workflow-to-edit-a-quarto-site-source" class="nav-link active" data-scroll-target="#workflow-to-edit-a-quarto-site-source">Workflow to edit a Quarto site source</a></li>
+  <li><a href="#workflow-to-contribute-via-github" id="toc-workflow-to-contribute-via-github" class="nav-link" data-scroll-target="#workflow-to-contribute-via-github">Workflow to contribute via GitHub</a></li>
+  <li><a href="#lets-try-these-workflows" id="toc-lets-try-these-workflows" class="nav-link" data-scroll-target="#lets-try-these-workflows">Let’s try these workflows!</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/Openscapes/quarto-clinic/edit/main/lessons/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/Openscapes/quarto-clinic/blob/main/lessons/index.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/Openscapes/quarto-clinic/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -224,42 +197,32 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p><em>TODO: Drastically reduce this page’s text. Get to the doing. This index page should say, hey here’s 2 things we’ll practice - Edit a Quarto site, and Contribute via GitHub. Here’s the Basic Workflow</em></p>
-<section id="authoring" class="level2">
-<h2 class="anchored" data-anchor-id="authoring">Authoring</h2>
-<p><em>TODO: Move to “Edit a Quarto site”</em></p>
-<p>As an author, you have a lot of options of how your text will be formatted, arranged, and interlinked. You will be writing in Markdown, which is a lightweight text formatting language. The Quarto documentation about authoring introduces <a href="https://quarto.org/docs/authoring/markdown-basics.html">markdown-basics</a> that will get you started.</p>
-<p>Each page of our site has a similar first few lines - this YAML, like we saw in our <code>_quarto.yml</code> and it is indicated by two sets of 3 dashes <code>---</code> :</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">---</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">title:</span> My title</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="ex">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>You’re able to add more features to individual pages by including it in the YAML, which for the most part here only includes a title. See <a href="https://quarto.org/docs/computations/execution-options.html">Quarto excecution options</a> for more information of what you can include in the YAML.</p>
+<p>In this section we’ll practice two workflows: <a href="../lessons/part1-quarto.html">Part 1: Edit a Quarto site</a>, and <a href="../lessons/part2-github.html">Part 2: Contribute via GitHub</a>. We include a basic workflow for each here, so you can come back to these for a reminder.</p>
+<section id="workflow-to-edit-a-quarto-site-source" class="level2">
+<h2 class="anchored" data-anchor-id="workflow-to-edit-a-quarto-site-source">Workflow to edit a Quarto site source</h2>
+<ol type="1">
+<li>Preview the site</li>
+<li>Make changes to files; supported types include <code>.qmd</code>, <code>.ipynb</code> <code>.md</code>, <code>.Rmd</code>.</li>
+<li>Save, preview</li>
+<li>Update <code>_quarto.yml</code> file as needed to have new content appear in the site’s nav bar.</li>
+</ol>
 </section>
-<section id="update-_quarto.yml" class="level2">
-<h2 class="anchored" data-anchor-id="update-_quarto.yml">Update <code>_quarto.yml</code></h2>
-<p><em>TODO: move this to Edit a Quarto site: Preview your updates (Regroup, 10 min)</em></p>
-<p>Let’s have a closer look at the <code>_quarto.yml</code> file.</p>
-<p>This type of file (<code>.yml</code> or <code>.yaml</code>) is written in YAML (“Yet Another Markup Language”). You’ll be able to shift the arrangement of webpages by reordering/adding/deleting them in the <code>_quarto.yml</code> file following the patterns you see in this example.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/quarto-yml-site-side-by-side3.png" class="img-fluid figure-img" style="width:95.0%"></p>
-<figcaption>_quarto.yml and website side-by-side</figcaption>
-</figure>
-</div>
-<p>Notice that there are multiple ways in the <code>_quarto.yml</code> for you to include a file in your website. For example, in the above image, the “First Observations” we see in the left sidebar of the published website (right image) is represented in <code>_quarto.yml</code> (left image) over two lines, with line 36 indicating the file reference and line 37 indicating the text to show up in the left sidebar. However, “From RStudio” is only represented in one line of <code>_quarto.yml</code>, on line 43. This represents two strategies for including a file in your website. By default, the title of a specified file will show up in the website’s sidebar, which is what is happening with the “From RStudio” example. If you would like more control over what is written in the sidebar vs the title of your files, then the approach we took with “First Observations” is what you’ll want to do: you’ll see that only “First Observations” shows up in the sidebar as we specified in <code>_quarto.yml</code>, but the page’s title says “First Observations &amp; Setup” (which in our preference was too long for the sidebar).</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>As you modify <code>_quarto.yml</code>, the most important thing to know is that <strong>spacing matters</strong>. Pay attention to whether text is indented by one, two, four, or other spaces, and make sure you follow it; if your site is not looking as expected it is likely a silent error in your YAML. Some text editors like RStudio provide debugging support for YAML and are highly recommended to save you time and heartache.</p>
-</div>
-</div>
+<section id="workflow-to-contribute-via-github" class="level2">
+<h2 class="anchored" data-anchor-id="workflow-to-contribute-via-github">Workflow to contribute via GitHub</h2>
+<ol type="1">
+<li>Inspect the differences your edits will introduce</li>
+<li>“Stage” your changes</li>
+<li>Commit your changes with a helpful “Commit message”</li>
+<li>“Push” to GitHub</li>
+<li>Go to the Clinic repo source on GitHub, in your browser</li>
+<li>Make a “Pull Request” and tag a reviewer</li>
+<li>Reviewer responds by commenting, making suggested commits, and submitting their review</li>
+<li>Author responds to review and “merges” their Pull Request</li>
+<li>A GitHub Action automatically publishes the updates in the live siteDiff, Stage, Commit, and Push your edits to GitHub</li>
+</ol>
+</section>
+<section id="lets-try-these-workflows" class="level2">
+<h2 class="anchored" data-anchor-id="lets-try-these-workflows">Let’s try these workflows!</h2>
 
 
 </section>
@@ -825,8 +788,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../lessons/part1-quarto.html" class="pagination-link" aria-label="Edit a Quarto site">
-        <span class="nav-page-text">Edit a Quarto site</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../lessons/part1-quarto.html" class="pagination-link" aria-label="Part 1: Edit a Quarto site">
+        <span class="nav-page-text">Part 1: Edit a Quarto site</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

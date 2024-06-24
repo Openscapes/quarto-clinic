@@ -135,13 +135,19 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./lessons/part1-quarto.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Edit a Quarto site</span></a>
+ <span class="menu-text">Part 1: Edit a Quarto site</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./lessons/demo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><code>.qmd</code> file for practice</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./lessons/part2-github.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Contribute via GitHub</span></a>
+ <span class="menu-text">Part 2: Contribute via GitHub</span></a>
   </div>
 </li>
       </ul>
@@ -162,14 +168,13 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#troubleshooting" id="toc-troubleshooting" class="nav-link active" data-scroll-target="#troubleshooting">Troubleshooting</a>
+  <li><a href="#where-to-get-help-and-learn-more" id="toc-where-to-get-help-and-learn-more" class="nav-link active" data-scroll-target="#where-to-get-help-and-learn-more">Where to get help and learn more</a>
   <ul class="collapse">
-  <li><a href="#my-changes-dont-show-up-in-preview" id="toc-my-changes-dont-show-up-in-preview" class="nav-link" data-scroll-target="#my-changes-dont-show-up-in-preview">My changes don’t show up in preview</a></li>
-  <li><a href="#quarto-render-hangs-does-not-complete" id="toc-quarto-render-hangs-does-not-complete" class="nav-link" data-scroll-target="#quarto-render-hangs-does-not-complete">Quarto render hangs / does not complete</a></li>
+  <li><a href="#quarto" id="toc-quarto" class="nav-link" data-scroll-target="#quarto">Quarto</a></li>
+  <li><a href="#github" id="toc-github" class="nav-link" data-scroll-target="#github">GitHub</a></li>
   </ul></li>
-  <li><a href="#where-to-get-help-and-learn-more" id="toc-where-to-get-help-and-learn-more" class="nav-link" data-scroll-target="#where-to-get-help-and-learn-more">Where to get help and learn more</a></li>
   <li><a href="#where-to-contribute" id="toc-where-to-contribute" class="nav-link" data-scroll-target="#where-to-contribute">Where to contribute</a></li>
-  <li><a href="#example-quarto-sites" id="toc-example-quarto-sites" class="nav-link" data-scroll-target="#example-quarto-sites">Example Quarto sites</a></li>
+  <li><a href="#other-example-quarto-sites" id="toc-other-example-quarto-sites" class="nav-link" data-scroll-target="#other-example-quarto-sites">Other example Quarto sites</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/Openscapes/quarto-clinic/edit/main/next-steps.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/Openscapes/quarto-clinic/blob/main/next-steps.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/Openscapes/quarto-clinic/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -195,48 +200,51 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="troubleshooting" class="level2">
-<h2 class="anchored" data-anchor-id="troubleshooting">Troubleshooting</h2>
-<section id="my-changes-dont-show-up-in-preview" class="level3">
-<h3 class="anchored" data-anchor-id="my-changes-dont-show-up-in-preview">My changes don’t show up in preview</h3>
-<p>Make sure you’ve saved your file! There might be a slight delay depending on your JupyterHub setup.</p>
-</section>
-<section id="quarto-render-hangs-does-not-complete" class="level3">
-<h3 class="anchored" data-anchor-id="quarto-render-hangs-does-not-complete">Quarto render hangs / does not complete</h3>
-<p>Check the specific notebook, are there any `—` throughout to denote line breaks rather than yaml? They might be causing the issue; consider deleting those.</p>
-<p>Also check how long the first raw cell is. Are there level-1 headers (<code>#</code>)? Try removing them.</p>
-</section>
-</section>
 <section id="where-to-get-help-and-learn-more" class="level2">
 <h2 class="anchored" data-anchor-id="where-to-get-help-and-learn-more">Where to get help and learn more</h2>
+<section id="quarto" class="level3">
+<h3 class="anchored" data-anchor-id="quarto">Quarto</h3>
 <ul>
-<li><p><a href="https://quarto.org/" class="uri">https://quarto.org/</a></p></li>
-<li><p><a href="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/">A Quarto tip a day</a>, by Mine Çetinkaya-Rundel, July 2022</p></li>
+<li><a href="https://quarto.org/" class="uri">https://quarto.org/</a></li>
+<li><a href="https://quarto.org/docs/blog/posts/2023-05-15-get-started/">A video to jumpstart your Quarto journey</a>, by Mine Çetinkaya-Rundel, May, 2023 (23 mins). <em>This is in RStudio IDE so will look different in the Hub.</em> Includes:
+<ul>
+<li>Inserting <a href="https://quarto.org/docs/authoring/cross-references.html">cross references</a> to tables and figures</li>
+<li>Adding a <a href="https://quarto.org/docs/visual-editor/technical.html#citations">citation</a> from a DOI</li>
+<li>Seamlessly switching between output formats as well as creating <a href="https://quarto.org/docs/output-formats/html-multi-format.html">multi-format documents</a></li>
+<li>Customizing the <a href="https://quarto.org/docs/presentations/revealjs/#output-location">output location</a> of code in presentations</li>
+<li>Creating a <a href="https://quarto.org/docs/websites/">website</a> from scratch</li>
+</ul></li>
+<li><a href="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/">A Quarto tip a day</a>, by Mine Çetinkaya-Rundel, July 2022</li>
 </ul>
+</section>
+<section id="github" class="level3">
+<h3 class="anchored" data-anchor-id="github">GitHub</h3>
+<ul>
+<li><a href="https://nasa-openscapes.github.io/earthdata-cloud-cookbook/contributing/workflow.html#review-a-pull-request">Reviewing a pull request</a> (with videos), in the NASA Earthdata Cloud Cookbook</li>
+<li><a href="https://code-review.tidyverse.org/">Tidyteam code review principles</a>, recommended by Andy Teucher</li>
+<li>Openscapes lesson on <a href="https://openscapes.github.io/series/core-lessons/github/">GitHub Strategies</a>, the GitHub Clinic</li>
+<li>Setting up Git credentials under <a href="https://nasa-openscapes.github.io/2021-Cloud-Hackathon/tutorials/00_Setup.html#step-5.-tracking-changes-optional">Tracking Changes</a>, in the 2021 Cloud Hackathon</li>
+</ul>
+</section>
 </section>
 <section id="where-to-contribute" class="level2">
 <h2 class="anchored" data-anchor-id="where-to-contribute">Where to contribute</h2>
 <p>We can use these skills to contribute to many Quarto websites and books.</p>
 <ul>
 <li><a href="https://nasa-openscapes.github.io/earthdata-cloud-cookbook/">NASA Earthdata Cloud Cookbook</a></li>
-<li><a href="https://nasa-openscapes.github.io/">NASA Openscapes site</a>
+<li><a href="https://nasa-openscapes.github.io/">NASA Openscapes</a>
 <ul>
 <li>e.g.&nbsp;add a link to your slides or recording of a presentation</li>
 </ul></li>
 <li><a href="https://openscapes.github.io/approach-guide/">Openscapes Approach Guide</a></li>
-<li><a href="https://openscapes.github.io/series">Openscapes Champions Lessons Series</a></li>
 </ul>
 </section>
-<section id="example-quarto-sites" class="level2">
-<h2 class="anchored" data-anchor-id="example-quarto-sites">Example Quarto sites</h2>
+<section id="other-example-quarto-sites" class="level2">
+<h2 class="anchored" data-anchor-id="other-example-quarto-sites">Other example Quarto sites</h2>
 <ul>
-<li><a href="https://nasa-openscapes.github.io/">NASA Openscapes</a></li>
-<li><a href="https://nasa-openscapes.github.io/earthdata-cloud-cookbook/">NASA Earthdata Cloud Cookbook</a></li>
 <li><a href="https://nasa-openscapes.github.io/2021-Cloud-Hackathon/">2021 NASA Cloud Hackathon</a></li>
 <li><a href="https://openscapes.github.io/series">Openscapes Champions Lessons Series</a></li>
-<li><a href="https://openscapes.github.io/approach-guide/">Openscapes Approach Guide</a></li>
 <li><a href="https://thefaylab.github.io/lab-manual/">Faylab Lab Manual</a></li>
-<li><a href="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/">A Quarto tip a day</a>, by Mine Çetinkaya-Rundel</li>
 </ul>
 <p>See many more examples at the <a href="https://quarto.org/docs/gallery/">Quarto gallery</a>!</p>
 
@@ -799,8 +807,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./lessons/part2-github.html" class="pagination-link" aria-label="Contribute via GitHub">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Contribute via GitHub</span>
+      <a href="./lessons/part2-github.html" class="pagination-link" aria-label="Part 2: Contribute via GitHub">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Part 2: Contribute via GitHub</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">

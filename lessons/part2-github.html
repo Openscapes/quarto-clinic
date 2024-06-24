@@ -30,7 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
 <link href="../next-steps.html" rel="next">
-<link href="../lessons/part1-quarto.html" rel="prev">
+<link href="../lessons/demo.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -82,7 +82,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lessons/index.html">Lessons</a></li><li class="breadcrumb-item"><a href="../lessons/part2-github.html">Contribute via GitHub</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lessons/index.html">Lessons</a></li><li class="breadcrumb-item"><a href="../lessons/part2-github.html">Part 2: Contribute via GitHub</a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -136,13 +136,19 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../lessons/part1-quarto.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Edit a Quarto site</span></a>
+ <span class="menu-text">Part 1: Edit a Quarto site</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../lessons/demo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><code>.qmd</code> file for practice</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../lessons/part2-github.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Contribute via GitHub</span></a>
+ <span class="menu-text">Part 2: Contribute via GitHub</span></a>
   </div>
 </li>
       </ul>
@@ -165,17 +171,20 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#contribute-your-updates-using-github" id="toc-contribute-your-updates-using-github" class="nav-link active" data-scroll-target="#contribute-your-updates-using-github">Contribute your updates using GitHub</a>
   <ul class="collapse">
-  <li><a href="#diff-stage-commit-and-push-your-edits-to-github" id="toc-diff-stage-commit-and-push-your-edits-to-github" class="nav-link" data-scroll-target="#diff-stage-commit-and-push-your-edits-to-github">Diff, Stage, Commit, and Push your edits to GitHub</a></li>
-  </ul></li>
+  <li><a href="#demonstration" id="toc-demonstration" class="nav-link" data-scroll-target="#demonstration">Demonstration</a></li>
   <li><a href="#make-a-pull-request" id="toc-make-a-pull-request" class="nav-link" data-scroll-target="#make-a-pull-request">Make a Pull Request</a></li>
   <li><a href="#review-a-pull-request" id="toc-review-a-pull-request" class="nav-link" data-scroll-target="#review-a-pull-request">Review a pull request</a></li>
+  <li><a href="#merge-your-pull-request" id="toc-merge-your-pull-request" class="nav-link" data-scroll-target="#merge-your-pull-request">Merge your Pull Request</a></li>
+  <li><a href="#try-it-out" id="toc-try-it-out" class="nav-link" data-scroll-target="#try-it-out">Try it out!</a></li>
+  </ul></li>
+  <li><a href="#view-your-updates-in-the-live-site-regroup-10-min" id="toc-view-your-updates-in-the-live-site-regroup-10-min" class="nav-link" data-scroll-target="#view-your-updates-in-the-live-site-regroup-10-min">View your updates in the live site (Regroup, 10 min)</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/Openscapes/quarto-clinic/edit/main/lessons/part2-github.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/Openscapes/quarto-clinic/blob/main/lessons/part2-github.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/Openscapes/quarto-clinic/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lessons/index.html">Lessons</a></li><li class="breadcrumb-item"><a href="../lessons/part2-github.html">Contribute via GitHub</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lessons/index.html">Lessons</a></li><li class="breadcrumb-item"><a href="../lessons/part2-github.html">Part 2: Contribute via GitHub</a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title">Part 2: Contribute via GitHub</h1>
 </div>
@@ -196,20 +205,10 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="contribute-your-updates-using-github" class="level2">
 <h2 class="anchored" data-anchor-id="contribute-your-updates-using-github">Contribute your updates using GitHub</h2>
-<p><em>TODO: use text and some screenshot styles from 2021 Cloud Hackathon <a href="https://nasa-openscapes.github.io/2021-Cloud-Hackathon/tutorials/00_Setup.html#step-5.-tracking-changes-optional">Tracking changes section</a>. Those screenshots are so clean and text so clear.</em></p>
-<p><em>TODO: add this text somewhere? “We have set it up so that any modifications (commits) will automatically be republished via GitHub Actions.”</em></p>
-<p>GitHub commit, push, (move to GitHub.com….) pull request, review PRs, merge</p>
-<ol type="1">
-<li>Good commit messages</li>
-<li>Push to GitHub then move to GitHub.com, screenshot yellow banner to compare and make a pull request</li>
-<li>Not finished proposing your updates? Can make Draft PR at the start so folks can see your thinking. Set Ready for Review when ready. Request specific reviewer(s).&nbsp;</li>
-<li>Condense/ adapt <a href="https://nasa-openscapes.github.io/earthdata-cloud-cookbook/contributing/workflow.html#review-a-pull-request">Review a pull request</a> from Cookbook; note using “suggesting” and commenting, “Start your Review” instead of adding single comments (fewer notifications)</li>
-<li><strong>Demo</strong>: Andy commit and push, make a pull request, tag Stef as reviewer. Screenshare the above steps to review. Andy screenshares to commit suggested edits, merge his pull request.</li>
-<li><strong>Task</strong>: people pair up to review each other’s PRs.</li>
-</ol>
-<section id="diff-stage-commit-and-push-your-edits-to-github" class="level3">
-<h3 class="anchored" data-anchor-id="diff-stage-commit-and-push-your-edits-to-github">Diff, Stage, Commit, and Push your edits to GitHub</h3>
-<p>Inspect the differences your edits will introduce</p>
+<p>Now that we have each saved some changes to files in our Quarto site source, liike <code>.qmd</code>, <code>.ipynb</code>, and/or <code>_quarto.yml</code>, we can contribute our updates using GitHub.</p>
+<section id="demonstration" class="level3">
+<h3 class="anchored" data-anchor-id="demonstration">Demonstration</h3>
+<p>You have to deliberately tell Git/GitHub when you have work that you want to be versioned and synced. First, inspect the differences your edits will introduce.</p>
 <div class="quarto-figure quarto-figure-left">
 <figure class="figure">
 <p><img src="images/jupyterhub-git-diff.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:100.0%"></p>
@@ -222,8 +221,7 @@ ul.task-list li input[type="checkbox"] {
 <figcaption>Stage your changes</figcaption>
 </figure>
 </div>
-<p>Commit your edits with a good commit message and push your edits.</p>
-<p><em>TODO: What makes a good commit message (from GitHub Clinic)</em></p>
+<p>Commit your edits with a good commit message and push your edits to GitHub. A commit message is a human-readable message, like leaving a breadcrumb trail for your future self and others.</p>
 <div class="quarto-figure quarto-figure-left">
 <figure class="figure">
 <p><img src="images/jupyterhub-git-commit-push.png" class="img-fluid figure-img" style="width:50.0%"></p>
@@ -233,26 +231,20 @@ ul.task-list li input[type="checkbox"] {
 <p>On your first commit, you will be prompted to add your Git credentials. When you are working on a project over time, you can have them stored, following instructions in <a href="https://nasa-openscapes.github.io/2021-Cloud-Hackathon/tutorials/00_Setup.html#step-5.1.-configure-git-git-config">Configure Git (git config)</a> from the 2021 Cloud Hackathon.</p>
 <p>In the Hub, in our own branch of the Quarto Clinic repo, we have made one or more edits to the Clinic files, committed those updates, and pushed those commit(s) to GitHub. How do our suggested contributions get incorporated into the main Quarto Clinic repo and website?</p>
 </section>
-</section>
-<section id="make-a-pull-request" class="level2">
-<h2 class="anchored" data-anchor-id="make-a-pull-request">Make a Pull Request</h2>
-<p>After pushing your edits, go to <a href="https://github.com/Openscapes/quarto-clinic/" class="uri">https://github.com/Openscapes/quarto-clinic/</a> and you will see a yellow banner inviting you to make a pull request to add your edits to the Clinic repo.</p>
+<section id="make-a-pull-request" class="level3">
+<h3 class="anchored" data-anchor-id="make-a-pull-request">Make a Pull Request</h3>
+<p>After pushing your edits, go to <a href="https://github.com/Openscapes/quarto-clinic/" class="uri">https://github.com/Openscapes/quarto-clinic/</a> <!--- replace with unique link to a clinic ---> and you will see a yellow banner inviting you to make a Pull Request to add your edits to the Clinic repo.</p>
 <div class="quarto-figure quarto-figure-left">
 <figure class="figure">
 <p><img src="images/github-yellow-pr-banner.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:90.0%"></p>
 </figure>
 </div>
-<p>Not finished proposing your updates? You can set your Pull Request as a Draft at the start so folks can see your thinking. Set Ready for Review when ready and request a reviewer(s); preferable someone who knows about what you are contributing.</p>
+<p>Not finished proposing your updates? You can set your Pull Request as a Draft at the start so folks can see your thinking. Set Ready for Review when ready and request a reviewer(s). For the NASA Earthdata Cloud Cookbook, any Pull Request must be reviewed before it can be merged. If you know someone who is familiar with the content you’re proposing to add, request their review.</p>
 </section>
-<section id="review-a-pull-request" class="level2">
-<h2 class="anchored" data-anchor-id="review-a-pull-request">Review a pull request</h2>
-<p><em>TODO: Adapt <a href="https://nasa-openscapes.github.io/earthdata-cloud-cookbook/contributing/workflow.html#review-a-pull-request">Reviewing a pull request</a> (in Cookbook). Copied; Will edit to condense, using a Stef + Andy PR &amp; Review of edits to this clinic.</em></p>
-<p>Any pull request (PR) must be reviewed before it can be merged into the Cookbook. If you know someone who is familiar with the content you’re proposing to add, request their review.</p>
-<p>The following notes are adapted from a coworking session in which Amy Steiker and Julie Lowndes reviewed a Cookbook <a href="https://github.com/NASA-Openscapes/earthdata-cloud-cookbook/pull/171">pull request</a> from Andy Barrett. (<a href="https://youtu.be/2_F5Kr6gM1I">video</a>, 19 min). Some generic mechanics of reviewing a pull request in GitHub are demonstrated in a screenshare (<a href="https://youtu.be/ZiG4-d5vT30">video</a>, 7 min 41 sec).</p>
-<p>In reviewing a pull request with lots of changes, it can be helpful to have windows open to view both the GitHub browser and the 2i2c Hub showing the Cookbook preview.</p>
+<section id="review-a-pull-request" class="level3">
+<h3 class="anchored" data-anchor-id="review-a-pull-request">Review a pull request</h3>
 <p>From the pull request page in GitHub browser, look at the elements of the pull request.</p>
-<p><em>TODO: add screenshot of a PR page like the one in Cookbook, pull-request-example.png</em></p>
-<p><img src="images/pull-request-example.png" class="img-fluid"></p>
+<!--- *TODO: add screenshot of a PR page like the one in Cookbook, pull-request-example.png* --->
 <ul>
 <li>Start with Conversation tab:
 <ul>
@@ -265,12 +257,12 @@ ul.task-list li input[type="checkbox"] {
 </ul></li>
 <li>Files Changed tab:
 <ul>
-<li>Often easier here to assess all the files that changed across the commits</li>
+<li>View all the files that changed across the commits</li>
 <li>In Nav bar: Orange dot box signifies modified; Green plus box means something’s been added; Red minus box means deleted; Grey arrow box means renamed.</li>
 </ul></li>
 <li>Checks tab:
 <ul>
-<li>Shows status of the Github Action that renders and deploys the Cookbook. We can know whether this PR has the ability to be deployed</li>
+<li>Shows status of the Github Action that renders and deploys the site. We can know whether this Pull Request is able to be deployed.</li>
 </ul></li>
 </ul>
 <p>Now, switch to the 2i2c Hub to view the Cookbook preview as it would appear if the pull request was merged:</p>
@@ -278,22 +270,29 @@ ul.task-list li input[type="checkbox"] {
 <li>Terminal:
 <ul>
 <li>Go to the Main branch and pull so that we have the most recent changes from remote.</li>
-<li><code>git checkout</code> to the branch that has the PR: reorg_how_to_guides (note, this PR has been merged and the branch deleted so you won’t see this one; apply this example to your own)</li>
-<li><code>quarto preview</code> - this will build the book with Andy’s suggested edits. <em>TODO: Is this preview link still an issue?</em> <!-- -   At the end of the preview log, it says "Browse at 
-                                            <!--     https://openscapes.2i2c.cloud..." The Browse URL actually --> <!--     points to the production Hub!! We need it to point to --> <!--     staging since that's where we're working, so we use the URL --> <!--     staging.openscapes.2i2c.cloud.... (See minute 10:06 in the --> <!--     [video](https://youtu.be/2_F5Kr6gM1I?t=606).) --></li>
+<li><code>git checkout</code> to the branch that has the Pull Request</li>
+<li><code>quarto preview</code> - this will build the book with the author’s suggested edits.</li>
 </ul></li>
 </ul>
-<p>We can now view the changes in the built Quarto book and concurrently look at the files changed in GitHub.</p>
+<p>In reviewing a pull request with lots of changes, it can be helpful to have windows open to view both the GitHub browser and the 2i2c Hub showing the Clinic site preview.</p>
 <ul>
-<li>Now we see a minor issue with capitalization in the <code>how-tos/subset/index.md</code> file:
-<ul>
-<li>In GitHub under the “Files changed” tab of the PR, we can add a suggested edit by clicking the “plus” button below the line in question. (See minute 17:04 in the <a href="https://youtu.be/2_F5Kr6gM1I?t=1024">video</a> for the mechanics of this. Suggesting specific commits can speed the contributor’s workflow compared with trying to describe what we’d like them to change.)</li>
-<li>We can click “Start a review” button so that Andy gets a single email when we’re done reviewing, rather than getting one notification for every edit we suggest.</li>
-<li>We can check the “Viewed” box on each file as we go through them in the Hub. Marking files as viewed can help track our review progress by minimizing the changes visible, but does not affect the review.</li>
-</ul></li>
+<li>In GitHub under the “Files changed” tab of the PR, we can add a suggested edit by clicking the “plus” button below the line in question. Suggesting specific commits can speed the contributor’s workflow compared with trying to describe what we’d like them to change.</li>
+<li>We can click “Start a review” button so the author gets a single email when we’re done reviewing, rather than getting one notification for every edit we suggest.</li>
 </ul>
-<p>We will review each individual <code>.qmd</code> file and can come back to the main <code>_quarto.yml</code> if we see an issue with the main navigation.</p>
-<p>Once our review is complete, we add a note in the GitHub review and click “Approve”, “Comment” or “Request changes”. In the note it can be really helpful to add a note of appreciation for some aspect of the contribution, tagging the submitter, saying they can merge the PR after making changes, and possibly add a summary of our requested edits including the number of changes requested. Some changes in the middle of a long list of edits can be marked as hidden conversations, so this can be helpful to the submitter to know they’ve seen everything.</p>
+<p>Review each individual file that has changed and come back to the main <code>_quarto.yml</code> if we see an issue with the navigation.</p>
+<p>Once our review is complete, we add a note in the GitHub review box and click “Approve”, “Comment” or “Request changes”. In the note it can be really helpful to add a note of appreciation for some aspect of the contribution, tagging the author, saying they can merge the PR after making changes, and possibly add a summary of our requested edits including the number of changes requested. Some changes in the middle of a long list of edits can be marked as hidden conversations, so this can be helpful to the author to know they’ve seen everything.</p>
+</section>
+<section id="merge-your-pull-request" class="level3">
+<h3 class="anchored" data-anchor-id="merge-your-pull-request">Merge your Pull Request</h3>
+<p>As the author, you can now address the reviewer’s comments and then merge your Pull Request.</p>
+</section>
+<section id="try-it-out" class="level3">
+<h3 class="anchored" data-anchor-id="try-it-out">Try it out!</h3>
+<p>Pair up in breakouts to make and review each other’s Pull Requests</p>
+</section>
+</section>
+<section id="view-your-updates-in-the-live-site-regroup-10-min" class="level2">
+<h2 class="anchored" data-anchor-id="view-your-updates-in-the-live-site-regroup-10-min">View your updates in the live site (Regroup, 10 min)</h2>
 
 
 </section>
@@ -854,8 +853,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../lessons/part1-quarto.html" class="pagination-link" aria-label="Edit a Quarto site">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Edit a Quarto site</span>
+      <a href="../lessons/demo.html" class="pagination-link" aria-label="`.qmd` file for practice">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><code>.qmd</code> file for practice</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
