@@ -1,6 +1,6 @@
 ---
-title: "Contributing to Quarto websites and books"
-subtitle: "Share open-source tutorials, onboarding docs, and much more"
+title: "Quarto + GitHub Clinic"
+subtitle: "Contribute to open educational resources, onboarding docs, and much more"
 ---
 
 ## Welcome
