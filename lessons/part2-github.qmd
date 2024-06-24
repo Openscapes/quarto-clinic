@@ -6,20 +6,6 @@ title: "Part 2: Contribute via GitHub"
 
 Now that we have each saved some changes to files in our Quarto site source, liike `.qmd`, `.ipynb`, and/or `_quarto.yml`, we can contribute our updates using GitHub.
 
-### Basic Workflow
-
-Here is the basic workflow for getting your proposed updates incorporated into the main site. We'll demonstrate this below, and then you can try it in breakouts.
-
-1.  Inspect the differences your edits will introduce
-2.  "Stage" your changes
-3.  Commit your changes with a helpful "Commit message"
-4.  "Push" to GitHub
-5.  Go to the Clinic repo source on GitHub, in your browser
-6.  Make a "Pull Request" and tag a reviewer
-7.  Reviewer responds by commenting, making suggested commits, and submitting their review
-8.  Author responds to review and "merges" their Pull Request
-9.  A GitHub Action automatically publishes the updates in the live siteDiff, Stage, Commit, and Push your edits to GitHub
-
 ### Demonstration
 
 You have to deliberately tell Git/GitHub when you have work that you want to be versioned and synced. First, inspect the differences your edits will introduce.

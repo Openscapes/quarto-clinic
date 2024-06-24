@@ -107,11 +107,17 @@ In this Clinic, you must give unique filenames to any new files you create. This
 
 ## Preview your updates (Regroup, 10 min)
 
-If you created a new page, how do you get it in the book? This involves editing `_quarto.yml` to have it show up in site
+If you created a new page, how do you get it to appear in the site? This involves editing `_quarto.yml` to have it show up in site
 
 ### Update `_quarto.yml`
 
-Now we'll add `python-yourname.ipynb` or `newfile.qmd` to our `_quarto.yml` file; this is where we register all files to include in our site.
+Let's have a closer look at the `_quarto.yml` file.
+
+This type of file is written in YAML ("Yet Another Markup Language"). You'll be able to shift the arrangement of webpages by reordering/adding/deleting them in the `_quarto.yml` file following the patterns you see in this example.
+
+![\_quarto.yml and website side-by-side](images/quarto-yml-site-side-by-side3.png){alt="_quarto.yml and website side-by-side" fig-align="center" width="95%"}
+
+Now we'll add `python-yourname.ipynb` or any `newfile.qmd` to our `_quarto.yml` file.
 
 Open `_quarto.yml` by clicking on it from the file directory.
 
@@ -120,6 +126,10 @@ Scroll down to review the current contents in the `sidebar:` section. It's there
 *TODO: update screenshots and dont' use line \#*
 
 Add `- python-yourname.ipynb` below `- lessons/part1-quarto.qmd`, making sure that your indentation aligns with the other pages.
+
+::: callout-important
+As you modify `_quarto.yml`, the most important thing to know is that **spacing matters**. Pay attention to whether text is indented by one, two, four, or other spaces, and make sure you follow it; if your site is not looking as expected it is likely a silent error in your YAML.
+:::
 
 ![](images/jupyter-python-example.png){fig-align="center"}
 

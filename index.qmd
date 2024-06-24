@@ -7,6 +7,8 @@ subtitle: "Share open-source tutorials, onboarding docs, and much more"
 
 It's possible to create beautiful documentation to share online with [Quarto](https://quarto.org) that auto-updates with [GitHub](http://github.com). This Clinic is an example of a Quarto website --- a really powerful way to create and share your work. You can communicate about science using the same reproducible workflow you and/or your colleagues use for analyses, whether or not you write code.
 
+Quarto is an open-source scientific and technical publishing system. You can weave together narrative text and code to produce elegantly formatted output as documents, web pages, blog posts, books, presentations, and more.
+
 The ability for Quarto to streamline collaboration has been so cool and important for our [NASA Openscapes](https://nasa-openscapes.github.io/) project. Quarto is a common place for us to collaborate - across Python and R languages and varied levels of coding expertise, and accessibility and inclusion are centered in the Quarto design.
 
 **To begin**, you should have a GitHub account with access to the 2i2c Openscapes JupyterHub.
@@ -22,19 +24,3 @@ This is a 1.5-hr clinic that has demos and time for hands-on practice in breakou
 **Part 2. GitHub Workflow:** Clone the repository for this site, make a branch to work in, edit, commit and push your edits to GitHub, make a pull request, review and merge a pull request, and communicate what you’re doing at each step.
 
 This requires some setup. We'll do this first, and discuss more as we go.
-
-```{=html}
-<!--- TOCUT or move
-
-## What is Quarto?
-
-Quarto helps you have your ideas and your code in one place, and present it in a beautiful way.
-
-> Quarto is an open-source scientific and technical publishing system built on Pandoc. You can weave together narrative text and code to produce elegantly formatted output as documents, web pages, blog posts, books, presentations, and more.
-
-Quarto can be used to create dynamic content with Python, R, Julia, and Observable through your favorite IDE like JupyterHub or RStudio. Creating and editing websites with Quarto can be done without knowing R, Python or HTML, CSS, etc, however, Quarto integrates with these tools so you can make your websites as complex and beautiful as you like as you see examples and reuse and remix from others in the open science community.
-
-[Quarto.org](https://quarto.org) is the go-to place for full documentation and more tutorials!
-
---->
-```
