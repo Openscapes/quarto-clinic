@@ -2,43 +2,31 @@
 title: Next Steps
 ---
 
-## Troubleshooting
-
-### My changes don't show up in preview
-
-Make sure you've saved your file! There might be a slight delay depending on your JupyterHub setup.
-
-### Quarto render hangs / does not complete
-
-Check the specific notebook, are there any \`---\` throughout to denote line breaks rather than yaml? They might be causing the issue; consider deleting those.
-
-Also check how long the first raw cell is. Are there level-1 headers (`#`)? Try removing them.
-
 ## Where to get help and learn more
 
 -   <https://quarto.org/>
-
+-   [A video to jumpstart your Quarto journey](https://quarto.org/docs/blog/posts/2023-05-15-get-started/), by Mine Çetinkaya-Rundel, May, 2023 (23 mins). *This is in RStudio IDE so will look different in the Hub.* Includes:
+    -   Inserting [cross references](https://quarto.org/docs/authoring/cross-references.html) to tables and figures
+    -   Adding a [citation](https://quarto.org/docs/visual-editor/technical.html#citations) from a DOI
+    -   Seamlessly switching between output formats as well as creating [multi-format documents](https://quarto.org/docs/output-formats/html-multi-format.html)
+    -   Customizing the [output location](https://quarto.org/docs/presentations/revealjs/#output-location) of code in presentations
+    -   Creating a [website](https://quarto.org/docs/websites/) from scratch
 -   [A Quarto tip a day](https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/), by Mine Çetinkaya-Rundel, July 2022
+-   [Tidyteam code review principles](https://code-review.tidyverse.org/), recommended by Andy Teucher
 
 ## Where to contribute
 
 We can use these skills to contribute to many Quarto websites and books.
 
 -   [NASA Earthdata Cloud Cookbook](https://nasa-openscapes.github.io/earthdata-cloud-cookbook/)
--   [NASA Openscapes site](https://nasa-openscapes.github.io/)
+-   [NASA Openscapes](https://nasa-openscapes.github.io/)
     -   e.g. add a link to your slides or recording of a presentation
 -   [Openscapes Approach Guide](https://openscapes.github.io/approach-guide/)
--   [Openscapes Champions Lessons Series](https://openscapes.github.io/series)
 
+## Other example Quarto sites
 
-## Example Quarto sites
-
--   [NASA Openscapes](https://nasa-openscapes.github.io/)
--   [NASA Earthdata Cloud Cookbook](https://nasa-openscapes.github.io/earthdata-cloud-cookbook/)
 -   [2021 NASA Cloud Hackathon](https://nasa-openscapes.github.io/2021-Cloud-Hackathon/)
 -   [Openscapes Champions Lessons Series](https://openscapes.github.io/series)
--   [Openscapes Approach Guide](https://openscapes.github.io/approach-guide/)
 -   [Faylab Lab Manual](https://thefaylab.github.io/lab-manual/)
--   [A Quarto tip a day](https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/), by Mine Çetinkaya-Rundel
 
 See many more examples at the [Quarto gallery](https://quarto.org/docs/gallery/)!
