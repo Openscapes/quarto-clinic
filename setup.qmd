@@ -59,7 +59,6 @@ cd quarto-clinic
 
 ### Aside: What is a branch?
 
-
 ### Create a new branch
 
 Working in a branch means you have your own version of the Quarto Clinic to edit and preview. Later, we'll learn how to contribute your edits to the Main branch of the Clinic by making a "Pull Request" on GitHub.
@@ -82,4 +81,5 @@ We'll follow the instructions in the 2021 Cloud Hackathon to [Setup your Persona
 
 ## Onward!
 
-Now we are ready to start editing! The next chapter describes how to do this in the JupyterHub.
+Since we have each set up our own GitHub clone with our unique branch of this Quarto Clinic website in the Hub, now we are ready to start editing! The next chapter describes how to do this in the JupyterHub.
+
