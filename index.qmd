@@ -13,7 +13,7 @@ The ability for Quarto to streamline collaboration has been so cool and importan
 
 ## Our Plan today
 
-We will learn workflows with Quarto and GitHub for contributing to open source documentation - like the [NASA Earthdata Cloud Cookbook](https://nasa-openscapes.github.io/earthdata-cloud-cookbook/). 
+We will learn workflows with Quarto and GitHub for contributing to open source documentation - like the [NASA Earthdata Cloud Cookbook](https://nasa-openscapes.github.io/earthdata-cloud-cookbook/).
 
 This is a 1.5-hr clinic that has demos and time for hands-on practice in breakout rooms.
 
@@ -21,8 +21,9 @@ This is a 1.5-hr clinic that has demos and time for hands-on practice in breakou
 
 **Part 2. GitHub Workflow:** Clone the repository for this site, make a branch to work in, edit, commit and push your edits to GitHub, make a pull request, review and merge a pull request, and communicate what you’re doing at each step.
 
-This requires some setup. We'll do this first, and discuss more as we go. 
+This requires some setup. We'll do this first, and discuss more as we go.
 
+```{=html}
 <!--- TOCUT or move
 
 ## What is Quarto?
@@ -36,4 +37,4 @@ Quarto can be used to create dynamic content with Python, R, Julia, and Observab
 [Quarto.org](https://quarto.org) is the go-to place for full documentation and more tutorials!
 
 --->
-
+```

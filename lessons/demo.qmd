@@ -1,5 +1,5 @@
 ---
-title: "Task 1a: Edit a `.qmd` page"
+title: "`.qmd` file for practice"
 ---
 
 This `demo.qmd` file has [Markdown](https://quarto.org/docs/authoring/markdown-basics.html)-formatted text, examples for adding headers, hyperlinks, and inserting images with alt-text, and a Python code chunk.

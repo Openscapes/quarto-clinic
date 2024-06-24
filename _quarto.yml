@@ -39,12 +39,9 @@ website:
       - section: lessons/index.qmd
         text: Lessons
         contents: 
-          - href: lessons/part1-quarto.qmd
-            text: Edit a Quarto site
-#          - href: lessons/demo.qmd
- #           text: demo.qmd practice file
-          - href: lessons/part2-github.qmd
-            text: Contribute via GitHub
+          - lessons/part1-quarto.qmd
+          - lessons/demo.qmd
+          - lessons/part2-github.qmd
       - href: next-steps.qmd
         text: Next Steps
 
