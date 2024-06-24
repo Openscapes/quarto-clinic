@@ -51,8 +51,6 @@ To open a link in a new browser tab, hold command on Mac, or control on a PC, th
 
 *TODO: replace screenshots; red arrows for lessons, next-steps, setup (rename setup-explore)*
 
-*TODO: take text from `_render-vs-preview.qmd` then delete*
-
 ![quarto-website-tutorial GitHub repository with files for webpages marked with red arrows](images/quarto-files-github.png){fig-alt="Screenshot of files on GitHub with red arrows identifying the files that we saw in the left sidebar" fig-align="center" width="80%"}
 
 ### Quarto Basic Workflow
