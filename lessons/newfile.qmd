@@ -1,5 +1,0 @@
----
-title: "newfile"
----
-
-This is a file we'll use to show how to make its content appear in our site, by editing the `_quarto.yml` file

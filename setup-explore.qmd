@@ -3,8 +3,6 @@ title: "Setup and Explore"
 editor: visual
 ---
 
-*TODO: Do Welcome, then Setup Part 1: Hub login, then Explore while Hub is initiating. Setup Part 2: clone, branch. Preview site is on next page: step 1 in Lessons: Edit Quarto site.*
-
 ## Setup Part 1: Log in to the Hub
 
 Go to the Hub <https://openscapes.2i2c.cloud> \> log in with your GitHub Account \> select the Python server.
@@ -38,11 +36,7 @@ Most of these are pages, but you'll see that "Lessons" has an arrow `>`; it is a
 
 ### The website's source repo
 
-<!---
-*TODO: If we will make a new repo for every Clinic, we'll need to update the repo link below, every time. Good to keep in mind; we'll figure out an approach where we don't need to update here every time...* 
---->
-
-Let's go to this website's GitHub repository (or "repo"), <https://github.com/Openscapes/quarto-clinic>. You can also click there from any page in this clinic website by clicking the GitHub Octocat icon underneath the Openscapes logo in the left navbar.
+Let's go to this website's GitHub repository (or "repo"). You can get there from any page in this clinic website by clicking the GitHub Octocat icon underneath the Openscapes logo in the left navbar.
 
 ::: callout-tip
 To open a link in a new browser tab, hold command on Mac, or control on a PC, then click.
@@ -50,36 +44,9 @@ To open a link in a new browser tab, hold command on Mac, or control on a PC, th
 
 **Have a look at the filenames.** We can recognize the names of the webpages we see (and listed above), and they have red arrows marking them in the image below. Note that most files in this repo are `.qmd` files. These are plain text Quarto files that can combine Markdown text with code. `index.qmd` is the home page. When we click inside the `lessons` folder we see more `.qmd` files and an `images` folder that holds images used in the pages inside the Lessons section of the site.
 
-*TODO: replace screenshots; red arrows for lessons, next-steps, setup (rename setup-explore)*
-
-*TODO: take text from `_render-vs-preview.qmd` then delete*
+*TODO: replace screenshots; red arrows for lessons*
 
 ![quarto-website-tutorial GitHub repository with files for webpages marked with red arrows](images/quarto-files-github.png){fig-alt="Screenshot of files on GitHub with red arrows identifying the files that we saw in the left sidebar" fig-align="center" width="80%"}
-
-### Quarto Basic Workflow
-
-Quarto is an open-source scientific and technical publishing system  You can weave together narrative text and code to produce elegantly formatted output as documents, web pages, blog posts, books, presentations, and more.
-
-How do you work in Quarto? You can use whichever tool you're comfortable with (Jupyter, RStudio, GitHub, VS Code, etc). Developing your Quarto site will have the same basic workflow, no matter which tool you use. It is very iterative.
-
-1.  Authoring: write text, code, images, etc in a file. Supported files include `.md`, `.Rmd`, `.qmd`, `.ipynb`...
-2.  Update `_quarto.yml` as needed (for example, if you've created a new file you'd like included in your site) <!---I think this still works even without exploring _quarto.yml yet --->
-3.  Render individual files and/or the whole website
-4.  Repeat, repeat, repeat
-5.  Commit and push your updates to GitHub, they will publish automatically!
-6.  Repeat all of the above to make the website as you'd like!
-
-
-<!--- TOCUT or MOVE - This feeels like too much for the intro here. 
-### `_quarto.yml` intro
-
-There is also a `_quarto.yml` file, which is the website's configuration file. It is essentially metadata for the website that includes the order that the pages / sections will be in. This is where we can update the organization of our website: which page comes before another, and how pages are named in the navbar. If we compare the repo and website side-by-side, we'll see that the pages that appear on our website are listed there.
-
-![\_quarto.yml and website side-by-side](images/quarto-yml-site-side-by-side3.png){fig-align="center"}
-
-We'll learn more about how to interact with `_quarto.yml` in the [Lessons](lessons/index.qmd).
-
---->
 
 ## Setup Part 2: Clone the Quarto Clinic repo
 

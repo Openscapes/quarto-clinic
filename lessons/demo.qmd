@@ -1,28 +1,22 @@
 ---
-title: "`demo.qmd` Quarto Practice"
+title: "`.qmd` file for practice"
 ---
 
-Quarto enables you to weave together content and executable code into a finished document.
+This `demo.qmd` file has [Markdown](https://quarto.org/docs/authoring/markdown-basics.html)-formatted text, examples for adding headers, hyperlinks, and inserting images with alt-text, and a Python code chunk.
 
-This `demo.qmd` file has Markdown-formatted text, examples for adding headers, hyperlinks, and inserting images with alt-text, and a Python code chunk.
+-   Headers are powerful in Quarto because they let you organize on the side of the page. In a Quarto site, headers let you share a specific section of a page by clicking on a header and copying the URL.
+-   Hyperlinking lets us cite our sources and inspirations and give credit.
+-   Python code in a `.qmd` file will be executed automatically.
 
-Headers are powerful in Quarto because they let you organize on the side of the page. In a Quarto site, headers let you share a specific section of a page by clicking on a header and copying the URL.
-
-Hyperlinking lets us cite our sources and inspirations and give credit.
-
-Python code in a `.qmd` file will be executed automatically. *TODO: draft manage echo, run*
-
-## Task 1a: Edit a `.qmd` page
-
-We can all practice Markdown in this Quarto file. Make an edit, preview how it will look in the site (quarto preview), edit, repeat.
+We can all practice Markdown in this Quarto file. Make an edit, preview how it will look in the site (`quarto preview`), edit, repeat.
 
 ::: callout-note
-Only make changes to the section under your name header (to prevent conflicts at a later stage)
+Only make changes to the section below under *your* name header (to prevent conflicts with other people's edits)
 :::
 
 ### Stefanie
 
-Your first edit? Fix this tpyo.
+For your first edit, you could fix this tpyo and preview how it will look in the site.
 
 #### **Headers**
 
@@ -57,13 +51,11 @@ You can add options to executable code. The `echo: false` option disables the pr
 
 ### Julie
 
-Fix this tpyo.
-
-*TODO: copy activities text under each participant heading when it's settled*
+For your first edit, you could fix this tpyo and preview how it will look in the site.
 
 ### Andy
 
-Fix this tpyo.
+For your first edit, you could fix this tpyo and preview how it will look in the site.
 
 ## Your turn!
 
