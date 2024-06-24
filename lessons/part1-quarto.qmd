@@ -23,7 +23,7 @@ Now that we have each set up our own GitHub clone with our unique branch of this
 
 ## Make changes to the site content
 
-Choose either [Task 1a: Edit and preview a demo.qmd file] or \[Task 1b: Create a new .ipynb page\] to try in a breakout room.
+Choose either [Task 1a: Edit and preview a demo.qmd file] or [Task 1b: Create a new `.ipynb` page] to try in a breakout room.
 
 ### Task 1a: Edit and preview a demo.qmd file
 
@@ -115,7 +115,7 @@ Let's have a closer look at the `_quarto.yml` file.
 
 This type of file is written in YAML ("Yet Another Markup Language"). You'll be able to shift the arrangement of webpages by reordering/adding/deleting them in the `_quarto.yml` file following the patterns you see in this example.
 
-![\_quarto.yml and website side-by-side](images/quarto-yml-site-side-by-side3.png){alt="_quarto.yml and website side-by-side" fig-align="center" width="95%"}
+![\_quarto.yml and website side-by-side](images/quarto-yml-site-side-by-side3.png){fig-align="center" width="95%"}
 
 Now we'll add `python-yourname.ipynb` or any `newfile.qmd` to our `_quarto.yml` file.
 
