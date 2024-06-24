@@ -5,7 +5,7 @@ subtitle: "Contribute to open educational resources, onboarding docs, and much m
 
 ## Welcome
 
-It's possible to create beautiful documentation to share online with [Quarto](https://quarto.org) that auto-updates with [GitHub](http://github.com). This Clinic is an example of a Quarto website --- a really powerful way to create and share your work. You can communicate about science using the same reproducible workflow you and/or your colleagues use for analyses, whether or not you write code.
+It's possible to create beautiful documentation to share online with [Quarto](https://quarto.org) that auto-updates with [GitHub](http://github.com). This Clinic is an example of a Quarto website --- a really powerful way to create and share your work. You can communicate about science using the same reproducible workflow you or your colleagues use for analyses, whether or not you write code.
 
 Quarto is an open-source scientific and technical publishing system. You can weave together narrative text and code to produce elegantly formatted output as documents, web pages, blog posts, books, presentations, and more.
 

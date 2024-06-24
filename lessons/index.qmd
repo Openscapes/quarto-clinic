@@ -7,9 +7,9 @@ In this section we'll practice two workflows: [Part 1: Edit a Quarto site](part1
 ## Workflow to edit a Quarto site source
 
 1.  Preview the site
-2.  Make changes to files, save, preview
-3.  Update `_quarto.yml` file to have new content appear in the site's nav bar.
-4.  
+2.  Make changes to files; supported types include `.qmd`, `.ipynb` `.md`, `.Rmd`.
+3.  Save, preview
+4.  Update `_quarto.yml` file as needed to have new content appear in the site's nav bar.
 
 ## Workflow to contribute via GitHub
 
