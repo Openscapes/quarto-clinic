@@ -2,10 +2,6 @@
 title: "Part 1: Edit a Quarto site"
 ---
 
-The NASA Openscapes 2i2c JupyterHub ("the Hub") has a Python environment as well as Quarto installed. No further installations are required.
-
-*TODO: List here the things we'll do in this section*
-
 ## Preview the site (aka Quarto preview)
 
 Let's start off by previewing our quarto site locally. In Terminal, in the `quarto-clinic` folder, type `quarto preview`, which will provide a URL with a preview of our site!
@@ -38,8 +34,6 @@ First we'll demonstrate, then you can choose either Task 1a or 1b to try in a br
 **Open [`lessons/demo.qmd`](demo.qmd) file using the Editor, not as a Notebook file.** Suggestions for things to try, and how to format things are in the file.
 
 ![Open .qmd file with the Editor](images/jupyterhub-openwith-editor.png){fig-align="left" width="50%"}
-
-*TODO: screenshot of demo file in Hub Editor with typo showing?*
 
 #### Make a small change and preview it
 
