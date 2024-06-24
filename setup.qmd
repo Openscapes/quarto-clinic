@@ -1,5 +1,5 @@
 ---
-title: "Setup and Explore"
+title: "Setup"
 editor: visual
 ---
 
