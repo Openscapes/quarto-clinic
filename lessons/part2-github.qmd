@@ -1,6 +1,18 @@
 ---
-title: "Part 2: Contribute via GitHub"
+title: "Part 2: GitHub workflow"
 ---
+
+## Workflow to contribute via GitHub
+
+1.  Inspect the differences your edits will introduce
+2.  "Stage" your changes
+3.  Commit your changes with a helpful "Commit message"
+4.  "Push" to GitHub
+5.  Go to the Clinic repo source on GitHub, in your browser
+6.  Make a "Pull Request" and tag a reviewer
+7.  Reviewer responds by commenting, making suggested commits, and submitting their review
+8.  Author responds to review and "merges" their Pull Request
+9.  A GitHub Action automatically publishes the updates in the live siteDiff, Stage, Commit, and Push your edits to GitHub
 
 ## Contribute your updates using GitHub
 
@@ -74,3 +86,11 @@ As the author, you can now address the reviewer's comments and then merge your P
 Pair up in breakouts to make and review each other's Pull Requests
 
 ## View your updates in the live site (Regroup, 10 min)
+
+## Regroup discussion topics
+
+**Short message: commit the freeze folder.**
+
+- Freeze directory contains the results of code execution. 
+- Commit the freeze directory after you run quarto preview. 
+- If there are merge conflicts when you submit to NASA Openscapes Cookbook, maintainers will help resolve them. 

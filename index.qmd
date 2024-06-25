@@ -5,22 +5,27 @@ subtitle: "Contribute to open educational resources, onboarding docs, and much m
 
 ## Welcome
 
-It's possible to create beautiful documentation to share online with [Quarto](https://quarto.org) that auto-updates with [GitHub](http://github.com). This Clinic is an example of a Quarto website --- a really powerful way to create and share your work. You can communicate about science using the same reproducible workflow you or your colleagues use for analyses, whether or not you write code.
+This book is an example of a Quarto website that is published via GitHub - these are powerful workflows to create and share your work.
 
-Quarto is an open-source scientific and technical publishing system. You can weave together narrative text and code to produce elegantly formatted output as documents, web pages, blog posts, books, presentations, and more.
+Quarto lets us build websites as a collection of files (`.qmd`, `.ipynb`, `.rmd` and others). Today we'll focus on `.qmd` files, which are plain-text files that work nicely with GitHub workflows.
 
-The ability for Quarto to streamline collaboration has been so cool and important for our [NASA Openscapes](https://nasa-openscapes.github.io/) project. Quarto is a common place for us to collaborate - across Python and R languages and varied levels of coding expertise, and accessibility and inclusion are centered in the Quarto design.
+Quarto enables us to collaborate on documentation and tutorials - across Python and R languages and varied levels of coding expertise. Importantly, it lets us write and share documentation/tutorials using the same tools we teach research teams for reproducible science.
 
-**To begin**, you should have a GitHub account with access to the 2i2c Openscapes JupyterHub.
+The ability for Quarto to streamline collaboration has been so cool and important for our [NASA Openscapes](https://nasa-openscapes.github.io/) project, so this tutorial will enable you to contribute to that site as well as the [NASA Earthdata Cloud Cookbook](https://nasa-openscapes.github.io/earthdata-cloud-cookbook/) (both made with Quarto+GitHub.)
+
+![](images/horst_quarto_schematic.png){fig-alt="3 part illustration left-to-right that starts with R, Python, Julia, Observable and more pointing to Quarto and then pointing to html, pdf, and word documents" fig-align="center" width="1100"}
 
 ## Our Plan today
 
-We will learn workflows with Quarto and GitHub for contributing to open source documentation - like the [NASA Earthdata Cloud Cookbook](https://nasa-openscapes.github.io/earthdata-cloud-cookbook/).
+We will learn workflows with Quarto and GitHub for contributing to open source documentation. We'll cover contributing in 2 parts:
 
-This is a 1.5-hr clinic that has demos and time for hands-on practice in breakout rooms.
+**Part 1. Quarto Workflow:** Use the 2i2c Openscapes JupyterHub as an editor: we will contribute to this Quarto site by editing a `.qmd` file and previewing the changes.
 
-**Part 1. Quarto Workflow:** Use the 2i2c Openscapes JupyterHub to explore this clinic website and its source repository on GitHub, practice contributing to this site by editing a Quarto file or adding a new Jupyter Notebook and previewing the changes.
-
-**Part 2. GitHub Workflow:** Clone the repository for this site, make a branch to work in, edit, commit and push your edits to GitHub, make a pull request, review and merge a pull request, and communicate what you’re doing at each step.
+**Part 2. GitHub Workflow:** Clone the repository for this site, make a branch to work in, commit and push your edits to GitHub, make a pull request, review and merge a pull request, and communicate what you’re doing at each step.
 
 This requires some setup. We'll do this first, and discuss more as we go.
+
+## Prerequisites
+
+**To begin**, you should have a GitHub account with access to the 2i2c Openscapes JupyterHub.
+

@@ -14,9 +14,7 @@ We can all practice Markdown in this Quarto file. Make an edit, preview how it w
 Only make changes to the section below under *your* name header (to prevent conflicts with other people's edits)
 :::
 
-### Stefanie
-
-For your first edit, you could fix this tpyo and preview how it will look in the site.
+## Ideas for contributions
 
 #### **Headers**
 
@@ -42,21 +40,24 @@ When you **Render**, a document will be generated that includes both content and
 
 *TODO: day before clinic, make this Python code (don't add screenshot - fewer files to for folks to get distracted with, lighter weight repo)*
 
-```{r}
-#| echo: false
+```{bash}
 2 * 2
 ```
 
 You can add options to executable code. The `echo: false` option disables the printing of code (only output is displayed).
 
-### Julie
+
+## Stefanie
 
 For your first edit, you could fix this tpyo and preview how it will look in the site.
 
-### Andy
+
+## Julie
 
 For your first edit, you could fix this tpyo and preview how it will look in the site.
 
-## Your turn!
+## Andy
 
-Change or add something to this file under your Name header and save the file.
+For your first edit, you could fix this tpyo and preview how it will look in the site.
+
+

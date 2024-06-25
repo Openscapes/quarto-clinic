@@ -4,23 +4,12 @@ title: Practice
 
 In this section we'll practice two workflows: [Part 1: Edit a Quarto site](part1-quarto.qmd), and [Part 2: Contribute via GitHub](part2-github.qmd). We include a basic workflow for each here, so you can come back to these for a reminder.
 
-## Workflow to edit a Quarto site source
+<!---
+TODO: some overarching statement/illustration of: ("there's a lot of jargon/concepts:)
 
-1.  Preview the site
-2.  Make changes to files; supported types include `.qmd`, `.ipynb` `.md`, `.Rmd`.
-3.  Save, preview
-4.  Update `_quarto.yml` file as needed to have new content appear in the site's nav bar.
+Quarto is a thing that lets you combine different file times we build to ... (preview, .qmd, and how they are built together)
+GitHub is how we contribute to...
+JupyterHub / terminal
+Branches
+--->
 
-## Workflow to contribute via GitHub
-
-1.  Inspect the differences your edits will introduce
-2.  "Stage" your changes
-3.  Commit your changes with a helpful "Commit message"
-4.  "Push" to GitHub
-5.  Go to the Clinic repo source on GitHub, in your browser
-6.  Make a "Pull Request" and tag a reviewer
-7.  Reviewer responds by commenting, making suggested commits, and submitting their review
-8.  Author responds to review and "merges" their Pull Request
-9.  A GitHub Action automatically publishes the updates in the live siteDiff, Stage, Commit, and Push your edits to GitHub
-
-## Let's try these workflows!

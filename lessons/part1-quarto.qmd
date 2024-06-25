@@ -1,8 +1,17 @@
 ---
-title: "Part 1: Edit a Quarto site"
+title: "Part 1: Quarto workflow"
 ---
 
-## Preview the site (aka Quarto preview)
+## Workflow to edit a Quarto website source
+
+1.  Preview the website (`quarto preview`)
+2.  Make changes to files 
+3.  Save and preview how changes are automatically updated!
+
+## Demo: Edit and preview a demo.qmd file
+I will demonstrate this with the `demo.qmd` file: watch me and then you will all have a chance to do this yourself.
+
+### Preview the website (aka Quarto preview)
 
 Let's start off by previewing our quarto site locally. In Terminal, in the `quarto-clinic` folder, type `quarto preview`, which will provide a URL with a preview of our site!
 
@@ -15,158 +24,37 @@ quarto preview
 
 Open this URL in a browser window and arrange your Hub and website preview windows so you can see them both. I make a bit more space in Jupyter by collapsing the left file menu by clicking on the file icon at the top of the left sidebar.
 
-*TODO: add new screenshots*
+<!---*TODO: add new screenshots* TODO only show demo.qmd example
 
-![](images/jupyter-side-by-side.png){fig-align="center"}
+![](images/jupyter-side-by-side.png){fig-align="center"} --->
 
-Now that we have each set up our own GitHub clone with our unique branch of this Quarto Clinic website in the Hub, we can practice editing and rendering `.qmd` and `.ipynb` files. These are the workflows we use to contribute to the NASA Earthdata Cloud Cookbook and other Quarto websites and books.
 
-## Make changes to the site content
-
-Choose either [Task 1a: Edit and preview a demo.qmd file] or [Task 1b: Create a new `.ipynb` page] to try in a breakout room.
-
-### Task 1a: Edit and preview a demo.qmd file
+## Make changes to files (aka the website content)
 
 **Open [`lessons/demo.qmd`](demo.qmd) file using the Editor, not as a Notebook file.** Suggestions for things to try, and how to format things are in the file.
 
 ![Open .qmd file with the Editor](images/jupyterhub-openwith-editor.png){fig-align="left" width="50%"}
 
-#### Make a small change and preview it
 
-Now we'll be able to see live changes in the preview as we edit in our `.qmd` files. Let's try it: Fix the typo. When we save changes, our preview window will refresh automatically and display our changes! If it does not, you can also refresh the page manually.
+I will fix a small typo. 
 
-### Task 1b: Create a new `.ipynb` page
+### Save and preview automagically updates!
 
-Let's add a new page to our site. Instead of a `.qmd` file like the others, let's add a `.ipynb` file.
+When we save changes, our preview window will refresh automatically and display our changes! If it does not, you can also refresh the page manually.
 
-File \> New \> Notebook. Accept the default kernel by clicking Select.
+This is powerful to be able to see live changes in the preview as we edit in our `.qmd` files. 
 
-*TODO: screenshot*
+## Your turn 
 
-#### First chunk: raw yaml
+In your breakout room: 
 
-By default, this Notebook will give us a first chunk that is code. Let's change it to raw so that we can write our yaml at the top.
+- In terminal, `cd quarto-clinic` and then `quarto preview`
+- Open `demo.qmd` file
+- Find the header with your name, edit in that section. Ideas at the top of the file.
+- Save, `quarto preview`
+- Repeat!
 
-![](images/jupyter-raw-chunk.png){fig-align="center"}
+## Regroup discussion topics
 
-In our Raw code chunk, let's write the title of this document. We need three dashes `---` on separate lines preceding and following the `title:`, which you can name as you'd like.
+- When adding new files, update `_quarto.yml` file as needed to have new content appear in the site's nav bar. (see https://openscapes.github.io/quarto-website-tutorial/explore.html)
 
-``` bash
----
-title: Python Example
----
-```
-
-#### Second chunk: Markdown
-
-Let's add a new chunk that is Markdown so we can write some description of what this page will be.
-
-Click the `+` symbol at the top of the document, and this will add a new chunk, which by default again is a Code chunk. Change it to a Markdown Chunk following the steps we did above when switching to Raw.
-
-Here, write a little bit of text in Markdown. Since your title is effectively a level-1 header, avoid using level-1 headers in the rest of your document. Here is some example text I wrote:
-
-``` bash
-## Introduction
-
-This example has some Python code that will be a part of our Quarto site.
-```
-
-#### Third chunk: Code
-
-Now let's create a new chunk with the default Code setting.
-
-Paste the following code (or write some of your own to test):
-
-``` python
-#| label: fig-polar
-#| fig-cap: "A line plot on a polar axis"
-import numpy as np
-import matplotlib.pyplot as plt
-r = np.arange(0, 2, 0.01)
-theta = 2 * np.pi * r
-fig, ax = plt.subplots(
-  subplot_kw = {'projection': 'polar'} 
-)
-ax.plot(theta, r)
-ax.set_rticks([0.5, 1, 1.5, 2])
-ax.grid(True)
-plt.show()
-```
-
-Now, execute this code chunk as you normally would, by clicking the cursor in a code block and clicking the sideways "play" triangle to run the selected cells (and advance to the next cell). This code produces a plot.
-
-Note that the code runs as it normally would; the code options in the comments are just comments.
-
-#### Save your file
-
-Save your document. Name it `python-yourname.ipynb`.
-
-::: callout-important
-In this Clinic, you must give unique filenames to any new files you create. This will help avoid conflicts that will arise from several people creating files called `example.ipynb` and trying to display them in the site.
-:::
-
-## Preview your updates (Regroup, 10 min)
-
-If you created a new page, how do you get it to appear in the site? This involves editing `_quarto.yml` to have it show up in site
-
-### Update `_quarto.yml`
-
-Let's have a closer look at the `_quarto.yml` file.
-
-This type of file is written in YAML ("Yet Another Markup Language"). You'll be able to shift the arrangement of webpages by reordering/adding/deleting them in the `_quarto.yml` file following the patterns you see in this example.
-
-![\_quarto.yml and website side-by-side](images/quarto-yml-site-side-by-side3.png){fig-align="center" width="95%"}
-
-Now we'll add `python-yourname.ipynb` or any `newfile.qmd` to our `_quarto.yml` file.
-
-Open `_quarto.yml` by clicking on it from the file directory.
-
-Scroll down to review the current contents in the `sidebar:` section. It's there we see all the file arrangements that we see in the previewed site.
-
-*TODO: update screenshots and dont' use line \#*
-
-Add `- python-yourname.ipynb` below `- lessons/part1-quarto.qmd`, making sure that your indentation aligns with the other pages.
-
-::: callout-important
-As you modify `_quarto.yml`, the most important thing to know is that **spacing matters**. Pay attention to whether text is indented by one, two, four, or other spaces, and make sure you follow it; if your site is not looking as expected it is likely a silent error in your YAML.
-:::
-
-![](images/jupyter-python-example.png){fig-align="center"}
-
-You'll see that our new page shows up in our Preview, and the code is executed since we did that in the Jupyter Notebook itself. By default, Quarto will not execute code chunks since your computations will likely become more complex and you will want to control when they are executed (or "run").
-
-Since Quarto is still previewing our website and the `python-yourname.ipynb`, the plot also displays in the notebook after the code is run and the file is saved, as shown below.
-
-![](images/jupyter-execute-cell.png){fig-align="center"}
-
-So, your normal workflow for creating and running code blocks in your Jupyter Notebook is the same one you'll use as Quarto displays the preview.
-
-### Quarto render
-
-*TODO: clarify preview vs render text; cp some `render-vs-preview.qmd`*
-
-So far we have used **Quarto preview** to view our website as we develop it. **Quarto render** will build the html elements of the website that we can see when we preview. Rendering will format the markdown text and code nicely as `.html` files for a website (or however is indicated in the `_quarto.yml`; could be `.docx` or `.pdf` files).
-
-By default, Quarto render does not execute code in a Jupyter notebook. It will never run `.ipynb` files unless you tell it to.
-
-````{=html}
-<!--- ### Render whole notebook
-
-*TODO: incorporate/ link to [Cookbook Quarto render](https://nasa-openscapes.github.io/earthdata-cloud-cookbook/contributing/workflow.html#quarto-render)*
-
-If you would like it to specifically execute code in a Jupyter notebook, you can do so in Terminal.
-
-Our Terminal is still busy previewing our website, so let's open a new Terminal.
-
-File \> New \> Terminal. Then type:
-
-``` bash
-cd quarto-website-tutorial
-quarto render python-example.ipynb --execute
-```
---->
-````
-
-## Onward
-
-Now we can move to [Part 2](part2-github.qmd) to Contribute your proposed updates using Git and GitHub.

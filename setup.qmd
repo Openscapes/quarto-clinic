@@ -1,5 +1,5 @@
 ---
-title: "Setup and Explore"
+title: "Setup"
 editor: visual
 ---
 
@@ -17,12 +17,6 @@ It takes a few minutes for the Hub to load. Please be patient!
 
 While the server starts up, we’ll explore the Quarto Clinic website structure side by side with the repo.
 
-## Explore
-
-With this Clinic, we have a working example website that we will explore together. We'll learn a few rules and look for patterns to get an understanding of what things to do to help you start customizing and making it your own. You can continue to use this website as a reference after the clinic, along with [Quarto](https://quarto.org) documentation.
-
-We'll start our exploration looking at the website architecture and its source GitHub repository. Then we'll setup a copy for ourselves so that we can modify starting from a working example, which is a great way to learn something new.
-
 ### The website
 
 This Quarto Clinic website has 4 things you can see on the left navbar:
@@ -34,7 +28,7 @@ This Quarto Clinic website has 4 things you can see on the left navbar:
 
 Most of these are pages, but you'll see that "Lessons" has an arrow `>`; it is a folder with additional pages inside.
 
-### The website's source repo
+### The website's source repo - is this helpful for this clinic?
 
 Let's go to this website's GitHub repository (or "repo"). You can get there from any page in this clinic website by clicking the GitHub Octocat icon underneath the Openscapes logo in the left navbar.
 
@@ -63,6 +57,8 @@ git clone https://github.com/openscapes/quarto-clinic
 cd quarto-clinic
 ```
 
+### Aside: What is a branch?
+
 ### Create a new branch
 
 Working in a branch means you have your own version of the Quarto Clinic to edit and preview. Later, we'll learn how to contribute your edits to the Main branch of the Clinic by making a "Pull Request" on GitHub.
@@ -85,4 +81,5 @@ We'll follow the instructions in the 2021 Cloud Hackathon to [Setup your Persona
 
 ## Onward!
 
-Now we are ready to start editing! The next chapter describes how to do this in the JupyterHub.
+Since we have each set up our own GitHub clone with our unique branch of this Quarto Clinic website in the Hub, now we are ready to start editing! The next chapter describes how to do this in the JupyterHub.
+
