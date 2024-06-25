@@ -166,15 +166,24 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#workflow-to-contribute-via-github" id="toc-workflow-to-contribute-via-github" class="nav-link active" data-scroll-target="#workflow-to-contribute-via-github">Workflow to contribute via GitHub</a></li>
   <li><a href="#contribute-your-updates-using-github" id="toc-contribute-your-updates-using-github" class="nav-link" data-scroll-target="#contribute-your-updates-using-github">Contribute your updates using GitHub</a>
   <ul class="collapse">
-  <li><a href="#demonstration" id="toc-demonstration" class="nav-link" data-scroll-target="#demonstration">Demonstration</a></li>
-  <li><a href="#set-up-our-git-credentials" id="toc-set-up-our-git-credentials" class="nav-link" data-scroll-target="#set-up-our-git-credentials">Set up our Git credentials</a></li>
-  <li><a href="#make-a-pull-request" id="toc-make-a-pull-request" class="nav-link" data-scroll-target="#make-a-pull-request">Make a Pull Request</a></li>
-  <li><a href="#review-a-pull-request" id="toc-review-a-pull-request" class="nav-link" data-scroll-target="#review-a-pull-request">Review a pull request</a></li>
-  <li><a href="#merge-your-pull-request" id="toc-merge-your-pull-request" class="nav-link" data-scroll-target="#merge-your-pull-request">Merge your Pull Request</a></li>
-  <li><a href="#try-it-out" id="toc-try-it-out" class="nav-link" data-scroll-target="#try-it-out">Try it out!</a></li>
+  <li><a href="#author-stages-commits-and-pushes-file" id="toc-author-stages-commits-and-pushes-file" class="nav-link" data-scroll-target="#author-stages-commits-and-pushes-file">Author stages, commits, and pushes file</a></li>
+  <li><a href="#aside-set-up-our-git-credentials" id="toc-aside-set-up-our-git-credentials" class="nav-link" data-scroll-target="#aside-set-up-our-git-credentials">Aside: set up our Git credentials</a></li>
+  <li><a href="#author-makes-a-pull-request" id="toc-author-makes-a-pull-request" class="nav-link" data-scroll-target="#author-makes-a-pull-request">Author makes a Pull Request</a></li>
+  <li><a href="#reviewer-reviews-the-pull-request" id="toc-reviewer-reviews-the-pull-request" class="nav-link" data-scroll-target="#reviewer-reviews-the-pull-request">Reviewer reviews the Pull Request</a></li>
+  <li><a href="#author-merges-pull-request" id="toc-author-merges-pull-request" class="nav-link" data-scroll-target="#author-merges-pull-request">Author merges Pull Request</a></li>
   </ul></li>
-  <li><a href="#view-your-updates-in-the-live-site-regroup-10-min" id="toc-view-your-updates-in-the-live-site-regroup-10-min" class="nav-link" data-scroll-target="#view-your-updates-in-the-live-site-regroup-10-min">View your updates in the live site (Regroup, 10 min)</a></li>
-  <li><a href="#regroup-discussion-topics" id="toc-regroup-discussion-topics" class="nav-link" data-scroll-target="#regroup-discussion-topics">Regroup discussion topics</a></li>
+  <li><a href="#your-turn---breakout-rooms" id="toc-your-turn---breakout-rooms" class="nav-link" data-scroll-target="#your-turn---breakout-rooms">Your turn - Breakout rooms</a></li>
+  <li><a href="#regroup-wrap-up" id="toc-regroup-wrap-up" class="nav-link" data-scroll-target="#regroup-wrap-up">Regroup &amp; Wrap up</a>
+  <ul class="collapse">
+  <li><a href="#review-our-updated-site" id="toc-review-our-updated-site" class="nav-link" data-scroll-target="#review-our-updated-site">Review our updated site</a></li>
+  <li><a href="#tidying-up" id="toc-tidying-up" class="nav-link" data-scroll-target="#tidying-up">Tidying up</a></li>
+  </ul></li>
+  <li><a href="#regroup-discussion-topics" id="toc-regroup-discussion-topics" class="nav-link" data-scroll-target="#regroup-discussion-topics">Regroup discussion topics</a>
+  <ul class="collapse">
+  <li><a href="#deleting-branches" id="toc-deleting-branches" class="nav-link" data-scroll-target="#deleting-branches">Deleting branches</a></li>
+  <li><a href="#code-rendering-.qmd-files" id="toc-code-rendering-.qmd-files" class="nav-link" data-scroll-target="#code-rendering-.qmd-files">Code &amp; rendering <code>.qmd</code> files</a></li>
+  <li><a href="#freeze" id="toc-freeze" class="nav-link" data-scroll-target="#freeze">Freeze</a></li>
+  </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/Openscapes/quarto-clinic/edit/main/part2-github.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/Openscapes/quarto-clinic/blob/main/part2-github.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/Openscapes/quarto-clinic/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -217,16 +226,17 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="contribute-your-updates-using-github" class="level2">
 <h2 class="anchored" data-anchor-id="contribute-your-updates-using-github">Contribute your updates using GitHub</h2>
-<p>Now that we have each saved some changes to files in our Quarto site source, liike <code>.qmd</code>, <code>.ipynb</code>, and/or <code>_quarto.yml</code>, we can contribute our updates using GitHub.</p>
-<section id="demonstration" class="level3">
-<h3 class="anchored" data-anchor-id="demonstration">Demonstration</h3>
+<p>Now that we have each saved some changes to files in our Quarto site source, we can contribute our updates using GitHub.</p>
+<p>We will demonstrate this and then you will do this in breakout rooms.</p>
+<section id="author-stages-commits-and-pushes-file" class="level3">
+<h3 class="anchored" data-anchor-id="author-stages-commits-and-pushes-file">Author stages, commits, and pushes file</h3>
 <p>You have to deliberately tell Git/GitHub when you have work that you want to be versioned and synced. First, inspect the differences your edits will introduce.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/jupyterhub-git-diff.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></p>
+<p><img src="images/jupyterhub-git-diff.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%"></p>
 </figure>
 </div>
-<p>In the Git tab “stage” your saved changes.</p>
+<p>In the Git tab “stage” your saved changes. There may be a <code>.json</code> file that you also stage; this is part of the Quarto build process.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/jupyterhub-git-stage.png" class="img-fluid figure-img" style="width:50.0%"></p>
@@ -234,15 +244,10 @@ ul.task-list li input[type="checkbox"] {
 </figure>
 </div>
 <p>Commit your edits with a good commit message and push your edits to GitHub. A commit message is a human-readable message, like leaving a breadcrumb trail for your future self and others.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/jupyterhub-git-commit-push.png" class="img-fluid figure-img" style="width:50.0%"></p>
-<figcaption>Commit and Push</figcaption>
-</figure>
-</div>
+<p><img src="images/jupyterhub-git-commit-push.png" class="img-fluid quarto-figure quarto-figure-center" style="width:50.0%" alt="Commit and Push"> When you <strong>push</strong> by clicking the push icon (with the orange dot since we have committed files to push), you may be prompted to enter your git credentials.</p>
 </section>
-<section id="set-up-our-git-credentials" class="level3">
-<h3 class="anchored" data-anchor-id="set-up-our-git-credentials">Set up our Git credentials</h3>
+<section id="aside-set-up-our-git-credentials" class="level3">
+<h3 class="anchored" data-anchor-id="aside-set-up-our-git-credentials">Aside: set up our Git credentials</h3>
 <p>On your first commit, you will be prompted to add your Git credentials. When you are working on a project over time, you can have them stored, following instructions in <a href="https://nasa-openscapes.github.io/2021-Cloud-Hackathon/tutorials/00_Setup.html#step-5.1.-configure-git-git-config">Configure Git (git config)</a> from the 2021 Cloud Hackathon.</p>
 <p><em>TODO: do we need to do <a href="https://nasa-openscapes.github.io/2021-Cloud-Hackathon/tutorials/00_Setup.html#step-5.1.-configure-git-git-config">Step 5.1. Configure Git (<code>git config</code>)</a>? (but ignore the push file part). Clarify the following text to say see the orange dot. click it to be prompted</em></p>
 <p>When you see the following screenshot, GitHub is asking for you to input your credentials. (Note: you see this screenshot when you have committed work to push to GitHub.com. In this case we have created a new branch in the Hub and it does not yet exist on GitHub.</p>
@@ -254,42 +259,49 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <p>We’ll follow the instructions in the 2021 Cloud Hackathon to <a href="https://nasa-openscapes.github.io/2021-Cloud-Hackathon/tutorials/00_Setup.html#step-5.6.-setup-pat">Setup your Personal Access Token (PAT)</a>.</p>
 </section>
-<section id="make-a-pull-request" class="level3">
-<h3 class="anchored" data-anchor-id="make-a-pull-request">Make a Pull Request</h3>
+<section id="author-makes-a-pull-request" class="level3">
+<h3 class="anchored" data-anchor-id="author-makes-a-pull-request">Author makes a Pull Request</h3>
 <p>Our current status is that in the Hub, in our own branch of the Quarto Clinic repo, we have made one or more edits to the Clinic files, committed those updates, and pushed those commit(s) to GitHub. How do our suggested contributions get incorporated into the main Quarto Clinic repo and website? Via a <strong>Pull Request</strong>.</p>
-<p>After pushing your edits, go to <a href="https://github.com/Openscapes/quarto-clinic/" class="uri">https://github.com/Openscapes/quarto-clinic/</a> <!--- replace with unique link to a clinic ---> and you will see a yellow banner inviting you to make a Pull Request to add your edits to the Clinic repo.</p>
+<p>Now we’ll go to <a href="https://github.com/Openscapes/quarto-clinic/" class="uri">https://github.com/Openscapes/quarto-clinic/</a> <!--- replace with unique link to a clinic ---> and you will see a yellow banner inviting you to make a Pull Request to add your edits to the Clinic repo.</p>
 <div class="quarto-figure quarto-figure-left">
 <figure class="figure">
 <p><img src="images/github-yellow-pr-banner.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:90.0%"></p>
 </figure>
 </div>
 <p>Not finished proposing your updates? You can set your Pull Request as a Draft at the start so folks can see your thinking. Set Ready for Review when ready and request a reviewer(s). For the NASA Earthdata Cloud Cookbook, any Pull Request must be reviewed before it can be merged. If you know someone who is familiar with the content you’re proposing to add, request their review.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/pull-request.png" class="img-fluid figure-img" style="width:90.0%"></p>
+<figcaption>First view of a Pull Request.</figcaption>
+</figure>
+</div>
 </section>
-<section id="review-a-pull-request" class="level3">
-<h3 class="anchored" data-anchor-id="review-a-pull-request">Review a pull request</h3>
+<section id="reviewer-reviews-the-pull-request" class="level3">
+<h3 class="anchored" data-anchor-id="reviewer-reviews-the-pull-request">Reviewer reviews the Pull Request</h3>
+<p>TODO:</p>
 <p>From the pull request page in GitHub browser, look at the elements of the pull request.</p>
 <!--- *TODO: add screenshot of a PR page like the one in Cookbook, pull-request-example.png* --->
 <ul>
-<li>Start with Conversation tab:
+<li>Start with <strong>Conversation</strong> tab:
 <ul>
 <li>We can see all commits and comments on what Andy has worked on</li>
 <li>This is where we can add PR reviewers by clicking the gear icon next to “Reviewers” at the top right corner of this tab.</li>
 </ul></li>
-<li>Commit tab:
+<li><strong>Commit</strong> tab:
 <ul>
 <li>More details on the commits that we saw under Conversation. When we click on one of the commits, we can see line by line what has changed under that commit (green lines are added, red lines have been removed)</li>
 </ul></li>
-<li>Files Changed tab:
+<li><strong>Files Changed</strong> tab:
 <ul>
 <li>View all the files that changed across the commits</li>
 <li>In Nav bar: Orange dot box signifies modified; Green plus box means something’s been added; Red minus box means deleted; Grey arrow box means renamed.</li>
 </ul></li>
-<li>Checks tab:
+<li><strong>Checks</strong> tab:
 <ul>
 <li>Shows status of the Github Action that renders and deploys the site. We can know whether this Pull Request is able to be deployed.</li>
 </ul></li>
 </ul>
-<p>Now, switch to the 2i2c Hub to view the Cookbook preview as it would appear if the pull request was merged:</p>
+<p>Now, switch to the 2i2c Hub to view the Clinic preview as it would appear if the pull request was merged:</p>
 <ul>
 <li>Terminal:
 <ul>
@@ -306,21 +318,52 @@ ul.task-list li input[type="checkbox"] {
 <p>Review each individual file that has changed and come back to the main <code>_quarto.yml</code> if we see an issue with the navigation.</p>
 <p>Once our review is complete, we add a note in the GitHub review box and click “Approve”, “Comment” or “Request changes”. In the note it can be really helpful to add a note of appreciation for some aspect of the contribution, tagging the author, saying they can merge the PR after making changes, and possibly add a summary of our requested edits including the number of changes requested. Some changes in the middle of a long list of edits can be marked as hidden conversations, so this can be helpful to the author to know they’ve seen everything.</p>
 </section>
-<section id="merge-your-pull-request" class="level3">
-<h3 class="anchored" data-anchor-id="merge-your-pull-request">Merge your Pull Request</h3>
+<section id="author-merges-pull-request" class="level3">
+<h3 class="anchored" data-anchor-id="author-merges-pull-request">Author merges Pull Request</h3>
 <p>As the author, you can now address the reviewer’s comments and then merge your Pull Request.</p>
 </section>
-<section id="try-it-out" class="level3">
-<h3 class="anchored" data-anchor-id="try-it-out">Try it out!</h3>
+</section>
+<section id="your-turn---breakout-rooms" class="level2">
+<h2 class="anchored" data-anchor-id="your-turn---breakout-rooms">Your turn - Breakout rooms</h2>
 <p>Pair up in breakouts to make and review each other’s Pull Requests</p>
+<p>We’ve done this demonstration - now you’ll go into breakout rooms. One of you be the Author role, and one the Reviewer role, with each of you screensharing where you are playing your role. Help each other out! If there is time, please switch roles</p>
+<p>Steps:</p>
+<ul>
+<li>Author stages, commits, and pushes file</li>
+<li>Author makes a Pull Request</li>
+<li>Reviewer reviews the Pull Request</li>
+<li>Author merges Pull Request</li>
+<li>Make notes of any questions you have, challenges</li>
+</ul>
 </section>
+<section id="regroup-wrap-up" class="level2">
+<h2 class="anchored" data-anchor-id="regroup-wrap-up">Regroup &amp; Wrap up</h2>
+<section id="review-our-updated-site" class="level3">
+<h3 class="anchored" data-anchor-id="review-our-updated-site">Review our updated site</h3>
+<p><a href="https://openscapes.github.io/quarto-clinic/demo" class="uri">https://openscapes.github.io/quarto-clinic/demo</a></p>
 </section>
-<section id="view-your-updates-in-the-live-site-regroup-10-min" class="level2">
-<h2 class="anchored" data-anchor-id="view-your-updates-in-the-live-site-regroup-10-min">View your updates in the live site (Regroup, 10 min)</h2>
+<section id="tidying-up" class="level3">
+<h3 class="anchored" data-anchor-id="tidying-up">Tidying up</h3>
+<p>Good practices to tidy your workspace &amp; save unneccessary storage costs:</p>
+<p>From GitHub Browser: - <strong>Delete branch on GitHub Browser</strong></p>
+<p>From JupyterHub: - <strong>Delete <code>stefanie</code> branch</strong> from the Git plugin - <strong>Delete quarto-clinic folder</strong> from terminal <code>cd ..</code> then <code>rm -rf quarto clinic</code> - <strong>Shut down Hub</strong> from File menu</p>
+</section>
 </section>
 <section id="regroup-discussion-topics" class="level2">
 <h2 class="anchored" data-anchor-id="regroup-discussion-topics">Regroup discussion topics</h2>
-<p><strong>Short message: commit the freeze folder.</strong></p>
+<section id="deleting-branches" class="level3">
+<h3 class="anchored" data-anchor-id="deleting-branches">Deleting branches</h3>
+</section>
+<section id="code-rendering-.qmd-files" class="level3">
+<h3 class="anchored" data-anchor-id="code-rendering-.qmd-files">Code &amp; rendering <code>.qmd</code> files</h3>
+<p>You can add code TODO</p>
+<p>When you <strong>Render</strong>, a document will be generated that includes both content and the output of embedded code. You can embed code like this:</p>
+<p><em>TODO: day before clinic, make this Python code (don’t add screenshot - fewer files to for folks to get distracted with, lighter weight repo)</em></p>
+<p>You can add options to executable code. The <code>echo: false</code> option disables the printing of code (only output is displayed).</p>
+</section>
+<section id="freeze" class="level3">
+<h3 class="anchored" data-anchor-id="freeze">Freeze</h3>
+<p><strong>Commit the freeze folder.</strong></p>
 <ul>
 <li>Freeze directory contains the results of code execution.</li>
 <li>Commit the freeze directory after you run quarto preview.</li>
@@ -328,6 +371,7 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
