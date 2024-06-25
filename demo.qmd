@@ -38,7 +38,7 @@ When you **Render**, a document will be generated that includes both content and
 
 *TODO: day before clinic, make this Python code (don't add screenshot - fewer files to for folks to get distracted with, lighter weight repo)*
 
-```{r}
+```{python}
 2 * 2
 ```
 
@@ -46,7 +46,7 @@ You can add options to executable code. The `echo: false` option disables the pr
 
 ## Stefanie
 
-For your first edit, you could fix this tpyo and preview how it will look in the site.
+For your first edit, you could fix this typo and preview how it will look in the site.
 
 ## Alexis
 
