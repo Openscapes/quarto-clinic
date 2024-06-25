@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Quarto Contributing Clinic - Setup and Explore</title>
+<title>Quarto Contributing Clinic - Setup</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -116,7 +116,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./setup-explore.html">Setup &amp; Explore</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./setup.html">Setup</a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -154,8 +154,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./setup-explore.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Setup &amp; Explore</span></a>
+  <a href="./setup.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Setup</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -170,7 +170,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./lessons/part1-quarto.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Part 1: Edit a Quarto site</span></a>
+ <span class="menu-text">Part 1: Quarto workflow</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -182,7 +182,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./lessons/part2-github.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Part 2: Contribute via GitHub</span></a>
+ <span class="menu-text">Part 2: GitHub workflow</span></a>
   </div>
 </li>
       </ul>
@@ -203,27 +203,27 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#setup-part-1-log-in-to-the-hub" id="toc-setup-part-1-log-in-to-the-hub" class="nav-link active" data-scroll-target="#setup-part-1-log-in-to-the-hub">Setup Part 1: Log in to the Hub</a></li>
-  <li><a href="#explore" id="toc-explore" class="nav-link" data-scroll-target="#explore">Explore</a>
+  <li><a href="#setup-part-1-log-in-to-the-hub" id="toc-setup-part-1-log-in-to-the-hub" class="nav-link active" data-scroll-target="#setup-part-1-log-in-to-the-hub">Setup Part 1: Log in to the Hub</a>
   <ul class="collapse">
   <li><a href="#the-website" id="toc-the-website" class="nav-link" data-scroll-target="#the-website">The website</a></li>
-  <li><a href="#the-websites-source-repo" id="toc-the-websites-source-repo" class="nav-link" data-scroll-target="#the-websites-source-repo">The website’s source repo</a></li>
+  <li><a href="#the-websites-source-repo---is-this-helpful-for-this-clinic" id="toc-the-websites-source-repo---is-this-helpful-for-this-clinic" class="nav-link" data-scroll-target="#the-websites-source-repo---is-this-helpful-for-this-clinic">The website’s source repo - is this helpful for this clinic?</a></li>
   </ul></li>
   <li><a href="#setup-part-2-clone-the-quarto-clinic-repo" id="toc-setup-part-2-clone-the-quarto-clinic-repo" class="nav-link" data-scroll-target="#setup-part-2-clone-the-quarto-clinic-repo">Setup Part 2: Clone the Quarto Clinic repo</a>
   <ul class="collapse">
+  <li><a href="#aside-what-is-a-branch" id="toc-aside-what-is-a-branch" class="nav-link" data-scroll-target="#aside-what-is-a-branch">Aside: What is a branch?</a></li>
   <li><a href="#create-a-new-branch" id="toc-create-a-new-branch" class="nav-link" data-scroll-target="#create-a-new-branch">Create a new branch</a></li>
   <li><a href="#set-up-our-git-credentials" id="toc-set-up-our-git-credentials" class="nav-link" data-scroll-target="#set-up-our-git-credentials">Set up our Git credentials</a></li>
   </ul></li>
   <li><a href="#onward" id="toc-onward" class="nav-link" data-scroll-target="#onward">Onward!</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/Openscapes/quarto-clinic/edit/main/setup-explore.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/Openscapes/quarto-clinic/blob/main/setup-explore.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/Openscapes/quarto-clinic/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/Openscapes/quarto-clinic/edit/main/setup.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/Openscapes/quarto-clinic/blob/main/setup.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/Openscapes/quarto-clinic/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Setup and Explore</h1>
+<h1 class="title">Setup</h1>
 </div>
 
 
@@ -258,11 +258,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p><img src="images/jupyterhub-loading.png" class="img-fluid"></p>
 <p>It takes a few minutes for the Hub to load. Please be patient!</p>
 <p>While the server starts up, we’ll explore the Quarto Clinic website structure side by side with the repo.</p>
-</section>
-<section id="explore" class="level2">
-<h2 class="anchored" data-anchor-id="explore">Explore</h2>
-<p>With this Clinic, we have a working example website that we will explore together. We’ll learn a few rules and look for patterns to get an understanding of what things to do to help you start customizing and making it your own. You can continue to use this website as a reference after the clinic, along with <a href="https://quarto.org">Quarto</a> documentation.</p>
-<p>We’ll start our exploration looking at the website architecture and its source GitHub repository. Then we’ll setup a copy for ourselves so that we can modify starting from a working example, which is a great way to learn something new.</p>
 <section id="the-website" class="level3">
 <h3 class="anchored" data-anchor-id="the-website">The website</h3>
 <p>This Quarto Clinic website has 4 things you can see on the left navbar:</p>
@@ -274,8 +269,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ul>
 <p>Most of these are pages, but you’ll see that “Lessons” has an arrow <code>&gt;</code>; it is a folder with additional pages inside.</p>
 </section>
-<section id="the-websites-source-repo" class="level3">
-<h3 class="anchored" data-anchor-id="the-websites-source-repo">The website’s source repo</h3>
+<section id="the-websites-source-repo---is-this-helpful-for-this-clinic" class="level3">
+<h3 class="anchored" data-anchor-id="the-websites-source-repo---is-this-helpful-for-this-clinic">The website’s source repo - is this helpful for this clinic?</h3>
 <p>Let’s go to this website’s GitHub repository (or “repo”). You can get there from any page in this clinic website by clicking the GitHub Octocat icon underneath the Openscapes logo in the left navbar.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -313,6 +308,9 @@ Tip
 <p><strong>Option B:</strong> In the Hub, do this by opening a terminal (File &gt; New &gt; Terminal). In the Terminal, <code>git clone</code> your repository and <code>cd</code> into it:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone https://github.com/openscapes/quarto-clinic</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> quarto-clinic</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="aside-what-is-a-branch" class="level3">
+<h3 class="anchored" data-anchor-id="aside-what-is-a-branch">Aside: What is a branch?</h3>
+</section>
 <section id="create-a-new-branch" class="level3">
 <h3 class="anchored" data-anchor-id="create-a-new-branch">Create a new branch</h3>
 <p>Working in a branch means you have your own version of the Quarto Clinic to edit and preview. Later, we’ll learn how to contribute your edits to the Main branch of the Clinic by making a “Pull Request” on GitHub.</p>
@@ -340,7 +338,7 @@ Tip
 </section>
 <section id="onward" class="level2">
 <h2 class="anchored" data-anchor-id="onward">Onward!</h2>
-<p>Now we are ready to start editing! The next chapter describes how to do this in the JupyterHub.</p>
+<p>Since we have each set up our own GitHub clone with our unique branch of this Quarto Clinic website in the Hub, now we are ready to start editing! The next chapter describes how to do this in the JupyterHub.</p>
 
 
 </section>
@@ -919,7 +917,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/Openscapes/quarto-clinic/edit/main/setup-explore.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/Openscapes/quarto-clinic/blob/main/setup-explore.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/Openscapes/quarto-clinic/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/Openscapes/quarto-clinic/edit/main/setup.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/Openscapes/quarto-clinic/blob/main/setup.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/Openscapes/quarto-clinic/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This page is built with ❤️ and <a href="https://quarto.org/">Quarto</a>.</p>
 </div>

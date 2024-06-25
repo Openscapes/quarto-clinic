@@ -30,7 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
 <link href="../lessons/part1-quarto.html" rel="next">
-<link href="../setup-explore.html" rel="prev">
+<link href="../setup.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -120,8 +120,8 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../setup-explore.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Setup &amp; Explore</span></a>
+  <a href="../setup.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Setup</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -136,7 +136,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../lessons/part1-quarto.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Part 1: Edit a Quarto site</span></a>
+ <span class="menu-text">Part 1: Quarto workflow</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -148,7 +148,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../lessons/part2-github.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Part 2: Contribute via GitHub</span></a>
+ <span class="menu-text">Part 2: GitHub workflow</span></a>
   </div>
 </li>
       </ul>
@@ -165,15 +165,7 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#workflow-to-edit-a-quarto-site-source" id="toc-workflow-to-edit-a-quarto-site-source" class="nav-link active" data-scroll-target="#workflow-to-edit-a-quarto-site-source">Workflow to edit a Quarto site source</a></li>
-  <li><a href="#workflow-to-contribute-via-github" id="toc-workflow-to-contribute-via-github" class="nav-link" data-scroll-target="#workflow-to-contribute-via-github">Workflow to contribute via GitHub</a></li>
-  <li><a href="#lets-try-these-workflows" id="toc-lets-try-these-workflows" class="nav-link" data-scroll-target="#lets-try-these-workflows">Let’s try these workflows!</a></li>
-  </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/Openscapes/quarto-clinic/edit/main/lessons/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/Openscapes/quarto-clinic/blob/main/lessons/index.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/Openscapes/quarto-clinic/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -198,34 +190,16 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p>In this section we’ll practice two workflows: <a href="../lessons/part1-quarto.html">Part 1: Edit a Quarto site</a>, and <a href="../lessons/part2-github.html">Part 2: Contribute via GitHub</a>. We include a basic workflow for each here, so you can come back to these for a reminder.</p>
-<section id="workflow-to-edit-a-quarto-site-source" class="level2">
-<h2 class="anchored" data-anchor-id="workflow-to-edit-a-quarto-site-source">Workflow to edit a Quarto site source</h2>
-<ol type="1">
-<li>Preview the site</li>
-<li>Make changes to files; supported types include <code>.qmd</code>, <code>.ipynb</code> <code>.md</code>, <code>.Rmd</code>.</li>
-<li>Save, preview</li>
-<li>Update <code>_quarto.yml</code> file as needed to have new content appear in the site’s nav bar.</li>
-</ol>
-</section>
-<section id="workflow-to-contribute-via-github" class="level2">
-<h2 class="anchored" data-anchor-id="workflow-to-contribute-via-github">Workflow to contribute via GitHub</h2>
-<ol type="1">
-<li>Inspect the differences your edits will introduce</li>
-<li>“Stage” your changes</li>
-<li>Commit your changes with a helpful “Commit message”</li>
-<li>“Push” to GitHub</li>
-<li>Go to the Clinic repo source on GitHub, in your browser</li>
-<li>Make a “Pull Request” and tag a reviewer</li>
-<li>Reviewer responds by commenting, making suggested commits, and submitting their review</li>
-<li>Author responds to review and “merges” their Pull Request</li>
-<li>A GitHub Action automatically publishes the updates in the live siteDiff, Stage, Commit, and Push your edits to GitHub</li>
-</ol>
-</section>
-<section id="lets-try-these-workflows" class="level2">
-<h2 class="anchored" data-anchor-id="lets-try-these-workflows">Let’s try these workflows!</h2>
+<!---
+TODO: some overarching statement/illustration of: ("there's a lot of jargon/concepts:)
+
+Quarto is a thing that lets you combine different file times we build to ... (preview, .qmd, and how they are built together)
+GitHub is how we contribute to...
+JupyterHub / terminal
+Branches
+--->
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -783,13 +757,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../setup-explore.html" class="pagination-link" aria-label="Setup &amp; Explore">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Setup &amp; Explore</span>
+      <a href="../setup.html" class="pagination-link" aria-label="Setup">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Setup</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../lessons/part1-quarto.html" class="pagination-link" aria-label="Part 1: Edit a Quarto site">
-        <span class="nav-page-text">Part 1: Edit a Quarto site</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../lessons/part1-quarto.html" class="pagination-link" aria-label="Part 1: Quarto workflow">
+        <span class="nav-page-text">Part 1: Quarto workflow</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -801,7 +775,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/Openscapes/quarto-clinic/edit/main/lessons/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/Openscapes/quarto-clinic/blob/main/lessons/index.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/Openscapes/quarto-clinic/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions"><ul><li><a href="https://github.com/Openscapes/quarto-clinic/edit/main/lessons/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/Openscapes/quarto-clinic/blob/main/lessons/index.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/Openscapes/quarto-clinic/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This page is built with ❤️ and <a href="https://quarto.org/">Quarto</a>.</p>
 </div>

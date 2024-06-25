@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Quarto Contributing Clinic - Part 2: Contribute via GitHub</title>
+<title>Quarto Contributing Clinic - Part 2: GitHub workflow</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -82,7 +82,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lessons/index.html">Lessons</a></li><li class="breadcrumb-item"><a href="../lessons/part2-github.html">Part 2: Contribute via GitHub</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lessons/index.html">Lessons</a></li><li class="breadcrumb-item"><a href="../lessons/part2-github.html">Part 2: GitHub workflow</a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -120,8 +120,8 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../setup-explore.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Setup &amp; Explore</span></a>
+  <a href="../setup.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Setup</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -136,7 +136,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../lessons/part1-quarto.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Part 1: Edit a Quarto site</span></a>
+ <span class="menu-text">Part 1: Quarto workflow</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -148,7 +148,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../lessons/part2-github.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Part 2: Contribute via GitHub</span></a>
+ <span class="menu-text">Part 2: GitHub workflow</span></a>
   </div>
 </li>
       </ul>
@@ -169,7 +169,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#contribute-your-updates-using-github" id="toc-contribute-your-updates-using-github" class="nav-link active" data-scroll-target="#contribute-your-updates-using-github">Contribute your updates using GitHub</a>
+  <li><a href="#workflow-to-contribute-via-github" id="toc-workflow-to-contribute-via-github" class="nav-link active" data-scroll-target="#workflow-to-contribute-via-github">Workflow to contribute via GitHub</a></li>
+  <li><a href="#contribute-your-updates-using-github" id="toc-contribute-your-updates-using-github" class="nav-link" data-scroll-target="#contribute-your-updates-using-github">Contribute your updates using GitHub</a>
   <ul class="collapse">
   <li><a href="#demonstration" id="toc-demonstration" class="nav-link" data-scroll-target="#demonstration">Demonstration</a></li>
   <li><a href="#make-a-pull-request" id="toc-make-a-pull-request" class="nav-link" data-scroll-target="#make-a-pull-request">Make a Pull Request</a></li>
@@ -178,15 +179,16 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#try-it-out" id="toc-try-it-out" class="nav-link" data-scroll-target="#try-it-out">Try it out!</a></li>
   </ul></li>
   <li><a href="#view-your-updates-in-the-live-site-regroup-10-min" id="toc-view-your-updates-in-the-live-site-regroup-10-min" class="nav-link" data-scroll-target="#view-your-updates-in-the-live-site-regroup-10-min">View your updates in the live site (Regroup, 10 min)</a></li>
+  <li><a href="#regroup-discussion-topics" id="toc-regroup-discussion-topics" class="nav-link" data-scroll-target="#regroup-discussion-topics">Regroup discussion topics</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/Openscapes/quarto-clinic/edit/main/lessons/part2-github.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/Openscapes/quarto-clinic/blob/main/lessons/part2-github.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/Openscapes/quarto-clinic/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lessons/index.html">Lessons</a></li><li class="breadcrumb-item"><a href="../lessons/part2-github.html">Part 2: Contribute via GitHub</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lessons/index.html">Lessons</a></li><li class="breadcrumb-item"><a href="../lessons/part2-github.html">Part 2: GitHub workflow</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Part 2: Contribute via GitHub</h1>
+<h1 class="title">Part 2: GitHub workflow</h1>
 </div>
 
 
@@ -203,6 +205,20 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="workflow-to-contribute-via-github" class="level2">
+<h2 class="anchored" data-anchor-id="workflow-to-contribute-via-github">Workflow to contribute via GitHub</h2>
+<ol type="1">
+<li>Inspect the differences your edits will introduce</li>
+<li>“Stage” your changes</li>
+<li>Commit your changes with a helpful “Commit message”</li>
+<li>“Push” to GitHub</li>
+<li>Go to the Clinic repo source on GitHub, in your browser</li>
+<li>Make a “Pull Request” and tag a reviewer</li>
+<li>Reviewer responds by commenting, making suggested commits, and submitting their review</li>
+<li>Author responds to review and “merges” their Pull Request</li>
+<li>A GitHub Action automatically publishes the updates in the live siteDiff, Stage, Commit, and Push your edits to GitHub</li>
+</ol>
+</section>
 <section id="contribute-your-updates-using-github" class="level2">
 <h2 class="anchored" data-anchor-id="contribute-your-updates-using-github">Contribute your updates using GitHub</h2>
 <p>Now that we have each saved some changes to files in our Quarto site source, liike <code>.qmd</code>, <code>.ipynb</code>, and/or <code>_quarto.yml</code>, we can contribute our updates using GitHub.</p>
@@ -293,6 +309,15 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="view-your-updates-in-the-live-site-regroup-10-min" class="level2">
 <h2 class="anchored" data-anchor-id="view-your-updates-in-the-live-site-regroup-10-min">View your updates in the live site (Regroup, 10 min)</h2>
+</section>
+<section id="regroup-discussion-topics" class="level2">
+<h2 class="anchored" data-anchor-id="regroup-discussion-topics">Regroup discussion topics</h2>
+<p><strong>Short message: commit the freeze folder.</strong></p>
+<ul>
+<li>Freeze directory contains the results of code execution.</li>
+<li>Commit the freeze directory after you run quarto preview.</li>
+<li>If there are merge conflicts when you submit to NASA Openscapes Cookbook, maintainers will help resolve them.</li>
+</ul>
 
 
 </section>

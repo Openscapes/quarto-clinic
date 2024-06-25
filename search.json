@@ -1,52 +1,42 @@
 [
   {
-    "objectID": "setup-explore.html",
-    "href": "setup-explore.html",
-    "title": "Setup and Explore",
+    "objectID": "setup.html",
+    "href": "setup.html",
+    "title": "Setup",
     "section": "",
-    "text": "Go to the Hub https://openscapes.2i2c.cloud &gt; log in with your GitHub Account &gt; select the Python server.\n\n\n\nLogin page for the NASA Openscapes 2i2c JupyterHub, “the Hub”\n\n\n\n\n\nHub server options\n\n\n\nIt takes a few minutes for the Hub to load. Please be patient!\nWhile the server starts up, we’ll explore the Quarto Clinic website structure side by side with the repo.",
+    "text": "Go to the Hub https://openscapes.2i2c.cloud &gt; log in with your GitHub Account &gt; select the Python server.\n\n\n\nLogin page for the NASA Openscapes 2i2c JupyterHub, “the Hub”\n\n\n\n\n\nHub server options\n\n\n\nIt takes a few minutes for the Hub to load. Please be patient!\nWhile the server starts up, we’ll explore the Quarto Clinic website structure side by side with the repo.\n\n\nThis Quarto Clinic website has 4 things you can see on the left navbar:\n\nWelcome\nSetup & Explore\nLessons\nNext Steps\n\nMost of these are pages, but you’ll see that “Lessons” has an arrow &gt;; it is a folder with additional pages inside.\n\n\n\nLet’s go to this website’s GitHub repository (or “repo”). You can get there from any page in this clinic website by clicking the GitHub Octocat icon underneath the Openscapes logo in the left navbar.\n\n\n\n\n\n\nTip\n\n\n\nTo open a link in a new browser tab, hold command on Mac, or control on a PC, then click.\n\n\nHave a look at the filenames. We can recognize the names of the webpages we see (and listed above), and they have red arrows marking them in the image below. Note that most files in this repo are .qmd files. These are plain text Quarto files that can combine Markdown text with code. index.qmd is the home page. When we click inside the lessons folder we see more .qmd files and an images folder that holds images used in the pages inside the Lessons section of the site.\nTODO: replace screenshots; red arrows for lessons\n\n\n\nquarto-website-tutorial GitHub repository with files for webpages marked with red arrows",
     "crumbs": [
-      "Setup & Explore"
+      "Setup"
     ]
   },
   {
-    "objectID": "setup-explore.html#setup-part-1-log-in-to-the-hub",
-    "href": "setup-explore.html#setup-part-1-log-in-to-the-hub",
-    "title": "Setup and Explore",
+    "objectID": "setup.html#setup-part-1-log-in-to-the-hub",
+    "href": "setup.html#setup-part-1-log-in-to-the-hub",
+    "title": "Setup",
     "section": "",
-    "text": "Go to the Hub https://openscapes.2i2c.cloud &gt; log in with your GitHub Account &gt; select the Python server.\n\n\n\nLogin page for the NASA Openscapes 2i2c JupyterHub, “the Hub”\n\n\n\n\n\nHub server options\n\n\n\nIt takes a few minutes for the Hub to load. Please be patient!\nWhile the server starts up, we’ll explore the Quarto Clinic website structure side by side with the repo.",
+    "text": "Go to the Hub https://openscapes.2i2c.cloud &gt; log in with your GitHub Account &gt; select the Python server.\n\n\n\nLogin page for the NASA Openscapes 2i2c JupyterHub, “the Hub”\n\n\n\n\n\nHub server options\n\n\n\nIt takes a few minutes for the Hub to load. Please be patient!\nWhile the server starts up, we’ll explore the Quarto Clinic website structure side by side with the repo.\n\n\nThis Quarto Clinic website has 4 things you can see on the left navbar:\n\nWelcome\nSetup & Explore\nLessons\nNext Steps\n\nMost of these are pages, but you’ll see that “Lessons” has an arrow &gt;; it is a folder with additional pages inside.\n\n\n\nLet’s go to this website’s GitHub repository (or “repo”). You can get there from any page in this clinic website by clicking the GitHub Octocat icon underneath the Openscapes logo in the left navbar.\n\n\n\n\n\n\nTip\n\n\n\nTo open a link in a new browser tab, hold command on Mac, or control on a PC, then click.\n\n\nHave a look at the filenames. We can recognize the names of the webpages we see (and listed above), and they have red arrows marking them in the image below. Note that most files in this repo are .qmd files. These are plain text Quarto files that can combine Markdown text with code. index.qmd is the home page. When we click inside the lessons folder we see more .qmd files and an images folder that holds images used in the pages inside the Lessons section of the site.\nTODO: replace screenshots; red arrows for lessons\n\n\n\nquarto-website-tutorial GitHub repository with files for webpages marked with red arrows",
     "crumbs": [
-      "Setup & Explore"
+      "Setup"
     ]
   },
   {
-    "objectID": "setup-explore.html#explore",
-    "href": "setup-explore.html#explore",
-    "title": "Setup and Explore",
-    "section": "Explore",
-    "text": "Explore\nWith this Clinic, we have a working example website that we will explore together. We’ll learn a few rules and look for patterns to get an understanding of what things to do to help you start customizing and making it your own. You can continue to use this website as a reference after the clinic, along with Quarto documentation.\nWe’ll start our exploration looking at the website architecture and its source GitHub repository. Then we’ll setup a copy for ourselves so that we can modify starting from a working example, which is a great way to learn something new.\n\nThe website\nThis Quarto Clinic website has 4 things you can see on the left navbar:\n\nWelcome\nSetup & Explore\nLessons\nNext Steps\n\nMost of these are pages, but you’ll see that “Lessons” has an arrow &gt;; it is a folder with additional pages inside.\n\n\nThe website’s source repo\nLet’s go to this website’s GitHub repository (or “repo”). You can get there from any page in this clinic website by clicking the GitHub Octocat icon underneath the Openscapes logo in the left navbar.\n\n\n\n\n\n\nTip\n\n\n\nTo open a link in a new browser tab, hold command on Mac, or control on a PC, then click.\n\n\nHave a look at the filenames. We can recognize the names of the webpages we see (and listed above), and they have red arrows marking them in the image below. Note that most files in this repo are .qmd files. These are plain text Quarto files that can combine Markdown text with code. index.qmd is the home page. When we click inside the lessons folder we see more .qmd files and an images folder that holds images used in the pages inside the Lessons section of the site.\nTODO: replace screenshots; red arrows for lessons\n\n\n\nquarto-website-tutorial GitHub repository with files for webpages marked with red arrows",
-    "crumbs": [
-      "Setup & Explore"
-    ]
-  },
-  {
-    "objectID": "setup-explore.html#setup-part-2-clone-the-quarto-clinic-repo",
-    "href": "setup-explore.html#setup-part-2-clone-the-quarto-clinic-repo",
-    "title": "Setup and Explore",
+    "objectID": "setup.html#setup-part-2-clone-the-quarto-clinic-repo",
+    "href": "setup.html#setup-part-2-clone-the-quarto-clinic-repo",
+    "title": "Setup",
     "section": "Setup Part 2: Clone the Quarto Clinic repo",
-    "text": "Setup Part 2: Clone the Quarto Clinic repo\nAfter our Hub server has loaded (Setup Part 1), we’ll clone the Quarto Clinic repository into the Hub.\nOption A: In the Hub, use the Git tab to Clone the repo.\n\n\n\nClone a GitHub repository in the Hub\n\n\nOption B: In the Hub, do this by opening a terminal (File &gt; New &gt; Terminal). In the Terminal, git clone your repository and cd into it:\ngit clone https://github.com/openscapes/quarto-clinic\ncd quarto-clinic\n\nCreate a new branch\nWorking in a branch means you have your own version of the Quarto Clinic to edit and preview. Later, we’ll learn how to contribute your edits to the Main branch of the Clinic by making a “Pull Request” on GitHub.\nNavigate into the quarto-clinic folder (In the Terminal: cd quarto-clinic) &gt; click the Git tab &gt; New Branch, with branch name = your name, to make it easy to identify your work in the exercises that follow.\n\n\n\nCreate a branch\n\n\nIn the terminal: git checkout -b yourname\n\n\nSet up our Git credentials\nTODO: do we need to do Step 5.1. Configure Git (git config)? (but ignore the push file part). Clarify the following text to say see the orange dot. click it to be prompted\nWhen you see the following screenshot, GitHub is asking for you to input your credentials. (Note: you see this screenshot when you have committed work to push to GitHub.com. In this case we have created a new branch in the Hub and it does not yet exist on GitHub.\n\n\n\nPrompt to add your Git credentials\n\n\nWe’ll follow the instructions in the 2021 Cloud Hackathon to Setup your Personal Access Token (PAT).",
+    "text": "Setup Part 2: Clone the Quarto Clinic repo\nAfter our Hub server has loaded (Setup Part 1), we’ll clone the Quarto Clinic repository into the Hub.\nOption A: In the Hub, use the Git tab to Clone the repo.\n\n\n\nClone a GitHub repository in the Hub\n\n\nOption B: In the Hub, do this by opening a terminal (File &gt; New &gt; Terminal). In the Terminal, git clone your repository and cd into it:\ngit clone https://github.com/openscapes/quarto-clinic\ncd quarto-clinic\n\nAside: What is a branch?\n\n\nCreate a new branch\nWorking in a branch means you have your own version of the Quarto Clinic to edit and preview. Later, we’ll learn how to contribute your edits to the Main branch of the Clinic by making a “Pull Request” on GitHub.\nNavigate into the quarto-clinic folder (In the Terminal: cd quarto-clinic) &gt; click the Git tab &gt; New Branch, with branch name = your name, to make it easy to identify your work in the exercises that follow.\n\n\n\nCreate a branch\n\n\nIn the terminal: git checkout -b yourname\n\n\nSet up our Git credentials\nTODO: do we need to do Step 5.1. Configure Git (git config)? (but ignore the push file part). Clarify the following text to say see the orange dot. click it to be prompted\nWhen you see the following screenshot, GitHub is asking for you to input your credentials. (Note: you see this screenshot when you have committed work to push to GitHub.com. In this case we have created a new branch in the Hub and it does not yet exist on GitHub.\n\n\n\nPrompt to add your Git credentials\n\n\nWe’ll follow the instructions in the 2021 Cloud Hackathon to Setup your Personal Access Token (PAT).",
     "crumbs": [
-      "Setup & Explore"
+      "Setup"
     ]
   },
   {
-    "objectID": "setup-explore.html#onward",
-    "href": "setup-explore.html#onward",
-    "title": "Setup and Explore",
+    "objectID": "setup.html#onward",
+    "href": "setup.html#onward",
+    "title": "Setup",
     "section": "Onward!",
-    "text": "Onward!\nNow we are ready to start editing! The next chapter describes how to do this in the JupyterHub.",
+    "text": "Onward!\nSince we have each set up our own GitHub clone with our unique branch of this Quarto Clinic website in the Hub, now we are ready to start editing! The next chapter describes how to do this in the JupyterHub.",
     "crumbs": [
-      "Setup & Explore"
+      "Setup"
     ]
   },
   {
@@ -125,89 +115,122 @@
   {
     "objectID": "lessons/part1-quarto.html",
     "href": "lessons/part1-quarto.html",
-    "title": "Part 1: Edit a Quarto site",
+    "title": "Part 1: Quarto workflow",
     "section": "",
-    "text": "Let’s start off by previewing our quarto site locally. In Terminal, in the quarto-clinic folder, type quarto preview, which will provide a URL with a preview of our site!\nquarto preview\n# Preparing to preview\n# Watching files for changes\n# Browse at https://openscapes.2i2c.cloud/user/jules32/proxy/4593/\nOpen this URL in a browser window and arrange your Hub and website preview windows so you can see them both. I make a bit more space in Jupyter by collapsing the left file menu by clicking on the file icon at the top of the left sidebar.\nTODO: add new screenshots\n\n\n\n\n\nNow that we have each set up our own GitHub clone with our unique branch of this Quarto Clinic website in the Hub, we can practice editing and rendering .qmd and .ipynb files. These are the workflows we use to contribute to the NASA Earthdata Cloud Cookbook and other Quarto websites and books.",
+    "text": "Preview the website (quarto preview)\nMake changes to files\nSave and preview how changes are automatically updated!",
     "crumbs": [
       "Lessons",
-      "Part 1: Edit a Quarto site"
+      "Part 1: Quarto workflow"
     ]
   },
   {
-    "objectID": "lessons/part1-quarto.html#preview-the-site-aka-quarto-preview",
-    "href": "lessons/part1-quarto.html#preview-the-site-aka-quarto-preview",
-    "title": "Part 1: Edit a Quarto site",
+    "objectID": "lessons/part1-quarto.html#workflow-to-edit-a-quarto-website-source",
+    "href": "lessons/part1-quarto.html#workflow-to-edit-a-quarto-website-source",
+    "title": "Part 1: Quarto workflow",
     "section": "",
-    "text": "Let’s start off by previewing our quarto site locally. In Terminal, in the quarto-clinic folder, type quarto preview, which will provide a URL with a preview of our site!\nquarto preview\n# Preparing to preview\n# Watching files for changes\n# Browse at https://openscapes.2i2c.cloud/user/jules32/proxy/4593/\nOpen this URL in a browser window and arrange your Hub and website preview windows so you can see them both. I make a bit more space in Jupyter by collapsing the left file menu by clicking on the file icon at the top of the left sidebar.\nTODO: add new screenshots\n\n\n\n\n\nNow that we have each set up our own GitHub clone with our unique branch of this Quarto Clinic website in the Hub, we can practice editing and rendering .qmd and .ipynb files. These are the workflows we use to contribute to the NASA Earthdata Cloud Cookbook and other Quarto websites and books.",
+    "text": "Preview the website (quarto preview)\nMake changes to files\nSave and preview how changes are automatically updated!",
     "crumbs": [
       "Lessons",
-      "Part 1: Edit a Quarto site"
+      "Part 1: Quarto workflow"
     ]
   },
   {
-    "objectID": "lessons/part1-quarto.html#make-changes-to-the-site-content",
-    "href": "lessons/part1-quarto.html#make-changes-to-the-site-content",
-    "title": "Part 1: Edit a Quarto site",
-    "section": "Make changes to the site content",
-    "text": "Make changes to the site content\nChoose either Task 1a: Edit and preview a demo.qmd file or Task 1b: Create a new .ipynb page to try in a breakout room.\n\nTask 1a: Edit and preview a demo.qmd file\nOpen lessons/demo.qmd file using the Editor, not as a Notebook file. Suggestions for things to try, and how to format things are in the file.\n\n\n\nOpen .qmd file with the Editor\n\n\n\nMake a small change and preview it\nNow we’ll be able to see live changes in the preview as we edit in our .qmd files. Let’s try it: Fix the typo. When we save changes, our preview window will refresh automatically and display our changes! If it does not, you can also refresh the page manually.\n\n\n\nTask 1b: Create a new .ipynb page\nLet’s add a new page to our site. Instead of a .qmd file like the others, let’s add a .ipynb file.\nFile &gt; New &gt; Notebook. Accept the default kernel by clicking Select.\nTODO: screenshot\n\nFirst chunk: raw yaml\nBy default, this Notebook will give us a first chunk that is code. Let’s change it to raw so that we can write our yaml at the top.\n\n\n\n\n\nIn our Raw code chunk, let’s write the title of this document. We need three dashes --- on separate lines preceding and following the title:, which you can name as you’d like.\n---\ntitle: Python Example\n---\n\n\nSecond chunk: Markdown\nLet’s add a new chunk that is Markdown so we can write some description of what this page will be.\nClick the + symbol at the top of the document, and this will add a new chunk, which by default again is a Code chunk. Change it to a Markdown Chunk following the steps we did above when switching to Raw.\nHere, write a little bit of text in Markdown. Since your title is effectively a level-1 header, avoid using level-1 headers in the rest of your document. Here is some example text I wrote:\n## Introduction\n\nThis example has some Python code that will be a part of our Quarto site.\n\n\nThird chunk: Code\nNow let’s create a new chunk with the default Code setting.\nPaste the following code (or write some of your own to test):\n#| label: fig-polar\n#| fig-cap: \"A line plot on a polar axis\"\nimport numpy as np\nimport matplotlib.pyplot as plt\nr = np.arange(0, 2, 0.01)\ntheta = 2 * np.pi * r\nfig, ax = plt.subplots(\n  subplot_kw = {'projection': 'polar'} \n)\nax.plot(theta, r)\nax.set_rticks([0.5, 1, 1.5, 2])\nax.grid(True)\nplt.show()\nNow, execute this code chunk as you normally would, by clicking the cursor in a code block and clicking the sideways “play” triangle to run the selected cells (and advance to the next cell). This code produces a plot.\nNote that the code runs as it normally would; the code options in the comments are just comments.\n\n\nSave your file\nSave your document. Name it python-yourname.ipynb.\n\n\n\n\n\n\nImportant\n\n\n\nIn this Clinic, you must give unique filenames to any new files you create. This will help avoid conflicts that will arise from several people creating files called example.ipynb and trying to display them in the site.",
+    "objectID": "lessons/part1-quarto.html#demo-edit-and-preview-a-demo.qmd-file",
+    "href": "lessons/part1-quarto.html#demo-edit-and-preview-a-demo.qmd-file",
+    "title": "Part 1: Quarto workflow",
+    "section": "Demo: Edit and preview a demo.qmd file",
+    "text": "Demo: Edit and preview a demo.qmd file\nI will demonstrate this with the demo.qmd file: watch me and then you will all have a chance to do this yourself.\n\nPreview the website (aka Quarto preview)\nLet’s start off by previewing our quarto site locally. In Terminal, in the quarto-clinic folder, type quarto preview, which will provide a URL with a preview of our site!\nquarto preview\n# Preparing to preview\n# Watching files for changes\n# Browse at https://openscapes.2i2c.cloud/user/jules32/proxy/4593/\nOpen this URL in a browser window and arrange your Hub and website preview windows so you can see them both. I make a bit more space in Jupyter by collapsing the left file menu by clicking on the file icon at the top of the left sidebar.",
     "crumbs": [
       "Lessons",
-      "Part 1: Edit a Quarto site"
+      "Part 1: Quarto workflow"
     ]
   },
   {
-    "objectID": "lessons/part1-quarto.html#preview-your-updates-regroup-10-min",
-    "href": "lessons/part1-quarto.html#preview-your-updates-regroup-10-min",
-    "title": "Part 1: Edit a Quarto site",
-    "section": "Preview your updates (Regroup, 10 min)",
-    "text": "Preview your updates (Regroup, 10 min)\nIf you created a new page, how do you get it to appear in the site? This involves editing _quarto.yml to have it show up in site\n\nUpdate _quarto.yml\nLet’s have a closer look at the _quarto.yml file.\nThis type of file is written in YAML (“Yet Another Markup Language”). You’ll be able to shift the arrangement of webpages by reordering/adding/deleting them in the _quarto.yml file following the patterns you see in this example.\n\n\n\n_quarto.yml and website side-by-side\n\n\nNow we’ll add python-yourname.ipynb or any newfile.qmd to our _quarto.yml file.\nOpen _quarto.yml by clicking on it from the file directory.\nScroll down to review the current contents in the sidebar: section. It’s there we see all the file arrangements that we see in the previewed site.\nTODO: update screenshots and dont’ use line #\nAdd - python-yourname.ipynb below - lessons/part1-quarto.qmd, making sure that your indentation aligns with the other pages.\n\n\n\n\n\n\nImportant\n\n\n\nAs you modify _quarto.yml, the most important thing to know is that spacing matters. Pay attention to whether text is indented by one, two, four, or other spaces, and make sure you follow it; if your site is not looking as expected it is likely a silent error in your YAML.\n\n\n\n\n\n\n\nYou’ll see that our new page shows up in our Preview, and the code is executed since we did that in the Jupyter Notebook itself. By default, Quarto will not execute code chunks since your computations will likely become more complex and you will want to control when they are executed (or “run”).\nSince Quarto is still previewing our website and the python-yourname.ipynb, the plot also displays in the notebook after the code is run and the file is saved, as shown below.\n\n\n\n\n\nSo, your normal workflow for creating and running code blocks in your Jupyter Notebook is the same one you’ll use as Quarto displays the preview.\n\n\nQuarto render\nTODO: clarify preview vs render text; cp some render-vs-preview.qmd\nSo far we have used Quarto preview to view our website as we develop it. Quarto render will build the html elements of the website that we can see when we preview. Rendering will format the markdown text and code nicely as .html files for a website (or however is indicated in the _quarto.yml; could be .docx or .pdf files).\nBy default, Quarto render does not execute code in a Jupyter notebook. It will never run .ipynb files unless you tell it to.",
+    "objectID": "lessons/part1-quarto.html#make-changes-to-files-aka-the-website-content",
+    "href": "lessons/part1-quarto.html#make-changes-to-files-aka-the-website-content",
+    "title": "Part 1: Quarto workflow",
+    "section": "Make changes to files (aka the website content)",
+    "text": "Make changes to files (aka the website content)\nOpen lessons/demo.qmd file using the Editor, not as a Notebook file. Suggestions for things to try, and how to format things are in the file.\n\n\n\nOpen .qmd file with the Editor\n\n\nI will fix a small typo.\n\nSave and preview automagically updates!\nWhen we save changes, our preview window will refresh automatically and display our changes! If it does not, you can also refresh the page manually.\nThis is powerful to be able to see live changes in the preview as we edit in our .qmd files.",
     "crumbs": [
       "Lessons",
-      "Part 1: Edit a Quarto site"
+      "Part 1: Quarto workflow"
     ]
   },
   {
-    "objectID": "lessons/part1-quarto.html#onward",
-    "href": "lessons/part1-quarto.html#onward",
-    "title": "Part 1: Edit a Quarto site",
-    "section": "Onward",
-    "text": "Onward\nNow we can move to Part 2 to Contribute your proposed updates using Git and GitHub.",
+    "objectID": "lessons/part1-quarto.html#your-turn",
+    "href": "lessons/part1-quarto.html#your-turn",
+    "title": "Part 1: Quarto workflow",
+    "section": "Your turn",
+    "text": "Your turn\nIn your breakout room:\n\nIn terminal, cd quarto-clinic and then quarto preview\nOpen demo.qmd file\nFind the header with your name, edit in that section. Ideas at the top of the file.\nSave, quarto preview\nRepeat!",
     "crumbs": [
       "Lessons",
-      "Part 1: Edit a Quarto site"
+      "Part 1: Quarto workflow"
+    ]
+  },
+  {
+    "objectID": "lessons/part1-quarto.html#regroup-discussion-topics",
+    "href": "lessons/part1-quarto.html#regroup-discussion-topics",
+    "title": "Part 1: Quarto workflow",
+    "section": "Regroup discussion topics",
+    "text": "Regroup discussion topics\n\nWhen adding new files, update _quarto.yml file as needed to have new content appear in the site’s nav bar. (see https://openscapes.github.io/quarto-website-tutorial/explore.html)",
+    "crumbs": [
+      "Lessons",
+      "Part 1: Quarto workflow"
     ]
   },
   {
     "objectID": "lessons/part2-github.html",
     "href": "lessons/part2-github.html",
-    "title": "Part 2: Contribute via GitHub",
+    "title": "Part 2: GitHub workflow",
     "section": "",
-    "text": "Now that we have each saved some changes to files in our Quarto site source, liike .qmd, .ipynb, and/or _quarto.yml, we can contribute our updates using GitHub.\n\n\nYou have to deliberately tell Git/GitHub when you have work that you want to be versioned and synced. First, inspect the differences your edits will introduce.\n\n\n\n\n\nIn the Git tab “stage” your saved changes.\n\n\n\nStage your changes\n\n\nCommit your edits with a good commit message and push your edits to GitHub. A commit message is a human-readable message, like leaving a breadcrumb trail for your future self and others.\n\n\n\nCommit and Push\n\n\nOn your first commit, you will be prompted to add your Git credentials. When you are working on a project over time, you can have them stored, following instructions in Configure Git (git config) from the 2021 Cloud Hackathon.\nIn the Hub, in our own branch of the Quarto Clinic repo, we have made one or more edits to the Clinic files, committed those updates, and pushed those commit(s) to GitHub. How do our suggested contributions get incorporated into the main Quarto Clinic repo and website?\n\n\n\nAfter pushing your edits, go to https://github.com/Openscapes/quarto-clinic/  and you will see a yellow banner inviting you to make a Pull Request to add your edits to the Clinic repo.\n\n\n\n\n\nNot finished proposing your updates? You can set your Pull Request as a Draft at the start so folks can see your thinking. Set Ready for Review when ready and request a reviewer(s). For the NASA Earthdata Cloud Cookbook, any Pull Request must be reviewed before it can be merged. If you know someone who is familiar with the content you’re proposing to add, request their review.\n\n\n\nFrom the pull request page in GitHub browser, look at the elements of the pull request.\n\n\nStart with Conversation tab:\n\nWe can see all commits and comments on what Andy has worked on\nThis is where we can add PR reviewers by clicking the gear icon next to “Reviewers” at the top right corner of this tab.\n\nCommit tab:\n\nMore details on the commits that we saw under Conversation. When we click on one of the commits, we can see line by line what has changed under that commit (green lines are added, red lines have been removed)\n\nFiles Changed tab:\n\nView all the files that changed across the commits\nIn Nav bar: Orange dot box signifies modified; Green plus box means something’s been added; Red minus box means deleted; Grey arrow box means renamed.\n\nChecks tab:\n\nShows status of the Github Action that renders and deploys the site. We can know whether this Pull Request is able to be deployed.\n\n\nNow, switch to the 2i2c Hub to view the Cookbook preview as it would appear if the pull request was merged:\n\nTerminal:\n\nGo to the Main branch and pull so that we have the most recent changes from remote.\ngit checkout to the branch that has the Pull Request\nquarto preview - this will build the book with the author’s suggested edits.\n\n\nIn reviewing a pull request with lots of changes, it can be helpful to have windows open to view both the GitHub browser and the 2i2c Hub showing the Clinic site preview.\n\nIn GitHub under the “Files changed” tab of the PR, we can add a suggested edit by clicking the “plus” button below the line in question. Suggesting specific commits can speed the contributor’s workflow compared with trying to describe what we’d like them to change.\nWe can click “Start a review” button so the author gets a single email when we’re done reviewing, rather than getting one notification for every edit we suggest.\n\nReview each individual file that has changed and come back to the main _quarto.yml if we see an issue with the navigation.\nOnce our review is complete, we add a note in the GitHub review box and click “Approve”, “Comment” or “Request changes”. In the note it can be really helpful to add a note of appreciation for some aspect of the contribution, tagging the author, saying they can merge the PR after making changes, and possibly add a summary of our requested edits including the number of changes requested. Some changes in the middle of a long list of edits can be marked as hidden conversations, so this can be helpful to the author to know they’ve seen everything.\n\n\n\nAs the author, you can now address the reviewer’s comments and then merge your Pull Request.\n\n\n\nPair up in breakouts to make and review each other’s Pull Requests",
+    "text": "Inspect the differences your edits will introduce\n“Stage” your changes\nCommit your changes with a helpful “Commit message”\n“Push” to GitHub\nGo to the Clinic repo source on GitHub, in your browser\nMake a “Pull Request” and tag a reviewer\nReviewer responds by commenting, making suggested commits, and submitting their review\nAuthor responds to review and “merges” their Pull Request\nA GitHub Action automatically publishes the updates in the live siteDiff, Stage, Commit, and Push your edits to GitHub",
     "crumbs": [
       "Lessons",
-      "Part 2: Contribute via GitHub"
+      "Part 2: GitHub workflow"
+    ]
+  },
+  {
+    "objectID": "lessons/part2-github.html#workflow-to-contribute-via-github",
+    "href": "lessons/part2-github.html#workflow-to-contribute-via-github",
+    "title": "Part 2: GitHub workflow",
+    "section": "",
+    "text": "Inspect the differences your edits will introduce\n“Stage” your changes\nCommit your changes with a helpful “Commit message”\n“Push” to GitHub\nGo to the Clinic repo source on GitHub, in your browser\nMake a “Pull Request” and tag a reviewer\nReviewer responds by commenting, making suggested commits, and submitting their review\nAuthor responds to review and “merges” their Pull Request\nA GitHub Action automatically publishes the updates in the live siteDiff, Stage, Commit, and Push your edits to GitHub",
+    "crumbs": [
+      "Lessons",
+      "Part 2: GitHub workflow"
     ]
   },
   {
     "objectID": "lessons/part2-github.html#contribute-your-updates-using-github",
     "href": "lessons/part2-github.html#contribute-your-updates-using-github",
-    "title": "Part 2: Contribute via GitHub",
-    "section": "",
-    "text": "Now that we have each saved some changes to files in our Quarto site source, liike .qmd, .ipynb, and/or _quarto.yml, we can contribute our updates using GitHub.\n\n\nYou have to deliberately tell Git/GitHub when you have work that you want to be versioned and synced. First, inspect the differences your edits will introduce.\n\n\n\n\n\nIn the Git tab “stage” your saved changes.\n\n\n\nStage your changes\n\n\nCommit your edits with a good commit message and push your edits to GitHub. A commit message is a human-readable message, like leaving a breadcrumb trail for your future self and others.\n\n\n\nCommit and Push\n\n\nOn your first commit, you will be prompted to add your Git credentials. When you are working on a project over time, you can have them stored, following instructions in Configure Git (git config) from the 2021 Cloud Hackathon.\nIn the Hub, in our own branch of the Quarto Clinic repo, we have made one or more edits to the Clinic files, committed those updates, and pushed those commit(s) to GitHub. How do our suggested contributions get incorporated into the main Quarto Clinic repo and website?\n\n\n\nAfter pushing your edits, go to https://github.com/Openscapes/quarto-clinic/  and you will see a yellow banner inviting you to make a Pull Request to add your edits to the Clinic repo.\n\n\n\n\n\nNot finished proposing your updates? You can set your Pull Request as a Draft at the start so folks can see your thinking. Set Ready for Review when ready and request a reviewer(s). For the NASA Earthdata Cloud Cookbook, any Pull Request must be reviewed before it can be merged. If you know someone who is familiar with the content you’re proposing to add, request their review.\n\n\n\nFrom the pull request page in GitHub browser, look at the elements of the pull request.\n\n\nStart with Conversation tab:\n\nWe can see all commits and comments on what Andy has worked on\nThis is where we can add PR reviewers by clicking the gear icon next to “Reviewers” at the top right corner of this tab.\n\nCommit tab:\n\nMore details on the commits that we saw under Conversation. When we click on one of the commits, we can see line by line what has changed under that commit (green lines are added, red lines have been removed)\n\nFiles Changed tab:\n\nView all the files that changed across the commits\nIn Nav bar: Orange dot box signifies modified; Green plus box means something’s been added; Red minus box means deleted; Grey arrow box means renamed.\n\nChecks tab:\n\nShows status of the Github Action that renders and deploys the site. We can know whether this Pull Request is able to be deployed.\n\n\nNow, switch to the 2i2c Hub to view the Cookbook preview as it would appear if the pull request was merged:\n\nTerminal:\n\nGo to the Main branch and pull so that we have the most recent changes from remote.\ngit checkout to the branch that has the Pull Request\nquarto preview - this will build the book with the author’s suggested edits.\n\n\nIn reviewing a pull request with lots of changes, it can be helpful to have windows open to view both the GitHub browser and the 2i2c Hub showing the Clinic site preview.\n\nIn GitHub under the “Files changed” tab of the PR, we can add a suggested edit by clicking the “plus” button below the line in question. Suggesting specific commits can speed the contributor’s workflow compared with trying to describe what we’d like them to change.\nWe can click “Start a review” button so the author gets a single email when we’re done reviewing, rather than getting one notification for every edit we suggest.\n\nReview each individual file that has changed and come back to the main _quarto.yml if we see an issue with the navigation.\nOnce our review is complete, we add a note in the GitHub review box and click “Approve”, “Comment” or “Request changes”. In the note it can be really helpful to add a note of appreciation for some aspect of the contribution, tagging the author, saying they can merge the PR after making changes, and possibly add a summary of our requested edits including the number of changes requested. Some changes in the middle of a long list of edits can be marked as hidden conversations, so this can be helpful to the author to know they’ve seen everything.\n\n\n\nAs the author, you can now address the reviewer’s comments and then merge your Pull Request.\n\n\n\nPair up in breakouts to make and review each other’s Pull Requests",
+    "title": "Part 2: GitHub workflow",
+    "section": "Contribute your updates using GitHub",
+    "text": "Contribute your updates using GitHub\nNow that we have each saved some changes to files in our Quarto site source, liike .qmd, .ipynb, and/or _quarto.yml, we can contribute our updates using GitHub.\n\nDemonstration\nYou have to deliberately tell Git/GitHub when you have work that you want to be versioned and synced. First, inspect the differences your edits will introduce.\n\n\n\n\n\nIn the Git tab “stage” your saved changes.\n\n\n\nStage your changes\n\n\nCommit your edits with a good commit message and push your edits to GitHub. A commit message is a human-readable message, like leaving a breadcrumb trail for your future self and others.\n\n\n\nCommit and Push\n\n\nOn your first commit, you will be prompted to add your Git credentials. When you are working on a project over time, you can have them stored, following instructions in Configure Git (git config) from the 2021 Cloud Hackathon.\nIn the Hub, in our own branch of the Quarto Clinic repo, we have made one or more edits to the Clinic files, committed those updates, and pushed those commit(s) to GitHub. How do our suggested contributions get incorporated into the main Quarto Clinic repo and website?\n\n\nMake a Pull Request\nAfter pushing your edits, go to https://github.com/Openscapes/quarto-clinic/  and you will see a yellow banner inviting you to make a Pull Request to add your edits to the Clinic repo.\n\n\n\n\n\nNot finished proposing your updates? You can set your Pull Request as a Draft at the start so folks can see your thinking. Set Ready for Review when ready and request a reviewer(s). For the NASA Earthdata Cloud Cookbook, any Pull Request must be reviewed before it can be merged. If you know someone who is familiar with the content you’re proposing to add, request their review.\n\n\nReview a pull request\nFrom the pull request page in GitHub browser, look at the elements of the pull request.\n\n\nStart with Conversation tab:\n\nWe can see all commits and comments on what Andy has worked on\nThis is where we can add PR reviewers by clicking the gear icon next to “Reviewers” at the top right corner of this tab.\n\nCommit tab:\n\nMore details on the commits that we saw under Conversation. When we click on one of the commits, we can see line by line what has changed under that commit (green lines are added, red lines have been removed)\n\nFiles Changed tab:\n\nView all the files that changed across the commits\nIn Nav bar: Orange dot box signifies modified; Green plus box means something’s been added; Red minus box means deleted; Grey arrow box means renamed.\n\nChecks tab:\n\nShows status of the Github Action that renders and deploys the site. We can know whether this Pull Request is able to be deployed.\n\n\nNow, switch to the 2i2c Hub to view the Cookbook preview as it would appear if the pull request was merged:\n\nTerminal:\n\nGo to the Main branch and pull so that we have the most recent changes from remote.\ngit checkout to the branch that has the Pull Request\nquarto preview - this will build the book with the author’s suggested edits.\n\n\nIn reviewing a pull request with lots of changes, it can be helpful to have windows open to view both the GitHub browser and the 2i2c Hub showing the Clinic site preview.\n\nIn GitHub under the “Files changed” tab of the PR, we can add a suggested edit by clicking the “plus” button below the line in question. Suggesting specific commits can speed the contributor’s workflow compared with trying to describe what we’d like them to change.\nWe can click “Start a review” button so the author gets a single email when we’re done reviewing, rather than getting one notification for every edit we suggest.\n\nReview each individual file that has changed and come back to the main _quarto.yml if we see an issue with the navigation.\nOnce our review is complete, we add a note in the GitHub review box and click “Approve”, “Comment” or “Request changes”. In the note it can be really helpful to add a note of appreciation for some aspect of the contribution, tagging the author, saying they can merge the PR after making changes, and possibly add a summary of our requested edits including the number of changes requested. Some changes in the middle of a long list of edits can be marked as hidden conversations, so this can be helpful to the author to know they’ve seen everything.\n\n\nMerge your Pull Request\nAs the author, you can now address the reviewer’s comments and then merge your Pull Request.\n\n\nTry it out!\nPair up in breakouts to make and review each other’s Pull Requests",
     "crumbs": [
       "Lessons",
-      "Part 2: Contribute via GitHub"
+      "Part 2: GitHub workflow"
     ]
   },
   {
     "objectID": "lessons/part2-github.html#view-your-updates-in-the-live-site-regroup-10-min",
     "href": "lessons/part2-github.html#view-your-updates-in-the-live-site-regroup-10-min",
-    "title": "Part 2: Contribute via GitHub",
+    "title": "Part 2: GitHub workflow",
     "section": "View your updates in the live site (Regroup, 10 min)",
     "text": "View your updates in the live site (Regroup, 10 min)",
     "crumbs": [
       "Lessons",
-      "Part 2: Contribute via GitHub"
+      "Part 2: GitHub workflow"
+    ]
+  },
+  {
+    "objectID": "lessons/part2-github.html#regroup-discussion-topics",
+    "href": "lessons/part2-github.html#regroup-discussion-topics",
+    "title": "Part 2: GitHub workflow",
+    "section": "Regroup discussion topics",
+    "text": "Regroup discussion topics\nShort message: commit the freeze folder.\n\nFreeze directory contains the results of code execution.\nCommit the freeze directory after you run quarto preview.\nIf there are merge conflicts when you submit to NASA Openscapes Cookbook, maintainers will help resolve them.",
+    "crumbs": [
+      "Lessons",
+      "Part 2: GitHub workflow"
     ]
   },
   {
@@ -221,41 +244,11 @@
     ]
   },
   {
-    "objectID": "lessons/index.html#workflow-to-edit-a-quarto-site-source",
-    "href": "lessons/index.html#workflow-to-edit-a-quarto-site-source",
-    "title": "Practice",
-    "section": "Workflow to edit a Quarto site source",
-    "text": "Workflow to edit a Quarto site source\n\nPreview the site\nMake changes to files; supported types include .qmd, .ipynb .md, .Rmd.\nSave, preview\nUpdate _quarto.yml file as needed to have new content appear in the site’s nav bar.",
-    "crumbs": [
-      "Lessons"
-    ]
-  },
-  {
-    "objectID": "lessons/index.html#workflow-to-contribute-via-github",
-    "href": "lessons/index.html#workflow-to-contribute-via-github",
-    "title": "Practice",
-    "section": "Workflow to contribute via GitHub",
-    "text": "Workflow to contribute via GitHub\n\nInspect the differences your edits will introduce\n“Stage” your changes\nCommit your changes with a helpful “Commit message”\n“Push” to GitHub\nGo to the Clinic repo source on GitHub, in your browser\nMake a “Pull Request” and tag a reviewer\nReviewer responds by commenting, making suggested commits, and submitting their review\nAuthor responds to review and “merges” their Pull Request\nA GitHub Action automatically publishes the updates in the live siteDiff, Stage, Commit, and Push your edits to GitHub",
-    "crumbs": [
-      "Lessons"
-    ]
-  },
-  {
-    "objectID": "lessons/index.html#lets-try-these-workflows",
-    "href": "lessons/index.html#lets-try-these-workflows",
-    "title": "Practice",
-    "section": "Let’s try these workflows!",
-    "text": "Let’s try these workflows!",
-    "crumbs": [
-      "Lessons"
-    ]
-  },
-  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Quarto + GitHub Clinic",
     "section": "",
-    "text": "It’s possible to create beautiful documentation to share online with Quarto that auto-updates with GitHub. This Clinic is an example of a Quarto website — a really powerful way to create and share your work. You can communicate about science using the same reproducible workflow you or your colleagues use for analyses, whether or not you write code.\nQuarto is an open-source scientific and technical publishing system. You can weave together narrative text and code to produce elegantly formatted output as documents, web pages, blog posts, books, presentations, and more.\nThe ability for Quarto to streamline collaboration has been so cool and important for our NASA Openscapes project. Quarto is a common place for us to collaborate - across Python and R languages and varied levels of coding expertise, and accessibility and inclusion are centered in the Quarto design.\nTo begin, you should have a GitHub account with access to the 2i2c Openscapes JupyterHub.",
+    "text": "This book is an example of a Quarto website that is published via GitHub - these are powerful workflows to create and share your work.\nQuarto lets us build websites as a collection of files (.qmd, .ipynb, .rmd and others). Today we’ll focus on .qmd files, which are plain-text files that work nicely with GitHub workflows.\nQuarto enables us to collaborate on documentation and tutorials - across Python and R languages and varied levels of coding expertise. Importantly, it lets us write and share documentation/tutorials using the same tools we teach research teams for reproducible science.\nThe ability for Quarto to streamline collaboration has been so cool and important for our NASA Openscapes project, so this tutorial will enable you to contribute to that site as well as the NASA Earthdata Cloud Cookbook (both made with Quarto+GitHub.)",
     "crumbs": [
       "Welcome"
     ]
@@ -265,7 +258,7 @@
     "href": "index.html#welcome",
     "title": "Quarto + GitHub Clinic",
     "section": "",
-    "text": "It’s possible to create beautiful documentation to share online with Quarto that auto-updates with GitHub. This Clinic is an example of a Quarto website — a really powerful way to create and share your work. You can communicate about science using the same reproducible workflow you or your colleagues use for analyses, whether or not you write code.\nQuarto is an open-source scientific and technical publishing system. You can weave together narrative text and code to produce elegantly formatted output as documents, web pages, blog posts, books, presentations, and more.\nThe ability for Quarto to streamline collaboration has been so cool and important for our NASA Openscapes project. Quarto is a common place for us to collaborate - across Python and R languages and varied levels of coding expertise, and accessibility and inclusion are centered in the Quarto design.\nTo begin, you should have a GitHub account with access to the 2i2c Openscapes JupyterHub.",
+    "text": "This book is an example of a Quarto website that is published via GitHub - these are powerful workflows to create and share your work.\nQuarto lets us build websites as a collection of files (.qmd, .ipynb, .rmd and others). Today we’ll focus on .qmd files, which are plain-text files that work nicely with GitHub workflows.\nQuarto enables us to collaborate on documentation and tutorials - across Python and R languages and varied levels of coding expertise. Importantly, it lets us write and share documentation/tutorials using the same tools we teach research teams for reproducible science.\nThe ability for Quarto to streamline collaboration has been so cool and important for our NASA Openscapes project, so this tutorial will enable you to contribute to that site as well as the NASA Earthdata Cloud Cookbook (both made with Quarto+GitHub.)",
     "crumbs": [
       "Welcome"
     ]
@@ -275,7 +268,17 @@
     "href": "index.html#our-plan-today",
     "title": "Quarto + GitHub Clinic",
     "section": "Our Plan today",
-    "text": "Our Plan today\nWe will learn workflows with Quarto and GitHub for contributing to open source documentation - like the NASA Earthdata Cloud Cookbook.\nThis is a 1.5-hr clinic that has demos and time for hands-on practice in breakout rooms.\nPart 1. Quarto Workflow: Use the 2i2c Openscapes JupyterHub to explore this clinic website and its source repository on GitHub, practice contributing to this site by editing a Quarto file or adding a new Jupyter Notebook and previewing the changes.\nPart 2. GitHub Workflow: Clone the repository for this site, make a branch to work in, edit, commit and push your edits to GitHub, make a pull request, review and merge a pull request, and communicate what you’re doing at each step.\nThis requires some setup. We’ll do this first, and discuss more as we go.",
+    "text": "Our Plan today\nWe will learn workflows with Quarto and GitHub for contributing to open source documentation. We’ll cover contributing in 2 parts:\nPart 1. Quarto Workflow: Use the 2i2c Openscapes JupyterHub as an editor: we will contribute to this Quarto site by editing a .qmd file and previewing the changes.\nPart 2. GitHub Workflow: Clone the repository for this site, make a branch to work in, commit and push your edits to GitHub, make a pull request, review and merge a pull request, and communicate what you’re doing at each step.\nThis requires some setup. We’ll do this first, and discuss more as we go.",
+    "crumbs": [
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "index.html#prerequisites",
+    "href": "index.html#prerequisites",
+    "title": "Quarto + GitHub Clinic",
+    "section": "Prerequisites",
+    "text": "Prerequisites\nTo begin, you should have a GitHub account with access to the 2i2c Openscapes JupyterHub.",
     "crumbs": [
       "Welcome"
     ]

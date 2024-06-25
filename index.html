@@ -29,7 +29,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./setup-explore.html" rel="next">
+<link href="./setup.html" rel="next">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -119,8 +119,8 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./setup-explore.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Setup &amp; Explore</span></a>
+  <a href="./setup.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Setup</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -135,7 +135,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./lessons/part1-quarto.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Part 1: Edit a Quarto site</span></a>
+ <span class="menu-text">Part 1: Quarto workflow</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -147,7 +147,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./lessons/part2-github.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Part 2: Contribute via GitHub</span></a>
+ <span class="menu-text">Part 2: GitHub workflow</span></a>
   </div>
 </li>
       </ul>
@@ -170,6 +170,7 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#welcome" id="toc-welcome" class="nav-link active" data-scroll-target="#welcome">Welcome</a></li>
   <li><a href="#our-plan-today" id="toc-our-plan-today" class="nav-link" data-scroll-target="#our-plan-today">Our Plan today</a></li>
+  <li><a href="#prerequisites" id="toc-prerequisites" class="nav-link" data-scroll-target="#prerequisites">Prerequisites</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/Openscapes/quarto-clinic/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/Openscapes/quarto-clinic/blob/main/index.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/Openscapes/quarto-clinic/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -198,18 +199,26 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="welcome" class="level2">
 <h2 class="anchored" data-anchor-id="welcome">Welcome</h2>
-<p>It’s possible to create beautiful documentation to share online with <a href="https://quarto.org">Quarto</a> that auto-updates with <a href="http://github.com">GitHub</a>. This Clinic is an example of a Quarto website — a really powerful way to create and share your work. You can communicate about science using the same reproducible workflow you or your colleagues use for analyses, whether or not you write code.</p>
-<p>Quarto is an open-source scientific and technical publishing system. You can weave together narrative text and code to produce elegantly formatted output as documents, web pages, blog posts, books, presentations, and more.</p>
-<p>The ability for Quarto to streamline collaboration has been so cool and important for our <a href="https://nasa-openscapes.github.io/">NASA Openscapes</a> project. Quarto is a common place for us to collaborate - across Python and R languages and varied levels of coding expertise, and accessibility and inclusion are centered in the Quarto design.</p>
-<p><strong>To begin</strong>, you should have a GitHub account with access to the 2i2c Openscapes JupyterHub.</p>
+<p>This book is an example of a Quarto website that is published via GitHub - these are powerful workflows to create and share your work.</p>
+<p>Quarto lets us build websites as a collection of files (<code>.qmd</code>, <code>.ipynb</code>, <code>.rmd</code> and others). Today we’ll focus on <code>.qmd</code> files, which are plain-text files that work nicely with GitHub workflows.</p>
+<p>Quarto enables us to collaborate on documentation and tutorials - across Python and R languages and varied levels of coding expertise. Importantly, it lets us write and share documentation/tutorials using the same tools we teach research teams for reproducible science.</p>
+<p>The ability for Quarto to streamline collaboration has been so cool and important for our <a href="https://nasa-openscapes.github.io/">NASA Openscapes</a> project, so this tutorial will enable you to contribute to that site as well as the <a href="https://nasa-openscapes.github.io/earthdata-cloud-cookbook/">NASA Earthdata Cloud Cookbook</a> (both made with Quarto+GitHub.)</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/horst_quarto_schematic.png" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="3 part illustration left-to-right that starts with R, Python, Julia, Observable and more pointing to Quarto and then pointing to html, pdf, and word documents" width="1100"></p>
+</figure>
+</div>
 </section>
 <section id="our-plan-today" class="level2">
 <h2 class="anchored" data-anchor-id="our-plan-today">Our Plan today</h2>
-<p>We will learn workflows with Quarto and GitHub for contributing to open source documentation - like the <a href="https://nasa-openscapes.github.io/earthdata-cloud-cookbook/">NASA Earthdata Cloud Cookbook</a>.</p>
-<p>This is a 1.5-hr clinic that has demos and time for hands-on practice in breakout rooms.</p>
-<p><strong>Part 1. Quarto Workflow:</strong> Use the 2i2c Openscapes JupyterHub to explore this clinic website and its source repository on GitHub, practice contributing to this site by editing a Quarto file or adding a new Jupyter Notebook and previewing the changes.</p>
-<p><strong>Part 2. GitHub Workflow:</strong> Clone the repository for this site, make a branch to work in, edit, commit and push your edits to GitHub, make a pull request, review and merge a pull request, and communicate what you’re doing at each step.</p>
+<p>We will learn workflows with Quarto and GitHub for contributing to open source documentation. We’ll cover contributing in 2 parts:</p>
+<p><strong>Part 1. Quarto Workflow:</strong> Use the 2i2c Openscapes JupyterHub as an editor: we will contribute to this Quarto site by editing a <code>.qmd</code> file and previewing the changes.</p>
+<p><strong>Part 2. GitHub Workflow:</strong> Clone the repository for this site, make a branch to work in, commit and push your edits to GitHub, make a pull request, review and merge a pull request, and communicate what you’re doing at each step.</p>
 <p>This requires some setup. We’ll do this first, and discuss more as we go.</p>
+</section>
+<section id="prerequisites" class="level2">
+<h2 class="anchored" data-anchor-id="prerequisites">Prerequisites</h2>
+<p><strong>To begin</strong>, you should have a GitHub account with access to the 2i2c Openscapes JupyterHub.</p>
 
 
 </section>
@@ -772,8 +781,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   <div class="nav-page nav-page-previous">
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./setup-explore.html" class="pagination-link" aria-label="Setup &amp; Explore">
-        <span class="nav-page-text">Setup &amp; Explore</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./setup.html" class="pagination-link" aria-label="Setup">
+        <span class="nav-page-text">Setup</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
