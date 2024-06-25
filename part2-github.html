@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Quarto Contributing Clinic - Part 1: Quarto workflow</title>
+<title>Quarto Contributing Clinic - Part 2: GitHub workflow</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,62 +20,28 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<link href="../lessons/demo.html" rel="next">
-<link href="../lessons/index.html" rel="prev">
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./next-steps.html" rel="next">
+<link href="./demo.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -116,7 +82,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lessons/index.html">Lessons</a></li><li class="breadcrumb-item"><a href="../lessons/part1-quarto.html">Part 1: Quarto workflow</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./part2-github.html">Part 2: GitHub workflow</a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -130,8 +96,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-center sidebar-header">
-      <a href="../index.html" class="sidebar-logo-link">
-      <img src="../images/openscapes_hex.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      <a href="./index.html" class="sidebar-logo-link">
+      <img src="./images/openscapes_hex.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
       <div class="sidebar-tools-main tools-wide">
     <a href="https://openscapes.org" title="Openscapes.org" class="quarto-navigation-tool px-1" aria-label="Openscapes.org"><i class="bi bi-globe"></i></a>
@@ -148,48 +114,42 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../index.html" class="sidebar-item-text sidebar-link">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Welcome</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../setup.html" class="sidebar-item-text sidebar-link">
+  <a href="./part0-setup.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Setup</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../lessons/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Lessons</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+            <a href="./part1-quarto.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part 1: Quarto workflow</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lessons/part1-quarto.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Part 1: Quarto workflow</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../lessons/demo.html" class="sidebar-item-text sidebar-link">
+  <a href="./demo.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><code>.qmd</code> file for practice</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../lessons/part2-github.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Part 2: GitHub workflow</span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../next-steps.html" class="sidebar-item-text sidebar-link">
+  <a href="./part2-github.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Part 2: GitHub workflow</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./next-steps.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Next Steps</span></a>
   </div>
 </li>
@@ -203,26 +163,27 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#workflow-to-edit-a-quarto-website-source" id="toc-workflow-to-edit-a-quarto-website-source" class="nav-link active" data-scroll-target="#workflow-to-edit-a-quarto-website-source">Workflow to edit a Quarto website source</a></li>
-  <li><a href="#demo-edit-and-preview-a-demo.qmd-file" id="toc-demo-edit-and-preview-a-demo.qmd-file" class="nav-link" data-scroll-target="#demo-edit-and-preview-a-demo.qmd-file">Demo: Edit and preview a demo.qmd file</a>
+  <li><a href="#workflow-to-contribute-via-github" id="toc-workflow-to-contribute-via-github" class="nav-link active" data-scroll-target="#workflow-to-contribute-via-github">Workflow to contribute via GitHub</a></li>
+  <li><a href="#contribute-your-updates-using-github" id="toc-contribute-your-updates-using-github" class="nav-link" data-scroll-target="#contribute-your-updates-using-github">Contribute your updates using GitHub</a>
   <ul class="collapse">
-  <li><a href="#preview-the-website-aka-quarto-preview" id="toc-preview-the-website-aka-quarto-preview" class="nav-link" data-scroll-target="#preview-the-website-aka-quarto-preview">Preview the website (aka Quarto preview)</a></li>
+  <li><a href="#demonstration" id="toc-demonstration" class="nav-link" data-scroll-target="#demonstration">Demonstration</a></li>
+  <li><a href="#set-up-our-git-credentials" id="toc-set-up-our-git-credentials" class="nav-link" data-scroll-target="#set-up-our-git-credentials">Set up our Git credentials</a></li>
+  <li><a href="#make-a-pull-request" id="toc-make-a-pull-request" class="nav-link" data-scroll-target="#make-a-pull-request">Make a Pull Request</a></li>
+  <li><a href="#review-a-pull-request" id="toc-review-a-pull-request" class="nav-link" data-scroll-target="#review-a-pull-request">Review a pull request</a></li>
+  <li><a href="#merge-your-pull-request" id="toc-merge-your-pull-request" class="nav-link" data-scroll-target="#merge-your-pull-request">Merge your Pull Request</a></li>
+  <li><a href="#try-it-out" id="toc-try-it-out" class="nav-link" data-scroll-target="#try-it-out">Try it out!</a></li>
   </ul></li>
-  <li><a href="#make-changes-to-files-aka-the-website-content" id="toc-make-changes-to-files-aka-the-website-content" class="nav-link" data-scroll-target="#make-changes-to-files-aka-the-website-content">Make changes to files (aka the website content)</a>
-  <ul class="collapse">
-  <li><a href="#save-and-preview-automagically-updates" id="toc-save-and-preview-automagically-updates" class="nav-link" data-scroll-target="#save-and-preview-automagically-updates">Save and preview automagically updates!</a></li>
-  </ul></li>
-  <li><a href="#your-turn" id="toc-your-turn" class="nav-link" data-scroll-target="#your-turn">Your turn</a></li>
+  <li><a href="#view-your-updates-in-the-live-site-regroup-10-min" id="toc-view-your-updates-in-the-live-site-regroup-10-min" class="nav-link" data-scroll-target="#view-your-updates-in-the-live-site-regroup-10-min">View your updates in the live site (Regroup, 10 min)</a></li>
   <li><a href="#regroup-discussion-topics" id="toc-regroup-discussion-topics" class="nav-link" data-scroll-target="#regroup-discussion-topics">Regroup discussion topics</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/Openscapes/quarto-clinic/edit/main/lessons/part1-quarto.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/Openscapes/quarto-clinic/blob/main/lessons/part1-quarto.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/Openscapes/quarto-clinic/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/Openscapes/quarto-clinic/edit/main/part2-github.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/Openscapes/quarto-clinic/blob/main/part2-github.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/Openscapes/quarto-clinic/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lessons/index.html">Lessons</a></li><li class="breadcrumb-item"><a href="../lessons/part1-quarto.html">Part 1: Quarto workflow</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Part 1: Quarto workflow</h1>
+<h1 class="title">Part 2: GitHub workflow</h1>
 </div>
 
 
@@ -239,61 +200,131 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="workflow-to-edit-a-quarto-website-source" class="level2">
-<h2 class="anchored" data-anchor-id="workflow-to-edit-a-quarto-website-source">Workflow to edit a Quarto website source</h2>
+<section id="workflow-to-contribute-via-github" class="level2">
+<h2 class="anchored" data-anchor-id="workflow-to-contribute-via-github">Workflow to contribute via GitHub</h2>
+<p><strong>Bold</strong> words are git/GitHub terms</p>
 <ol type="1">
-<li>Preview the website (<code>quarto preview</code>)</li>
-<li>Make changes to files</li>
-<li>Save and preview how changes are automatically updated!</li>
+<li>Inspect the differences your edits will introduce</li>
+<li><strong>Stage</strong> your changes</li>
+<li><strong>Commit</strong> your changes with a helpful <strong>Commit message</strong></li>
+<li><strong>Push</strong> to GitHub</li>
+<li>Go to the Clinic repo source on GitHub, in your browser</li>
+<li>Make a <strong>Pull Request</strong> and tag a reviewer</li>
+<li>Reviewer responds by commenting, making suggested commits, and submitting their <strong>review</strong></li>
+<li>Author responds to review and <strong>merges</strong> their Pull Request</li>
+<li>A GitHub Action automatically publishes the updates in the live siteDiff, Stage, Commit, and Push your edits to GitHub</li>
 </ol>
 </section>
-<section id="demo-edit-and-preview-a-demo.qmd-file" class="level2">
-<h2 class="anchored" data-anchor-id="demo-edit-and-preview-a-demo.qmd-file">Demo: Edit and preview a demo.qmd file</h2>
-<p>I will demonstrate this with the <code>demo.qmd</code> file: watch me and then you will all have a chance to do this yourself.</p>
-<section id="preview-the-website-aka-quarto-preview" class="level3">
-<h3 class="anchored" data-anchor-id="preview-the-website-aka-quarto-preview">Preview the website (aka Quarto preview)</h3>
-<p>Let’s start off by previewing our quarto site locally. In Terminal, in the <code>quarto-clinic</code> folder, type <code>quarto preview</code>, which will provide a URL with a preview of our site!</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> preview</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Preparing to preview</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Watching files for changes</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Browse at https://openscapes.2i2c.cloud/user/jules32/proxy/4593/</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Open this URL in a browser window and arrange your Hub and website preview windows so you can see them both. I make a bit more space in Jupyter by collapsing the left file menu by clicking on the file icon at the top of the left sidebar.</p>
-<!---*TODO: add new screenshots* TODO only show demo.qmd example
-
-![](images/jupyter-side-by-side.png){fig-align="center"} --->
-</section>
-</section>
-<section id="make-changes-to-files-aka-the-website-content" class="level2">
-<h2 class="anchored" data-anchor-id="make-changes-to-files-aka-the-website-content">Make changes to files (aka the website content)</h2>
-<p><strong>Open <a href="../lessons/demo.html"><code>lessons/demo.qmd</code></a> file using the Editor, not as a Notebook file.</strong> Suggestions for things to try, and how to format things are in the file.</p>
-<div class="quarto-figure quarto-figure-left">
+<section id="contribute-your-updates-using-github" class="level2">
+<h2 class="anchored" data-anchor-id="contribute-your-updates-using-github">Contribute your updates using GitHub</h2>
+<p>Now that we have each saved some changes to files in our Quarto site source, liike <code>.qmd</code>, <code>.ipynb</code>, and/or <code>_quarto.yml</code>, we can contribute our updates using GitHub.</p>
+<section id="demonstration" class="level3">
+<h3 class="anchored" data-anchor-id="demonstration">Demonstration</h3>
+<p>You have to deliberately tell Git/GitHub when you have work that you want to be versioned and synced. First, inspect the differences your edits will introduce.</p>
+<div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/jupyterhub-openwith-editor.png" class="img-fluid figure-img" style="width:50.0%"></p>
-<figcaption>Open .qmd file with the Editor</figcaption>
+<p><img src="images/jupyterhub-git-diff.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></p>
 </figure>
 </div>
-<p>I will fix a small typo.</p>
-<section id="save-and-preview-automagically-updates" class="level3">
-<h3 class="anchored" data-anchor-id="save-and-preview-automagically-updates">Save and preview automagically updates!</h3>
-<p>When we save changes, our preview window will refresh automatically and display our changes! If it does not, you can also refresh the page manually.</p>
-<p>This is powerful to be able to see live changes in the preview as we edit in our <code>.qmd</code> files.</p>
+<p>In the Git tab “stage” your saved changes.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/jupyterhub-git-stage.png" class="img-fluid figure-img" style="width:50.0%"></p>
+<figcaption>Stage your changes</figcaption>
+</figure>
+</div>
+<p>Commit your edits with a good commit message and push your edits to GitHub. A commit message is a human-readable message, like leaving a breadcrumb trail for your future self and others.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/jupyterhub-git-commit-push.png" class="img-fluid figure-img" style="width:50.0%"></p>
+<figcaption>Commit and Push</figcaption>
+</figure>
+</div>
 </section>
+<section id="set-up-our-git-credentials" class="level3">
+<h3 class="anchored" data-anchor-id="set-up-our-git-credentials">Set up our Git credentials</h3>
+<p>On your first commit, you will be prompted to add your Git credentials. When you are working on a project over time, you can have them stored, following instructions in <a href="https://nasa-openscapes.github.io/2021-Cloud-Hackathon/tutorials/00_Setup.html#step-5.1.-configure-git-git-config">Configure Git (git config)</a> from the 2021 Cloud Hackathon.</p>
+<p><em>TODO: do we need to do <a href="https://nasa-openscapes.github.io/2021-Cloud-Hackathon/tutorials/00_Setup.html#step-5.1.-configure-git-git-config">Step 5.1. Configure Git (<code>git config</code>)</a>? (but ignore the push file part). Clarify the following text to say see the orange dot. click it to be prompted</em></p>
+<p>When you see the following screenshot, GitHub is asking for you to input your credentials. (Note: you see this screenshot when you have committed work to push to GitHub.com. In this case we have created a new branch in the Hub and it does not yet exist on GitHub.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/jupyterhub-git-credentials.png" class="img-fluid figure-img" style="width:70.0%"></p>
+<figcaption>Prompt to add your Git credentials</figcaption>
+</figure>
+</div>
+<p>We’ll follow the instructions in the 2021 Cloud Hackathon to <a href="https://nasa-openscapes.github.io/2021-Cloud-Hackathon/tutorials/00_Setup.html#step-5.6.-setup-pat">Setup your Personal Access Token (PAT)</a>.</p>
 </section>
-<section id="your-turn" class="level2">
-<h2 class="anchored" data-anchor-id="your-turn">Your turn</h2>
-<p>In your breakout room:</p>
+<section id="make-a-pull-request" class="level3">
+<h3 class="anchored" data-anchor-id="make-a-pull-request">Make a Pull Request</h3>
+<p>Our current status is that in the Hub, in our own branch of the Quarto Clinic repo, we have made one or more edits to the Clinic files, committed those updates, and pushed those commit(s) to GitHub. How do our suggested contributions get incorporated into the main Quarto Clinic repo and website? Via a <strong>Pull Request</strong>.</p>
+<p>After pushing your edits, go to <a href="https://github.com/Openscapes/quarto-clinic/" class="uri">https://github.com/Openscapes/quarto-clinic/</a> <!--- replace with unique link to a clinic ---> and you will see a yellow banner inviting you to make a Pull Request to add your edits to the Clinic repo.</p>
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><img src="images/github-yellow-pr-banner.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:90.0%"></p>
+</figure>
+</div>
+<p>Not finished proposing your updates? You can set your Pull Request as a Draft at the start so folks can see your thinking. Set Ready for Review when ready and request a reviewer(s). For the NASA Earthdata Cloud Cookbook, any Pull Request must be reviewed before it can be merged. If you know someone who is familiar with the content you’re proposing to add, request their review.</p>
+</section>
+<section id="review-a-pull-request" class="level3">
+<h3 class="anchored" data-anchor-id="review-a-pull-request">Review a pull request</h3>
+<p>From the pull request page in GitHub browser, look at the elements of the pull request.</p>
+<!--- *TODO: add screenshot of a PR page like the one in Cookbook, pull-request-example.png* --->
 <ul>
-<li>In terminal, <code>cd quarto-clinic</code> and then <code>quarto preview</code></li>
-<li>Open <code>demo.qmd</code> file</li>
-<li>Find the header with your name, edit in that section. Ideas at the top of the file.</li>
-<li>Save, <code>quarto preview</code></li>
-<li>Repeat!</li>
+<li>Start with Conversation tab:
+<ul>
+<li>We can see all commits and comments on what Andy has worked on</li>
+<li>This is where we can add PR reviewers by clicking the gear icon next to “Reviewers” at the top right corner of this tab.</li>
+</ul></li>
+<li>Commit tab:
+<ul>
+<li>More details on the commits that we saw under Conversation. When we click on one of the commits, we can see line by line what has changed under that commit (green lines are added, red lines have been removed)</li>
+</ul></li>
+<li>Files Changed tab:
+<ul>
+<li>View all the files that changed across the commits</li>
+<li>In Nav bar: Orange dot box signifies modified; Green plus box means something’s been added; Red minus box means deleted; Grey arrow box means renamed.</li>
+</ul></li>
+<li>Checks tab:
+<ul>
+<li>Shows status of the Github Action that renders and deploys the site. We can know whether this Pull Request is able to be deployed.</li>
+</ul></li>
 </ul>
+<p>Now, switch to the 2i2c Hub to view the Cookbook preview as it would appear if the pull request was merged:</p>
+<ul>
+<li>Terminal:
+<ul>
+<li>Go to the Main branch and pull so that we have the most recent changes from remote.</li>
+<li><code>git checkout</code> to the branch that has the Pull Request</li>
+<li><code>quarto preview</code> - this will build the book with the author’s suggested edits.</li>
+</ul></li>
+</ul>
+<p>In reviewing a pull request with lots of changes, it can be helpful to have windows open to view both the GitHub browser and the 2i2c Hub showing the Clinic site preview.</p>
+<ul>
+<li>In GitHub under the “Files changed” tab of the PR, we can add a suggested edit by clicking the “plus” button below the line in question. Suggesting specific commits can speed the contributor’s workflow compared with trying to describe what we’d like them to change.</li>
+<li>We can click “Start a review” button so the author gets a single email when we’re done reviewing, rather than getting one notification for every edit we suggest.</li>
+</ul>
+<p>Review each individual file that has changed and come back to the main <code>_quarto.yml</code> if we see an issue with the navigation.</p>
+<p>Once our review is complete, we add a note in the GitHub review box and click “Approve”, “Comment” or “Request changes”. In the note it can be really helpful to add a note of appreciation for some aspect of the contribution, tagging the author, saying they can merge the PR after making changes, and possibly add a summary of our requested edits including the number of changes requested. Some changes in the middle of a long list of edits can be marked as hidden conversations, so this can be helpful to the author to know they’ve seen everything.</p>
+</section>
+<section id="merge-your-pull-request" class="level3">
+<h3 class="anchored" data-anchor-id="merge-your-pull-request">Merge your Pull Request</h3>
+<p>As the author, you can now address the reviewer’s comments and then merge your Pull Request.</p>
+</section>
+<section id="try-it-out" class="level3">
+<h3 class="anchored" data-anchor-id="try-it-out">Try it out!</h3>
+<p>Pair up in breakouts to make and review each other’s Pull Requests</p>
+</section>
+</section>
+<section id="view-your-updates-in-the-live-site-regroup-10-min" class="level2">
+<h2 class="anchored" data-anchor-id="view-your-updates-in-the-live-site-regroup-10-min">View your updates in the live site (Regroup, 10 min)</h2>
 </section>
 <section id="regroup-discussion-topics" class="level2">
 <h2 class="anchored" data-anchor-id="regroup-discussion-topics">Regroup discussion topics</h2>
+<p><strong>Short message: commit the freeze folder.</strong></p>
 <ul>
-<li>When adding new files, update <code>_quarto.yml</code> file as needed to have new content appear in the site’s nav bar. (see https://openscapes.github.io/quarto-website-tutorial/explore.html)</li>
+<li>Freeze directory contains the results of code execution.</li>
+<li>Commit the freeze directory after you run quarto preview.</li>
+<li>If there are merge conflicts when you submit to NASA Openscapes Cookbook, maintainers will help resolve them.</li>
 </ul>
 
 
@@ -855,13 +886,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../lessons/index.html" class="pagination-link" aria-label="Lessons">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Lessons</span>
+      <a href="./demo.html" class="pagination-link" aria-label="`.qmd` file for practice">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><code>.qmd</code> file for practice</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../lessons/demo.html" class="pagination-link" aria-label="`.qmd` file for practice">
-        <span class="nav-page-text"><code>.qmd</code> file for practice</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./next-steps.html" class="pagination-link" aria-label="Next Steps">
+        <span class="nav-page-text">Next Steps</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -873,7 +904,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/Openscapes/quarto-clinic/edit/main/lessons/part1-quarto.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/Openscapes/quarto-clinic/blob/main/lessons/part1-quarto.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/Openscapes/quarto-clinic/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/Openscapes/quarto-clinic/edit/main/part2-github.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/Openscapes/quarto-clinic/blob/main/part2-github.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/Openscapes/quarto-clinic/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This page is built with ❤️ and <a href="https://quarto.org/">Quarto</a>.</p>
 </div>

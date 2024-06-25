@@ -1,31 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://openscapes.github.io/quarto-clinic/setup.html</loc>
-    <lastmod>2024-06-25T18:50:30.479Z</lastmod>
+    <loc>https://openscapes.github.io/quarto-clinic/part0-setup.html</loc>
+    <lastmod>2024-06-25T20:37:14.901Z</lastmod>
   </url>
   <url>
     <loc>https://openscapes.github.io/quarto-clinic/next-steps.html</loc>
-    <lastmod>2024-06-25T18:50:30.479Z</lastmod>
+    <lastmod>2024-06-25T20:37:14.901Z</lastmod>
   </url>
   <url>
-    <loc>https://openscapes.github.io/quarto-clinic/lessons/demo.html</loc>
-    <lastmod>2024-06-25T18:50:30.455Z</lastmod>
+    <loc>https://openscapes.github.io/quarto-clinic/part2-github.html</loc>
+    <lastmod>2024-06-25T20:37:14.901Z</lastmod>
   </url>
   <url>
-    <loc>https://openscapes.github.io/quarto-clinic/lessons/part1-quarto.html</loc>
-    <lastmod>2024-06-25T18:50:30.479Z</lastmod>
+    <loc>https://openscapes.github.io/quarto-clinic/part1-quarto.html</loc>
+    <lastmod>2024-06-25T20:37:14.901Z</lastmod>
   </url>
   <url>
-    <loc>https://openscapes.github.io/quarto-clinic/lessons/part2-github.html</loc>
-    <lastmod>2024-06-25T18:50:30.479Z</lastmod>
-  </url>
-  <url>
-    <loc>https://openscapes.github.io/quarto-clinic/lessons/index.html</loc>
-    <lastmod>2024-06-25T18:50:30.479Z</lastmod>
+    <loc>https://openscapes.github.io/quarto-clinic/demo.html</loc>
+    <lastmod>2024-06-25T20:37:14.841Z</lastmod>
   </url>
   <url>
     <loc>https://openscapes.github.io/quarto-clinic/index.html</loc>
-    <lastmod>2024-06-25T18:50:30.455Z</lastmod>
+    <lastmod>2024-06-25T20:37:14.901Z</lastmod>
   </url>
 </urlset>
