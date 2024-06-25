@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -169,13 +203,26 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#task-1a-edit-a-.qmd-page" id="toc-task-1a-edit-a-.qmd-page" class="nav-link active" data-scroll-target="#task-1a-edit-a-.qmd-page">Task 1a: Edit a <code>.qmd</code> page</a>
-  <ul class="collapse">
+  <li><a href="#ideas-for-contributions" id="toc-ideas-for-contributions" class="nav-link active" data-scroll-target="#ideas-for-contributions">Ideas for contributions</a></li>
   <li><a href="#stefanie" id="toc-stefanie" class="nav-link" data-scroll-target="#stefanie">Stefanie</a></li>
-  <li><a href="#julie" id="toc-julie" class="nav-link" data-scroll-target="#julie">Julie</a></li>
+  <li><a href="#alexis" id="toc-alexis" class="nav-link" data-scroll-target="#alexis">Alexis</a></li>
   <li><a href="#andy" id="toc-andy" class="nav-link" data-scroll-target="#andy">Andy</a></li>
-  </ul></li>
-  <li><a href="#your-turn" id="toc-your-turn" class="nav-link" data-scroll-target="#your-turn">Your turn!</a></li>
+  <li><a href="#eric" id="toc-eric" class="nav-link" data-scroll-target="#eric">Eric</a></li>
+  <li><a href="#guoqing" id="toc-guoqing" class="nav-link" data-scroll-target="#guoqing">Guoqing</a></li>
+  <li><a href="#ian" id="toc-ian" class="nav-link" data-scroll-target="#ian">Ian</a></li>
+  <li><a href="#jessica" id="toc-jessica" class="nav-link" data-scroll-target="#jessica">Jessica</a></li>
+  <li><a href="#juan" id="toc-juan" class="nav-link" data-scroll-target="#juan">Juan</a></li>
+  <li><a href="#julie" id="toc-julie" class="nav-link" data-scroll-target="#julie">Julie</a></li>
+  <li><a href="#katherine" id="toc-katherine" class="nav-link" data-scroll-target="#katherine">Katherine</a></li>
+  <li><a href="#kytt" id="toc-kytt" class="nav-link" data-scroll-target="#kytt">Kytt</a></li>
+  <li><a href="#luis" id="toc-luis" class="nav-link" data-scroll-target="#luis">Luis</a></li>
+  <li><a href="#michele" id="toc-michele" class="nav-link" data-scroll-target="#michele">Michele</a></li>
+  <li><a href="#navaneeth" id="toc-navaneeth" class="nav-link" data-scroll-target="#navaneeth">Navaneeth</a></li>
+  <li><a href="#rhys" id="toc-rhys" class="nav-link" data-scroll-target="#rhys">Rhys</a></li>
+  <li><a href="#ritika" id="toc-ritika" class="nav-link" data-scroll-target="#ritika">Ritika</a></li>
+  <li><a href="#rupesh" id="toc-rupesh" class="nav-link" data-scroll-target="#rupesh">Rupesh</a></li>
+  <li><a href="#roosevelt" id="toc-roosevelt" class="nav-link" data-scroll-target="#roosevelt">Roosevelt</a></li>
+  <li><a href="#scott" id="toc-scott" class="nav-link" data-scroll-target="#scott">Scott</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/Openscapes/quarto-clinic/edit/main/lessons/demo.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/Openscapes/quarto-clinic/blob/main/lessons/demo.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/Openscapes/quarto-clinic/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -184,7 +231,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lessons/index.html">Lessons</a></li><li class="breadcrumb-item"><a href="../lessons/demo.html"><code>.qmd</code> file for practice</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><code>demo.qmd</code> Quarto Practice</h1>
+<h1 class="title"><code>.qmd</code> file for practice</h1>
 </div>
 
 
@@ -201,59 +248,47 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Quarto enables you to weave together content and executable code into a finished document.</p>
-<p>This <code>demo.qmd</code> file has Markdown-formatted text, examples for adding hyperlinks and inserting images with alt-text, and a Python code chunk.</p>
+<p>This <code>demo.qmd</code> file has <a href="https://quarto.org/docs/authoring/markdown-basics.html">Markdown</a>-formatted text, examples for adding headers, hyperlinks, and inserting images with alt-text, and a Python code chunk.</p>
 <ul>
-<li>Headers. Headers are powerful in Quarto because they let you organize on the side of the page. They let you share a specific section of a page by copying the URL</li>
-<li>hyperlink something (cite the Cookbook and hyperlink it). Hyperlinking is done like this; lets you cite and give credit</li>
-<li>inspect this image with alt-txt</li>
-<li>Python code. manage echo, run</li>
+<li>Headers are powerful in Quarto because they let you organize on the side of the page. In a Quarto site, headers let you share a specific section of a page by clicking on a header and copying the URL.</li>
+<li>Hyperlinking lets us cite our sources and inspirations and give credit.</li>
+<li>Python code in a <code>.qmd</code> file will be executed automatically.</li>
 </ul>
-<p>Stef will demo then it’s your turn.</p>
-<section id="task-1a-edit-a-.qmd-page" class="level2">
-<h2 class="anchored" data-anchor-id="task-1a-edit-a-.qmd-page">Task 1a: Edit a <code>.qmd</code> page</h2>
-<p><em>TODO: Edit down to what we need, duplicated under each name header</em></p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Only make changes to the section under your name header (to prevent conflicts at a later stage)</p>
-</div>
-</div>
-<p>Now let’s practice Markdown in this Quarto file and commit an edit to this file.</p>
-<p>Make an edit, preview, edit etc</p>
-<section id="stefanie" class="level3">
-<h3 class="anchored" data-anchor-id="stefanie">Stefanie</h3>
-<p>Your first edit? Fix this tpyo.</p>
+<p>We can all practice Markdown in this Quarto file. Make an edit, preview how it will look in the site (<code>quarto preview</code>), edit, repeat.</p>
+<p>Only make changes to the section below under <em>your</em> name header (to prevent conflicts with other people’s edits)</p>
+<section id="ideas-for-contributions" class="level2">
+<h2 class="anchored" data-anchor-id="ideas-for-contributions">Ideas for contributions</h2>
 <section id="headers" class="level4">
-<h4 class="anchored" data-anchor-id="headers"><strong>Headers</strong></h4>
+<h4 class="anchored" data-anchor-id="headers">Headers</h4>
 <p>We can make headers using <code>## Name</code>, <code>### Name</code>, etc. Headers are powerful in Quarto because they let you organize your content. You can share a specific subsection of a page by copying its URL.</p>
 </section>
 <section id="hyperlinks" class="level4">
-<h4 class="anchored" data-anchor-id="hyperlinks"><strong>Hyperlinks</strong></h4>
+<h4 class="anchored" data-anchor-id="hyperlinks">Hyperlinks</h4>
 <p>We can make hyperlinks using the <code>[]()</code> pattern: you name the hyperlink in <code>[]</code> and put the URL in <code>()</code>. For example, here’s a link to <a href="https://quarto.org/docs/authoring/markdown-basics.html">Markdown Basics</a>. Hyperlinking lets us cite and give credit to our sources, like the NASA Earthdata Cloud Cookbook (<a href="https://nasa-openscapes.github.io/earthdata-cloud-cookbook/">Barrett et al.</a>).</p>
 </section>
 <section id="images" class="level4">
-<h4 class="anchored" data-anchor-id="images"><strong>Images</strong></h4>
-<p>We can include an image with the same <code>[]()</code> pattern, by adding a preceding exclamation point: <code>![]()</code>. The <code>[]</code> contain the caption and <code>()</code> contain the path to the image file. Other attributes like image size, alt text, and a hyperlink, are also set in this example:</p>
+<h4 class="anchored" data-anchor-id="images">Images</h4>
+<p>We can include an image with the same <code>[]()</code> pattern, by adding a preceding exclamation point: <code>![]()</code>. The <code>[]</code> contain the caption (optional) and <code>()</code> contain the path to the image file.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="https://openscapes.org/"><img src="../images/openscapes_hex.png" class="img-fluid figure-img" alt="Openscapes logo. A hexagonal shape with orange border, yellow background, the word openscapes in orange above a cartoon evoking a landscape of data plots" width="150"></a></p>
+<p><img src="../images/openscapes_hex.png" class="img-fluid figure-img" width="150"></p>
+<figcaption>The Openscapes logo</figcaption>
+</figure>
+</div>
+<p>Additional attributes like image size, alt text, and linking the image to a URL, are set inside <code>{}</code> in this example:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/openscapes_hex.png" class="img-fluid figure-img" alt="Openscapes logo. A hexagonal shape with orange border, yellow background, the word openscapes in orange above a cartoon evoking a landscape of data plots" width="150"></p>
 <figcaption>The Openscapes logo</figcaption>
 </figure>
 </div>
 </section>
 <section id="code" class="level4">
-<h4 class="anchored" data-anchor-id="code"><strong>Code</strong></h4>
+<h4 class="anchored" data-anchor-id="code">Code</h4>
 <p>When you <strong>Render</strong>, a document will be generated that includes both content and the output of embedded code. You can embed code like this:</p>
 <p><em>TODO: day before clinic, make this Python code (don’t add screenshot - fewer files to for folks to get distracted with, lighter weight repo)</em></p>
 <div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span> <span class="sc">*</span> <span class="dv">2</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 4</code></pre>
 </div>
@@ -261,19 +296,81 @@ Note
 <p>You can add options to executable code. The <code>echo: false</code> option disables the printing of code (only output is displayed).</p>
 </section>
 </section>
-<section id="julie" class="level3">
-<h3 class="anchored" data-anchor-id="julie">Julie</h3>
-<p>Fix this tpyo.</p>
-<p><em>TODO: copy activities text under each participant heading when it’s settled</em></p>
+<section id="stefanie" class="level2">
+<h2 class="anchored" data-anchor-id="stefanie">Stefanie</h2>
+<p>For your first edit, you could fix this tpyo and preview how it will look in the site.</p>
 </section>
-<section id="andy" class="level3">
-<h3 class="anchored" data-anchor-id="andy">Andy</h3>
-<p>Fix this tpyo.</p>
+<section id="alexis" class="level2">
+<h2 class="anchored" data-anchor-id="alexis">Alexis</h2>
+<p>For your first edit, you could fix this tpyo and preview how it will look in the site.</p>
 </section>
+<section id="andy" class="level2">
+<h2 class="anchored" data-anchor-id="andy">Andy</h2>
+<p>For your first edit, you could fix this tpyo and preview how it will look in the site.</p>
 </section>
-<section id="your-turn" class="level2">
-<h2 class="anchored" data-anchor-id="your-turn">Your turn!</h2>
-<p>Change or add something to this file under your Name header and save the file.</p>
+<section id="eric" class="level2">
+<h2 class="anchored" data-anchor-id="eric">Eric</h2>
+<p>For your first edit, you could fix this tpyo and preview how it will look in the site.</p>
+</section>
+<section id="guoqing" class="level2">
+<h2 class="anchored" data-anchor-id="guoqing">Guoqing</h2>
+<p>For your first edit, you could fix this tpyo and preview how it will look in the site.</p>
+</section>
+<section id="ian" class="level2">
+<h2 class="anchored" data-anchor-id="ian">Ian</h2>
+<p>For your first edit, you could fix this tpyo and preview how it will look in the site.</p>
+</section>
+<section id="jessica" class="level2">
+<h2 class="anchored" data-anchor-id="jessica">Jessica</h2>
+<p>For your first edit, you could fix this tpyo and preview how it will look in the site.</p>
+</section>
+<section id="juan" class="level2">
+<h2 class="anchored" data-anchor-id="juan">Juan</h2>
+<p>For your first edit, you could fix this tpyo and preview how it will look in the site.</p>
+</section>
+<section id="julie" class="level2">
+<h2 class="anchored" data-anchor-id="julie">Julie</h2>
+<p>For your first edit, you could fix this tpyo and preview how it will look in the site.</p>
+</section>
+<section id="katherine" class="level2">
+<h2 class="anchored" data-anchor-id="katherine">Katherine</h2>
+<p>For your first edit, you could fix this tpyo and preview how it will look in the site.</p>
+</section>
+<section id="kytt" class="level2">
+<h2 class="anchored" data-anchor-id="kytt">Kytt</h2>
+<p>For your first edit, you could fix this tpyo and preview how it will look in the site.</p>
+</section>
+<section id="luis" class="level2">
+<h2 class="anchored" data-anchor-id="luis">Luis</h2>
+<p>For your first edit, you could fix this tpyo and preview how it will look in the site.</p>
+</section>
+<section id="michele" class="level2">
+<h2 class="anchored" data-anchor-id="michele">Michele</h2>
+<p>For your first edit, you could fix this tpyo and preview how it will look in the site.</p>
+</section>
+<section id="navaneeth" class="level2">
+<h2 class="anchored" data-anchor-id="navaneeth">Navaneeth</h2>
+<p>For your first edit, you could fix this tpyo and preview how it will look in the site.</p>
+</section>
+<section id="rhys" class="level2">
+<h2 class="anchored" data-anchor-id="rhys">Rhys</h2>
+<p>For your first edit, you could fix this tpyo and preview how it will look in the site.</p>
+</section>
+<section id="ritika" class="level2">
+<h2 class="anchored" data-anchor-id="ritika">Ritika</h2>
+<p>For your first edit, you could fix this tpyo and preview how it will look in the site.</p>
+</section>
+<section id="rupesh" class="level2">
+<h2 class="anchored" data-anchor-id="rupesh">Rupesh</h2>
+<p>For your first edit, you could fix this tpyo and preview how it will look in the site.</p>
+</section>
+<section id="roosevelt" class="level2">
+<h2 class="anchored" data-anchor-id="roosevelt">Roosevelt</h2>
+<p>For your first edit, you could fix this tpyo and preview how it will look in the site.</p>
+</section>
+<section id="scott" class="level2">
+<h2 class="anchored" data-anchor-id="scott">Scott</h2>
+<p>For your first edit, you could fix this tpyo and preview how it will look in the site.</p>
 
 
 </section>
