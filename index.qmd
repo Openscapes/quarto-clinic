@@ -9,13 +9,11 @@ This book is an example of a Quarto website that is published via GitHub — Qua
 
 Quarto enables us to collaborate on documentation and tutorials — across Python and R languages and varied levels of coding expertise. It lets us share output in many ways, including websites. Importantly, it lets us write and share documentation/tutorials using the same tools we teach research teams for reproducible science.
 
-![](images/horst_quarto_schematic.png){fig-alt="3 part illustration left-to-right that starts with R, Python, Julia, Observable and more pointing to Quarto and then pointing to html, pdf, and word documents" fig-align="center" width="70%"}
+![Quarto enables contributions in R, Python, Observable, Julia, and more for outputs as html, PDF, Word, and more! Illustration by Allison Horst.](images/horst_quarto_schematic.png){fig-alt="3 part illustration left-to-right that starts with R, Python, Julia, Observable and more pointing to Quarto and then pointing to html, pdf, and word documents" fig-align="center" width="70%"}
 
 Quarto lets us build websites as a collection of files (`.qmd`, `.ipynb`, `.rmd` and others). Today we'll focus on Quarto's `.qmd` files, which are plain-text files that work nicely with GitHub workflows.
 
 The ability for Quarto to streamline collaboration has been so cool and important for **NASA Openscapes**, so this tutorial will enable you to contribute to the main [NASA Openscapes website](https://nasa-openscapes.github.io/) as well as the [NASA Earthdata Cloud Cookbook](https://nasa-openscapes.github.io/earthdata-cloud-cookbook/) (both made with Quarto+GitHub.)
-
-
 
 ## Our Plan today
 
@@ -30,4 +28,3 @@ This requires some setup. We'll do this first, and discuss more as we go.
 ## Prerequisites
 
 **To begin**, you should have a GitHub account with access to the 2i2c Openscapes JupyterHub.
-
