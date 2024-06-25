@@ -163,8 +163,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#workflow-to-contribute-via-github" id="toc-workflow-to-contribute-via-github" class="nav-link active" data-scroll-target="#workflow-to-contribute-via-github">Workflow to contribute via GitHub</a></li>
-  <li><a href="#contribute-your-updates-using-github" id="toc-contribute-your-updates-using-github" class="nav-link" data-scroll-target="#contribute-your-updates-using-github">Contribute your updates using GitHub</a>
+  <li><a href="#workflow-to-contribute-via-github" id="toc-workflow-to-contribute-via-github" class="nav-link active" data-scroll-target="#workflow-to-contribute-via-github">Workflow to contribute via GitHub</a>
   <ul class="collapse">
   <li><a href="#author-stages-commits-and-pushes-file" id="toc-author-stages-commits-and-pushes-file" class="nav-link" data-scroll-target="#author-stages-commits-and-pushes-file">Author stages, commits, and pushes file</a></li>
   <li><a href="#aside-set-up-our-git-credentials" id="toc-aside-set-up-our-git-credentials" class="nav-link" data-scroll-target="#aside-set-up-our-git-credentials">Aside: set up our Git credentials</a></li>
@@ -180,8 +179,8 @@ ul.task-list li input[type="checkbox"] {
   </ul></li>
   <li><a href="#regroup-discussion-topics" id="toc-regroup-discussion-topics" class="nav-link" data-scroll-target="#regroup-discussion-topics">Regroup discussion topics</a>
   <ul class="collapse">
-  <li><a href="#deleting-branches" id="toc-deleting-branches" class="nav-link" data-scroll-target="#deleting-branches">Deleting branches</a></li>
   <li><a href="#code-rendering-.qmd-files" id="toc-code-rendering-.qmd-files" class="nav-link" data-scroll-target="#code-rendering-.qmd-files">Code &amp; rendering <code>.qmd</code> files</a></li>
+  <li><a href="#review-in-jupyterhub" id="toc-review-in-jupyterhub" class="nav-link" data-scroll-target="#review-in-jupyterhub">Review in JupyterHub</a></li>
   <li><a href="#freeze" id="toc-freeze" class="nav-link" data-scroll-target="#freeze">Freeze</a></li>
   </ul></li>
   </ul>
@@ -211,44 +210,39 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="workflow-to-contribute-via-github" class="level2">
 <h2 class="anchored" data-anchor-id="workflow-to-contribute-via-github">Workflow to contribute via GitHub</h2>
-<p><strong>Bold</strong> words are git/GitHub terms</p>
+<p><strong>Bold</strong> words are git/GitHub terms. In this example there are two roles: an Author and a Reviewer.</p>
 <ol type="1">
-<li>Inspect the differences your edits will introduce</li>
-<li><strong>Stage</strong> your changes</li>
-<li><strong>Commit</strong> your changes with a helpful <strong>Commit message</strong></li>
-<li><strong>Push</strong> to GitHub</li>
-<li>Go to the Clinic repo source on GitHub, in your browser</li>
-<li>Make a <strong>Pull Request</strong> and tag a reviewer</li>
+<li>Author <strong>stages</strong> their changes</li>
+<li>Author <strong>commits</strong> changes with a helpful <strong>Commit message</strong></li>
+<li>Author <strong>pushes</strong> to GitHub</li>
+<li>Author make a <strong>Pull Request</strong> and tag a reviewer from GitHub.com</li>
 <li>Reviewer responds by commenting, making suggested commits, and submitting their <strong>review</strong></li>
 <li>Author responds to review and <strong>merges</strong> their Pull Request</li>
 <li>A GitHub Action automatically publishes the updates in the live siteDiff, Stage, Commit, and Push your edits to GitHub</li>
 </ol>
-</section>
-<section id="contribute-your-updates-using-github" class="level2">
-<h2 class="anchored" data-anchor-id="contribute-your-updates-using-github">Contribute your updates using GitHub</h2>
 <p>Now that we have each saved some changes to files in our Quarto site source, we can contribute our updates using GitHub.</p>
 <p>We will demonstrate this and then you will do this in breakout rooms.</p>
 <section id="author-stages-commits-and-pushes-file" class="level3">
 <h3 class="anchored" data-anchor-id="author-stages-commits-and-pushes-file">Author stages, commits, and pushes file</h3>
-<p>You have to deliberately tell Git/GitHub when you have work that you want to be versioned and synced. First, inspect the differences your edits will introduce.</p>
+<p>We have to deliberately tell Git/GitHub when you have work that we want to be versioned and synced. This is separate from saving the file, which is required first. Let’s inspect the differences our edits will introduce.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/jupyterhub-git-diff.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%"></p>
 </figure>
 </div>
-<p>In the Git tab “stage” your saved changes. There may be a <code>.json</code> file that you also stage; this is part of the Quarto build process.</p>
+<p>In the Git tab I will “stage” my saved changes. (There may be a <code>.json</code> file that you also stage; this is part of the Quarto build process.)</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/jupyterhub-git-stage.png" class="img-fluid figure-img" style="width:50.0%"></p>
 <figcaption>Stage your changes</figcaption>
 </figure>
 </div>
-<p>Commit your edits with a good commit message and push your edits to GitHub. A commit message is a human-readable message, like leaving a breadcrumb trail for your future self and others.</p>
-<p><img src="images/jupyterhub-git-commit-push.png" class="img-fluid quarto-figure quarto-figure-center" style="width:50.0%" alt="Commit and Push"> When you <strong>push</strong> by clicking the push icon (with the orange dot since we have committed files to push), you may be prompted to enter your git credentials.</p>
+<p>Next I will commit my edits with a good commit message and push my edits to GitHub. A commit message is a human-readable message, like leaving a breadcrumb trail for my future self and others.</p>
+<p><img src="images/jupyterhub-git-commit-push.png" class="img-fluid quarto-figure quarto-figure-center" style="width:50.0%" alt="Commit and Push"> When we <strong>push</strong> by clicking the push icon (with the orange dot since we have committed files to push), we may be prompted to enter git credentials.</p>
 </section>
 <section id="aside-set-up-our-git-credentials" class="level3">
 <h3 class="anchored" data-anchor-id="aside-set-up-our-git-credentials">Aside: set up our Git credentials</h3>
-<p>On your first commit, you will be prompted to add your Git credentials. When you are working on a project over time, you can have them stored, following instructions in <a href="https://nasa-openscapes.github.io/2021-Cloud-Hackathon/tutorials/00_Setup.html#step-5.1.-configure-git-git-config">Configure Git (git config)</a> from the 2021 Cloud Hackathon.</p>
+<p>You will be prompted to add your Git credentials. When you are working on a project over time, you can have them stored, following instructions in <a href="https://nasa-openscapes.github.io/2021-Cloud-Hackathon/tutorials/00_Setup.html#step-5.1.-configure-git-git-config">Configure Git (git config)</a> from the 2021 Cloud Hackathon.</p>
 <p><em>TODO: do we need to do <a href="https://nasa-openscapes.github.io/2021-Cloud-Hackathon/tutorials/00_Setup.html#step-5.1.-configure-git-git-config">Step 5.1. Configure Git (<code>git config</code>)</a>? (but ignore the push file part). Clarify the following text to say see the orange dot. click it to be prompted</em></p>
 <p>When you see the following screenshot, GitHub is asking for you to input your credentials. (Note: you see this screenshot when you have committed work to push to GitHub.com. In this case we have created a new branch in the Hub and it does not yet exist on GitHub.</p>
 <div class="quarto-figure quarto-figure-center">
@@ -261,26 +255,23 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="author-makes-a-pull-request" class="level3">
 <h3 class="anchored" data-anchor-id="author-makes-a-pull-request">Author makes a Pull Request</h3>
-<p>Our current status is that in the Hub, in our own branch of the Quarto Clinic repo, we have made one or more edits to the Clinic files, committed those updates, and pushed those commit(s) to GitHub. How do our suggested contributions get incorporated into the main Quarto Clinic repo and website? Via a <strong>Pull Request</strong>.</p>
-<p>Now we’ll go to <a href="https://github.com/Openscapes/quarto-clinic/" class="uri">https://github.com/Openscapes/quarto-clinic/</a> <!--- replace with unique link to a clinic ---> and you will see a yellow banner inviting you to make a Pull Request to add your edits to the Clinic repo.</p>
+<p>Our current status: We are in the Hub, and in our own branch of the Quarto Clinic GitHub repo, we have made one or more edits to the Clinic files, committed those updates, and pushed those commit(s) to GitHub. How do our suggested contributions get incorporated into the main Quarto Clinic repo and website? Via a GitHub <strong>Pull Request</strong>.</p>
+<p>So now I’ll go to <a href="https://github.com/NASA-Openscapes/quarto-clinic/" class="uri">https://github.com/NASA-Openscapes/quarto-clinic/</a> and I will see a yellow banner inviting me to make a Pull Request to add my edits to the Clinic repo.</p>
 <div class="quarto-figure quarto-figure-left">
 <figure class="figure">
 <p><img src="images/github-yellow-pr-banner.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:90.0%"></p>
 </figure>
 </div>
-<p>Not finished proposing your updates? You can set your Pull Request as a Draft at the start so folks can see your thinking. Set Ready for Review when ready and request a reviewer(s). For the NASA Earthdata Cloud Cookbook, any Pull Request must be reviewed before it can be merged. If you know someone who is familiar with the content you’re proposing to add, request their review.</p>
+<p>Maybe I’m not finished proposing my updates? I can set my Pull Request as a Draft at the start so folks can see my thinking, and we can have conversations about it. Set Ready for Review when ready and request a reviewer(s). For the NASA Earthdata Cloud Cookbook, any Pull Request must be reviewed before it can be merged. If you know someone who is familiar with the content you’re proposing to add, request their review.</p>
+<section id="pull-request-elements" class="level4">
+<h4 class="anchored" data-anchor-id="pull-request-elements">Pull Request elements</h4>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/pull-request.png" class="img-fluid figure-img" style="width:90.0%"></p>
 <figcaption>First view of a Pull Request.</figcaption>
 </figure>
 </div>
-</section>
-<section id="reviewer-reviews-the-pull-request" class="level3">
-<h3 class="anchored" data-anchor-id="reviewer-reviews-the-pull-request">Reviewer reviews the Pull Request</h3>
-<p>TODO:</p>
 <p>From the pull request page in GitHub browser, look at the elements of the pull request.</p>
-<!--- *TODO: add screenshot of a PR page like the one in Cookbook, pull-request-example.png* --->
 <ul>
 <li>Start with <strong>Conversation</strong> tab:
 <ul>
@@ -301,16 +292,11 @@ ul.task-list li input[type="checkbox"] {
 <li>Shows status of the Github Action that renders and deploys the site. We can know whether this Pull Request is able to be deployed.</li>
 </ul></li>
 </ul>
-<p>Now, switch to the 2i2c Hub to view the Clinic preview as it would appear if the pull request was merged:</p>
-<ul>
-<li>Terminal:
-<ul>
-<li>Go to the Main branch and pull so that we have the most recent changes from remote.</li>
-<li><code>git checkout</code> to the branch that has the Pull Request</li>
-<li><code>quarto preview</code> - this will build the book with the author’s suggested edits.</li>
-</ul></li>
-</ul>
-<p>In reviewing a pull request with lots of changes, it can be helpful to have windows open to view both the GitHub browser and the 2i2c Hub showing the Clinic site preview.</p>
+</section>
+</section>
+<section id="reviewer-reviews-the-pull-request" class="level3">
+<h3 class="anchored" data-anchor-id="reviewer-reviews-the-pull-request">Reviewer reviews the Pull Request</h3>
+<p>GitHub has gotten really powerful at doing reviews from the browser, so we can review small Pull Requests right here in GitHub.com. Note: When you are reviewing a Pull Request with a lot of code and analyses you need to run and dig into more deeply, you will do your review in JupyterHub by pulling the branch’s updates and committing your suggestions there. Today we will only practice a small review from the GitHub browser.</p>
 <ul>
 <li>In GitHub under the “Files changed” tab of the PR, we can add a suggested edit by clicking the “plus” button below the line in question. Suggesting specific commits can speed the contributor’s workflow compared with trying to describe what we’d like them to change.</li>
 <li>We can click “Start a review” button so the author gets a single email when we’re done reviewing, rather than getting one notification for every edit we suggest.</li>
@@ -351,15 +337,25 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="regroup-discussion-topics" class="level2">
 <h2 class="anchored" data-anchor-id="regroup-discussion-topics">Regroup discussion topics</h2>
-<section id="deleting-branches" class="level3">
-<h3 class="anchored" data-anchor-id="deleting-branches">Deleting branches</h3>
-</section>
 <section id="code-rendering-.qmd-files" class="level3">
 <h3 class="anchored" data-anchor-id="code-rendering-.qmd-files">Code &amp; rendering <code>.qmd</code> files</h3>
 <p>You can add code TODO</p>
 <p>When you <strong>Render</strong>, a document will be generated that includes both content and the output of embedded code. You can embed code like this:</p>
 <p><em>TODO: day before clinic, make this Python code (don’t add screenshot - fewer files to for folks to get distracted with, lighter weight repo)</em></p>
 <p>You can add options to executable code. The <code>echo: false</code> option disables the printing of code (only output is displayed).</p>
+</section>
+<section id="review-in-jupyterhub" class="level3">
+<h3 class="anchored" data-anchor-id="review-in-jupyterhub">Review in JupyterHub</h3>
+<p>Now, switch to the 2i2c Hub to view the Clinic preview as it would appear if the pull request was merged:</p>
+<ul>
+<li>Terminal:
+<ul>
+<li>Go to the Main branch and pull so that we have the most recent changes from remote.</li>
+<li><code>git checkout</code> to the branch that has the Pull Request</li>
+<li><code>quarto preview</code> - this will build the book with the author’s suggested edits.</li>
+</ul></li>
+</ul>
+<p>In reviewing a pull request with lots of changes, it can be helpful to have windows open to view both the GitHub browser and the 2i2c Hub showing the Clinic site preview.</p>
 </section>
 <section id="freeze" class="level3">
 <h3 class="anchored" data-anchor-id="freeze">Freeze</h3>
