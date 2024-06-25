@@ -37,16 +37,6 @@ Next, click the Git plugin tab. Click New Branch (blue rectangle) and enter a ne
 
 ![Create a branch](images/jupyterhub-git-branch.png){fig-align="center" width="70%"}
 
-## Set up our Git credentials
-
-*TODO: do we need to do [Step 5.1. Configure Git (`git config`)](https://nasa-openscapes.github.io/2021-Cloud-Hackathon/tutorials/00_Setup.html#step-5.1.-configure-git-git-config)? (but ignore the push file part). Clarify the following text to say see the orange dot. click it to be prompted*
-
-When you see the following screenshot, GitHub is asking for you to input your credentials. (Note: you see this screenshot when you have committed work to push to GitHub.com. In this case we have created a new branch in the Hub and it does not yet exist on GitHub.
-
-![Prompt to add your Git credentials](images/jupyterhub-git-credentials.png)
-
-We'll follow the instructions in the 2021 Cloud Hackathon to [Setup your Personal Access Token (PAT)](https://nasa-openscapes.github.io/2021-Cloud-Hackathon/tutorials/00_Setup.html#step-5.6.-setup-pat).
-
 ## Onward!
 
 Since we have each set up our own GitHub clone with our unique branch of this Quarto Clinic website in the Hub, now we are ready to start editing! The next chapter describes how to do this in the JupyterHub.
