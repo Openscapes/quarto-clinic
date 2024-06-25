@@ -10,49 +10,45 @@ This `demo.qmd` file has [Markdown](https://quarto.org/docs/authoring/markdown-b
 
 We can all practice Markdown in this Quarto file. Make an edit, preview how it will look in the site (`quarto preview`), edit, repeat.
 
-::: callout-note
 Only make changes to the section below under *your* name header (to prevent conflicts with other people's edits)
-:::
 
 ## Ideas for contributions
 
-#### **Headers**
+#### Headers
 
 We can make headers using `## Name`, `### Name`, etc. Headers are powerful in Quarto because they let you organize your content. You can share a specific subsection of a page by copying its URL.
 
-#### **Hyperlinks**
+#### Hyperlinks
 
 We can make hyperlinks using the `[]()` pattern: you name the hyperlink in `[]` and put the URL in `()`. For example, here's a link to [Markdown Basics](https://quarto.org/docs/authoring/markdown-basics.html). Hyperlinking lets us cite and give credit to our sources, like the NASA Earthdata Cloud Cookbook ([Barrett et al.](https://nasa-openscapes.github.io/earthdata-cloud-cookbook/)).
 
-#### **Images**
+#### Images
 
 We can include an image with the same `[]()` pattern, by adding a preceding exclamation point: `![]()`. The `[]` contain the caption (optional) and `()` contain the path to the image file.
 
-![The Openscapes logo](/images/openscapes_hex.png){width="150"}
+![The Openscapes logo](/images/openscapes_hex.png){alt="The Openscapes logo" width="150"}
 
 Additional attributes like image size, alt text, and linking the image to a URL, are set inside `{}` in this example:
 
-[![The Openscapes logo](/images/openscapes_hex.png){fig-alt="Openscapes logo. A hexagonal shape with orange border, yellow background, the word openscapes in orange above a cartoon evoking a landscape of data plots" width="150"}](https://openscapes.org/)
+![The Openscapes logo](/images/openscapes_hex.png){alt="The Openscapes logo" fig-alt="Openscapes logo. A hexagonal shape with orange border, yellow background, the word openscapes in orange above a cartoon evoking a landscape of data plots" width="150"}
 
-#### **Code**
+#### Code
 
 When you **Render**, a document will be generated that includes both content and the output of embedded code. You can embed code like this:
 
 *TODO: day before clinic, make this Python code (don't add screenshot - fewer files to for folks to get distracted with, lighter weight repo)*
 
-```{bash}
+```{r}
 2 * 2
 ```
 
 You can add options to executable code. The `echo: false` option disables the printing of code (only output is displayed).
 
-
 ## Stefanie
 
 For your first edit, you could fix this tpyo and preview how it will look in the site.
 
-
-## Julie
+## Alexis
 
 For your first edit, you could fix this tpyo and preview how it will look in the site.
 
@@ -60,4 +56,66 @@ For your first edit, you could fix this tpyo and preview how it will look in the
 
 For your first edit, you could fix this tpyo and preview how it will look in the site.
 
+## Eric
 
+For your first edit, you could fix this tpyo and preview how it will look in the site.
+
+## Guoqing
+
+For your first edit, you could fix this tpyo and preview how it will look in the site.
+
+## Ian
+
+For your first edit, you could fix this tpyo and preview how it will look in the site.
+
+## Jessica
+
+For your first edit, you could fix this tpyo and preview how it will look in the site.
+
+## Juan
+
+For your first edit, you could fix this tpyo and preview how it will look in the site.
+
+## Julie
+
+For your first edit, you could fix this tpyo and preview how it will look in the site.
+
+## Katherine
+
+For your first edit, you could fix this tpyo and preview how it will look in the site.
+
+## Kytt
+
+For your first edit, you could fix this tpyo and preview how it will look in the site.
+
+## Luis
+
+For your first edit, you could fix this tpyo and preview how it will look in the site.
+
+## Michele
+
+For your first edit, you could fix this tpyo and preview how it will look in the site.
+
+## Navaneeth
+
+For your first edit, you could fix this tpyo and preview how it will look in the site.
+
+## Rhys 
+
+For your first edit, you could fix this tpyo and preview how it will look in the site.
+
+## Ritika
+
+For your first edit, you could fix this tpyo and preview how it will look in the site.
+
+## Rupesh
+
+For your first edit, you could fix this tpyo and preview how it will look in the site.
+
+## Roosevelt
+
+For your first edit, you could fix this tpyo and preview how it will look in the site.
+
+## Scott
+
+For your first edit, you could fix this tpyo and preview how it will look in the site.
