@@ -4,14 +4,16 @@ title: "Part 2: GitHub workflow"
 
 ## Workflow to contribute via GitHub
 
+**Bold** words are git/GitHub terms
+
 1.  Inspect the differences your edits will introduce
-2.  "Stage" your changes
-3.  Commit your changes with a helpful "Commit message"
-4.  "Push" to GitHub
+2.  **Stage** your changes
+3.  **Commit** your changes with a helpful **Commit message**
+4.  **Push** to GitHub
 5.  Go to the Clinic repo source on GitHub, in your browser
-6.  Make a "Pull Request" and tag a reviewer
-7.  Reviewer responds by commenting, making suggested commits, and submitting their review
-8.  Author responds to review and "merges" their Pull Request
+6.  Make a **Pull Request** and tag a reviewer
+7.  Reviewer responds by commenting, making suggested commits, and submitting their **review**
+8.  Author responds to review and **merges** their Pull Request
 9.  A GitHub Action automatically publishes the updates in the live siteDiff, Stage, Commit, and Push your edits to GitHub
 
 ## Contribute your updates using GitHub
@@ -22,21 +24,31 @@ Now that we have each saved some changes to files in our Quarto site source, lii
 
 You have to deliberately tell Git/GitHub when you have work that you want to be versioned and synced. First, inspect the differences your edits will introduce.
 
-![](images/jupyterhub-git-diff.png){fig-align="left" width="100%"}
+![](images/jupyterhub-git-diff.png){fig-align="center" width="100%"}
 
 In the Git tab "stage" your saved changes.
 
-![Stage your changes](images/jupyterhub-git-stage.png){fig-align="left" width="50%"}
+![Stage your changes](images/jupyterhub-git-stage.png){fig-align="center" width="50%"}
 
 Commit your edits with a good commit message and push your edits to GitHub. A commit message is a human-readable message, like leaving a breadcrumb trail for your future self and others.
 
-![Commit and Push](images/jupyterhub-git-commit-push.png){fig-align="left" width="50%"}
+![Commit and Push](images/jupyterhub-git-commit-push.png){fig-align="center" width="50%"}
+
+### Set up our Git credentials
 
 On your first commit, you will be prompted to add your Git credentials. When you are working on a project over time, you can have them stored, following instructions in [Configure Git (git config)](https://nasa-openscapes.github.io/2021-Cloud-Hackathon/tutorials/00_Setup.html#step-5.1.-configure-git-git-config) from the 2021 Cloud Hackathon.
 
-In the Hub, in our own branch of the Quarto Clinic repo, we have made one or more edits to the Clinic files, committed those updates, and pushed those commit(s) to GitHub. How do our suggested contributions get incorporated into the main Quarto Clinic repo and website?
+*TODO: do we need to do [Step 5.1. Configure Git (`git config`)](https://nasa-openscapes.github.io/2021-Cloud-Hackathon/tutorials/00_Setup.html#step-5.1.-configure-git-git-config)? (but ignore the push file part). Clarify the following text to say see the orange dot. click it to be prompted*
+
+When you see the following screenshot, GitHub is asking for you to input your credentials. (Note: you see this screenshot when you have committed work to push to GitHub.com. In this case we have created a new branch in the Hub and it does not yet exist on GitHub.
+
+![Prompt to add your Git credentials](images/jupyterhub-git-credentials.png){fig-align="center" width="70%"}
+
+We'll follow the instructions in the 2021 Cloud Hackathon to [Setup your Personal Access Token (PAT)](https://nasa-openscapes.github.io/2021-Cloud-Hackathon/tutorials/00_Setup.html#step-5.6.-setup-pat).
 
 ### Make a Pull Request
+
+Our current status is that in the Hub, in our own branch of the Quarto Clinic repo, we have made one or more edits to the Clinic files, committed those updates, and pushed those commit(s) to GitHub. How do our suggested contributions get incorporated into the main Quarto Clinic repo and website? Via a **Pull Request**.
 
 After pushing your edits, go to <https://github.com/Openscapes/quarto-clinic/> <!--- replace with unique link to a clinic ---> and you will see a yellow banner inviting you to make a Pull Request to add your edits to the Clinic repo.
 
