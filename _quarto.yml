@@ -34,14 +34,14 @@ website:
     contents:
       - href: index.qmd
         text: Welcome
-      - href: setup.qmd
+      - href: part0-setup.qmd
         text: Setup
-      - section: lessons/index.qmd
-        text: Lessons
+      - section: part1-quarto.qmd
+        text: "Part 1: Quarto workflow"
         contents: 
-          - lessons/part1-quarto.qmd
-          - lessons/demo.qmd
-          - lessons/part2-github.qmd
+          - demo.qmd
+      - href: part2-github.qmd
+        text: "Part 2: GitHub workflow"        
       - href: next-steps.qmd
         text: Next Steps
 
