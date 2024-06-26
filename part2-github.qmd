@@ -46,7 +46,7 @@ We'll follow the instructions in the 2021 Cloud Hackathon to [Setup your Persona
 
 Our current status: We are in the Hub, and in our own branch of the Quarto Clinic GitHub repo, we have made one or more edits to the Clinic files, committed those updates, and pushed those commit(s) to GitHub. How do our suggested contributions get incorporated into the main Quarto Clinic repo and website? Via a GitHub **Pull Request**.
 
-So now I'll go to <https://github.com/NASA-Openscapes/quarto-clinic/> and I will see a yellow banner inviting me to make a Pull Request to add my edits to the Clinic repo.
+So now I'll go to <https://github.com/Openscapes/quarto-clinic/> and I will see a yellow banner inviting me to make a Pull Request to add my edits to the Clinic repo.
 
 ![](images/github-yellow-pr-banner.png){fig-align="left" width="90%"}
 
@@ -74,6 +74,9 @@ From the pull request page in GitHub browser, look at the elements of the pull r
 GitHub has gotten really powerful at doing reviews from the browser, so we can review small Pull Requests right here in GitHub.com. Note: When you are reviewing a Pull Request with a lot of code and analyses you need to run and dig into more deeply, you will do your review in JupyterHub by pulling the branch's updates and committing your suggestions there. Today we will only practice a small review from the GitHub browser.
 
 -   In GitHub under the "Files changed" tab of the PR, we can add a suggested edit by clicking the "plus" button below the line in question. Suggesting specific commits can speed the contributor's workflow compared with trying to describe what we'd like them to change.
+
+    ![A suggestion in a Pull Request review](images/github-suggestion.png){fig-align="center" width="60%"}
+
 -   We can click "Start a review" button so the author gets a single email when we're done reviewing, rather than getting one notification for every edit we suggest.
 
 Review each individual file that has changed and come back to the main `_quarto.yml` if we see an issue with the navigation.
