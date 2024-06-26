@@ -1,0 +1,8 @@
+# Rupesh New File
+
+## Test for Head
+
+```{python}
+with open('demo.qmd', 'r') as f:
+    f.read()
+```

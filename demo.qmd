@@ -97,7 +97,27 @@ For your first edit, you could fix this tpyo and preview how it will look in the
 
 ## Rupesh
 
-For your first edit, you could fix this tpyo and preview how it will look in the site.
+For your first edit, you could fix this typo and preview how it will look in the site. 
+
+### Table example
+
+I am adding a table below:
+
+| Month | Tax |
+| -------- | ------- |
+| January | $300 |
+| February | $500 |
+| March | $400 |
+
+### List example
+I am adding a list : 
+
+ - List 1
+ - List 1 
+    1. List 2
+    2. List 2
+
+
 
 ## Roosevelt
 
