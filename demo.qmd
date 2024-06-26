@@ -37,7 +37,9 @@ For your first edit, you could fix this tpyo and preview how it will look in the
 
 ## Alexis
 
-For your first edit, you could fix this tpyo and preview how it will look in the site.
+For your first edit, you could fix this typo and preview how it will look in the site.
+
+![Bald eagles](/images/bald-eagle.jpeg){fig-alt="Bald eagle evolution. Six eagle heads representing age evolution and characteristics over time." width="35%"}
 
 ## Andy
 
