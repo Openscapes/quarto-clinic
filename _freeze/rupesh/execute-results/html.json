@@ -1,0 +1,12 @@
+{
+  "hash": "335dc113b1fdae8a45db737aa8088b5d",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\ntitle: Rupesh New File\n---\n\n\n\n## Test for Head\n\n\n::: {#0170d198 .cell execution_count=1}\n``` {.python .cell-code}\nwith open('demo.qmd', 'r') as f:\n    f.read()\n```\n:::\n\n\n",
+    "supporting": [
+      "rupesh_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}

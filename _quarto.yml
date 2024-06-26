@@ -40,6 +40,7 @@ website:
         text: "Part 1: Quarto workflow"
         contents: 
           - demo.qmd
+          - rupesh.qmd
       - href: part2-github.qmd
         text: "Part 2: GitHub workflow"        
       - href: next-steps.qmd
