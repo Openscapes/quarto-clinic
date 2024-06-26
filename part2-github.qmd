@@ -7,12 +7,12 @@ title: "Part 2: GitHub workflow"
 **Bold** words are git/GitHub terms. In this example there are two roles: an Author and a Reviewer.
 
 1.  Author **stages** their changes
-2.  Author **commits** changes with a helpful **Commit message** 
+2.  Author **commits** changes with a helpful **Commit message**
 3.  Author **pushes** to GitHub
 4.  Author make a **Pull Request** and tag a reviewer from GitHub.com
-7.  Reviewer responds by commenting, making suggested commits, and submitting their **review**
-8.  Author responds to review and **merges** their Pull Request
-9.  A GitHub Action automatically publishes the updates in the live siteDiff, Stage, Commit, and Push your edits to GitHub
+5.  Reviewer responds by commenting, making suggested commits, and submitting their **review**
+6.  Author responds to review and **merges** their Pull Request
+7.  A GitHub Action automatically publishes the updates in the live site
 
 Now that we have each saved some changes to files in our Quarto site source, we can contribute our updates using GitHub.
 
@@ -20,7 +20,7 @@ We will demonstrate this and then you will do this in breakout rooms.
 
 ### Author stages, commits, and pushes file
 
-We have to deliberately tell Git/GitHub when you have work that we want to be versioned and synced. This is separate from saving the file, which is required first. Let's inspect the differences our edits will introduce.
+We have to deliberately tell Git/GitHub when we have work that we want to be versioned and synced. This is separate from saving the file, which is required first. Let's inspect the differences our edits will introduce.
 
 ![](images/jupyterhub-git-diff.png){fig-align="center" width="80%"}
 
@@ -30,15 +30,13 @@ In the Git tab I will "stage" my saved changes. (There may be a `.json` file tha
 
 Next I will commit my edits with a good commit message and push my edits to GitHub. A commit message is a human-readable message, like leaving a breadcrumb trail for my future self and others.
 
-![Commit and Push](images/jupyterhub-git-commit-push.png){fig-align="center" width="50%"} When we **push** by clicking the push icon (with the orange dot since we have committed files to push), we may be prompted to enter git credentials.
+![Commit and Push](images/jupyterhub-git-commit-push.png){fig-align="center" width="50%"}
+
+When we **push** by clicking the push icon (with the orange dot since we have committed files to push), we may be prompted to enter Git credentials.
 
 ### Aside: set up our Git credentials
 
-You will be prompted to add your Git credentials. When you are working on a project over time, you can have them stored, following instructions in [Configure Git (git config)](https://nasa-openscapes.github.io/2021-Cloud-Hackathon/tutorials/00_Setup.html#step-5.1.-configure-git-git-config) from the 2021 Cloud Hackathon.
-
-*TODO: do we need to do [Step 5.1. Configure Git (`git config`)](https://nasa-openscapes.github.io/2021-Cloud-Hackathon/tutorials/00_Setup.html#step-5.1.-configure-git-git-config)? (but ignore the push file part). Clarify the following text to say see the orange dot. click it to be prompted*
-
-When you see the following screenshot, GitHub is asking for you to input your credentials. (Note: you see this screenshot when you have committed work to push to GitHub.com. In this case we have created a new branch in the Hub and it does not yet exist on GitHub.
+When you see the following screenshot, GitHub is asking for you to input your Git credentials. You see this when you have committed work to push to GitHub.com. In this case we have created a new branch and made changes to a file in the Hub and these do not yet exist on GitHub.
 
 ![Prompt to add your Git credentials](images/jupyterhub-git-credentials.png){fig-align="center" width="70%"}
 
@@ -48,15 +46,15 @@ We'll follow the instructions in the 2021 Cloud Hackathon to [Setup your Persona
 
 Our current status: We are in the Hub, and in our own branch of the Quarto Clinic GitHub repo, we have made one or more edits to the Clinic files, committed those updates, and pushed those commit(s) to GitHub. How do our suggested contributions get incorporated into the main Quarto Clinic repo and website? Via a GitHub **Pull Request**.
 
-So now I'll go to <https://github.com/NASA-Openscapes/quarto-clinic/> and I will see a yellow banner inviting me to make a Pull Request to add my edits to the Clinic repo.
+So now I'll go to <https://github.com/Openscapes/quarto-clinic/> and I will see a yellow banner inviting me to make a Pull Request to add my edits to the Clinic repo.
 
-![](images/github-yellow-pr-banner.png){fig-align="left" width="90%"}
-
-Maybe I'm not finished proposing my updates? I can set my Pull Request as a Draft at the start so folks can see my thinking, and we can have conversations about it. Set Ready for Review when ready and request a reviewer(s). For the NASA Earthdata Cloud Cookbook, any Pull Request must be reviewed before it can be merged. If you know someone who is familiar with the content you're proposing to add, request their review.
+![Yellow banner prompt to make a Pull Request](images/github-yellow-pr-banner.png){fig-align="left" width="90%"}
 
 #### Pull Request elements
 
 ![First view of a Pull Request.](images/pull-request.png){fig-align="center" width="90%"}
+
+Maybe I'm not finished proposing my updates? I can **set my Pull Request as a Draft** at the start so folks can see my thinking, and we can have conversations about it. Set Ready for Review when ready and request a reviewer(s).
 
 From the pull request page in GitHub browser, look at the elements of the pull request.
 
@@ -76,6 +74,9 @@ From the pull request page in GitHub browser, look at the elements of the pull r
 GitHub has gotten really powerful at doing reviews from the browser, so we can review small Pull Requests right here in GitHub.com. Note: When you are reviewing a Pull Request with a lot of code and analyses you need to run and dig into more deeply, you will do your review in JupyterHub by pulling the branch's updates and committing your suggestions there. Today we will only practice a small review from the GitHub browser.
 
 -   In GitHub under the "Files changed" tab of the PR, we can add a suggested edit by clicking the "plus" button below the line in question. Suggesting specific commits can speed the contributor's workflow compared with trying to describe what we'd like them to change.
+
+    ![A suggestion in a Pull Request review](images/github-suggestion.png){fig-align="center" width="60%"}
+
 -   We can click "Start a review" button so the author gets a single email when we're done reviewing, rather than getting one notification for every edit we suggest.
 
 Review each individual file that has changed and come back to the main `_quarto.yml` if we see an issue with the navigation.
@@ -92,13 +93,13 @@ Pair up in breakouts to make and review each other's Pull Requests
 
 We've done this demonstration - now you'll go into breakout rooms. One of you be the Author role, and one the Reviewer role, with each of you screensharing where you are playing your role. Help each other out! If there is time, please switch roles
 
-Steps: 
+Steps:
 
-- Author stages, commits, and pushes file
-- Author makes a Pull Request
-- Reviewer reviews the Pull Request
-- Author merges Pull Request
-- Make notes of any questions you have, challenges
+-   Author stages, commits, and pushes file
+-   Author makes a Pull Request
+-   Reviewer reviews the Pull Request
+-   Author merges Pull Request
+-   Make notes of any questions you have, challenges
 
 ## Regroup & Wrap up
 
@@ -111,22 +112,24 @@ Steps:
 Good practices to tidy your workspace & save unneccessary storage costs:
 
 From GitHub Browser:
-- **Delete branch on GitHub Browser**
+
+-   **Delete branch on GitHub Browser**
 
 From JupyterHub:
-- **Delete `stefanie` branch** from the Git plugin
-- **Delete quarto-clinic folder** from terminal `cd ..` then `rm -rf quarto clinic`
-- **Shut down Hub** from File menu
+
+-   **Delete `stefanie` branch** from the Git plugin
+-   **Delete quarto-clinic folder** from terminal `cd ..` then `rm -rf quarto clinic`
+-   **Shut down Hub** from File menu
 
 ## Regroup discussion topics
 
 ### Code & rendering `.qmd` files
 
-You can add code TODO
+You can add code
 
 When you **Render**, a document will be generated that includes both content and the output of embedded code. You can embed code like this:
 
-*TODO: day before clinic, make this Python code (don't add screenshot - fewer files to for folks to get distracted with, lighter weight repo)*
+TODO
 
 You can add options to executable code. The `echo: false` option disables the printing of code (only output is displayed).
 
@@ -147,4 +150,4 @@ In reviewing a pull request with lots of changes, it can be helpful to have wind
 
 -   Freeze directory contains the results of code execution.
 -   Commit the freeze directory after you run quarto preview.
--   If there are merge conflicts when you submit to NASA Openscapes Cookbook, maintainers will help resolve them.
+-   If there are merge conflicts when you submit to NASA Earthdata Cloud Cookbook, maintainers will help resolve them.
