@@ -48,13 +48,13 @@ Our current status: We are in the Hub, and in our own branch of the Quarto Clini
 
 So now I'll go to <https://github.com/Openscapes/quarto-clinic/> and I will see a yellow banner inviting me to make a Pull Request to add my edits to the Clinic repo.
 
-![](images/github-yellow-pr-banner.png){fig-align="left" width="90%"}
-
-Maybe I'm not finished proposing my updates? I can set my Pull Request as a Draft at the start so folks can see my thinking, and we can have conversations about it. Set Ready for Review when ready and request a reviewer(s). For the NASA Earthdata Cloud Cookbook, any Pull Request must be reviewed before it can be merged. If you know someone who is familiar with the content you're proposing to add, request their review.
+![Yellow banner prompt to make a Pull Request](images/github-yellow-pr-banner.png){fig-align="left" width="90%"}
 
 #### Pull Request elements
 
 ![First view of a Pull Request.](images/pull-request.png){fig-align="center" width="90%"}
+
+Maybe I'm not finished proposing my updates? I can **set my Pull Request as a Draft** at the start so folks can see my thinking, and we can have conversations about it. Set Ready for Review when ready and request a reviewer(s).
 
 From the pull request page in GitHub browser, look at the elements of the pull request.
 
