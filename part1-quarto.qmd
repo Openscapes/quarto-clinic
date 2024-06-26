@@ -31,7 +31,7 @@ Open this URL in a browser window and arrange your Hub and website preview windo
 
 ## Make changes to files (aka the website content)
 
-**Open [`lessons/demo.qmd`](demo.qmd) file using the Editor, not as a Notebook file.** Suggestions for things to try, and how to format things are in the file.
+**Open [`demo.qmd`](demo.qmd) file using the Editor, not as a Notebook file.** Suggestions for things to try, and how to format things are in the file.
 
 ![Open .qmd file with the Editor](images/jupyterhub-openwith-editor.png){fig-align="left" width="50%"}
 

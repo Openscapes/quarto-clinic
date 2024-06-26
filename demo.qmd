@@ -1,12 +1,11 @@
 ---
-title: "`.qmd` file for practice"
+title: "`demo.qmd` file for practice"
 ---
 
-This `demo.qmd` file has [Markdown](https://quarto.org/docs/authoring/markdown-basics.html)-formatted text, examples for adding headers, hyperlinks, and inserting images with alt-text, and a Python code chunk.
+This `demo.qmd` file has [Markdown](https://quarto.org/docs/authoring/markdown-basics.html)-formatted text, examples for adding headers, hyperlinks, and inserting images with alt-text.
 
 -   Headers are powerful in Quarto because they let you organize on the side of the page. In a Quarto site, headers let you share a specific section of a page by clicking on a header and copying the URL.
 -   Hyperlinking lets us cite our sources and inspirations and give credit.
--   Python code in a `.qmd` file will be executed automatically.
 
 We can all practice Markdown in this Quarto file. Make an edit, preview how it will look in the site (`quarto preview`), edit, repeat.
 
